@@ -7,6 +7,7 @@
 
 from __future__ import annotations
 
+import json
 import sys
 from datetime import datetime, timedelta
 
@@ -154,6 +155,24 @@ def publish_next(cfg: dict, st: dict) -> bool:
     # breaking news first, then the oldest approval
     folder, meta = min(queue, key=lambda fm: (-int(fm[1].get("priority", 1)),
                                                fm[1].get("decided_at") or fm[1].get("created_at", "")))
+
+    meta = json.loads((folder / "post.json").read_text(encoding="utf-8"))   # latest version
+    if meta.get("status") != "approved":
+        print(f"{folder.name}: no longer approved, skipping")
+        return True
+    if not meta.get("result"):
+        try:
+            from vok.publish import recent_vok_posts
+            from vok.collect import _similar, _words
+            mine = _words(meta["headline"])
+            if any(_similar(mine, set(w)) for w in recent_vok_posts(hours=12)):
+                meta["status"] = "rejected"
+                meta["note"] = "VOK already posted this story"
+                save_post(folder, meta)
+                print(f"{folder.name}: already on VOK, skipped")
+                return True
+        except Exception as e:
+            print(f"duplicate check failed: {str(e)[:80]}")
 
     def save_progress(res: dict) -> None:
         meta["result"] = res

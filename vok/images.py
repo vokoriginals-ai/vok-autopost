@@ -60,7 +60,9 @@ def wikimedia_person(name: str) -> list[dict]:
             "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 2000}
     out = _parse(_commons({**base, "generator": "search", "gsrnamespace": 6, "gsrlimit": 25,
                            "gsrsearch": f'intitle:"{name}" filetype:bitmap'}))
-    out = [c for c in out if not NOT_A_PERSON.search(c["page"].rsplit("File:", 1)[-1])]
+    sur = re.sub(r"[^a-z]", "", name.lower().split()[-1])
+    out = [c for c in out if not NOT_A_PERSON.search(c["page"].rsplit("File:", 1)[-1])
+           and sur in re.sub(r"[^a-z]", "", c["page"].rsplit("File:", 1)[-1].lower())]
     key = re.sub(r"[^a-z]", "", name.lower())
     for c in out:
         title = re.sub(r"[^a-z]", "", c["page"].rsplit("File:", 1)[-1].lower())
@@ -98,7 +100,7 @@ def _parse(data: dict, newest_first: bool = False) -> list[dict]:
         lic = _strip(meta.get("LicenseShortName", {}).get("value", ""))
         if info.get("mime") not in ("image/jpeg", "image/png"):
             continue
-        if not OK_LICENSES.match(lic) or SKIP_WORDS.search(p.get("title", "")):
+        if not OK_LICENSES.match(lic) or SKIP_WORDS.search(p.get("title", "")) or CHART.search(p.get("title", "")):
             continue
         if min(info.get("width", 0), info.get("height", 0)) < MIN_SIDE:
             continue
@@ -172,6 +174,7 @@ def download(url: str, path: str) -> str:
     return path
 
 
+CHART = re.compile(r"chart|graph|infographic|diagram|ranking|evolution|vs\b|statistics|timeline|table", re.I)
 NOT_A_PERSON = re.compile(r"stadium|airport|road|street|station|bridge|building|house|hospital|"
                           r"university|college|school|statue|signature|logo|poster|mural|cartoon|"
                           r"memorial|tomb|ship|aircraft|plane|car|museum|park|square|avenue", re.I)

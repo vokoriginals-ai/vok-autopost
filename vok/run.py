@@ -76,6 +76,14 @@ def publish_all_approved(gap_seconds: int = 180) -> bool:
     return ok
 
 
+def _sync() -> None:
+    """Save local changes and take everyone else's. On a clash the version already on
+    GitHub wins (a pause or fix made there must never be overwritten)."""
+    import os
+    os.system('git add posts data >/dev/null 2>&1; git commit -qm "drip: update posts [skip ci]" >/dev/null 2>&1; '
+              '(git pull -q --rebase -X ours || git rebase --abort); git push -q')
+
+
 def drip(max_hours: float = 5.5) -> None:
     """Keep running: every 5 min read replies, auto-approve, and publish the next post
     when it is due. Posts are spread evenly so the queue lasts until the window ends
@@ -108,6 +116,7 @@ def drip(max_hours: float = 5.5) -> None:
                     make_posts.main(count=3)
                 except Exception as e:
                     print(f"news check failed: {str(e)[:120]}")
+            _sync()                      # get the latest edits BEFORE deciding anything
             st = load_state()
             st["drip_until"] = st0["drip_until"]
             tick.apply_decisions(st)
@@ -115,8 +124,7 @@ def drip(max_hours: float = 5.5) -> None:
             tick.expire_old()
             tick.publish_next(cfg, st)
             save_state(st)
-            os.system('git add posts data >/dev/null 2>&1 && git commit -qm "drip: update posts [skip ci]" '
-                      '&& (git pull -q --rebase -X theirs || git rebase --abort) && git push -q')
+            _sync()
         elif not any(m.get("status") in ("approved", "pending") for _, m in all_posts()):
             print("outside window and nothing queued: stopping")
             return

@@ -49,6 +49,11 @@ CAPTION
 - Then exactly 5 hashtags on one line: #Vok #VokOriginals plus 3 specific ones.
 - Plain text, no markdown, no links. Total under 1,800 characters.
 
+TOPIC FIT: VOK's audience is Pakistan and the Middle East. Set "publishable": false for local
+sports deals and results (baseball, American football, college sports, routine tennis or golf
+results), celebrity gossip with no wider angle, and local business news. Global sports moments
+(World Cup, Olympics, cricket, a Muslim athlete's historic win) are fine.
+
 PRIORITY: "priority": 3 = breaking news (just happened, big: war moves, strikes, deaths of
 leaders, major disasters, huge political shocks), 2 = important, 1 = normal/viral.
 
