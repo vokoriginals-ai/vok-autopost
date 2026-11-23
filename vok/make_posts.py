@@ -64,8 +64,9 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         if _time.time() - run_started > 40 * 60:      # job limit is 55 min: stop cleanly
             print("time budget used up; the next run continues")
             break
-        st["seen"].append({"at": now().isoformat(), "words": sorted(story["words"]),
-                           "headline": story["headline"]})
+        def mark_seen():
+            st["seen"].append({"at": now().isoformat(), "words": sorted(story["words"]),
+                               "headline": story["headline"]})
         try:
             w = write_post(story, cfg["gemini_models"])
         except Exception as e:
@@ -78,6 +79,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             import time
             time.sleep(20)                # Gemini busy: short pause, then the next story
             continue
+        mark_seen()
         if not w.get("publishable"):
             print(f"skip: {story['headline'][:70]} – {w.get('reason')}")
             continue
