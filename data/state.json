@@ -1169,6 +1169,42 @@
     "york"
    ],
    "headline": "The Mets’ ridiculous Tarik Skubal contract is the last vestige of MLB’s old world"
+  },
+  {
+   "at": "2026-11-23T23:48:37.841390+05:00",
+   "words": [
+    "49ers",
+    "brock",
+    "carves",
+    "city",
+    "electrifying",
+    "makes",
+    "mexico",
+    "nfl",
+    "passes",
+    "purdy",
+    "return",
+    "rout",
+    "vikings",
+    "win"
+   ],
+   "headline": "Brock Purdy carves up the Vikings' D with 3 TD passes in the 49ers' 35-10 win in Mexico City"
+  },
+  {
+   "at": "2026-11-23T23:49:06.465894+05:00",
+   "words": [
+    "advancements",
+    "bases",
+    "evacuated",
+    "iraq",
+    "northern",
+    "peace",
+    "pkk",
+    "process",
+    "turkey",
+    "turkiye"
+   ],
+   "headline": "Turkey says PKK evacuated 14 more bases in northern Iraq"
   }
  ],
  "published": [
@@ -1255,7 +1291,11 @@
   {
    "at": "2026-11-23T23:45:49.399200+05:00",
    "page": "https://commons.wikimedia.org/wiki/File:Tarik_Skubal_(53947418471).jpg"
+  },
+  {
+   "at": "2026-11-23T23:49:24.747941+05:00",
+   "page": "https://commons.wikimedia.org/wiki/File:Piramagrun_Mountain-_Slemani.jpg"
   }
  ],
- "drip_until": "2026-11-24T05:21:49.102581+05:00"
+ "drip_until": "2026-11-24T05:27:14.638476+05:00"
 }
