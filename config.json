@@ -22,6 +22,10 @@
       "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"
     },
     {
+      "name": "Dawn",
+      "url": "https://www.dawn.com/feeds/world"
+    },
+    {
       "name": "BBC News",
       "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
     },
@@ -44,6 +48,39 @@
     {
       "name": "Google News",
       "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/search?q=when:1d+site:firstpost.com+(world+OR+Iran+OR+Israel+OR+Gaza+OR+Saudi)&hl=en-IN&gl=IN&ceid=IN:en"
     }
-  ]
+  ],
+  "trusted_sources": [
+    "Reuters",
+    "Al Jazeera",
+    "BBC",
+    "Dawn",
+    "Firstpost",
+    "AP News",
+    "Associated Press",
+    "Middle East Eye",
+    "Arab News",
+    "Al Arabiya",
+    "Times of Israel",
+    "The Guardian",
+    "CNN",
+    "Bloomberg",
+    "Financial Times",
+    "The New York Times",
+    "The Washington Post",
+    "Anadolu",
+    "Euronews",
+    "CNBC",
+    "Sky News",
+    "France 24",
+    "DW",
+    "NDTV",
+    "The Express Tribune",
+    "Geo News"
+  ],
+  "require_trusted_source": true
 }

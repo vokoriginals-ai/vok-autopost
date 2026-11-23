@@ -36,6 +36,9 @@ HEADLINE (goes on the image; this post is a SINGLE image, there is no next slide
   "you won't believe", "the real reason". Those are only for carousels, which this is not.
 - No question marks, hashtags, emojis, or quotation marks around the whole headline.
 
+NO DASHES ANYWHERE (headline and caption): never use em dashes (—), en dashes (–) or hyphens (-).
+Use commas, full stops or "and" instead; write "US Iran talks", "pro Israel", "7 year".
+
 CAPTION
 - Line 1: a hook sentence (can include one relevant emoji).
 - Then 4 to 6 short paragraphs (1–2 sentences each), most important fact first, with attribution.

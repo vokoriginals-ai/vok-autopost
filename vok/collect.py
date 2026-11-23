@@ -121,6 +121,11 @@ def top_stories(cfg: dict, seen: list[list[str]], limit: int) -> list[dict]:
     for g in groups:
         if len(g["sources"]) < cfg["min_sources"]:
             continue
+        trusted = set(cfg.get("trusted_sources", []))
+        if cfg.get("require_trusted_source") and not trusted & set(g["sources"]):
+            continue                      # at least one credible outlet must carry it
+        g["trusted"] = sorted(trusted & set(g["sources"]))
+        g["score"] += 2 * len(g["trusted"])
         if overlaps(g["words"], seen):
             continue
         picked.append(g)

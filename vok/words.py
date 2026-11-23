@@ -73,3 +73,45 @@ if __name__ == "__main__":
               "Sexual abuse claims rock ministry", "He died after being tortured",
               "Skills deadline missed", "Israeli strike kills 12", "#Vok #KilledInAction"]:
         print(f"{t!r:45} → {disguise(t)!r}")
+
+
+# ---------------------------------------------------------------- no dashes
+
+def no_dashes(text: str) -> str:
+    """VOK style: no em/en dashes or hyphens anywhere in headline or caption.
+
+    "Talks collapse — EU walks out"  → "Talks collapse, EU walks out"
+    "US-Iran talks", "pro-Israel"    → "US Iran talks", "pro Israel"
+    "2025-26", "7-year"              → "2025 to 26", "7 year"
+    Hashtags and links are left alone.
+    """
+    def fix(part: str) -> str:
+        part = re.sub(r"(^|\n)[ \t]*[-—–][ \t]+", r"\1", part)     # list bullets
+        part = re.sub(r"[ \t]*[—–][ \t]*", ", ", part)             # em/en dash between clauses
+        part = re.sub(r"(\d)\s*-\s*(\d{2,4})\b", r"\1 to \2", part)  # number ranges
+        part = re.sub(r"(?<=\w)-(?=\w)", " ", part)              # hyphenated words
+        part = re.sub(r"[ \t]+-[ \t]+", ", ", part)               # spaced hyphen used as dash
+        part = re.sub(r",\s*,", ",", part)
+        part = re.sub(r"\s+,", ",", part)
+        part = re.sub(r",\s*([.!?:])", r"\1", part)
+        return re.sub(r"[ \t]{2,}", " ", part)
+    parts = re.split(r"(#\w+|https?://\S+)", text)
+    return "".join(p if p.startswith(("#", "http")) else fix(p) for p in parts)
+
+
+AI_NOTE = "Note: AI image used for illustration purposes."
+CTA = "Follow Vok for more stories like this."
+
+
+def add_ai_note(caption: str) -> str:
+    """Put the AI-image disclaimer right after the CTA line (before hashtags)."""
+    if AI_NOTE in caption:
+        return caption
+    if CTA in caption:
+        return caption.replace(CTA, f"{CTA}\n\n{AI_NOTE}", 1)
+    return caption.rstrip() + f"\n\n{AI_NOTE}"
+
+
+def clean(text: str) -> str:
+    """Everything VOK text goes through: no dashes, then disguise words."""
+    return disguise(no_dashes(text))

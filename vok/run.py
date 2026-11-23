@@ -2,6 +2,7 @@
 
     python -m vok.run render  <post-id>   # (re)make render.jpg
     python -m vok.run publish <post-id>   # publish this post right now
+    python -m vok.run publish-all [gap]   # publish all approved posts now, gap seconds apart
 """
 
 from __future__ import annotations
@@ -55,7 +56,29 @@ def do_publish(post_id: str) -> bool:
     return True
 
 
+def publish_all_approved(gap_seconds: int = 180) -> bool:
+    """Publish every approved post now, oldest first, with a pause between them."""
+    import time
+    from vok.state import all_posts, load_state, save_state
+    queue = sorted((m.get("decided_at") or m.get("created_at", ""), f.name)
+                   for f, m in all_posts() if m.get("status") == "approved")
+    st = load_state()
+    ok = True
+    for i, (_, post_id) in enumerate(queue):
+        if i:
+            time.sleep(gap_seconds)
+        good = do_publish(post_id)
+        ok &= good
+        if good:
+            st.setdefault("published", []).append(now().isoformat(timespec="minutes"))
+    save_state(st)
+    return ok
+
+
 if __name__ == "__main__":
+    if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
+        gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
+        sys.exit(0 if publish_all_approved(gap) else 1)
     if len(sys.argv) < 3 or sys.argv[1] not in ("render", "publish"):
         sys.exit(__doc__)
     if sys.argv[1] == "render":

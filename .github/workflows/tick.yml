@@ -12,6 +12,10 @@ on:
         description: "Publish this post folder right now (optional)"
         required: false
         default: ""
+      publish_all_approved:
+        description: "Publish ALL approved posts now, 3 min apart (yes/no)"
+        required: false
+        default: "no"
 
 permissions:
   contents: write
@@ -24,7 +28,7 @@ concurrency:
 jobs:
   tick:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
 
@@ -35,8 +39,11 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POST_ID: ${{ github.event.inputs.post_id }}
+          ALL: ${{ github.event.inputs.publish_all_approved }}
         run: |
-          if [ -n "$POST_ID" ]; then
+          if [ "$ALL" = "yes" ]; then
+            python3 -m vok.run publish-all 180
+          elif [ -n "$POST_ID" ]; then
             python3 -m vok.run publish "$POST_ID"
           else
             python3 -m vok.tick
