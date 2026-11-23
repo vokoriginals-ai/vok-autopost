@@ -27,13 +27,14 @@ STRICT FACT RULES
 PAKISTAN RULE
 - If the story is mainly about Pakistan and is NOT major global news, set "publishable": false.
 
-HEADLINE (goes on the image)
-- 7 to 14 words, punchy, curiosity-driven, emotionally strong, but 100% accurate.
-- Good patterns: "X just did Y — here's why it matters", "The real reason …",
-  "… and nobody is talking about it" (only if true), strong verbs, contrasts.
-- No question marks, no hashtags, no emojis, no quotation marks around the whole headline.
-- Like VOK, disguise only these words in the HEADLINE to avoid reach limits:
-  killed → K!lled, kills → K!lls, dead → D3ad, death → D3ath. Write them normally in the caption.
+HEADLINE (goes on the image; this post is a SINGLE image, there is no next slide)
+- 8 to 15 words. It must STATE the actual news: who did what, with the key fact.
+  A reader who only sees the image must know what happened.
+- Make it engaging with strong verbs, contrast, stakes and numbers that are in the sources,
+  e.g. "Trump says he is ready to strike Iran after New Year if no deal is reached".
+- NEVER tease or withhold: no "here's why", "here's who", "this is what", "find out",
+  "you won't believe", "the real reason". Those are only for carousels, which this is not.
+- No question marks, hashtags, emojis, or quotation marks around the whole headline.
 
 CAPTION
 - Line 1: a hook sentence (can include one relevant emoji).
@@ -54,6 +55,10 @@ Return ONLY JSON with these keys:
 {"publishable": true/false, "reason": "...", "label": "NEWS|VIRAL", "headline": "...",
  "caption": "...", "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
 """
+
+
+TEASER = re.compile(r"(here'?s (why|who|what|how|the)|this is (why|what|how)|find out|"
+                    r"you won'?t believe|the real reason|what happened next|\?)", re.I)
 
 
 class WriteError(RuntimeError):
@@ -113,5 +118,8 @@ def write_post(story: dict, models: list[str]) -> dict:
         if out.get("publishable") and not out.get(k):
             out["publishable"] = False
             out["reason"] = f"missing {k}"
+    if out.get("publishable") and TEASER.search(out.get("headline", "")):
+        out["publishable"] = False
+        out["reason"] = f"teaser headline not allowed on single posts: {out['headline']}"
     out["label"] = "VIRAL" if str(out.get("label", "")).upper() == "VIRAL" else "NEWS"
     return out

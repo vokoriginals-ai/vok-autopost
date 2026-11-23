@@ -7,7 +7,10 @@ from __future__ import annotations
 import sys
 from datetime import timedelta
 
+import shutil
+
 from vok import collect, images, telegram
+from vok.words import disguise
 from vok.render import render
 from vok.state import (all_posts, config, load_state, now, save_post, save_state, slug,
                        POSTS)
@@ -46,26 +49,29 @@ def main() -> int:
             continue
 
         used = {u["page"] for u in st.setdefault("photos", [])}
-        photo = images.find_photo(w.get("image_query", ""), w.get("image_query_backup", ""),
-                                  exclude=used)
-        if not photo:
-            print(f"skip (no free photo): {w['headline']}")
-            continue
-
         post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}"
         folder = POSTS / post_id
-        folder.mkdir(parents=True, exist_ok=True)
-        try:
-            images.download(photo["url"], str(folder / "photo.jpg"))
-            render(str(folder / "photo.jpg"), w["headline"], str(folder / "render.jpg"),
-                   w["label"])
-        except Exception as e:
-            print(f"skip (photo/render failed): {e}")
+        photo = images.best_photo([w.get("image_query", ""), w.get("image_query_backup", "")],
+                                  exclude=used, workdir=str(folder / "_candidates"))
+        if not photo:
+            print(f"skip (no sharp free photo): {w['headline']}")
+            shutil.rmtree(folder, ignore_errors=True)
             continue
 
-        caption = w["caption"].rstrip() + f"\n\n📸 {photo['credit']}"
+        headline = disguise(w["headline"])
+        try:
+            shutil.copy(photo["path"], folder / "photo.jpg")
+            render(str(folder / "photo.jpg"), headline, str(folder / "render.jpg"), w["label"])
+        except Exception as e:
+            print(f"skip (render failed): {e}")
+            shutil.rmtree(folder, ignore_errors=True)
+            continue
+        finally:
+            shutil.rmtree(folder / "_candidates", ignore_errors=True)
+
+        caption = disguise(w["caption"].rstrip()) + f"\n\n📸 {photo['credit']}"
         meta = {
-            "headline": w["headline"],
+            "headline": headline,
             "label": w["label"],
             "caption": caption,
             "status": "pending",
@@ -73,6 +79,7 @@ def main() -> int:
             "targets": ["facebook", "instagram"],
             "photo_credit": photo["credit"],
             "photo_page": photo["page"],
+            "photo_sharpness": photo["sharpness"],
             "sources_named": story["sources"],
             "source_links": [i["link"] for i in story["items"][:8]],
         }

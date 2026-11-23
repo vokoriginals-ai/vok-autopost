@@ -33,7 +33,8 @@ def save_state(st: dict) -> None:
     cutoff = (now() - timedelta(days=4)).isoformat()
     st["seen"] = [s for s in st.get("seen", []) if s.get("at", "") >= cutoff]
     st["published"] = [p for p in st.get("published", []) if p >= cutoff]
-    st["photos"] = [p for p in st.get("photos", []) if p.get("at", "") >= cutoff]
+    photo_cutoff = (now() - timedelta(days=30)).isoformat()   # never reuse a photo within 30 days
+    st["photos"] = [p for p in st.get("photos", []) if p.get("at", "") >= photo_cutoff]
     STATE.write_text(json.dumps(st, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
