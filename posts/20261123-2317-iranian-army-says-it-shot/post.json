@@ -2,7 +2,7 @@
   "headline": "Iranian army says it shot down a US Lucas drone over the Persian Gulf",
   "label": "NEWS",
   "caption": "An American drone was destroyed over the waters of the Persian Gulf according to the Iranian army 🚨\n\nThe Iranian army said it shot down an American aggressor Lucas drone on Monday. The strike was carried out by the army air defence systems over the waters of the Persian Gulf east of the Strait of Hormuz.\n\nThe operation was conducted under the control of the country integrated air defence network according to a statement from the army public relations office reported by Tasnim news agency.\n\nWhat do you think will happen next in the region? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Iran #US #PersianGulf\n\n📸 Image via social media",
-  "status": "reposting",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-23T23:20+05:00",
@@ -38,5 +38,19 @@
       "media_id": "18151258183584172",
       "permalink": "https://www.instagram.com/p/DgGBqzojA83/"
     }
-  }
+  },
+  "old_fb_deleted": true,
+  "result": {
+    "facebook": {
+      "photo_id": "122184927560988633",
+      "post_id": "790959357430859_122184927584988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184927560988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/913176209_122184927566988633_6111912234963248834_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeH3UkgrkYojaBUd9NIAd_3c0kO9Q_aAbyXSQ71D9oBvJa6WYPzIZglha43jAbjoEhOB7dTqLJ0BoEUd2KRVTQjY&_nc_ohc=ynqdsNszgZsQ7kNvwGMl33k&_nc_oc=AdrJdDM8Q8zMjV7bCI5G5LGSuAQ010BcykFQ_dLYNXLfyVLw-fbYgy0D4gKb3MRaG9g&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=5Fgh3pJjuQXYIn1uqTFhrw&_nc_tpa=Q5bMBQK4PcN1-lf9y2WLhudFCLhOLxcpW12jYEF2eEVZlwcIZTF1BYOwVg8BAxLZ6pggMgHBdIwww5slmQ&oh=00_AQSrBUAAHiZEL82zRy3P2VhxnnoJtSIm8boxAxGK5o-Pug&oe=6B0A57D3"
+    },
+    "instagram": {
+      "media_id": "18110329145579323",
+      "permalink": "https://www.instagram.com/p/DgGEFCpI_lr/"
+    }
+  },
+  "published_at": "2026-11-23T23:50+05:00"
 }
