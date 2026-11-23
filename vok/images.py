@@ -200,8 +200,15 @@ def library_photo(person: str, queries: list[str], recent: set) -> dict | None:
     def ok(e):
         return min(e.get("size", [0, 0])) >= 600 and f"library:{e['file']}" not in recent
     hits = []
+    def surname(n):
+        return re.sub(r"[^a-z]", "", n.lower().split()[-1])[:5]   # Baghaei / Baghei both match
+    words = re.sub(r"[^a-z ]", "", (person + " " + text).lower())
     if person:
-        hits = [e for e in lib if ok(e) and any(person.lower() == p.lower() for p in e.get("people", []))]
+        # every person in the photo must be part of the story (a photo of two leaders
+        # is only used when the story is about both)
+        hits = [e for e in lib if ok(e) and e.get("people")
+                and surname(person) in [surname(p) for p in e["people"]]
+                and all(surname(p) in words for p in e["people"])]
     if not hits:
         hits = [e for e in lib if ok(e) and not e.get("people") and any(t in text for t in e.get("tags", []))]
     if not hits:

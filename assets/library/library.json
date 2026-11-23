@@ -67,25 +67,6 @@
   "note": ""
  },
  {
-  "file": "ship-at-port.webp",
-  "people": [],
-  "tags": [
-   "ship",
-   "vessel",
-   "port",
-   "cargo ship",
-   "tanker",
-   "shipping"
-  ],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1067,
-   800
-  ],
-  "note": ""
- },
- {
   "file": "marco-rubio-lectern.png",
   "people": [
    "Marco Rubio"
@@ -104,7 +85,9 @@
  },
  {
   "file": "person-01-iran-flag.png",
-  "people": [],
+  "people": [
+   "Abbas Araghchi"
+  ],
   "tags": [],
   "ai": false,
   "credit": "VOK",
@@ -116,7 +99,9 @@
  },
  {
   "file": "person-02-foreign-ministry.jpg",
-  "people": [],
+  "people": [
+   "Esmaeil Baghaei"
+  ],
   "tags": [],
   "ai": false,
   "credit": "VOK",
@@ -128,7 +113,9 @@
  },
  {
   "file": "person-03-lectern-iran-flag.png",
-  "people": [],
+  "people": [
+   "Abbas Araghchi"
+  ],
   "tags": [],
   "ai": false,
   "credit": "VOK",
@@ -139,20 +126,11 @@
   "note": ""
  },
  {
-  "file": "person-04-cleric.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   299,
-   168
-  ],
-  "note": ""
- },
- {
   "file": "ai-01-cleric-and-us-leader.png",
-  "people": [],
+  "people": [
+   "Mojtaba Khamenei",
+   "Donald Trump"
+  ],
   "tags": [],
   "ai": true,
   "credit": "VOK",
@@ -164,7 +142,9 @@
  },
  {
   "file": "person-05-white-hair.png",
-  "people": [],
+  "people": [
+   "Mohammad Reza Aref"
+  ],
   "tags": [],
   "ai": true,
   "credit": "VOK",
@@ -175,10 +155,31 @@
   "note": ""
  },
  {
-  "file": "ai-02-pointing-leader-iran.webp",
-  "people": [],
+  "file": "macron-tv-mics.webp",
+  "people": [
+   "Emmanuel Macron"
+  ],
   "tags": [],
-  "ai": true,
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1067,
+   800
+  ],
+  "note": ""
+ },
+ {
+  "file": "ship-at-port.webp",
+  "people": [],
+  "tags": [
+   "ship",
+   "vessel",
+   "port",
+   "cargo ship",
+   "tanker",
+   "shipping"
+  ],
+  "ai": false,
   "credit": "VOK",
   "size": [
    640,
@@ -187,8 +188,10 @@
   "note": ""
  },
  {
-  "file": "ai-03-cleric-portrait.png",
-  "people": [],
+  "file": "ai-trump-pointing-clock.png",
+  "people": [
+   "Donald Trump"
+  ],
   "tags": [],
   "ai": true,
   "credit": "VOK",
@@ -199,8 +202,10 @@
   "note": ""
  },
  {
-  "file": "person-06-french-tv-mics.jpg",
-  "people": [],
+  "file": "mojtaba-khamenei-portrait.jpg",
+  "people": [
+   "Mojtaba Khamenei"
+  ],
   "tags": [],
   "ai": false,
   "credit": "VOK",
