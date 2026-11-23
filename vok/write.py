@@ -247,5 +247,5 @@ def check_photo(image_path: str, headline: str, summary: str, models: list[str])
             return bool(res.get("ok")), str(res.get("reason", ""))[:200]
         except Exception as e:
             print(f"photo check {model}: {str(e)[:80]}")
-            time.sleep(3)
+            time.sleep(30 if "429" in str(e) else 3)     # free-tier limit resets within a minute
     return False, "photo check unavailable"
