@@ -85,6 +85,7 @@ def drip(max_hours: float = 5.5) -> None:
     from vok import tick
     from vok.state import all_posts, config, in_window, load_state, save_state
     started = time.time()
+    last_news = 0.0
     st0 = load_state()
     st0["drip_until"] = (now() + timedelta(hours=max_hours, minutes=10)).isoformat()
     save_state(st0)
@@ -99,6 +100,14 @@ def drip(max_hours: float = 5.5) -> None:
             left_min = (end - t).total_seconds() / 60
             gap = max(30, min(60, int(left_min / max(queue, 1))))
             cfg["min_minutes_between_posts"] = gap
+            # hourly: look for new stories too (GitHub's own timer isn't reliable)
+            if time.time() - last_news > 3600 and os.environ.get("GEMINI_API_KEY"):
+                last_news = time.time()
+                try:
+                    from vok import make_posts
+                    make_posts.main(count=4)
+                except Exception as e:
+                    print(f"news check failed: {str(e)[:120]}")
             st = load_state()
             st["drip_until"] = st0["drip_until"]
             tick.apply_decisions(st)
