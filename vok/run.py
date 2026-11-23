@@ -57,6 +57,26 @@ def do_publish(post_id: str) -> bool:
     return True
 
 
+def do_repost(post_id: str) -> bool:
+    """Delete the old Facebook copy (Saad deletes Instagram himself), then publish again."""
+    from vok import net
+    from vok.publish import GRAPH, _token
+    folder, meta = load_post(post_id)
+    fb = ((meta.get("old_result") or {}).get("facebook") or {}).get("post_id")
+    if fb and not meta.get("old_fb_deleted"):
+        try:
+            req = net.urllib.request.Request(f"{GRAPH}/{fb}?access_token={_token()}", method="DELETE")
+            print("facebook delete:", net.urllib.request.urlopen(req, timeout=30).read()[:100])
+        except Exception as e:
+            print(f"facebook delete failed: {str(e)[:150]}")
+            return False
+        meta["old_fb_deleted"] = True
+        save_post(folder, meta)
+    meta["status"] = "approved"
+    save_post(folder, meta)
+    return do_publish(post_id)
+
+
 def publish_all_approved(gap_seconds: int = 180) -> bool:
     """Publish every approved post now, oldest first, with a pause between them."""
     import time
@@ -149,6 +169,8 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
         gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
         sys.exit(0 if publish_all_approved(gap) else 1)
+    if len(sys.argv) >= 3 and sys.argv[1] == "repost":
+        sys.exit(0 if do_repost(sys.argv[2]) else 1)
     if len(sys.argv) < 3 or sys.argv[1] not in ("render", "publish"):
         sys.exit(__doc__)
     if sys.argv[1] == "render":
