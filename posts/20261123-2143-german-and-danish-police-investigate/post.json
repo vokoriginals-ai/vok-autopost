@@ -2,7 +2,7 @@
   "headline": "German and Danish police investigate bomb threats sent to schools across both countries",
   "label": "NEWS",
   "caption": "Schools in Germany and Denmark received alarming bomb threats via email leading to ongoing police investigations. 🚨\n\nAccording to authorities, schools in the German capital of Berlin and the Danish capital of Copenhagen were among those targeted by identical email warnings. German police stated that around 450 schools were affected across multiple states in the country.\n\nAuthorities quickly concluded that the threats did not represent a concrete danger and were not serious. Police in Thuringia said schools were told to continue as normal because the apparent intention was to scare people without taking action.\n\nIn Denmark, police also confirmed there was no immediate danger while investigating the threats directed at schools across the country. Similar hoax threats have hit schools, supermarkets and public buildings across Europe in recent weeks.\n\nWhat do you think is behind this wave of European school hoaxes? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #GermanyNews #DenmarkNews #EuropeThreats\n\n📸 Mateusz Suski / Unsplash (Unsplash licence)",
-  "status": "pending",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-23T21:43+05:00",
@@ -24,5 +24,20 @@
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxNeGR4MmtWVUNBWDdVZlRjckl1UFZmWTVYai1sdDZ1dWFkYXZhUUpQYWVFdzJtOXJyMVlpR1p5dHVtY3hlTGZiU3MxOXZEalpTOTRnd0VIY3hjYldnd2NjbVlXNHcwT1pXUFpIR2pIaFZVRWJQNG80MDEwOWVIeDdHZzRVd0J1eklLNnBGVDFLWTJvd21UZVc3aGtjcERCeWZmM2c?oc=5",
     "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRVFRSVYxM3MwY19mSEhtQ251ZlktNnU5ZDQwSWs3UDdlNHM4WUM4QkJSTjlVaDFqcVF2WlV2c09jOUtPQkJjOGlHb0szaThSSlVJS1FNb0NLUlk4X0stR1Z0SmNseGVqWlMtSmRuUUN2dkFKYkRyeVVmUGl1SWRTQXdWQWlyai0yUnhNUTBfUGU?oc=5"
   ],
-  "issue": 2
+  "issue": 2,
+  "decided_at": "2026-11-23T22:00+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184917678988633",
+      "post_id": "790959357430859_122184917702988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184917678988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/921972671_122184917684988633_6332792955331583992_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFp4ClDG0QFWu_VjZPpGKd5qGy9CAWB7y2obL0IBYHvLbfYkVS0gVjpfcVveQNYNu9ggcMOIdqHJQSW2LlRBXaB&_nc_ohc=iwNL9GnJy00Q7kNvwGSY_Xm&_nc_oc=Adovf26kiZkxTxumEqf26bmBjUScUOWRwoX6riOpH3AzoLc8N8KjNTj7GKHyn3vjAlE&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=kUcuU18NvUGnf-16umsQuQ&_nc_tpa=Q5bMBQJlmZWgjsp-MibIRfAl_w8F6z4-YzjNEEYB8FCCHNs1uQJguX_0aJkLWt7UsD_2bz2W5gB_qOfXIA&oh=00_AQSBdaEr8WW9HBm7dITwbaPrgMk0B2HtNBe2mMwUMW-P7A&oe=6B0A3AFF"
+    },
+    "instagram": {
+      "media_id": "18649723837016242",
+      "permalink": "https://www.instagram.com/p/DgF3hjRiVAU/"
+    }
+  },
+  "published_at": "2026-11-23T22:00+05:00"
 }
