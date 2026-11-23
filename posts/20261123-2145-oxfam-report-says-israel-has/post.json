@@ -2,7 +2,7 @@
   "headline": "Oxfam report says Israel has contaminated over 99 percent of Gaza with toxic pollution",
   "label": "NEWS",
   "caption": "A new international report warns that the ongoing conflict has left the region heavily polluted. 🌍\n\nAccording to Oxfam and Al Jazeera, Israel may have contaminated over 99 percent of Gaza throughout the war.\n\nReports describe the area as a toxic wasteland due to severe environmental destruction and pollution caused by military operations.\n\nHumanitarian organizations attribute these conditions to ongoing environmental crimes that threaten the health of the local population.\n\nDo you think international b0dies will hold anyone accountable for this environmental damage? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #Oxfam #Environment\n\n📸 Avi Ohayon / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-23T21:45+05:00",
@@ -25,5 +25,18 @@
   ],
   "issue": 3,
   "decided_at": "2026-11-23T22:00+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184922916988633",
+      "post_id": "790959357430859_122184922940988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184922916988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/921956773_122184922922988633_5311321640949697899_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeF33j8eM43321_qlLJFyljFqkWPNXL_n_mqRY81cv-f-UZKqLfoSrfS6riA-h16n8pVyCss6qCb_j8A4QNUeapA&_nc_ohc=KU_m7vTzmuQQ7kNvwGr6j4X&_nc_oc=AdqK2SS82v_weCu4Y3zhw5kCWH6P4bhGAp_oNe7jysJYMhwmG0dWbKImAG79GTXf_co&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=_3D4pf3VjCI8VpJBU6aI_g&_nc_tpa=Q5bMBQIcC72-Lm1IfgrsaYHjjY8zGUqsHk0UthsPP7uApHGoWV-dBmebRCS3-MoAn7I5kwKfRDJa3tloXQ&oh=00_AQQZopXVdmI6vk9JZJkCBTNdcnd4A83Nz5xqV1coAkIs_Q&oe=6B0A3DA7"
+    },
+    "instagram": {
+      "media_id": "17921456019465842",
+      "permalink": "https://www.instagram.com/p/DgF-1xjiUKp/"
+    }
+  },
+  "published_at": "2026-11-23T23:04+05:00"
 }
