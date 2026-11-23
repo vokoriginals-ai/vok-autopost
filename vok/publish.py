@@ -117,7 +117,7 @@ def publish(image_path: str, caption: str, targets=("facebook", "instagram"),
     return result
 
 
-def recent_vok_posts(hours: int = 36) -> list[list[str]]:
+def recent_vok_posts(hours: int = 24) -> list[list[str]]:
     """Keywords of everything posted on VOK recently, by this system or by staff,
     so the same story isn't posted twice."""
     from datetime import datetime, timedelta, timezone

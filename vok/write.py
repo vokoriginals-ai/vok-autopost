@@ -22,7 +22,9 @@ STRICT FACT RULES
 - Use ONLY facts that appear in the SOURCE MATERIAL below. Never add numbers, names, quotes,
   dates or claims that are not there. If sources disagree, use the most cautious version.
 - Attribute claims ("according to Reuters", "Iran's foreign ministry said").
-- If the material is too thin or unclear to write 4 solid paragraphs, set "publishable": false.
+- Use the ARTICLE TEXT (when given) for facts. If the material is too thin to write at least
+  3 short factual paragraphs, set "publishable": false. For breaking news (priority 3) 2
+  paragraphs of confirmed facts is enough: say clearly what is confirmed and what is not yet.
 
 PAKISTAN RULE
 - If the story is mainly about Pakistan and is NOT major global news, set "publishable": false.
@@ -41,7 +43,7 @@ Use commas, full stops or "and" instead; write "US Iran talks", "pro Israel", "7
 
 CAPTION
 - Line 1: a hook sentence (can include one relevant emoji).
-- Then 4 to 6 short paragraphs (1–2 sentences each), most important fact first, with attribution.
+- Then 3 to 6 short paragraphs (1–2 sentences each), most important fact first, with attribution.
 - Then one question to the audience that invites comments (end with 👇).
 - Then exactly: "Follow Vok for more stories like this."
 - Then exactly 5 hashtags on one line: #Vok #VokOriginals plus 3 specific ones.
@@ -149,11 +151,39 @@ def _gemini(prompt: str, models: list[str], budget_s: int = 180) -> dict:
     raise WriteError("Gemini is busy right now (all models refused).")
 
 
+def _article_text(story: dict) -> tuple[str, str] | None:
+    """Read the body of one real article about the story (direct outlet links only;
+    Google News links are redirects we can't follow cheaply)."""
+    import html as _html
+    for it in story["items"]:
+        link = it.get("link", "")
+        if not link or "news.google.com" in link:
+            continue
+        try:
+            raw = net.get(link, timeout=20).decode("utf-8", "replace")
+        except Exception:
+            continue
+        raw = re.sub(r"<(script|style|nav|header|footer|aside)[^>]*>.*?</\1>", " ", raw, flags=re.S | re.I)
+        body = re.search(r"<article[^>]*>(.*?)</article>", raw, re.S | re.I)
+        raw = body.group(1) if body else raw
+        paras = re.findall(r"<p[\s>](?:[^>]*>)?((?:(?!<p[\s>]).)*?)</p>", raw, re.S | re.I)
+        clean = [re.sub(r"\s+", " ", _html.unescape(re.sub(r"<[^>]+>", "", x))).strip() for x in paras]
+        # real sentences only: skips menus, buttons and captions
+        text = " ".join(x for x in clean if len(x) > 80 and "." in x)
+        text = re.sub(r"\s+", " ", text)
+        if len(text) > 600:
+            return it["source"], text[:5000]
+    return None
+
+
 def write_post(story: dict, models: list[str]) -> dict:
     material = "\n".join(
         f"- [{i['source']}] {i['title']}" + (f" — {i['summary']}" if i["summary"] else "")
         for i in story["items"][:12])
+    article = _article_text(story)
     prompt = f"{STYLE}\n\nSOURCE MATERIAL ({len(story['sources'])} outlets):\n{material}\n"
+    if article:
+        prompt += f"\nARTICLE TEXT (from {article[0]}):\n{article[1]}\n"
     out = _gemini(prompt, models)
     for k in ("headline", "caption", "label"):
         if out.get("publishable") and not out.get(k):
