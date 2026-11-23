@@ -115,6 +115,21 @@ def overlaps(words: set[str], seen: list[list[str]]) -> bool:
     return any(_similar(words, set(s)) for s in seen)
 
 
+# clear sports words block a story on their own; ambiguous ones ("final", "league", "cup")
+# only count when two or more appear together
+SPORTS_STRONG = re.compile(r"\b(football|soccer|cricket|tennis|golf|nba|nfl|mlb|nhl|ufc|formula 1|f1|"
+                           r"grand prix|olympics?|world cup|premier league|la liga|bundesliga|serie a|"
+                           r"champions league|atp|wta|wimbledon|grand slam|striker|goalkeeper|"
+                           r"pitcher|quarterback|touchdown|innings|wicket|t20|odi|ipl|psl|boxing|"
+                           r"fifa|uefa|icc|matchday|hat trick|ballon d.or|mets|yankees|lakers)\b", re.I)
+SPORTS_WEAK = re.compile(r"\b(match|matches|final|finals|semifinal|league|cup|tournament|coach|"
+                         r"medal|title|season|club|player|players|team|transfer|stadium|fans)\b", re.I)
+
+
+def is_sports(text: str) -> bool:
+    return bool(SPORTS_STRONG.search(text)) or len(set(m.lower() for m in SPORTS_WEAK.findall(text))) >= 2
+
+
 def top_stories(cfg: dict, seen: list[list[str]], limit: int) -> list[dict]:
     groups = cluster(fetch(cfg["feeds"], cfg["story_max_age_hours"]))
     picked = []
@@ -127,6 +142,9 @@ def top_stories(cfg: dict, seen: list[list[str]], limit: int) -> list[dict]:
         g["trusted"] = sorted(trusted & set(g["sources"]))
         g["score"] += 2 * len(g["trusted"])
         if overlaps(g["words"], seen):
+            continue
+        if any(is_sports(it["title"]) for it in g["items"][:3]):
+            print(f"skip sports: {g['items'][0]['title'][:70]}")
             continue
         picked.append(g)
         if len(picked) >= limit:

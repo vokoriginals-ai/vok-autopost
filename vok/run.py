@@ -169,6 +169,13 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
         gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
         sys.exit(0 if publish_all_approved(gap) else 1)
+    if len(sys.argv) >= 3 and sys.argv[1] == "check":
+        from vok.write import check_photo
+        from vok.state import config as _cfg
+        for pid in sys.argv[2].split(","):
+            f, m = load_post(pid)
+            print(pid, check_photo(str(f / "render.jpg"), m["headline"], m["caption"][:600], _cfg()["gemini_models"]))
+        sys.exit(0)
     if len(sys.argv) >= 3 and sys.argv[1] == "repost":
         sys.exit(0 if do_repost(sys.argv[2]) else 1)
     if len(sys.argv) < 3 or sys.argv[1] not in ("render", "publish"):

@@ -64,6 +64,8 @@ jobs:
             python3 -m vok.run drip
           elif [ "$ALL" = "yes" ]; then
             python3 -m vok.run publish-all 180
+          elif [ "${POST_ID#check:}" != "$POST_ID" ]; then
+            python3 -m vok.run check "${POST_ID#check:}"
           elif [ "${POST_ID#repost:}" != "$POST_ID" ]; then
             python3 -m vok.run repost "${POST_ID#repost:}"
           elif [ -n "$POST_ID" ]; then

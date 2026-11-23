@@ -203,3 +203,49 @@ def write_post(story: dict, models: list[str]) -> dict:
         out["reason"] = f"teaser headline not allowed on single posts: {out['headline']}"
     out["label"] = "VIRAL" if str(out.get("label", "")).upper() == "VIRAL" else "NEWS"
     return out
+
+
+PHOTO_CHECK = """You are the photo editor of VOK, a news page. Look at this finished post image.
+Headline: {headline}
+Story: {summary}
+
+Reject the photo (ok=false) if ANY of these is true:
+- it shows a different person than the story is about, or a person unrelated to the story
+- the scene does not match the story (e.g. a petrol station for a bus crash, a mountain for a
+  military story, soldiers of another country, a random building)
+- it is a screenshot, a social media post, a chart, a graph, an infographic or a document
+- it contains offensive words, swear words or hateful text
+- the mood is wrong for the story (someone smiling on a story about deaths, war or genocide)
+- it is blurry, distorted, or the main subject is cut off
+- it could mislead readers about what happened
+Otherwise ok=true. A general photo of the right place, the right type of object or the right
+person is fine. Return ONLY JSON: {{"ok": true/false, "reason": "short reason"}}"""
+
+
+def check_photo(image_path: str, headline: str, summary: str, models: list[str]) -> tuple[bool, str]:
+    """Gemini vision check of the finished design. Fails closed: no answer = not ok."""
+    import base64, time
+    data = base64.b64encode(open(image_path, "rb").read()).decode()
+    prompt = PHOTO_CHECK.format(headline=headline, summary=summary[:600])
+    order = [m for m in _GOOD + models + _available_flash_models() if m not in _DEAD]
+    seen = []
+    for model in order:
+        if model in seen:
+            continue
+        seen.append(model)
+        if len(seen) > 6:
+            break
+        try:
+            out = net.post_json(
+                f"{API}/models/{model}:generateContent",
+                {"contents": [{"parts": [{"inline_data": {"mime_type": "image/jpeg", "data": data}},
+                                         {"text": prompt}]}],
+                 "generationConfig": {"responseMimeType": "application/json", "temperature": 0}},
+                headers={"x-goog-api-key": _key()}, timeout=60)
+            text = out["candidates"][0]["content"]["parts"][0]["text"]
+            res = json.loads(re.sub(r"^```(json)?|```$", "", text.strip()).strip())
+            return bool(res.get("ok")), str(res.get("reason", ""))[:200]
+        except Exception as e:
+            print(f"photo check {model}: {str(e)[:80]}")
+            time.sleep(3)
+    return False, "photo check unavailable"

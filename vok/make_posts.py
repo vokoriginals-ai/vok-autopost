@@ -129,6 +129,36 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         finally:
             shutil.rmtree(folder / "_candidates", ignore_errors=True)
 
+        from vok.write import check_photo
+        ok, why = check_photo(str(folder / "render.jpg"), headline, w["caption"][:600], cfg["gemini_models"])
+        print(f"  photo check: {'OK' if ok else 'REJECTED'} ({why})")
+        if not ok:
+            photo = None       # handled below as "no usable photo"
+            (folder / "render.jpg").unlink(missing_ok=True)
+            for x in folder.glob("photo.*"):
+                x.unlink()
+            if auto_approve or hold or not gh.enabled() or asked >= 2:
+                print(f"skip (photo rejected): {headline}")
+                shutil.rmtree(folder, ignore_errors=True)
+                continue
+            meta = {
+                "headline": headline, "label": w["label"],
+                "caption": clean(w["caption"].rstrip()), "status": "needs_photo",
+                "priority": int(w.get("priority") or 1),
+                "ai_image": False, "created_at": now().isoformat(timespec="minutes"),
+                "targets": ["facebook", "instagram"],
+                "photo_hint": ", ".join(x for x in (w.get("photo_person"), w.get("image_query")) if x)
+                              + f" (auto photo rejected: {why})",
+                "sources_named": story["sources"],
+                "source_links": [i["link"] for i in story["items"][:8]],
+            }
+            meta["issue"] = gh.create_photo_request_issue(post_id, meta)
+            save_post(folder, meta)
+            asked += 1
+            made += 1
+            _save_to_github(post_id)
+            continue
+
         caption = clean(w["caption"].rstrip())
         if photo.get("ai_generated"):
             caption = add_ai_note(caption)
