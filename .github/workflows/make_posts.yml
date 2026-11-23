@@ -1,7 +1,7 @@
 name: Make new posts
 
 # Find trending Middle East / world stories, write them with Gemini, design
-# them, and send each one to Telegram for approval.
+# them, and email each one for approval (GitHub issue; reply ok / no).
 on:
   schedule:
     - cron: "20 2,5,8,11,14,17 * * *"   # PKT 07:20, 10:20, 13:20, 16:20, 19:20, 22:20
@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: vok-repo
@@ -30,7 +31,9 @@ jobs:
 
       - name: Make posts
         env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python -m vok.make_posts

@@ -10,7 +10,7 @@ from __future__ import annotations
 import sys
 from datetime import datetime, timedelta
 
-from vok import telegram
+from vok import gh, telegram
 from vok.publish import PublishError, publish
 from vok.state import POSTS, all_posts, config, load_post, load_state, now, save_post, save_state
 
@@ -19,19 +19,30 @@ APPROVED_MAX_H = 20    # approved but still not posted after 20h → too old
 
 
 def apply_decisions(st: dict) -> None:
-    if not telegram.enabled():
-        return
-    decisions, st["telegram_offset"] = telegram.fetch_decisions(st.get("telegram_offset", 0))
+    decisions: list[tuple[str, str]] = []
+    if telegram.enabled():
+        tg, st["telegram_offset"] = telegram.fetch_decisions(st.get("telegram_offset", 0))
+        decisions += tg
+    issue_of: dict[str, int] = {}
+    if gh.enabled():
+        for decision, number, post_id in gh.decisions():
+            decisions.append((decision, post_id))
+            issue_of[post_id] = number
     for decision, post_id in decisions:
         if decision not in ("ok", "no") or not (POSTS / post_id / "post.json").exists():
             continue
         folder, meta = load_post(post_id)
         if meta.get("status") != "pending":
+            if post_id in issue_of:      # already decided/expired: just tidy up the issue
+                gh.close(issue_of[post_id])
             continue
         meta["status"] = "approved" if decision == "ok" else "rejected"
         meta["decided_at"] = now().isoformat(timespec="minutes")
         save_post(folder, meta)
         print(f"{post_id}: {meta['status']}")
+        if post_id in issue_of:
+            gh.close(issue_of[post_id], "✅ Approved. It will post in the next free slot."
+                     if decision == "ok" else "❌ Rejected.")
 
 
 def expire_old() -> None:
@@ -46,6 +57,8 @@ def expire_old() -> None:
            (status == "approved" and age_h > APPROVED_MAX_H):
             meta["status"] = "expired"
             save_post(folder, meta)
+            if gh.enabled() and meta.get("issue"):
+                gh.close(meta["issue"], "⏰ Expired: no reply within 12 hours, so it was skipped.")
             print(f"{folder.name}: expired")
 
 
@@ -87,6 +100,8 @@ def publish_next(cfg: dict, st: dict) -> bool:
         save_post(folder, meta)
         if telegram.enabled():
             telegram.send_text(f"⚠️ Could not publish:\n{meta['headline']}\n\n{e}")
+        if gh.enabled() and meta.get("issue"):
+            gh.comment(meta["issue"], f"@{gh.owner()} ⚠️ Could not publish this post:\n\n{e}")
         print(f"{folder.name}: FAILED – {e}")
         return False
 
@@ -100,6 +115,8 @@ def publish_next(cfg: dict, st: dict) -> bool:
     print(f"{folder.name}: published {ig}")
     if telegram.enabled():
         telegram.send_text(f"✅ Posted: {meta['headline']}\n{ig or ''}")
+    if gh.enabled() and meta.get("issue"):
+        gh.comment(meta["issue"], f"✅ Posted on Instagram + Facebook: {ig or ''}")
     return True
 
 

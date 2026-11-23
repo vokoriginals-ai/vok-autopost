@@ -9,7 +9,7 @@ from datetime import timedelta
 
 import shutil
 
-from vok import collect, images, telegram
+from vok import collect, gh, images, telegram
 from vok.words import disguise
 from vok.render import render
 from vok.state import (all_posts, config, load_state, now, save_post, save_state, slug,
@@ -33,6 +33,8 @@ def main() -> int:
     stories = collect.top_stories(cfg, seen, limit=room * 3)
     print(f"{len(stories)} candidate stories, room for {room}")
 
+    if gh.enabled():
+        gh.ensure_label()
     made = 0
     for story in stories:
         if made >= room:
@@ -83,6 +85,11 @@ def main() -> int:
             "sources_named": story["sources"],
             "source_links": [i["link"] for i in story["items"][:8]],
         }
+        if gh.enabled():
+            import os
+            from vok.publish import host_image
+            preview = host_image(str(folder / "render.jpg")) if os.environ.get("META_PAGE_TOKEN") else None
+            meta["issue"] = gh.create_post_issue(post_id, meta, preview)
         save_post(folder, meta)
         st["photos"].append({"at": now().isoformat(), "page": photo["page"]})
         if telegram.enabled():

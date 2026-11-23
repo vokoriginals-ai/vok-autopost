@@ -81,6 +81,16 @@ def post_instagram(image_url: str, caption: str) -> dict:
     return {"media_id": media_id, "permalink": link}
 
 
+def host_image(image_path: str) -> str | None:
+    """Hidden (unpublished) upload to the Page, just to get a public image link
+    for the approval email. Nothing appears on the Page."""
+    try:
+        return post_facebook(image_path, "", published=False)["image_url"]
+    except PublishError as e:
+        print(f"could not host preview image: {e}")
+        return None
+
+
 def publish(image_path: str, caption: str, targets=("facebook", "instagram"),
             done: dict | None = None, on_step=None) -> dict:
     """Publish to each target that isn't already in `done`.

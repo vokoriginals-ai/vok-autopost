@@ -8,12 +8,13 @@ Everything used is free.
 
 | Time (PKT) | What happens |
 |---|---|
-| 07:20, 10:20, 13:20, 16:20, 19:20, 22:20 | **Make new posts**: finds the biggest stories (2+ outlets), Gemini writes headline + caption, a free photo is found, the VOK design is made, and each post is sent to your Telegram with ✅ / ❌ |
-| Every 30 min, 09:07 to 23:37 | **Approve & publish**: reads your taps, then posts the next approved post to Facebook + Instagram (one at a time, at least 25 min apart) |
+| 07:20, 10:20, 13:20, 16:20, 19:20, 22:20 | **Make new posts**: finds the biggest stories (2+ outlets), Gemini writes headline + caption, a free photo is found, the VOK design is made, and each post is **emailed** to you (via a GitHub issue). Reply `ok` or `no` |
+| Every 30 min, 09:07 to 23:37 | **Approve & publish**: reads your email replies, then posts the next approved post to Facebook + Instagram (one at a time, at least 25 min apart) |
 
 - Up to **20 posts a day** (change `posts_per_day` in `config.json`).
 - Not approved within 12 hours → **expired** (old news is skipped).
-- If posting fails, you get a ⚠️ message on Telegram with the reason.
+- If posting fails, you get an email with the reason.
+- Only replies from the **vokoriginals-ai** account count. Others are ignored.
 
 ## Post status
 
@@ -30,8 +31,8 @@ Everything used is free.
 |---|---|
 | `META_PAGE_TOKEN` | Vok Page token (Graph API Explorer, app "VOK POSTER 2") |
 | `GEMINI_API_KEY` | Free key from aistudio.google.com (project "vokapi") |
-| `TELEGRAM_BOT_TOKEN` | From @BotFather |
-| `TELEGRAM_CHAT_ID` | Your Telegram user id (from @userinfobot). Only taps from this id are accepted. |
+| *(GITHUB_TOKEN)* | Automatic; nothing to add. Used to open the approval emails/issues. |
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | Optional. Telegram approvals also work if these are ever added. |
 
 ## Rules built in
 
@@ -47,7 +48,8 @@ Everything used is free.
 - `vok/write.py`: Gemini headline + caption (style rules live here)
 - `vok/images.py`: free photo search
 - `vok/render.py`: the VOK design
-- `vok/telegram.py`: approvals
+- `vok/gh.py`: email approvals (GitHub issues)
+- `vok/telegram.py`: optional Telegram approvals
 - `vok/publish.py`: Facebook + Instagram
 - `vok/make_posts.py`, `vok/tick.py`: the two automatic jobs
 - `config.json`: feeds, limits, posting hours

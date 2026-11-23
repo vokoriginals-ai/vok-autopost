@@ -1,7 +1,7 @@
 name: Approve & publish
 
 # Every 30 min from 09:07 to 23:37 Pakistan time:
-#   read Telegram ✅/❌ taps → publish the next approved post (one per run).
+#   read your ok/no email replies → publish the next approved post (one per run).
 # Standard-library Python only, so each run takes seconds (free-minutes friendly).
 on:
   schedule:
@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: vok-repo
@@ -30,6 +31,7 @@ jobs:
       - name: Approvals + publish
         env:
           META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POST_ID: ${{ github.event.inputs.post_id }}
