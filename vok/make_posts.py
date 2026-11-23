@@ -54,7 +54,10 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
                            "headline": story["headline"]})
         try:
             w = write_post(story, cfg["gemini_models"])
-        except WriteError as e:
+        except Exception as e:
+            if not isinstance(e, WriteError):
+                print(f"writer crashed on this story, skipping: {str(e)[:100]}")
+                continue
             print(f"writer error: {e}")
             if "rejected" in str(e):
                 break                     # bad key: no point continuing

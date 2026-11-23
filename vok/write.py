@@ -139,6 +139,10 @@ def _gemini(prompt: str, models: list[str]) -> dict:
             except (KeyError, IndexError, json.JSONDecodeError) as e:
                 print(f"gemini {model}: bad response {e}")
                 break
+            except (TimeoutError, OSError) as e:          # slow network / timeout
+                print(f"gemini {model}: network problem ({str(e)[:60]}), trying again")
+                time.sleep(5)
+                continue
     raise WriteError("Gemini is busy right now (all models refused).")
 
 
