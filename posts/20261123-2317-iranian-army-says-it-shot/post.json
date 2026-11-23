@@ -1,18 +1,15 @@
 {
   "headline": "Iranian army says it shot down a US Lucas drone over the Persian Gulf",
   "label": "NEWS",
-  "caption": "An American drone was destroyed over the waters of the Persian Gulf according to the Iranian army 🚨\n\nThe Iranian army said it shot down an American aggressor Lucas drone on Monday. The strike was carried out by the army air defence systems over the waters of the Persian Gulf east of the Strait of Hormuz.\n\nThe operation was conducted under the control of the country integrated air defence network according to a statement from the army public relations office reported by Tasnim news agency.\n\nWhat do you think will happen next in the region? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Iran #US #PersianGulf\n\n📸 U.S. Army photo by Sgt. Joshua Taeckens / Wikimedia Commons (Public domain)",
-  "status": "hold",
+  "caption": "An American drone was destroyed over the waters of the Persian Gulf according to the Iranian army 🚨\n\nThe Iranian army said it shot down an American aggressor Lucas drone on Monday. The strike was carried out by the army air defence systems over the waters of the Persian Gulf east of the Strait of Hormuz.\n\nThe operation was conducted under the control of the country integrated air defence network according to a statement from the army public relations office reported by Tasnim news agency.\n\nWhat do you think will happen next in the region? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Iran #US #PersianGulf",
+  "status": "needs_photo",
   "priority": 3,
   "ai_image": false,
-  "created_at": "2026-11-23T23:18+05:00",
+  "created_at": "2026-11-23T23:20+05:00",
   "targets": [
     "facebook",
     "instagram"
   ],
-  "photo_credit": "U.S. Army photo by Sgt. Joshua Taeckens / Wikimedia Commons (Public domain)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:PISAJ_21_participants_attend_briefing_on_how_drone_warfare_is_being_taught_at_Basic_Combat_Training_(9258671).jpg",
-  "photo_sharpness": 4181.9,
   "sources_named": [
     "Kurdistan24",
     "Middle East Eye"
@@ -21,6 +18,7 @@
     "https://news.google.com/rss/articles/CBMipwFBVV95cUxNc1E1QjRrWTNQYjU1T29zYnBhNVYwY09FdHVmb1lUM1pvSkZjcG14MEw0ZkRvYnA3M1Bkbi1tOElzUVZpWFZmLTZTeThXREZjcXh0S3lqMXgySGY4QmVlN0tuUGZIUklObXVPb1E0aUw0RnZ6TlNGWWUtQUZ4alhmRW55cWpqbThFSVJJRkpHWWE3SXJWX3cyOEJlZ2hWTk9QNnptS19qaw?oc=5",
     "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-it-destroyed-us-drone-over-persian-gulf"
   ],
-  "issue": 9,
-  "note": "held: photo being fixed"
+  "issue": 11,
+  "note": "held: photo being fixed",
+  "photo_hint": "the drone, Iranian army, or the Persian Gulf (news photo)"
 }
