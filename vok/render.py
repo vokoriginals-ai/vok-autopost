@@ -146,6 +146,14 @@ def _gradient(canvas: Image.Image):
     grad.putalpha(alpha)
     canvas.alpha_composite(grad)
 
+    # soft shade behind the logo so it reads on bright photos
+    top = Image.new("L", (1, 240), 0)
+    for y in range(240):
+        top.putpixel((0, y), int(95 * (1 - y / 240) ** 1.6))
+    shade = Image.new("RGBA", (W, 240), (0, 0, 0, 0))
+    shade.putalpha(top.resize((W, 240)))
+    canvas.alpha_composite(shade)
+
 
 def _logo(canvas: Image.Image):
     if LOGO.exists():

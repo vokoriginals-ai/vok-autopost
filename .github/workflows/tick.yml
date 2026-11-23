@@ -1,0 +1,52 @@
+name: Approve & publish
+
+# Every 30 min from 09:07 to 23:37 Pakistan time:
+#   read Telegram ✅/❌ taps → publish the next approved post (one per run).
+# Standard-library Python only, so each run takes seconds (free-minutes friendly).
+on:
+  schedule:
+    - cron: "7,37 4-18 * * *"     # UTC 04:07–18:37 = PKT 09:07–23:37
+  workflow_dispatch:
+    inputs:
+      post_id:
+        description: "Publish this post folder right now (optional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vok-repo
+  cancel-in-progress: false
+
+jobs:
+  tick:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Approvals + publish
+        env:
+          META_PAGE_TOKEN: ${{ secrets.META_PAGE_TOKEN }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          POST_ID: ${{ github.event.inputs.post_id }}
+        run: |
+          if [ -n "$POST_ID" ]; then
+            python3 -m vok.run publish "$POST_ID"
+          else
+            python3 -m vok.tick
+          fi
+
+      - name: Save changes
+        if: always()
+        run: |
+          git config user.name "vok-bot"
+          git config user.email "vok-bot@users.noreply.github.com"
+          git add posts data
+          git diff --cached --quiet && exit 0
+          git commit -m "tick: update posts [skip ci]"
+          git pull --rebase
+          git push

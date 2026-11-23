@@ -1,0 +1,47 @@
+name: Make new posts
+
+# Find trending Middle East / world stories, write them with Gemini, design
+# them, and send each one to Telegram for approval.
+on:
+  schedule:
+    - cron: "20 2,5,8,11,14,17 * * *"   # PKT 07:20, 10:20, 13:20, 16:20, 19:20, 22:20
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: vok-repo
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Make posts
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m vok.make_posts
+
+      - name: Save new posts
+        if: always()
+        run: |
+          git config user.name "vok-bot"
+          git config user.email "vok-bot@users.noreply.github.com"
+          git add posts data
+          git diff --cached --quiet && exit 0
+          git commit -m "New posts for approval [skip ci]"
+          git pull --rebase
+          git push

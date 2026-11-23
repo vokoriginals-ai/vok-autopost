@@ -1,48 +1,53 @@
 # VOK Autopost
 
-Automatic news posts for **@vokoriginals** (Instagram) and the **Vok** Facebook Page.
-It runs on GitHub's servers, so it keeps working when your laptop is off.
+Automatic Middle East / trending news posts for **@vokoriginals** (Instagram) and the
+**Vok** Facebook Page. Runs on GitHub's servers, so it works while your laptop is off.
+Everything used is free.
 
-## What's built so far
+## How a day works
 
-| Part | Status |
+| Time (PKT) | What happens |
 |---|---|
-| Design engine: VOK template in code, smart photo crop, balanced headline | ✅ |
-| Publisher: posts to Facebook + Instagram through Meta's official API | ✅ |
-| Scheduler: checks every hour for approved posts that are due | ✅ |
-| Story finder + caption writer (free Gemini API) | ⏳ next |
-| Approvals on your phone | ⏳ next |
+| 07:20, 10:20, 13:20, 16:20, 19:20, 22:20 | **Make new posts**: finds the biggest stories (2+ outlets), Gemini writes headline + caption, a free photo is found, the VOK design is made, and each post is sent to your Telegram with ✅ / ❌ |
+| Every 30 min, 09:07 to 23:37 | **Approve & publish**: reads your taps, then posts the next approved post to Facebook + Instagram (one at a time, at least 25 min apart) |
 
-## How a post moves
+- Up to **20 posts a day** (change `posts_per_day` in `config.json`).
+- Not approved within 12 hours → **expired** (old news is skipped).
+- If posting fails, you get a ⚠️ message on Telegram with the reason.
 
-```
-posts/<post-id>/post.json   status: draft → approved → published
-```
+## Post status
 
-- **draft**: made, waiting for you
-- **approved**: will go out at `publish_at` (Pakistan time), or on the next hourly run if empty
-- **published**: done; links are saved in `post.json`
-- **failed**: the error message is saved in `post.json`
+`posts/<id>/post.json` → `pending` → `approved` / `rejected` → `published` (or `failed`, `expired`)
 
-## Publish one post right now
+## Run something now
 
-1. Open the **Actions** tab → **Publish posts** → **Run workflow**
-2. Type the post folder name (e.g. `2026-11-23-cop31`) → **Run workflow**
-3. Wait ~1–2 minutes. A green tick means it's live.
+- **Make posts now:** Actions → *Make new posts* → Run workflow
+- **Publish one post now:** Actions → *Approve & publish* → Run workflow → type the post folder name
 
 ## Secrets (Settings → Secrets and variables → Actions)
 
 | Name | What |
 |---|---|
-| `META_PAGE_TOKEN` | Vok Page access token (from Graph API Explorer, app "VOK POSTER 2") |
-| `GEMINI_API_KEY` | Free key from aistudio.google.com (needed for the story writer, coming next) |
+| `META_PAGE_TOKEN` | Vok Page token (Graph API Explorer, app "VOK POSTER 2") |
+| `GEMINI_API_KEY` | Free key from aistudio.google.com (project "vokapi") |
+| `TELEGRAM_BOT_TOKEN` | From @BotFather |
+| `TELEGRAM_CHAT_ID` | Your Telegram user id (from @userinfobot). Only taps from this id are accepted. |
 
-Never paste these anywhere else.
+## Rules built in
+
+- Facts only from the collected source headlines/summaries; at least 2 outlets per story.
+- Pakistan stories only when they're major global news.
+- Engagement headlines, but never false; "killed/dead" written as "K!lled/D3ad" on the image.
+- Photos: Wikimedia Commons / Openverse, free licences only, credited in the caption;
+  no logos, maps, flags or historic archive images; no photo reused within 4 days.
 
 ## Files
 
-- `vok/render.py`: draws the post
-- `vok/publish.py`: sends it to Facebook and Instagram
-- `vok/run.py`: works through the queue
-- `assets/`: Poppins font (open licence), logo, face-detection model
-- `.github/workflows/publish.yml`: the hourly job
+- `vok/collect.py`: reads news feeds, groups and ranks stories
+- `vok/write.py`: Gemini headline + caption (style rules live here)
+- `vok/images.py`: free photo search
+- `vok/render.py`: the VOK design
+- `vok/telegram.py`: approvals
+- `vok/publish.py`: Facebook + Instagram
+- `vok/make_posts.py`, `vok/tick.py`: the two automatic jobs
+- `config.json`: feeds, limits, posting hours

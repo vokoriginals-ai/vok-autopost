@@ -1,7 +1,7 @@
 """Publish a finished post image + caption to the VOK Facebook Page and
 Instagram account through Meta's official Graph API.
 
-Needs one secret in the environment: META_PAGE_TOKEN (the Vok Page token).
+Standard library only. Needs META_PAGE_TOKEN (the Vok Page token).
 
 Flow:
 1. Upload the image to the Facebook Page as a photo post (with caption).
@@ -14,7 +14,7 @@ from __future__ import annotations
 import os
 import time
 
-import requests
+from vok import net
 
 GRAPH = "https://graph.facebook.com/v27.0"
 PAGE_ID = "790959357430859"          # Facebook Page: Vok
@@ -28,17 +28,17 @@ class PublishError(RuntimeError):
 def _token() -> str:
     tok = os.environ.get("META_PAGE_TOKEN", "").strip()
     if not tok:
-        raise PublishError("META_PAGE_TOKEN is not set (add it in GitHub → Settings → Secrets).")
+        raise PublishError("META_PAGE_TOKEN is not set (GitHub → Settings → Secrets).")
     return tok
 
 
-def _check(r: requests.Response) -> dict:
+def _call(fn, *args, **kw) -> dict:
     try:
-        data = r.json()
-    except ValueError:
-        raise PublishError(f"HTTP {r.status_code}: {r.text[:300]}")
-    if r.status_code >= 400 or "error" in data:
-        err = data.get("error", {})
+        data = fn(*args, **kw)
+    except net.HTTPError as e:
+        raise PublishError(f"Meta API: {e}") from None
+    if isinstance(data, dict) and "error" in data:
+        err = data["error"]
         raise PublishError(f"Meta API error {err.get('code')}: {err.get('message')}")
     return data
 
@@ -47,43 +47,26 @@ def post_facebook(image_path: str, caption: str, published: bool = True) -> dict
     """Upload to the Page. With published=False the photo stays hidden and is
     only used to get a public image link for Instagram."""
     with open(image_path, "rb") as fh:
-        r = requests.post(
-            f"{GRAPH}/{PAGE_ID}/photos",
-            data={"caption": caption, "published": "true" if published else "false",
+        img = fh.read()
+    data = _call(net.post_multipart, f"{GRAPH}/{PAGE_ID}/photos",
+                 {"caption": caption, "published": "true" if published else "false",
                   "access_token": _token()},
-            files={"source": fh},
-            timeout=120,
-        )
-    data = _check(r)
+                 {"source": ("post.jpg", img, "image/jpeg")})
     photo_id = data["id"]
-    info = _check(requests.get(
-        f"{GRAPH}/{photo_id}",
-        params={"fields": "images,link", "access_token": _token()},
-        timeout=60,
-    ))
+    info = _call(net.get_json, f"{GRAPH}/{photo_id}",
+                 {"fields": "images,link", "access_token": _token()})
     biggest = max(info["images"], key=lambda im: im["width"])
-    return {
-        "photo_id": photo_id,
-        "post_id": data.get("post_id"),
-        "permalink": info.get("link"),
-        "image_url": biggest["source"],
-    }
+    return {"photo_id": photo_id, "post_id": data.get("post_id"),
+            "permalink": info.get("link"), "image_url": biggest["source"]}
 
 
 def post_instagram(image_url: str, caption: str) -> dict:
     tok = _token()
-    container = _check(requests.post(
-        f"{GRAPH}/{IG_ID}/media",
-        data={"image_url": image_url, "caption": caption, "access_token": tok},
-        timeout=120,
-    ))["id"]
-
+    container = _call(net.post_form, f"{GRAPH}/{IG_ID}/media",
+                      {"image_url": image_url, "caption": caption, "access_token": tok})["id"]
     for _ in range(30):                       # wait up to ~2.5 min
-        status = _check(requests.get(
-            f"{GRAPH}/{container}",
-            params={"fields": "status_code", "access_token": tok},
-            timeout=60,
-        )).get("status_code")
+        status = _call(net.get_json, f"{GRAPH}/{container}",
+                       {"fields": "status_code", "access_token": tok}).get("status_code")
         if status == "FINISHED":
             break
         if status in {"ERROR", "EXPIRED"}:
@@ -91,17 +74,10 @@ def post_instagram(image_url: str, caption: str) -> dict:
         time.sleep(5)
     else:
         raise PublishError("Instagram took too long to process the image.")
-
-    media_id = _check(requests.post(
-        f"{GRAPH}/{IG_ID}/media_publish",
-        data={"creation_id": container, "access_token": tok},
-        timeout=120,
-    ))["id"]
-    link = _check(requests.get(
-        f"{GRAPH}/{media_id}",
-        params={"fields": "permalink", "access_token": tok},
-        timeout=60,
-    )).get("permalink")
+    media_id = _call(net.post_form, f"{GRAPH}/{IG_ID}/media_publish",
+                     {"creation_id": container, "access_token": tok})["id"]
+    link = _call(net.get_json, f"{GRAPH}/{media_id}",
+                 {"fields": "permalink", "access_token": tok}).get("permalink")
     return {"media_id": media_id, "permalink": link}
 
 

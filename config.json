@@ -1,0 +1,49 @@
+{
+  "posts_per_day": 20,
+  "posts_per_run": 4,
+  "posting_hours_pkt": [
+    9,
+    24
+  ],
+  "min_minutes_between_posts": 25,
+  "min_sources": 2,
+  "story_max_age_hours": 18,
+  "gemini_models": [
+    "gemini-flash-latest",
+    "gemini-flash-lite-latest"
+  ],
+  "feeds": [
+    {
+      "name": "Al Jazeera",
+      "url": "https://www.aljazeera.com/xml/rss/all.xml"
+    },
+    {
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"
+    },
+    {
+      "name": "BBC News",
+      "url": "https://feeds.bbci.co.uk/news/world/rss.xml"
+    },
+    {
+      "name": "Middle East Eye",
+      "url": "https://www.middleeasteye.net/rss"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/search?q=when:1d+(Iran+OR+Israel+OR+Gaza+OR+Saudi+OR+Syria+OR+Lebanon+OR+Yemen+OR+Iraq+OR+UAE+OR+Qatar)&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/search?q=when:1d+site:reuters.com+world&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/search?q=when:1d+(site:timesofisrael.com+OR+site:english.alarabiya.net)&hl=en-US&gl=US&ceid=US:en"
+    },
+    {
+      "name": "Google News",
+      "url": "https://news.google.com/rss/headlines/section/topic/WORLD?hl=en-US&gl=US&ceid=US:en"
+    }
+  ]
+}
