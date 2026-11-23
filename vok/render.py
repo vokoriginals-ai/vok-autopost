@@ -43,6 +43,23 @@ CASCADE = ROOT / "assets" / "haarcascade_frontalface_default.xml"
 PROFILE = ROOT / "assets" / "haarcascade_profileface.xml"
 
 
+def _faces(img: Image.Image) -> list:
+    """Confident faces in the photo (front or side)."""
+    import cv2
+    import numpy as np
+    arr = np.array(img.convert("L"))
+    small = (arr.shape[1] // 20,) * 2
+    found = []
+    for path, image, flip in ((CASCADE, arr, False), (PROFILE, arr, False),
+                              (PROFILE, arr[:, ::-1].copy(), True)):
+        if not path.exists():
+            continue
+        boxes, _, levels = cv2.CascadeClassifier(str(path)).detectMultiScale3(
+            image, 1.1, 6, minSize=small, outputRejectLevels=True)
+        found += [b for b, lv in zip(boxes, levels) if float(lv) > 1.0]
+    return found
+
+
 def _subject(img: Image.Image) -> tuple[float, float]:
     """Return the subject's position (x, y as 0..1) in the source photo.
 

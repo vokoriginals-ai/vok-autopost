@@ -60,6 +60,7 @@ def wikimedia_person(name: str) -> list[dict]:
             "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 2000}
     out = _parse(_commons({**base, "generator": "search", "gsrnamespace": 6, "gsrlimit": 25,
                            "gsrsearch": f'intitle:"{name}" filetype:bitmap'}))
+    out = [c for c in out if not NOT_A_PERSON.search(c["page"].rsplit("File:", 1)[-1])]
     key = re.sub(r"[^a-z]", "", name.lower())
     for c in out:
         title = re.sub(r"[^a-z]", "", c["page"].rsplit("File:", 1)[-1].lower())
@@ -171,6 +172,20 @@ def download(url: str, path: str) -> str:
     return path
 
 
+NOT_A_PERSON = re.compile(r"stadium|airport|road|street|station|bridge|building|house|hospital|"
+                          r"university|college|school|statue|signature|logo|poster|mural|cartoon|"
+                          r"memorial|tomb|ship|aircraft|plane|car|museum|park|square|avenue", re.I)
+
+
+def _has_face(path: str) -> bool:
+    try:
+        from PIL import Image
+        from vok.render import _faces
+        return bool(_faces(Image.open(path)))
+    except Exception:
+        return True          # if detection itself fails, don't block the photo
+
+
 def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "") -> dict | None:
     """Return the best checked photo (with 'path' to the downloaded file), or None.
     If a person is given, photos of that person come first."""
@@ -209,6 +224,9 @@ def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "")
             print(f"candidate failed: {str(e)[:90]}")
             continue
         print(f"  photo {i}: sharp={c['sharpness']:6.0f} {w}x{h} {c['page'][-60:]}")
+        if person and c.get("query") == person and not _has_face(path):
+            print("    no face in it: not a photo of the person")
+            continue
         if c["sharpness"] < MIN_SHARPNESS:
             continue
         # earlier search results fit the story better; sharpness breaks ties

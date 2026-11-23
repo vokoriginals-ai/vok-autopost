@@ -62,7 +62,11 @@ PHOTO (who or what the picture shows)
   3. otherwise, if the story is about a country's government, army or policy, that country's
      current head of state or head of government (Iran → Supreme Leader or President, Israel →
      Benjamin Netanyahu). Use the name as of today's date.
-  Use "" only when no person fits (an earthquake, a company result with no leader named...).
+  BUT for military actions, attacks, accidents, disasters, protests and other EVENTS where no
+  named person spoke, set "photo_person" to "" and describe the event in "image_query"
+  (shot down drone → "military drone"; flood → "flood rescue"; strike → "airstrike smoke").
+  Use the leader only for government statements, decisions, deals and policy.
+  Use "" also when no person fits (an earthquake, a company result with no leader named...).
 - "image_query": 1–4 words for a backup photo of the place or object (e.g. "Strait of Hormuz",
   "Gaza City", "US Capitol").
 - "image_query_backup": a second, different backup query.
