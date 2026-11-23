@@ -2,7 +2,7 @@
   "headline": "Democrats win 258 seats, taking the largest US House majority since 1992",
   "label": "NEWS",
   "caption": "US politics has seen a major shift following the latest midterm election results 🇺🇸\n\nDemocrats have secured their largest US House majority since 1992 after flipping a seat in North Carolina, according to reports by BBC and Reuters.\n\nBBC reported that Democrats have now won at least 258 seats in the midterm elections, while Republicans hold at least 173 seats.\n\nThe historic election results set the stage for a major political tussle with Donald Trump, according to the Times of Israel.\n\nFirstpost reported that the expanded majority marks the largest seat sweep for the Democratic party in over three decades.\n\nWhat do you think these election results mean for the future of US politics? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USPolitics #USNews #Democrats\n\n📸 Andy Feliciotti / Unsplash (Unsplash licence)",
-  "status": "approved",
+  "status": "published",
   "ai_image": false,
   "created_at": "2026-11-23T19:29+05:00",
   "targets": [
@@ -25,5 +25,18 @@
     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOZzZjY0pNZnpnUmtsZ3RudXpZeDh4TnlWZDFIZHBvUk0tbVlxREhydk5zRTJhX0lYcjFXQTNNTzBtOFM4NlNhTE9DZnl3SUZiM3RpTzRzZTJ4aURMSUJCdDRGb0l2MWh5MFJmTWgwS1k4Ql9vTGh1eWVGbEw3WGVCS1UtTkNGVVoxS0EyZVl3Vmw0UThpTlVUWWN2WlNyaWR6a1FYYlJZaWl1MlAyQ01OSEcyY3hMai0zUWdfUUc3MkQ?oc=5"
   ],
   "note": "reviewed by Claude; photo swapped to US Capitol; facts checked vs NPR",
-  "decided_at": "2026-11-23T19:36+05:00"
+  "decided_at": "2026-11-23T19:36+05:00",
+  "result": {
+    "facebook": {
+      "photo_id": "122184905156988633",
+      "post_id": "790959357430859_122184905180988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184905156988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/921779128_122184905162988633_3370652284336779903_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEQzdOdqwvbf65dt3dYOi0RrvSruHrYSnOu9Ku4ethKc8Mh_TIX6S59NSlzc12Yt1vdZN_j5muaJSN226xjq2vi&_nc_ohc=Z6ryDH_52-gQ7kNvwHzCQtw&_nc_oc=AdqWsz7D8oZjKKkbrgYZtYWUQphGUNf7vSAM_m4GkIm11_A3ps2Rxqy10tEjue5K9dY&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Wdh9rv4TJiEwDJUUoxu7KA&_nc_tpa=Q5bMBQJR5ZNRzVIHpimGkcOmcTaEn7Cxs1rSPF-HbSt2EhqMVpFK8n9k-c6-4_nchcB9sMCI1Nm3zYYMGw&oh=00_AQTf_NtIYDa0gWfp6r1OTk-5Eu2sXUJFcp3fsiGTHCyKuQ&oe=6B0A2B45"
+    },
+    "instagram": {
+      "media_id": "18117032357590144",
+      "permalink": "https://www.instagram.com/p/DgFn5b6F-jq/"
+    }
+  },
+  "published_at": "2026-11-23T19:44+05:00"
 }

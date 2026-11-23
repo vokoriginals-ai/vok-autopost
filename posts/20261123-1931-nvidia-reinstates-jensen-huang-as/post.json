@@ -2,7 +2,7 @@
   "headline": "Nvidia brings back Jensen Huang as CEO, a week after he resigned",
   "label": "NEWS",
   "caption": "Jensen Huang is back in charge of Nvidia. 💻\n\nNvidia's board has reinstated Jensen Huang as president and chief executive with immediate effect, according to the company's filing with the US Securities and Exchange Commission.\n\nThe board said it voted unanimously after a series of meetings with Huang, and that it was satisfied with his candor and ability to lead the company.\n\nHuang resigned on November 12, and only last week the board had said it did not intend to bring him back, Reuters and Dawn reported.\n\nColette Kress, who served as interim CEO, will continue as Nvidia's chief financial officer.\n\nHuang built Nvidia from a video game chip maker into the dominant supplier of artificial intelligence processors.\n\nDo you think bringing Huang back is the right call for Nvidia? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Nvidia #JensenHuang #TechNews\n\n📸 Anders Eidesvik / Wikimedia Commons (CC BY 4.0)",
-  "status": "approved",
+  "status": "published",
   "ai_image": false,
   "created_at": "2026-11-23T19:32+05:00",
   "targets": [
@@ -23,5 +23,18 @@
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS1pvWmhMSm1MRktDOXJhZWNCdTJIZ25WejNRVExzUHhPeGhEeklEZW54T3NVZTJYbjJEa3Bmcm0xV3B2aVZnTE5oYm9MNEVYQXBzZmZYQXV4SmNWa3ZrVXVqczFEV0JqaXNoRERwTlZaNk1YSXo3TGlQNWRVekh5dC1XTmVhYU5SYVRUbjNnbmszTm5PRTdCeVEyMmFweGE1NTRHSmcyRXlrUnBGNk5aWXZyTkdvSmgwaWRvdks2bGIzejlMY0E?oc=5"
   ],
   "note": "reviewed by Claude; unverified share figure and private allegation removed; checked vs Nvidia SEC 8-K",
-  "decided_at": "2026-11-23T19:36+05:00"
+  "decided_at": "2026-11-23T19:36+05:00",
+  "result": {
+    "facebook": {
+      "photo_id": "122184905702988633",
+      "post_id": "790959357430859_122184905726988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184905702988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/922717901_122184905708988633_8507869070708534369_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFHh3N8zgj8SMyeH6YBLWHm4jtSF-1_4TjiO1IX7X_hOBC_qcntEsIxIPOWyOGBFvidsvYZsS5RdJj7uFQuVsFb&_nc_ohc=Bi_pOluRCUMQ7kNvwHYgaQB&_nc_oc=AdrFU7X4KPhlamDghoKpbyWkrJYp6dcyTnRIpTvqEA4fGYTutvdbOcyrSggue2-4rvw&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=C1f64biSjZbmZKaMhAO--A&_nc_tpa=Q5bMBQInNFrhsczQyfaFJGxCEfG4OkbBZXcqfk8agVf-Hu8865l0ZekBeBEQb193-3Jev-4n_QwLhTI-NQ&oh=00_AQTt4zpuapF0JIEwGnPzkenHqb7RyQpxXuw4EmVmyi2Ilg&oe=6B0A3A35"
+    },
+    "instagram": {
+      "media_id": "18118582061520896",
+      "permalink": "https://www.instagram.com/p/DgFoRsAF45u/"
+    }
+  },
+  "published_at": "2026-11-23T19:47+05:00"
 }

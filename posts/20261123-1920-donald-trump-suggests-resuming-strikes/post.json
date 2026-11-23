@@ -2,7 +2,7 @@
   "headline": "Donald Trump suggests resuming strikes on Iran next year if diplomatic talks fail",
   "label": "NEWS",
   "caption": "Donald Trump has signaled that US military action against Iran could resume if diplomatic negotiations fail. 🚨\n\nDonald Trump suggested that military strikes on Iran could resume next year if negotiations fail, according to reports from Bloomberg.\n\nCBS News reported that Trump wants a permanent deal with Iran, adding that major next moves might not take place until 2027.\n\nThe Wall Street Journal reported that an Israeli spy chief pressed for renewed strikes on Iran during a recent visit to the United States.\n\nAxios reported that US and Israeli officials are considering new actions as Israeli Prime Minister Benjamin Netanyahu warned that Israel faces grave threats.\n\nWhat do you think about these developments in US Iran relations? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Iran #DonaldTrump #MiddleEast\n\n📸 Daniel Torok / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "ai_image": false,
   "created_at": "2026-11-23T19:20+05:00",
   "targets": [
@@ -41,5 +41,18 @@
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxPZXRSNGFrT3FGNm03UEZteTRGOHNSOER6TUIzU1Q5WHZLMFVSSEYxaTFQWDFUOVFSMkhYMVk4UFpBNFZsMC1teFZ4SUJzNUNBZ3VYMFhuT0g0QzNMR01JeGcxT0Ezb2dfMlFZZERFbFlfakRlTjBYbGxOUVc3WHZWazNlU3pNZlNJOExKelRHc3E3YTUtV0lBRm13NjYxakNWTlkwaEVFb1h3NHVMWXR5dVpUaw?oc=5"
   ],
   "note": "reviewed by Claude",
-  "decided_at": "2026-11-23T19:36+05:00"
+  "decided_at": "2026-11-23T19:36+05:00",
+  "result": {
+    "facebook": {
+      "photo_id": "122184903836988633",
+      "post_id": "790959357430859_122184903860988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184903836988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/924772819_122184903842988633_2111319974237278109_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGaD8J5Tk8hKQs4ThWTUQkySawh_uhuvEZJrCH-6G68RveRiV6_Ad00923oGAp1QrMRo4qz1ouTwTrmBW1ufU8b&_nc_ohc=AahrXDm0FUcQ7kNvwHHO9dy&_nc_oc=AdrmQqn65mqZzveNxso8OlJ3l040jt1JsJHrUzlmyiX9hB0ztnxP6S53RAYJI98ckLA&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=XwWDX5kMK_YUz_bMKqJRSw&_nc_tpa=Q5bMBQIEPPRHY1VS_KqifqBdhNtNa3e2HrFUEfRjvTcasb4_wc0SykyhiY9Aic5NOsZgn1k-ESaCqbhjEw&oh=00_AQQU-jPp0Z4giQW0GtpiQGdYF8pPTzw616lEqUb2dK-AJw&oe=6B0A2750"
+    },
+    "instagram": {
+      "media_id": "18123596842962902",
+      "permalink": "https://www.instagram.com/p/DgFnJldlwhN/"
+    }
+  },
+  "published_at": "2026-11-23T19:37+05:00"
 }

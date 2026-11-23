@@ -2,7 +2,7 @@
   "headline": "Israeli air strike k!lls a UN Palestinian agency worker in northern Gaza",
   "label": "NEWS",
   "caption": "An Israeli air strike has k!lled a man working for the UN Palestinian refugee agency in the Gaza Strip. 🕊️\n\nAccording to the relief agency and local health officials, the strike happened on Monday near a water well in the Jabalia refugee camp in the northern part of the enclave.\n\nMedics named the k!lled Palestinian man as Adel al Helo, while three other people were wounded in the same attack.\n\nSeparate reports also noted that another Palestinian was k!lled by Israeli fire in northern Gaza, and a child d!ed of acute lead poisoning.\n\nWhat are your thoughts on the ongoing safety risks for aid workers in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #UN #MiddleEastNews\n\n📸 WAFA in contract with a local company (APAimages)‏‏ / Wikimedia Commons (CC BY SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "ai_image": false,
   "created_at": "2026-11-23T19:24+05:00",
   "targets": [
@@ -25,5 +25,18 @@
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNUm0zOVFZS1VoU3llODBTWE1Gb0NhLU1jVXRMNElqNVVpbmpWdWMxb0E0ZE1kQmlwM0lEV2NZTDg2SktldTkxdUhFLVBTS3BsVmlyNW4tVkloS0F6RGplVndXUFZSNkpzcC14QnlLekllaXJWX2ZLYnhLVkkzTTBBYnU3RThHWHQ2MW9YbWNydUN2OGZ6Q0hyenR6aWo1Sl9LNWlVVzY5amZTRl9PVzZPN01vRGI0V0kxSEN3STBkc2ZuSTJaR1V2TjZVVk9NUkVMeFE?oc=5"
   ],
   "note": "reviewed by Claude; name glitch fixed",
-  "decided_at": "2026-11-23T19:36+05:00"
+  "decided_at": "2026-11-23T19:36+05:00",
+  "result": {
+    "facebook": {
+      "photo_id": "122184904370988633",
+      "post_id": "790959357430859_122184904394988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184904370988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/925948014_122184904376988633_5892513206794302258_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGg0uuapOoeeQKKutubs_0_MKzWrqGsAGwwrNauoawAbDw1-MCBCNYQVvx-6MVofAA3dTeASAfw8VNOk60RXwVl&_nc_ohc=kVnZtKOXr3sQ7kNvwGOIh7b&_nc_oc=AdrFfqwyEuw7iS86RoU3LlqRmVeM_-JVnw7ppByVngjMKKA548xdPt8RbURqBPbnhSA&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=NLrRvwcWrT4eLzf7yHXvwQ&_nc_tpa=Q5bMBQJXfRorglL9MAtmU6PXRpyq-o-p5NYol_IzRSfDDOsN8bhDuiY2rGQoMrER4ronkUzaxfKtinMQNg&oh=00_AQSL1d4hlU3VxzY4RtowXfsGtr31SNPxr0v5jrHPuNKQ3g&oe=6B0A2B17"
+    },
+    "instagram": {
+      "media_id": "18118536110045125",
+      "permalink": "https://www.instagram.com/p/DgFnhXUl8Vm/"
+    }
+  },
+  "published_at": "2026-11-23T19:41+05:00"
 }
