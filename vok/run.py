@@ -76,21 +76,6 @@ def publish_all_approved(gap_seconds: int = 180) -> bool:
     return ok
 
 
-if __name__ == "__main__":
-    if sys.argv[1:2] == ["drip"]:
-        drip()
-        sys.exit(0)
-    if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
-        gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
-        sys.exit(0 if publish_all_approved(gap) else 1)
-    if len(sys.argv) < 3 or sys.argv[1] not in ("render", "publish"):
-        sys.exit(__doc__)
-    if sys.argv[1] == "render":
-        do_render(sys.argv[2])
-    else:
-        sys.exit(0 if do_publish(sys.argv[2]) else 1)
-
-
 def drip(max_hours: float = 5.5) -> None:
     """Keep running: every 5 min read replies, auto-approve, and publish the next post
     when it is due. Posts are spread evenly so the queue lasts until the window ends
@@ -138,3 +123,18 @@ def drip(max_hours: float = 5.5) -> None:
                          "User-Agent": "vok-autopost"})
             urllib.request.urlopen(req, timeout=30)
             print("handed over to a new drip run")
+
+
+if __name__ == "__main__":
+    if sys.argv[1:2] == ["drip"]:
+        drip()
+        sys.exit(0)
+    if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
+        gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
+        sys.exit(0 if publish_all_approved(gap) else 1)
+    if len(sys.argv) < 3 or sys.argv[1] not in ("render", "publish"):
+        sys.exit(__doc__)
+    if sys.argv[1] == "render":
+        do_render(sys.argv[2])
+    else:
+        sys.exit(0 if do_publish(sys.argv[2]) else 1)
