@@ -159,7 +159,8 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             preview = host_image(str(folder / "render.jpg")) if os.environ.get("META_PAGE_TOKEN") else None
             meta["issue"] = gh.create_post_issue(post_id, meta, preview)
         save_post(folder, meta)
-        st["photos"].append({"at": now().isoformat(), "page": photo["page"]})
+        if not photo["page"].startswith("library:"):     # Saad's library photos may be reused
+            st["photos"].append({"at": now().isoformat(), "page": photo["page"]})
         if telegram.enabled() and not (auto_approve or hold):
             telegram.send_for_approval(post_id, str(folder / "render.jpg"), meta)
         print(f"made {post_id}")

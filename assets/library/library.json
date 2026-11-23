@@ -1,0 +1,213 @@
+[
+ {
+  "file": "west-bank-settler-clash.jpg",
+  "people": [],
+  "tags": [
+   "west bank",
+   "settler",
+   "settlers",
+   "outpost",
+   "palestinians"
+  ],
+  "ai": false,
+  "credit": "Reuters",
+  "size": [
+   860,
+   573
+  ],
+  "note": ""
+ },
+ {
+  "file": "drone-thermal-target.jpg",
+  "people": [],
+  "tags": [
+   "drone",
+   "shot down",
+   "reaper",
+   "uav"
+  ],
+  "ai": false,
+  "credit": "Image via social media",
+  "size": [
+   664,
+   462
+  ],
+  "note": ""
+ },
+ {
+  "file": "drone-shot-down-burning.jpg",
+  "people": [],
+  "tags": [
+   "drone",
+   "shot down",
+   "downed"
+  ],
+  "ai": false,
+  "credit": "Image via social media",
+  "size": [
+   691,
+   444
+  ],
+  "note": ""
+ },
+ {
+  "file": "drone-altair-coast.png",
+  "people": [],
+  "tags": [
+   "drone",
+   "uav",
+   "surveillance drone"
+  ],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": ""
+ },
+ {
+  "file": "ship-at-port.webp",
+  "people": [],
+  "tags": [
+   "ship",
+   "vessel",
+   "port",
+   "cargo ship",
+   "tanker",
+   "shipping"
+  ],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1067,
+   800
+  ],
+  "note": ""
+ },
+ {
+  "file": "marco-rubio-lectern.png",
+  "people": [
+   "Marco Rubio"
+  ],
+  "tags": [
+   "state department",
+   "secretary of state"
+  ],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-01-iran-flag.png",
+  "people": [],
+  "tags": [],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-02-foreign-ministry.jpg",
+  "people": [],
+  "tags": [],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   726,
+   423
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-03-lectern-iran-flag.png",
+  "people": [],
+  "tags": [],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   1092,
+   1440
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-04-cleric.jpg",
+  "people": [],
+  "tags": [],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   299,
+   168
+  ],
+  "note": ""
+ },
+ {
+  "file": "ai-01-cleric-and-us-leader.png",
+  "people": [],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-05-white-hair.png",
+  "people": [],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": ""
+ },
+ {
+  "file": "ai-02-pointing-leader-iran.webp",
+  "people": [],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   640,
+   360
+  ],
+  "note": ""
+ },
+ {
+  "file": "ai-03-cleric-portrait.png",
+  "people": [],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1086,
+   1448
+  ],
+  "note": ""
+ },
+ {
+  "file": "person-06-french-tv-mics.jpg",
+  "people": [],
+  "tags": [],
+  "ai": false,
+  "credit": "VOK",
+  "size": [
+   904,
+   905
+  ],
+  "note": ""
+ }
+]

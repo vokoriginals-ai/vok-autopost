@@ -186,9 +186,38 @@ def _has_face(path: str) -> bool:
         return True          # if detection itself fails, don't block the photo
 
 
+LIBRARY = Path(__file__).resolve().parent.parent / "assets" / "library"
+
+
+def library_photo(person: str, queries: list[str], recent: set) -> dict | None:
+    """Saad's own photos come first: match the person's name, else a tag in the queries.
+    A library photo can be reused, but not one used in the last few posts."""
+    try:
+        lib = json.loads((LIBRARY / "library.json").read_text())
+    except Exception:
+        return None
+    text = " ".join(q.lower() for q in queries if q)
+    def ok(e):
+        return min(e.get("size", [0, 0])) >= 600 and f"library:{e['file']}" not in recent
+    hits = []
+    if person:
+        hits = [e for e in lib if ok(e) and any(person.lower() == p.lower() for p in e.get("people", []))]
+    if not hits:
+        hits = [e for e in lib if ok(e) and not e.get("people") and any(t in text for t in e.get("tags", []))]
+    if not hits:
+        return None
+    e = max(hits, key=lambda e: min(e["size"]))
+    print(f"  photo from Saad's library: {e['file']}")
+    return {"path": str(LIBRARY / e["file"]), "credit": e.get("credit", "VOK"),
+            "page": f"library:{e['file']}", "sharpness": 999, "ai_generated": bool(e.get("ai"))}
+
+
 def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "") -> dict | None:
     """Return the best checked photo (with 'path' to the downloaded file), or None.
-    If a person is given, photos of that person come first."""
+    Saad's photo library first; then photos of the person; then the event/place."""
+    lib = library_photo(person, queries, exclude)
+    if lib:
+        return lib
     cands: list[dict] = []
     for q in [q for q in queries if q]:
         finders = (wikimedia_person, wikimedia, openverse) if q == person else (wikimedia, openverse)
