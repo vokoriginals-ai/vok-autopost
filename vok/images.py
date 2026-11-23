@@ -60,6 +60,15 @@ def wikimedia_person(name: str) -> list[dict]:
             "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 2000}
     out = _parse(_commons({**base, "generator": "search", "gsrnamespace": 6, "gsrlimit": 25,
                            "gsrsearch": f'intitle:"{name}" filetype:bitmap'}))
+    key = re.sub(r"[^a-z]", "", name.lower())
+    for c in out:
+        title = re.sub(r"[^a-z]", "", c["page"].rsplit("File:", 1)[-1].lower())
+        # "Sheikh_Hasina_in_2023.jpg" shows her; "People_cheering_after_Sheikh_Hasina..." doesn't
+        if not title.startswith(key):
+            c["rank"] += 8
+        if re.search(r"people|crowd|protest|cheering|supporters|with|and|meets|meeting",
+                     c["page"].rsplit("File:", 1)[-1], re.I):
+            c["rank"] += 4
     if len(out) < 3:
         time.sleep(1)
         out += _parse(_commons({**base, "generator": "categorymembers", "gcmtype": "file",
@@ -203,7 +212,7 @@ def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "")
         if c["sharpness"] < MIN_SHARPNESS:
             continue
         # earlier search results fit the story better; sharpness breaks ties
-        score = c["sharpness"] / 50 - c["rank"] * 2
+        score = min(c["sharpness"], 600) / 50 - c["rank"] * 2
         if best is None or score > best["score"]:
             best = {**c, "score": score, "path": path}
     return best

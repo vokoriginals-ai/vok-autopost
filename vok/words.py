@@ -113,6 +113,11 @@ def add_ai_note(caption: str) -> str:
     return caption.rstrip() + f"\n\n{AI_NOTE}"
 
 
+def _question_mark(text: str) -> str:
+    # "Do you think ... 👇" → "Do you think ...? 👇"
+    return re.sub(r"([A-Za-z0-9)])\s*👇", r"\1? 👇", text)
+
+
 def clean(text: str) -> str:
     """Everything VOK text goes through: no dashes, then disguise words."""
-    return disguise(no_dashes(text))
+    return _question_mark(disguise(no_dashes(text)))

@@ -40,6 +40,7 @@ def font(weight: int, size: int) -> ImageFont.FreeTypeFont:
 # ---------------------------------------------------------------- photo crop
 
 CASCADE = ROOT / "assets" / "haarcascade_frontalface_default.xml"
+PROFILE = ROOT / "assets" / "haarcascade_profileface.xml"
 
 
 def _subject(img: Image.Image) -> tuple[float, float]:
@@ -53,11 +54,26 @@ def _subject(img: Image.Image) -> tuple[float, float]:
         import numpy as np
 
         arr = np.array(img.convert("L"))
-        cascade = cv2.CascadeClassifier(str(CASCADE))
-        faces = cascade.detectMultiScale(arr, scaleFactor=1.1, minNeighbors=6,
-                                         minSize=(arr.shape[1] // 20,) * 2)
-        if len(faces):
-            x, y, w, h = max(faces, key=lambda f: f[2] * f[3])
+        small = (arr.shape[1] // 20,) * 2
+        found = []                                  # (x, y, w, h, confidence)
+
+        def scan(path, image, flip=False):
+            c = cv2.CascadeClassifier(str(path))
+            boxes, _, levels = c.detectMultiScale3(image, 1.1, 6, minSize=small,
+                                                    outputRejectLevels=True)
+            for (x, y, w, h), lv in zip(boxes, levels):
+                if flip:
+                    x = image.shape[1] - x - w
+                found.append((x, y, w, h, float(lv)))
+
+        scan(CASCADE, arr)
+        if PROFILE.exists():                        # people turned sideways (both ways)
+            scan(PROFILE, arr)
+            scan(PROFILE, arr[:, ::-1].copy(), flip=True)
+        if found:
+            biggest = max(f[2] for f in found)
+            # most certain face wins; size only breaks near-ties
+            x, y, w, h, _ = max(found, key=lambda f: f[4] + 0.5 * f[2] / biggest)
             # aim a bit below the face centre so the head isn't cut at the top
             return (x + w / 2) / arr.shape[1], (y + h * 0.8) / arr.shape[0]
 
