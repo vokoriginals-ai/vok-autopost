@@ -90,6 +90,7 @@ def no_dashes(text: str) -> str:
         part = re.sub(r"[ \t]*[—–][ \t]*", ", ", part)             # em/en dash between clauses
         part = re.sub(r"(\d)\s*-\s*(\d{2,4})\b", r"\1 to \2", part)  # number ranges
         part = re.sub(r"(?<=\w)-(?=\w)", " ", part)              # hyphenated words
+        part = re.sub(r"(?<=[A-Za-z])_(?=[A-Za-z])", " ", part)  # al_Helo → al Helo
         part = re.sub(r"[ \t]+-[ \t]+", ", ", part)               # spaced hyphen used as dash
         part = re.sub(r",\s*,", ",", part)
         part = re.sub(r"\s+,", ",", part)
