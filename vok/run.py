@@ -101,11 +101,11 @@ def drip(max_hours: float = 5.5) -> None:
             gap = max(30, min(60, int(left_min / max(queue, 1))))
             cfg["min_minutes_between_posts"] = gap
             # hourly: look for new stories too (GitHub's own timer isn't reliable)
-            if time.time() - last_news > 3600 and os.environ.get("GEMINI_API_KEY"):
+            if time.time() - last_news > 1200 and os.environ.get("GEMINI_API_KEY"):
                 last_news = time.time()
                 try:
                     from vok import make_posts
-                    make_posts.main(count=4)
+                    make_posts.main(count=3)
                 except Exception as e:
                     print(f"news check failed: {str(e)[:120]}")
             st = load_state()

@@ -97,7 +97,8 @@ def auto_approve(cfg: dict) -> None:
     for folder, meta in all_posts():
         if meta.get("status") != "pending" or not meta.get("created_at"):
             continue
-        if (t - datetime.fromisoformat(meta["created_at"])) >= timedelta(minutes=wait):
+        w = 10 if int(meta.get("priority", 1)) >= 3 else wait
+        if (t - datetime.fromisoformat(meta["created_at"])) >= timedelta(minutes=w):
             meta["status"] = "approved"
             meta["decided_at"] = t.isoformat(timespec="minutes")
             meta["note"] = f"auto-approved: no reply in {wait} min"
@@ -136,9 +137,11 @@ def publish_next(cfg: dict, st: dict) -> bool:
     if sum(1 for p in times if cycle_day(datetime.fromisoformat(p)) == today) >= cfg["posts_per_day"]:
         print("daily posting limit reached")
         return True
+    breaking = any(int(m.get("priority", 1)) >= 3 for _, m in all_posts() if m.get("status") == "approved")
     if times:
         last = datetime.fromisoformat(max(times))
-        if (t - last) < timedelta(minutes=cfg["min_minutes_between_posts"]):
+        gap = 10 if breaking else cfg["min_minutes_between_posts"]
+        if (t - last) < timedelta(minutes=gap):
             print("too soon after the last post")
             return True
 
