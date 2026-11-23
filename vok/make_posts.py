@@ -45,7 +45,11 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             w = write_post(story, cfg["gemini_models"])
         except WriteError as e:
             print(f"writer error: {e}")
-            break
+            if "rejected" in str(e):
+                break                     # bad key: no point continuing
+            import time
+            time.sleep(60)                # Gemini busy: pause, then try the next story
+            continue
         if not w.get("publishable"):
             print(f"skip: {story['headline'][:70]} – {w.get('reason')}")
             continue

@@ -86,29 +86,49 @@ def _available_flash_models() -> list[str]:
     return sorted(names, reverse=True)
 
 
+_DEAD: set[str] = set()      # models that don't exist for this key (404)
+_GOOD: list[str] = []        # the model that worked last time is tried first
+
+
 def _gemini(prompt: str, models: list[str]) -> dict:
-    tried = []
-    for model in models + _available_flash_models():
-        if model in tried:
-            continue
-        tried.append(model)
-        try:
-            data = net.post_json(
-                f"{API}/models/{model}:generateContent",
-                {"contents": [{"parts": [{"text": prompt}]}],
-                 "generationConfig": {"responseMimeType": "application/json",
-                                      "temperature": 0.7}},
-                headers={"x-goog-api-key": _key()})
-            text = data["candidates"][0]["content"]["parts"][0]["text"]
-            text = re.sub(r"^```(json)?|```$", "", text.strip()).strip()
-            return json.loads(text)
-        except net.HTTPError as e:
-            print(f"gemini {model}: {e}")
-            if e.status in (401, 403):
-                raise WriteError(f"Gemini key rejected: {e}") from None
-        except (KeyError, IndexError, json.JSONDecodeError) as e:
-            print(f"gemini {model}: bad response {e}")
-    raise WriteError(f"No Gemini model worked (tried {', '.join(tried)}).")
+    import time
+    order: list[str] = []
+    for m in _GOOD + models + _available_flash_models():
+        if m not in order and m not in _DEAD:
+            order.append(m)
+    for model in order[:8]:
+        for attempt in range(3):
+            try:
+                data = net.post_json(
+                    f"{API}/models/{model}:generateContent",
+                    {"contents": [{"parts": [{"text": prompt}]}],
+                     "generationConfig": {"responseMimeType": "application/json",
+                                          "temperature": 0.7}},
+                    headers={"x-goog-api-key": _key()})
+                text = data["candidates"][0]["content"]["parts"][0]["text"]
+                text = re.sub(r"^```(json)?|```$", "", text.strip()).strip()
+                result = json.loads(text)
+                if model in _GOOD:
+                    _GOOD.remove(model)
+                _GOOD.insert(0, model)
+                return result
+            except net.HTTPError as e:
+                if e.status in (401, 403):
+                    raise WriteError(f"Gemini key rejected: {e}") from None
+                if e.status == 404:
+                    _DEAD.add(model)
+                    break
+                if e.status == 503 and attempt < 2:      # busy: wait and retry same model
+                    wait = 20 * (attempt + 1)
+                    print(f"gemini {model}: busy, retrying in {wait}s")
+                    time.sleep(wait)
+                    continue
+                print(f"gemini {model}: HTTP {e.status}")
+                break                                     # 429 / other: next model
+            except (KeyError, IndexError, json.JSONDecodeError) as e:
+                print(f"gemini {model}: bad response {e}")
+                break
+    raise WriteError("Gemini is busy right now (all models refused).")
 
 
 def write_post(story: dict, models: list[str]) -> dict:
