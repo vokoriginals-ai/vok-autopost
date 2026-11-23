@@ -101,21 +101,24 @@ _DEAD: set[str] = set()      # models that don't exist for this key (404)
 _GOOD: list[str] = []        # the model that worked last time is tried first
 
 
-def _gemini(prompt: str, models: list[str]) -> dict:
+def _gemini(prompt: str, models: list[str], budget_s: int = 180) -> dict:
     import time
+    deadline = time.time() + budget_s          # one story never blocks the batch for long
     order: list[str] = []
     for m in _GOOD + models + _available_flash_models():
         if m not in order and m not in _DEAD:
             order.append(m)
     for model in order[:8]:
         for attempt in range(3):
+            if time.time() > deadline:
+                raise WriteError("Gemini is busy right now (took too long).")
             try:
                 data = net.post_json(
                     f"{API}/models/{model}:generateContent",
                     {"contents": [{"parts": [{"text": prompt}]}],
                      "generationConfig": {"responseMimeType": "application/json",
                                           "temperature": 0.7}},
-                    headers={"x-goog-api-key": _key()})
+                    headers={"x-goog-api-key": _key()}, timeout=45)
                 text = data["candidates"][0]["content"]["parts"][0]["text"]
                 text = re.sub(r"^```(json)?|```$", "", text.strip()).strip()
                 result = json.loads(text)

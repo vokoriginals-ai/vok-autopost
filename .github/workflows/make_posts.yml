@@ -28,7 +28,7 @@ concurrency:
 jobs:
   make:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
 
@@ -46,6 +46,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          PYTHONUNBUFFERED: "1"
           COUNT: ${{ github.event.inputs.count }}
           AUTO_APPROVE: ${{ github.event.inputs.auto_approve }}
         run: |
@@ -63,5 +64,5 @@ jobs:
           git add posts data
           git diff --cached --quiet && exit 0
           git commit -m "New posts for approval [skip ci]"
-          git pull --rebase
+          git pull --rebase -X theirs
           git push

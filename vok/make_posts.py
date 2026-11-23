@@ -17,6 +17,15 @@ from vok.state import (all_posts, config, load_state, now, save_post, save_state
 from vok.write import WriteError, write_post
 
 
+def _save_to_github(post_id: str) -> None:
+    """Commit each post as soon as it exists, so a stopped run loses nothing."""
+    import os
+    if os.environ.get("GITHUB_ACTIONS"):
+        os.system('git config user.name vok-bot; git config user.email vok-bot@users.noreply.github.com; '
+                  f'git add posts data && git commit -qm "New post {post_id} [skip ci]" '
+                  '&& (git pull -q --rebase -X theirs || git rebase --abort) && git push -q')
+
+
 def main(count: int | None = None, auto_approve: bool = False, hold: bool = False) -> int:
     cfg = config()
     st = load_state()
@@ -45,10 +54,15 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
 
     if gh.enabled():
         gh.ensure_label()
+    import time as _time
+    run_started = _time.time()
     made = 0
     asked = 0          # photo requests sent this run (max 2, so emails stay few)
     for story in stories:
         if made >= room:
+            break
+        if _time.time() - run_started > 40 * 60:      # job limit is 55 min: stop cleanly
+            print("time budget used up; the next run continues")
             break
         st["seen"].append({"at": now().isoformat(), "words": sorted(story["words"]),
                            "headline": story["headline"]})
@@ -62,7 +76,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             if "rejected" in str(e):
                 break                     # bad key: no point continuing
             import time
-            time.sleep(60)                # Gemini busy: pause, then try the next story
+            time.sleep(20)                # Gemini busy: short pause, then the next story
             continue
         if not w.get("publishable"):
             print(f"skip: {story['headline'][:70]} – {w.get('reason')}")
@@ -70,6 +84,10 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
 
         used = {u["page"] for u in st.setdefault("photos", [])}
         post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}"
+        n = 2
+        while (POSTS / post_id).exists():          # never overwrite another post
+            post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}-{n}"
+            n += 1
         folder = POSTS / post_id
         photo = images.best_photo([w.get("photo_person", ""), w.get("image_query", ""),
                                    w.get("image_query_backup", "")],
@@ -144,6 +162,8 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             telegram.send_for_approval(post_id, str(folder / "render.jpg"), meta)
         print(f"made {post_id}")
         made += 1
+        save_state(st)
+        _save_to_github(post_id)
 
     save_state(st)
     print(f"done: {made} new posts")

@@ -130,11 +130,14 @@ def publish_next(cfg: dict, st: dict) -> bool:
         print("outside posting hours")
         return True
     today = cycle_day(t)
-    if sum(1 for p in st["published"] if cycle_day(datetime.fromisoformat(p)) == today) >= cfg["posts_per_day"]:
+    # publish times come from the posts themselves (can't be lost in a save clash)
+    times = [m["published_at"] for _, m in all_posts()
+             if m.get("status") == "published" and m.get("published_at")]
+    if sum(1 for p in times if cycle_day(datetime.fromisoformat(p)) == today) >= cfg["posts_per_day"]:
         print("daily posting limit reached")
         return True
-    if st["published"]:
-        last = datetime.fromisoformat(max(st["published"]))
+    if times:
+        last = datetime.fromisoformat(max(times))
         if (t - last) < timedelta(minutes=cfg["min_minutes_between_posts"]):
             print("too soon after the last post")
             return True
@@ -186,6 +189,9 @@ def publish_next(cfg: dict, st: dict) -> bool:
 def main() -> int:
     cfg = config()
     st = load_state()
+    if st.get("drip_until") and datetime.fromisoformat(st["drip_until"]) > now():
+        print("the overnight publisher is running; nothing to do")
+        return 0
     apply_decisions(st)
     auto_approve(cfg)
     expire_old()

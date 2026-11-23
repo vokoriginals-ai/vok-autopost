@@ -107,7 +107,7 @@ def drip(max_hours: float = 5.5) -> None:
             tick.publish_next(cfg, st)
             save_state(st)
             os.system('git add posts data >/dev/null 2>&1 && git commit -qm "drip: update posts [skip ci]" '
-                      '&& git pull -q --rebase && git push -q')
+                      '&& (git pull -q --rebase -X theirs || git rebase --abort) && git push -q')
         elif not any(m.get("status") in ("approved", "pending") for _, m in all_posts()):
             print("outside window and nothing queued: stopping")
             return

@@ -54,6 +54,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POST_ID: ${{ github.event.inputs.post_id }}
           ALL: ${{ github.event.inputs.publish_all_approved }}
+          PYTHONUNBUFFERED: "1"
           DRIP: ${{ github.event.inputs.drip }}
         run: |
           git config user.name "vok-bot"
@@ -76,5 +77,5 @@ jobs:
           git add posts data
           git diff --cached --quiet && exit 0
           git commit -m "tick: update posts [skip ci]"
-          git pull --rebase
+          git pull --rebase -X theirs
           git push
