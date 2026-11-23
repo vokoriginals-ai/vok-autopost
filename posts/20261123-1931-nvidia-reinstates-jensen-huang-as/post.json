@@ -1,8 +1,8 @@
 {
-  "headline": "Nvidia reinstates Jensen Huang as CEO causing shares to surge over 25 percent",
+  "headline": "Nvidia brings back Jensen Huang as CEO, a week after he resigned",
   "label": "NEWS",
-  "caption": "Nvidia has officially reinstated Jensen Huang as chief executive officer 💻\n\nNvidia announced on Monday that Jensen Huang has been reinstated as chief executive with immediate effect according to reports by Dawn.\n\nNvidia shares surged by more than 25 percent in premarket trading following the announcement according to Dawn.\n\nThe decision marks a dramatic reversal after the board of directors had ruled out his return just days prior Dawn reported.\n\nHuang built the company from a video game chip maker into the dominant supplier of artificial intelligence processors according to Dawn.\n\nMeanwhile The New York Times reported that Alice Huang was in touch with a Chinese spy agency during an affair with the Nvidia chief executive according to Reuters.\n\nWhat do you think about Jensen Huang returning as Nvidia chief executive 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Nvidia #JensenHuang #TechNews\n\n📸 Anders Eidesvik / Wikimedia Commons (CC BY 4.0)",
-  "status": "hold",
+  "caption": "Jensen Huang is back in charge of Nvidia. 💻\n\nNvidia's board has reinstated Jensen Huang as president and chief executive with immediate effect, according to the company's filing with the US Securities and Exchange Commission.\n\nThe board said it voted unanimously after a series of meetings with Huang, and that it was satisfied with his candor and ability to lead the company.\n\nHuang resigned on November 12, and only last week the board had said it did not intend to bring him back, Reuters and Dawn reported.\n\nColette Kress, who served as interim CEO, will continue as Nvidia's chief financial officer.\n\nHuang built Nvidia from a video game chip maker into the dominant supplier of artificial intelligence processors.\n\nDo you think bringing Huang back is the right call for Nvidia? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Nvidia #JensenHuang #TechNews\n\n📸 Anders Eidesvik / Wikimedia Commons (CC BY 4.0)",
+  "status": "approved",
   "ai_image": false,
   "created_at": "2026-11-23T19:32+05:00",
   "targets": [
@@ -22,5 +22,6 @@
     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNc3RBWWtSeXh0VGdkQVhNc3A2eEVXQVZjLTlkR0dyZ2p6enNUZkE4MXNCMVJuUks0ZnluUUlwN0MtZmw2ZWNzSll5VTBoWU1lT012N2NHQlllWDl0MTgtRjlRYlBuaTBrcElNQTVDZTdJVUFBa0hZdU9fX1V3R1NaU0lneERTcnNkSTlZ0gGQAUFVX3lxTE5YXzRORmhLR0EzVHd0T2djUGV5RDRTY1pmSWdmODB1ZWVXeUtCemFuN0ZveExDQ3BxNE5Jd0ZQbUpyWjVleG1Rd0lYZDNSbTJrNUM1ajNzZ3lmLUM2ZzNGcEl2dk43YmNpYUJockZiT0k0c1F2eUFZQmUwbFk4T0daTi1kbHdWcWlmWUctRjZMeg?oc=5",
     "https://news.google.com/rss/articles/CBMixgFBVV95cUxPS1pvWmhMSm1MRktDOXJhZWNCdTJIZ25WejNRVExzUHhPeGhEeklEZW54T3NVZTJYbjJEa3Bmcm0xV3B2aVZnTE5oYm9MNEVYQXBzZmZYQXV4SmNWa3ZrVXVqczFEV0JqaXNoRERwTlZaNk1YSXo3TGlQNWRVekh5dC1XTmVhYU5SYVRUbjNnbmszTm5PRTdCeVEyMmFweGE1NTRHSmcyRXlrUnBGNk5aWXZyTkdvSmgwaWRvdks2bGIzejlMY0E?oc=5"
   ],
-  "note": "held for review (no email); set status to approved to release"
+  "note": "reviewed by Claude; unverified share figure and private allegation removed; checked vs Nvidia SEC 8-K",
+  "decided_at": "2026-11-23T19:36+05:00"
 }

@@ -2,7 +2,7 @@
   "headline": "Israeli military attacks and displaces Palestinians in Gaza while expanding its yellow line deeper",
   "label": "NEWS",
   "caption": "Winter floods and aid blockades are worsening the crisis for displaced families in Gaza 🌧️\n\nAccording to Middle East Eye and Mondoweiss, Israeli attacks continue across the Gaza Strip while displacement expands daily.\n\nAn aid worker for the UN agency for Palestinian refugees, Unrwa, was k!lled early on Monday morning in the Jabalia refugee camp during the attacks.\n\nAt the same time, Israel is still displacing Palestinians in Gaza by expanding its yellow line deeper into the strip every day.\n\nThis ongoing military activity comes as the aid blockade and winter floods further deepen the suffering of civilians.\n\nHow can the international community better protect aid workers and civilians in active conflict zones 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #Palestine #MiddleEast\n\n📸 Jaber Jehad Badwan / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "hold",
+  "status": "rejected",
   "ai_image": false,
   "created_at": "2026-11-23T19:30+05:00",
   "targets": [
@@ -21,5 +21,6 @@
     "https://www.middleeasteye.net/news/israel-kills-palestinians-gaza-aid-blockade-winter-floods-deepen-suffering",
     "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa1NMelE0eHFhR3hjd0VUV21zMndCdy1fS3BrQkJBUmM4V1Npa1F3QU5VZkFnQXJjUnk2X1dGbjMwcGFqNVVYOFRnek5FWWJMNzB1Zy1Oc1RiQ2dWLWVnenpFOGQzZDVybm9OYXJQeEN3RjJPWHhFclJza09zd3Q2SGdvV2swM0RpSDlfS0VHMGh3c3FzWWZ4amNUdnNibDVvYlRqSVJHQXlSQWFEc0E?oc=5"
   ],
-  "note": "held for review (no email); set status to approved to release"
+  "note": "rejected in review: repeats the UNRWA worker story; only MEE + Mondoweiss",
+  "decided_at": "2026-11-23T19:36+05:00"
 }
