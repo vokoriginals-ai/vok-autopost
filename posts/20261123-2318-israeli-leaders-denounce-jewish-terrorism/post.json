@@ -2,7 +2,7 @@
   "headline": "Israeli leaders denounce Jewish terrorism after violent settler attacks across the West Bank",
   "label": "NEWS",
   "caption": "Israeli political leaders have strongly condemned recent violent attacks by settlers in the West Bank.\n\nAccording to the New York Times and the Guardian, Netanyahu rival Gadi Eisenkot condemned the arson attacks and Jewish terrorism following settler rampages on Palestinian villages.\n\nReuters reported that Gideon Saar also condemned the latest settler violence while noting enforcement efforts.\n\nMeanwhile, according to Middle East Monitor, France has condemned the very serious attacks by violent settlers on several Palestinian localities.\n\nWhat needs to happen to stop the violence in the West Bank right now? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #WestBank #Israel #Palestine\n\n📸 Reuters",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-23T23:20+05:00",
@@ -23,5 +23,18 @@
   "photo_hint": "the settler attack scene in the West Bank (news photo)",
   "photo_credit": "Reuters",
   "photo_page": "supplied by Saad",
-  "decided_at": "2026-11-23T23:30+05:00"
+  "decided_at": "2026-11-23T23:30+05:00",
+  "result": {
+    "facebook": {
+      "photo_id": "122184940940988633",
+      "post_id": "790959357430859_122184940970988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184940940988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/925926004_122184940952988633_646534360333167278_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGQhF-nSNPT48NVSLK9f8oZT9IE3OQ9YFRP0gTc5D1gVDqkPe-lUWuvb6RTj6ht59XkR8WwS0QWvpqt08fmTggY&_nc_ohc=MwYPMBnFP4EQ7kNvwEoESe1&_nc_oc=AdpoTfHslSIS0dyvPIxNtCRfhPDy5JwWsGNEq2BPDO-tkJshAyPg_tuIM9OrM1vlb_w&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=9-J3G32AnNdGRQCw2altbw&_nc_tpa=Q5bMBQINfS8ZUX8IyL_ZL0rYqH1kEA9c1PUfszzqturQhUrhyksb6lfRT6WmxadPiWKRRwS6aOKIWyuvIw&oh=00_AQTbXRFRaK9K5h9LjjyU4FtH6P0OESVUuAh2QxDpc3ejsA&oe=6B0AA549"
+    },
+    "instagram": {
+      "media_id": "17937960867141766",
+      "permalink": "https://www.instagram.com/p/DgGZ1OZjo-P/"
+    }
+  },
+  "published_at": "2026-11-24T03:00+05:00"
 }
