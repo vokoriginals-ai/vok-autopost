@@ -49,14 +49,22 @@ CAPTION
 
 LABEL: "NEWS" for hard news, "VIRAL" for viral/social/celebrity stories.
 
-PHOTO
-- "image_query": 1–4 words to search Wikimedia Commons for a real photo that fits: a named
-  person ("Benjamin Netanyahu"), a place ("Tehran", "Gaza City"), or an object ("oil tanker").
-  Prefer a person's name when a leader is central.
+PHOTO (who or what the picture shows)
+- "photo_person": the full name of the person the picture should show, chosen in this order:
+  1. the person who made the statement, warning, threat or decision in the headline
+     (Iran's spokesman warns → that spokesman; Trump threatens → Donald Trump);
+  2. otherwise the person the story is mainly about;
+  3. otherwise, if the story is about a country's government, army or policy, that country's
+     current head of state or head of government (Iran → Supreme Leader or President, Israel →
+     Benjamin Netanyahu). Use the name as of today's date.
+  Use "" only when no person fits (an earthquake, a company result with no leader named...).
+- "image_query": 1–4 words for a backup photo of the place or object (e.g. "Strait of Hormuz",
+  "Gaza City", "US Capitol").
+- "image_query_backup": a second, different backup query.
 
 Return ONLY JSON with these keys:
 {"publishable": true/false, "reason": "...", "label": "NEWS|VIRAL", "headline": "...",
- "caption": "...", "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
+ "caption": "...", "photo_person": "...", "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
 """
 
 

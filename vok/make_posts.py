@@ -36,6 +36,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
     if gh.enabled():
         gh.ensure_label()
     made = 0
+    asked = 0          # photo requests sent this run (max 2, so emails stay few)
     for story in stories:
         if made >= room:
             break
@@ -57,11 +58,31 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         used = {u["page"] for u in st.setdefault("photos", [])}
         post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}"
         folder = POSTS / post_id
-        photo = images.best_photo([w.get("image_query", ""), w.get("image_query_backup", "")],
+        photo = images.best_photo([w.get("photo_person", ""), w.get("image_query", ""),
+                                   w.get("image_query_backup", "")],
+                                  person=w.get("photo_person", ""),
                                   exclude=used, workdir=str(folder / "_candidates"))
         if not photo:
-            print(f"skip (no sharp free photo): {w['headline']}")
-            shutil.rmtree(folder, ignore_errors=True)
+            shutil.rmtree(folder / "_candidates", ignore_errors=True)
+            if auto_approve or hold or not gh.enabled() or asked >= 2:
+                print(f"skip (no sharp free photo): {w['headline']}")
+                shutil.rmtree(folder, ignore_errors=True)
+                continue
+            meta = {
+                "headline": clean(w["headline"]), "label": w["label"],
+                "caption": clean(w["caption"].rstrip()), "status": "needs_photo",
+                "ai_image": False, "created_at": now().isoformat(timespec="minutes"),
+                "targets": ["facebook", "instagram"],
+                "photo_hint": ", ".join(x for x in (w.get("photo_person"), w.get("image_query")) if x),
+                "sources_named": story["sources"],
+                "source_links": [i["link"] for i in story["items"][:8]],
+            }
+            folder.mkdir(parents=True, exist_ok=True)
+            meta["issue"] = gh.create_photo_request_issue(post_id, meta)
+            save_post(folder, meta)
+            print(f"photo needed: {post_id}")
+            asked += 1
+            made += 1
             continue
 
         headline = clean(w["headline"])

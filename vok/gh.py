@@ -96,19 +96,82 @@ def _first_word(body: str) -> str:
     return ""
 
 
-def decisions() -> list[tuple[str, int, str]]:
-    """[(decision 'ok'/'no', issue_number, post_id), ...] from the owner's replies."""
+IMG = re.compile(r"!\[[^\]]*\]\((https?://[^)\s]+)\)|<img[^>]+src=\"(https?://[^\"]+)\"")
+
+
+def decisions() -> list[tuple[str, int, str, str | None]]:
+    """[(decision 'ok'/'no', issue_number, post_id, attached_image_url), ...] from the owner's replies."""
     issues = _req("GET", f"/issues?state=open&labels={LABEL}&per_page=100") or []
     out = []
     for iss in issues:
         m = re.search(r"post-id: ([\w\-]+)", iss.get("body") or "")
         if not m:
             continue
+        decision, image = None, None
         for c in _req("GET", f"/issues/{iss['number']}/comments?per_page=50") or []:
             if (c.get("user") or {}).get("login", "").lower() != owner().lower():
                 continue
-            w = _first_word(c.get("body", ""))
-            if w in YES or w in NO:
-                out.append(("ok" if w in YES else "no", iss["number"], m.group(1)))
-                break
+            body = c.get("body", "")
+            for a, b in IMG.findall(body):
+                image = a or b                      # newest attached photo wins
+            w = _first_word(body)
+            if decision is None and (w in YES or w in NO):
+                decision = "ok" if w in YES else "no"
+        if decision:
+            out.append((decision, iss["number"], m.group(1), image))
     return out
+
+
+class _NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *a, **k):
+        return None
+
+
+def download(url: str, path: str) -> None:
+    """Download a photo attached to an issue (private repo: needs the token,
+    but the storage link it redirects to must be fetched without it)."""
+    req = urllib.request.Request(url, headers={
+        "Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}", "User-Agent": "vok-autopost"})
+    try:
+        r = urllib.request.build_opener(_NoRedirect).open(req, timeout=60)
+        data = r.read()
+    except urllib.error.HTTPError as e:
+        if e.code not in (301, 302, 303, 307, 308):
+            raise
+        loc = e.headers["Location"]
+        with urllib.request.urlopen(urllib.request.Request(
+                loc, headers={"User-Agent": "vok-autopost"}), timeout=60) as r2:
+            data = r2.read()
+    with open(path, "wb") as f:
+        f.write(data)
+
+
+def create_photo_request_issue(post_id: str, meta: dict) -> int | None:
+    src = ", ".join(meta.get("sources_named", [])[:8])
+    body = (
+        f"@{owner()} 📷 **No safe free photo found for this story.**\n\n"
+        f"**Headline:** {meta['headline']}\n\n"
+        f"**Photo idea:** {meta.get('photo_hint') or 'any fitting news photo'}\n\n"
+        f"**Caption:**\n\n```\n{meta['caption']}\n```\n\n"
+        f"**Sources:** {src}\n\n"
+        f"---\n"
+        f"### To post it\n"
+        f"Open this issue in the GitHub app or website, write **ok**, attach a photo, and send. "
+        f"(Email replies drop attachments.) Add a credit line after ok if you want one, "
+        f"e.g. `ok credit: Reuters`.\n\n"
+        f"- **no** → skip this story\n\n"
+        f"<sub>post-id: {post_id}</sub>"
+    )
+    res = _req("POST", "/issues", {"title": f"[VOK 📷 photo needed] {meta['headline'][:90]}",
+                                   "body": body, "labels": [LABEL]})
+    return res.get("number") if res else None
+
+
+def credit_from_replies(number: int) -> str | None:
+    for c in _req("GET", f"/issues/{number}/comments?per_page=50") or []:
+        if (c.get("user") or {}).get("login", "").lower() != owner().lower():
+            continue
+        m = re.search(r"credit:\s*([^\n]+)", c.get("body", ""), re.I)
+        if m:
+            return IMG.sub("", m.group(1)).strip()[:80] or None
+    return None

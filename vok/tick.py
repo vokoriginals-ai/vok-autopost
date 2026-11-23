@@ -20,18 +20,23 @@ APPROVED_MAX_H = 20    # approved but still not posted after 20h → too old
 
 def apply_decisions(st: dict) -> None:
     decisions: list[tuple[str, str]] = []
+    image_of: dict[str, str | None] = {}
     if telegram.enabled():
         tg, st["telegram_offset"] = telegram.fetch_decisions(st.get("telegram_offset", 0))
         decisions += tg
     issue_of: dict[str, int] = {}
     if gh.enabled():
-        for decision, number, post_id in gh.decisions():
+        for decision, number, post_id, image in gh.decisions():
             decisions.append((decision, post_id))
             issue_of[post_id] = number
+            image_of[post_id] = image
     for decision, post_id in decisions:
         if decision not in ("ok", "no") or not (POSTS / post_id / "post.json").exists():
             continue
         folder, meta = load_post(post_id)
+        if meta.get("status") == "needs_photo":
+            _photo_reply(folder, meta, post_id, decision, issue_of.get(post_id), image_of.get(post_id))
+            continue
         if meta.get("status") != "pending":
             if post_id in issue_of:      # already decided/expired: just tidy up the issue
                 gh.close(issue_of[post_id])
@@ -45,15 +50,53 @@ def apply_decisions(st: dict) -> None:
                      if decision == "ok" else "❌ Rejected.")
 
 
+def _photo_reply(folder, meta, post_id, decision, number, image) -> None:
+    """Owner answered a 'photo needed' post: no → reject; ok + photo → build and approve."""
+    if decision == "no":
+        meta["status"] = "rejected"
+    elif not image:
+        if not meta.get("asked_for_photo") and number:
+            gh.comment(number, "Got your ok, but no photo was attached. Please reply again "
+                               "from the GitHub app or website with the photo attached.")
+            meta["asked_for_photo"] = True
+            save_post(folder, meta)
+        return
+    else:
+        from vok.render import render                # needs Pillow, only loaded here
+        try:
+            gh.download(image, str(folder / "photo.jpg"))
+            render(str(folder / "photo.jpg"), meta["headline"], str(folder / "render.jpg"),
+                   meta.get("label", "NEWS"))
+        except Exception as e:
+            print(f"{post_id}: attached photo failed: {e}")
+            if number and not meta.get("photo_failed"):
+                gh.comment(number, f"⚠️ Couldn't use that photo ({str(e)[:120]}). "
+                                   "Please attach a JPG or PNG.")
+                meta["photo_failed"] = True
+                save_post(folder, meta)
+            return
+        credit = gh.credit_from_replies(number) if number else None
+        if credit:
+            meta["caption"] = meta["caption"].rstrip() + f"\n\n📸 {credit}"
+            meta["photo_credit"] = credit
+        meta["status"] = "approved"
+    meta["decided_at"] = now().isoformat(timespec="minutes")
+    save_post(folder, meta)
+    print(f"{post_id}: {meta['status']} (photo request)")
+    if number:
+        gh.close(number, "✅ Photo added and approved. It will post in the next free slot."
+                 if meta["status"] == "approved" else "❌ Skipped.")
+
+
 def expire_old() -> None:
     t = now()
     for folder, meta in all_posts():
         status = meta.get("status")
         stamp = meta.get("decided_at") or meta.get("created_at")
-        if status not in ("pending", "approved") or not stamp:
+        if status not in ("pending", "approved", "needs_photo") or not stamp:
             continue
         age_h = (t - datetime.fromisoformat(stamp)).total_seconds() / 3600
-        if (status == "pending" and age_h > PENDING_MAX_H) or \
+        if (status in ("pending", "needs_photo") and age_h > PENDING_MAX_H) or \
            (status == "approved" and age_h > APPROVED_MAX_H):
             meta["status"] = "expired"
             save_post(folder, meta)

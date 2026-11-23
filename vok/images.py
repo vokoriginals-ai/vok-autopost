@@ -53,14 +53,34 @@ def _commons(params: dict) -> dict:
     return {}
 
 
+def wikimedia_person(name: str) -> list[dict]:
+    """Photos that really show this person: files with their full name in the file
+    name, then their Commons category. A plain text search mostly finds group photos."""
+    base = {"action": "query", "format": "json", "prop": "imageinfo",
+            "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 2000}
+    out = _parse(_commons({**base, "generator": "search", "gsrnamespace": 6, "gsrlimit": 25,
+                           "gsrsearch": f'intitle:"{name}" filetype:bitmap'}))
+    if len(out) < 3:
+        time.sleep(1)
+        out += _parse(_commons({**base, "generator": "categorymembers", "gcmtype": "file",
+                                "gcmtitle": f"Category:{name}", "gcmlimit": 40,
+                                "gcmsort": "timestamp", "gcmdir": "desc"}), newest_first=True)
+    return out
+
+
 def wikimedia(query: str) -> list[dict]:
     data = _commons({
         "action": "query", "format": "json", "generator": "search",
         "gsrsearch": f"{query} filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 20,
         "prop": "imageinfo", "iiprop": "url|size|extmetadata|mime", "iiurlwidth": 2000,
     })
-    pages = sorted((data.get("query") or {}).get("pages", {}).values(),
-                   key=lambda p: p.get("index", 99))
+    return _parse(data)
+
+
+def _parse(data: dict, newest_first: bool = False) -> list[dict]:
+    pages = list((data.get("query") or {}).get("pages", {}).values())
+    if not newest_first:
+        pages.sort(key=lambda p: p.get("index", 99))
     out = []
     for rank, p in enumerate(pages):
         info = (p.get("imageinfo") or [{}])[0]
@@ -73,6 +93,12 @@ def wikimedia(query: str) -> list[dict]:
         if min(info.get("width", 0), info.get("height", 0)) < MIN_SIDE:
             continue
         artist = _strip(meta.get("Artist", {}).get("value", "")) or "Unknown"
+        title = p.get("title", "")
+        # news pages use event photos; studio portraits look stiff, so they go last
+        if re.search(r"official.{0,15}(portrait|photo)|headshot|portrait", title, re.I):
+            rank += 6
+        if re.search(r"20(2[3-9])", title):        # recent photo: a little boost
+            rank -= 2
         out.append({
             "url": info.get("thumburl") or info["url"],
             "credit": f"{artist[:60]} / Wikimedia Commons ({lic})",
@@ -136,11 +162,13 @@ def download(url: str, path: str) -> str:
     return path
 
 
-def best_photo(queries: list[str], exclude: set, workdir: str) -> dict | None:
-    """Return the best checked photo (with 'path' to the downloaded file), or None."""
+def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "") -> dict | None:
+    """Return the best checked photo (with 'path' to the downloaded file), or None.
+    If a person is given, photos of that person come first."""
     cands: list[dict] = []
     for q in [q for q in queries if q]:
-        for finder in (wikimedia, openverse):
+        finders = (wikimedia_person, wikimedia, openverse) if q == person else (wikimedia, openverse)
+        for finder in finders:
             try:
                 for c in finder(q):
                     if c["page"] not in exclude and c["page"] not in {x["page"] for x in cands}:
@@ -149,8 +177,11 @@ def best_photo(queries: list[str], exclude: set, workdir: str) -> dict | None:
             except Exception as e:
                 print(f"photo search failed ({finder.__name__}, {q!r}): {str(e)[:90]}")
         if len(cands) >= MAX_DOWNLOADS:
-            break
+            break          # enough from the first (most fitting) queries
 
+    order = {q: i for i, q in enumerate([q for q in queries if q])}
+    for c in cands:
+        c["rank"] += order.get(c["query"], 0) * 50    # person photo beats a sharper backup
     cands.sort(key=lambda c: (c["rank"], -c["pixels"]))
     best = None
     Path(workdir).mkdir(parents=True, exist_ok=True)

@@ -53,3 +53,12 @@ Everything used is free.
 - `vok/publish.py`: Facebook + Instagram
 - `vok/make_posts.py`, `vok/tick.py`: the two automatic jobs
 - `config.json`: feeds, limits, posting hours
+
+
+## Photos (how they are picked)
+1. The person in the news: whoever gave the warning or statement, or the person the story is about.
+   If no person is named, the country's current top leader.
+2. If no free photo of them exists: a photo of the place or object (Strait of Hormuz, US Capitol...).
+3. If still nothing safe and free: you get a **📷 photo needed** email. Open it in the GitHub app or
+   website, write `ok`, attach a photo (and `credit: Reuters` if you like), and send. It is built
+   and posted automatically. Email replies drop attachments, so use the app for these.

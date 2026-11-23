@@ -2,7 +2,7 @@ name: Approve & publish
 
 # Every 30 min from 09:07 to 23:37 Pakistan time:
 #   read your ok/no email replies → publish the next approved post (one per run).
-# Standard-library Python only, so each run takes seconds (free-minutes friendly).
+# Image libraries are cached, so each run still takes well under a minute.
 on:
   schedule:
     - cron: "7,37 4-18 * * *"     # UTC 04:07–18:37 = PKT 09:07–23:37
@@ -31,6 +31,14 @@ jobs:
     timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install (only for posts where you attached a photo)
+        run: pip install -q -r requirements.txt
 
       - name: Approvals + publish
         env:

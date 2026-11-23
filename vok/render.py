@@ -86,49 +86,74 @@ def smart_crop(img: Image.Image, focus: tuple[float, float] | None = None) -> Im
 
 # ---------------------------------------------------------------- headline
 
-def _balanced_lines(words: list[str], f: ImageFont.FreeTypeFont, max_w: int):
-    """Split words into the fewest lines that fit, with line widths as equal
-    as possible (so no line is much longer than the others)."""
+WEAK_END = {"A", "AN", "THE", "OF", "TO", "IN", "ON", "AT", "AS", "FOR", "AND", "OR",
+            "BY", "WITH", "FROM", "IS", "ITS", "HIS", "HER", "THEIR", "THAT", "WHO"}
+
+
+def _ragged(widths: list[int]) -> float:
+    """How uneven the lines look: 0 = all lines the same width.
+    A short line in the middle (or a long last line) looks odd, so those cost more."""
+    m = max(widths)
+    score = sum(((m - w) / m) ** 2 for w in widths)
+    for i, w in enumerate(widths[1:-1], 1):          # dip in the middle: zig-zag shape
+        if w < widths[i - 1] and w < widths[i + 1]:
+            score += 0.15
+    if len(widths) > 1 and widths[-1] > widths[0] * 1.05:
+        score += 0.05
+    return score
+
+
+def _balanced_lines(words: list[str], f: ImageFont.FreeTypeFont, max_w: int, n_lines: int):
+    """Best split of words into exactly n_lines lines that fit, or None."""
     def width(s: str) -> int:
         return f.getbbox(s)[2]
-
     n = len(words)
-    for n_lines in range(1, min(n, 6) + 1):
-        best, best_score = None, None
-        for cuts in itertools.combinations(range(1, n), n_lines - 1):
-            bounds = (0, *cuts, n)
-            lines = [" ".join(words[a:b]) for a, b in zip(bounds, bounds[1:])]
-            widths = [width(l) for l in lines]
-            if max(widths) > max_w:
-                continue
-            # prefer equal lines; small penalty if the last line is the longest
-            score = max(widths) - min(widths)
-            if widths[-1] > widths[0]:
-                score += 20
-            if best_score is None or score < best_score:
-                best, best_score = lines, score
-        if best:
-            return best
-    return None
+    if n_lines > n:
+        return None
+    best, best_score = None, None
+    for cuts in itertools.combinations(range(1, n), n_lines - 1):
+        bounds = (0, *cuts, n)
+        lines = [" ".join(words[a:b]) for a, b in zip(bounds, bounds[1:])]
+        widths = [width(l) for l in lines]
+        if max(widths) > max_w:
+            continue
+        sc = _ragged(widths)
+        # a line ending on "A", "THE", "OF"... reads badly
+        sc += 0.12 * sum(1 for l in lines[:-1] if l.split()[-1] in WEAK_END)
+        if best_score is None or sc < best_score:
+            best, best_score = lines, sc
+    return (best, best_score) if best else None
 
 
 def fit_headline(text: str):
+    """Pick font size (64 down to 50) and 2 to 4 lines so the block looks even.
+    Bigger text wins unless a slightly smaller size gives clearly straighter lines."""
     words = text.upper().split()
-    # keep dashes on the end of the previous line, never at the start of one
     merged: list[str] = []
-    for w in words:
+    for w in words:                     # never start a line with a dash
         if w in {"—", "–", "-"} and merged:
             merged[-1] += " " + w
         else:
             merged.append(w)
     words = merged
-    for size in range(64, 47, -2):            # 64px like the template, shrink if long
+    options = []
+    for size in range(64, 49, -2):
         f = font(800, size)
-        lines = _balanced_lines(words, f, HEADLINE_MAX_W)
-        if lines and len(lines) <= 4:
-            return f, lines
+        for n_lines in (1, 2, 3, 4):
+            r = _balanced_lines(words, f, HEADLINE_MAX_W, n_lines)
+            if not r:
+                continue
+            lines, rag = r
+            # cost: uneven lines + smaller text + extra lines
+            cost = rag * 1.0 + (64 - size) * 0.012 + (n_lines - 1) * 0.02
+            if n_lines == 1 and len(words) > 3:
+                cost += 0.3
+            options.append((cost, size, lines))
+    if options:
+        _, size, lines = min(options, key=lambda o: o[0])
+        return font(800, size), lines
     f = font(800, 48)
-    return f, _balanced_lines(words, f, HEADLINE_MAX_W) or [" ".join(words)]
+    return f, [" ".join(words)]
 
 
 # ---------------------------------------------------------------- drawing
