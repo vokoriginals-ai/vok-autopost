@@ -2,7 +2,7 @@
   "headline": "US plans to blacklist Singapore AI firm Megaspeed after Nvidia spy scandal",
   "label": "NEWS",
   "caption": "US officials are moving hard against a major tech firm over security fears 🚨\n\nAccording to the BBC, the US Department of Commerce announced plans to add Singapore based Megaspeed Ltd to a trade blacklist on Monday. \n\nThe company faces accusations of funneling advanced Nvidia AI computer chips to China.\n\nIncreased scrutiny followed a recent scandal involving a former Megaspeed executive who was accused of working as a spy for China while having a romantic relationship with Nvidia head Jensen Huang.\n\nWhat are your thoughts on this tech security breach? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Nvidia #TechNews #USChina\n\n📸 Photographer: Peter Dasilva / Wikimedia Commons (CC BY 4.0)",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-24T03:42+05:00",
@@ -21,5 +21,20 @@
     "https://www.bbc.co.uk/news/articles/cv98xpg5dg5zo?at_medium=RSS&at_campaign=rss",
     "https://news.google.com/rss/articles/CBMisAFBVV95cUxOV0dQODlEOFFrbUdoOUxqQU11LTBOM3NSMGFNLXBNODhvbW1yY2k0LWYweUFFY0t3YkY4ck1idjVpd1J2QmtvbHROdk9ZeFdwcVRqZThwbmtyREN1M3hpTTJpSW8wajRBclNkbW5qajBoelZwV0llMUZKNDJpdy1qMlM5cXRCYXRXNVlJU0Q2SmFYYUk3Umlqa093eWRJSVVWSkpjMnZLV3F5TXFDVWhPbQ?oc=5"
   ],
-  "issue": 28
+  "issue": 28,
+  "decided_at": "2026-11-24T03:55+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184945134988633",
+      "post_id": "790959357430859_122184945158988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184945134988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/920858671_122184945140988633_4849871880375463123_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHpI8kcRWQLDbPLAXxx2fTf1PeWIt5bWNjU95Yi3ltY2MEoCtAXWLIZMpJdwRlqKkm3MBpnt4VIHIzfqsC94Zv0&_nc_ohc=Ix1Jqu7CxiQQ7kNvwFP-qni&_nc_oc=Adpouve-zImGiJ98K50lgF6l91GcKr5D4rLpQu-ax6blCgWMrgQj60AwUJz1hTFavzQ&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=LMeGKe99FzHsHZtv0NRdZQ&_nc_tpa=Q5bMBQLiTY4qQo3Ct4IluWYlOTOcy2wJZRynJa2xU6gmJXzbMdP-I8NbBdGNY6-s_zXdupzRMim_qghRPg&oh=00_AQRZyjufuY1483J80ZwGO2IWN6Dw9Qhyh0luyFVWvSUv9A&oe=6B0AB2D2"
+    },
+    "instagram": {
+      "media_id": "18124464148979541",
+      "permalink": "https://www.instagram.com/p/DgGgF5EDnrt/"
+    }
+  },
+  "published_at": "2026-11-24T03:55+05:00"
 }
