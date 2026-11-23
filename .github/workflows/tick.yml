@@ -5,30 +5,36 @@ name: Approve & publish
 # Image libraries are cached, so each run still takes well under a minute.
 on:
   schedule:
-    - cron: "7,37 4-18 * * *"     # UTC 04:07–18:37 = PKT 09:07–23:37
+    - cron: "7,22,37,52 7-23 * * *"   # PKT 12:07 pm to 4:52 am
+    - cron: "7,22,37,52 0-4 * * *"    # PKT 5:07 am to 9:52 am
   workflow_dispatch:
     inputs:
       post_id:
         description: "Publish this post folder right now (optional)"
         required: false
         default: ""
+      drip:
+        description: "Stay on and spread queued posts until 10 am (yes/no)"
+        required: false
+        default: "no"
       publish_all_approved:
         description: "Publish ALL approved posts now, 3 min apart (yes/no)"
         required: false
         default: "no"
 
 permissions:
+  actions: write
   contents: write
   issues: write
 
 concurrency:
-  group: vok-repo
+  group: ${{ github.event.inputs.drip == 'yes' && 'vok-drip' || 'vok-repo' }}
   cancel-in-progress: false
 
 jobs:
   tick:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
 
@@ -48,8 +54,13 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           POST_ID: ${{ github.event.inputs.post_id }}
           ALL: ${{ github.event.inputs.publish_all_approved }}
+          DRIP: ${{ github.event.inputs.drip }}
         run: |
-          if [ "$ALL" = "yes" ]; then
+          git config user.name "vok-bot"
+          git config user.email "vok-bot@users.noreply.github.com"
+          if [ "$DRIP" = "yes" ]; then
+            python3 -m vok.run drip
+          elif [ "$ALL" = "yes" ]; then
             python3 -m vok.run publish-all 180
           elif [ -n "$POST_ID" ]; then
             python3 -m vok.run publish "$POST_ID"

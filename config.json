@@ -1,11 +1,11 @@
 {
-  "posts_per_day": 20,
+  "posts_per_day": 25,
   "posts_per_run": 4,
   "posting_hours_pkt": [
-    9,
-    24
+    12,
+    10
   ],
-  "min_minutes_between_posts": 25,
+  "min_minutes_between_posts": 30,
   "min_sources": 2,
   "story_max_age_hours": 18,
   "gemini_models": [
@@ -82,5 +82,7 @@
     "The Express Tribune",
     "Geo News"
   ],
-  "require_trusted_source": true
+  "require_trusted_source": true,
+  "auto_approve_after_minutes": 15,
+  "cycle_start_hour_pkt": 12
 }

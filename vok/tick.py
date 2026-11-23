@@ -12,7 +12,7 @@ from datetime import datetime, timedelta
 
 from vok import gh, telegram
 from vok.publish import PublishError, publish
-from vok.state import POSTS, all_posts, config, load_post, load_state, now, save_post, save_state
+from vok.state import POSTS, all_posts, config, cycle_day, in_window, load_post, load_state, now, save_post, save_state
 
 PENDING_MAX_H = 12     # not approved within 12h → too old
 APPROVED_MAX_H = 20    # approved but still not posted after 20h → too old
@@ -88,6 +88,25 @@ def _photo_reply(folder, meta, post_id, decision, number, image) -> None:
                  if meta["status"] == "approved" else "❌ Skipped.")
 
 
+def auto_approve(cfg: dict) -> None:
+    """No reply within N minutes → approve it anyway (Saad edits after if needed)."""
+    wait = cfg.get("auto_approve_after_minutes")
+    if not wait:
+        return
+    t = now()
+    for folder, meta in all_posts():
+        if meta.get("status") != "pending" or not meta.get("created_at"):
+            continue
+        if (t - datetime.fromisoformat(meta["created_at"])) >= timedelta(minutes=wait):
+            meta["status"] = "approved"
+            meta["decided_at"] = t.isoformat(timespec="minutes")
+            meta["note"] = f"auto-approved: no reply in {wait} min"
+            save_post(folder, meta)
+            print(f"{folder.name}: auto-approved")
+            if gh.enabled() and meta.get("issue"):
+                gh.close(meta["issue"], f"⏱️ No reply in {wait} min, so it was approved automatically.")
+
+
 def expire_old() -> None:
     t = now()
     for folder, meta in all_posts():
@@ -107,12 +126,11 @@ def expire_old() -> None:
 
 def publish_next(cfg: dict, st: dict) -> bool:
     t = now()
-    start, end = cfg["posting_hours_pkt"]
-    if not (start <= t.hour < end):
+    if not in_window(t):
         print("outside posting hours")
         return True
-    today = t.date().isoformat()
-    if sum(1 for p in st["published"] if p.startswith(today)) >= cfg["posts_per_day"]:
+    today = cycle_day(t)
+    if sum(1 for p in st["published"] if cycle_day(datetime.fromisoformat(p)) == today) >= cfg["posts_per_day"]:
         print("daily posting limit reached")
         return True
     if st["published"]:
@@ -127,7 +145,9 @@ def publish_next(cfg: dict, st: dict) -> bool:
     if not queue:
         print("nothing approved to publish")
         return True
-    folder, meta = min(queue, key=lambda fm: fm[1].get("decided_at") or fm[1].get("created_at", ""))
+    # breaking news first, then the oldest approval
+    folder, meta = min(queue, key=lambda fm: (-int(fm[1].get("priority", 1)),
+                                               fm[1].get("decided_at") or fm[1].get("created_at", "")))
 
     def save_progress(res: dict) -> None:
         meta["result"] = res
@@ -167,8 +187,13 @@ def main() -> int:
     cfg = config()
     st = load_state()
     apply_decisions(st)
+    auto_approve(cfg)
     expire_old()
-    ok = publish_next(cfg, st)
+    if st.get("drip_until") and datetime.fromisoformat(st["drip_until"]) > now():
+        print("a drip run is publishing; this run only handles replies")
+        ok = True
+    else:
+        ok = publish_next(cfg, st)
     save_state(st)
     return 0 if ok else 1
 

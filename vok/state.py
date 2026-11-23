@@ -59,3 +59,17 @@ def all_posts() -> list[tuple[Path, dict]]:
 def slug(text: str, n: int = 5) -> str:
     words = re.findall(r"[a-z0-9]+", text.lower())
     return "-".join(words[:n]) or "post"
+
+
+def cycle_day(t=None) -> str:
+    """The posting 'day' starts at 12 pm PKT and runs to the next morning."""
+    from datetime import timedelta as _td
+    t = t or now()
+    return (t - _td(hours=config().get("cycle_start_hour_pkt", 12))).date().isoformat()
+
+
+def in_window(t=None) -> bool:
+    """True inside posting hours; [12, 10] means 12 pm until 10 am next day."""
+    t = t or now()
+    start, end = config()["posting_hours_pkt"]
+    return start <= t.hour < end if start < end else (t.hour >= start or t.hour < end)

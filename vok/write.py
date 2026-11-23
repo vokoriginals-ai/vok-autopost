@@ -47,6 +47,9 @@ CAPTION
 - Then exactly 5 hashtags on one line: #Vok #VokOriginals plus 3 specific ones.
 - Plain text, no markdown, no links. Total under 1,800 characters.
 
+PRIORITY: "priority": 3 = breaking news (just happened, big: war moves, strikes, deaths of
+leaders, major disasters, huge political shocks), 2 = important, 1 = normal/viral.
+
 LABEL: "NEWS" for hard news, "VIRAL" for viral/social/celebrity stories.
 
 PHOTO (who or what the picture shows)
@@ -64,7 +67,7 @@ PHOTO (who or what the picture shows)
 
 Return ONLY JSON with these keys:
 {"publishable": true/false, "reason": "...", "label": "NEWS|VIRAL", "headline": "...",
- "caption": "...", "photo_person": "...", "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
+ "caption": "...", "photo_person": "...", "priority": 1, "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
 """
 
 

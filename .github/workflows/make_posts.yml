@@ -4,7 +4,8 @@ name: Make new posts
 # them, and email each one for approval (GitHub issue; reply ok / no).
 on:
   schedule:
-    - cron: "20 2,5,8,11,14,17 * * *"   # PKT 07:20, 10:20, 13:20, 16:20, 19:20, 22:20
+    - cron: "20 7-23 * * *"     # every hour, PKT 12:20 pm to 4:20 am
+    - cron: "20 0-4 * * *"      # PKT 5:20 am to 9:20 am
   workflow_dispatch:
     inputs:
       count:

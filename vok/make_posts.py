@@ -20,9 +20,13 @@ from vok.write import WriteError, write_post
 def main(count: int | None = None, auto_approve: bool = False, hold: bool = False) -> int:
     cfg = config()
     st = load_state()
-    today = now().date().isoformat()
+    from vok.state import cycle_day
+    from datetime import datetime as _dt
+    today = cycle_day()
 
-    made_today = sum(1 for _, m in all_posts() if m.get("created_at", "").startswith(today))
+    made_today = sum(1 for _, m in all_posts()
+                     if m.get("created_at") and cycle_day(_dt.fromisoformat(m["created_at"])) == today
+                     and m.get("status") not in ("rejected", "expired"))
     room = min(count or cfg["posts_per_run"], cfg["posts_per_day"] - made_today)
     if room <= 0:
         print(f"daily limit reached ({made_today} made today)")
@@ -30,6 +34,12 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
 
     recent = (now() - timedelta(days=2)).isoformat()
     seen = [s["words"] for s in st["seen"] if s.get("at", "") >= recent]
+    # stories VOK already posted (by anyone on the team) count as seen
+    try:
+        from vok.publish import recent_vok_posts
+        seen += recent_vok_posts()
+    except Exception as e:
+        print(f"couldn't read VOK's recent posts: {str(e)[:100]}")
     stories = collect.top_stories(cfg, seen, limit=room * 3)
     print(f"{len(stories)} candidate stories, room for {room}")
 
@@ -105,6 +115,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             "label": w["label"],
             "caption": caption,
             "status": "hold" if hold else ("approved" if auto_approve else "pending"),
+            "priority": int(w.get("priority") or 1),
             "ai_image": bool(photo.get("ai_generated")),
             "created_at": now().isoformat(timespec="minutes"),
             "targets": ["facebook", "instagram"],

@@ -115,3 +115,29 @@ def publish(image_path: str, caption: str, targets=("facebook", "instagram"),
         if on_step:
             on_step(result)
     return result
+
+
+def recent_vok_posts(hours: int = 36) -> list[list[str]]:
+    """Keywords of everything posted on VOK recently, by this system or by staff,
+    so the same story isn't posted twice."""
+    from datetime import datetime, timedelta, timezone
+    from vok.collect import _words
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    texts = []
+    ig = net.get_json(f"{GRAPH}/{IG_ID}/media", {"fields": "caption,timestamp", "limit": 50,
+                                                  "access_token": _token()})
+    for m in ig.get("data", []):
+        if datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z") >= cutoff:
+            texts.append(m.get("caption") or "")
+    fb = net.get_json(f"{GRAPH}/{PAGE_ID}/posts", {"fields": "message,created_time", "limit": 50,
+                                                    "access_token": _token()})
+    for m in fb.get("data", []):
+        if datetime.strptime(m["created_time"], "%Y-%m-%dT%H:%M:%S%z") >= cutoff:
+            texts.append(m.get("message") or "")
+    out = []
+    for t in texts:
+        first = " ".join(t.strip().splitlines()[:3])[:300]      # headline-ish part
+        if first:
+            out.append(sorted(_words(first)))
+    print(f"VOK posted {len(out)} items in the last {hours}h (skipping those stories)")
+    return out
