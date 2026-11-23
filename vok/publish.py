@@ -58,14 +58,14 @@ def post_facebook(image_path: str, caption: str, published: bool = True) -> dict
     photo_id = data["id"]
     info = _check(requests.get(
         f"{GRAPH}/{photo_id}",
-        params={"fields": "images,permalink_url", "access_token": _token()},
+        params={"fields": "images,link", "access_token": _token()},
         timeout=60,
     ))
     biggest = max(info["images"], key=lambda im: im["width"])
     return {
         "photo_id": photo_id,
         "post_id": data.get("post_id"),
-        "permalink": info.get("permalink_url"),
+        "permalink": info.get("link"),
         "image_url": biggest["source"],
     }
 
@@ -105,11 +105,27 @@ def post_instagram(image_url: str, caption: str) -> dict:
     return {"media_id": media_id, "permalink": link}
 
 
-def publish(image_path: str, caption: str, targets=("facebook", "instagram")) -> dict:
-    result: dict = {}
-    fb = post_facebook(image_path, caption, published="facebook" in targets)
-    if "facebook" in targets:
+def publish(image_path: str, caption: str, targets=("facebook", "instagram"),
+            done: dict | None = None, on_step=None) -> dict:
+    """Publish to each target that isn't already in `done`.
+
+    `on_step(result)` is called after each platform succeeds, so progress is
+    saved even if a later step fails (a re-run then never double-posts).
+    """
+    result: dict = dict(done or {})
+    image_url = (result.get("facebook") or {}).get("image_url")
+
+    if "facebook" in targets and "facebook" not in result:
+        fb = post_facebook(image_path, caption, published=True)
         result["facebook"] = fb
-    if "instagram" in targets:
-        result["instagram"] = post_instagram(fb["image_url"], caption)
+        image_url = fb["image_url"]
+        if on_step:
+            on_step(result)
+
+    if "instagram" in targets and "instagram" not in result:
+        if not image_url:  # Facebook not wanted/done: hidden upload just to host the image
+            image_url = post_facebook(image_path, caption, published=False)["image_url"]
+        result["instagram"] = post_instagram(image_url, caption)
+        if on_step:
+            on_step(result)
     return result

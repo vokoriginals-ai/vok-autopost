@@ -61,9 +61,15 @@ def do_publish(post_id: str) -> bool:
         print(f"{post_id}: already published, skipping")
         return True
     image = do_render(post_id)
+
+    def save_progress(res: dict) -> None:
+        meta["result"] = res
+        _save(folder, meta)
+
     try:
         result = publish(str(image), meta["caption"],
-                         tuple(meta.get("targets", ["facebook", "instagram"])))
+                         tuple(meta.get("targets", ["facebook", "instagram"])),
+                         done=meta.get("result"), on_step=save_progress)
     except PublishError as e:
         meta["status"] = "failed"
         meta["error"] = str(e)
