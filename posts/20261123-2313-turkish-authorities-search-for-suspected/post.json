@@ -2,7 +2,7 @@
   "headline": "Turkish authorities search for suspected lioness on the loose in Istanbul woodland",
   "label": "NEWS",
   "caption": "A big cat on the loose has authorities on high alert in Turkey. 🦁\n\nTurkish authorities are searching for an animal resembling a lion in a woodland area on the outskirts of Istanbul, according to Reuters and AP News.\n\n Anadolu reports that Istanbul authorities have closed a recreational woodland as the capture operation expands.\n\nTeams are actively working to locate and capture the suspected lioness safely while the operation continues, according to TRT World.\n\nHave you ever encountered a wild animal in your city before?\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Istanbul #Turkey #Wildlife\n\n📸 Spc. Chuck Gill / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-23T23:14+05:00",
@@ -28,5 +28,18 @@
   ],
   "issue": 8,
   "decided_at": "2026-11-23T23:29+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184936992988633",
+      "post_id": "790959357430859_122184937016988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184936992988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/927929923_122184936998988633_249262611018739726_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE0RTH8ezSnIP9Ln4gUbzlayDew3HCD9M3IN7DccIP0zTGjIQjYaXKKYAs1hPRBubcgzzOUfC2YsGSI8mBTldVj&_nc_ohc=nr62pgKCGRoQ7kNvwHq2085&_nc_oc=AdpiVz7qkbRjvWxk14mEl34rQPXNgJvofcE4N-wGqkvb_ZmFyb322FVPLw56ceYt89A&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=z33iuAlJCdXu7MS3Z9bGUw&_nc_tpa=Q5bMBQJtiqTF4ujKeGXSK7cmKOwCIaeqO4SvcblKjIwQHB80wxWUoQwc69xMzX-z0eRNO_O0qmxh90OXpQ&oh=00_AQQEwIZ52CZV1FXPGc-oycr1YUawkGRvBYFSXivfNprHqw&oe=6B0A80BE"
+    },
+    "instagram": {
+      "media_id": "18117546869026566",
+      "permalink": "https://www.instagram.com/p/DgGSsVxEbm1/"
+    }
+  },
+  "published_at": "2026-11-24T01:57+05:00"
 }
