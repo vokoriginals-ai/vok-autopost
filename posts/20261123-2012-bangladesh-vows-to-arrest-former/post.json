@@ -2,7 +2,7 @@
   "headline": "Bangladesh vows to arrest former Prime Minister Sheikh Hasina if she returns from India",
   "label": "NEWS",
   "caption": "Bangladesh has issued a severe warning to former leader Sheikh Hasina ahead of her planned return ⚠️\n\nState Minister for Foreign Affairs Shama Obaed Islam told Reuters that Bangladesh will arrest and jail former Prime Minister Sheikh Hasina if she returns from India.\n\nHasina has been residing in India since fleeing Bangladesh in 2024, and her announcement to return in December has triggered political tension and renewed street violence.\n\nDhaka is also seeking Hasina's extradition from India and expects New Delhi to comply with an existing extradition treaty, according to government officials.\n\nMeanwhile, politician Tarique Rahman is actively rallying political parties against Hasina's Awami League party as political instability deepens.\n\nDo you think India will extradite Sheikh Hasina back to Bangladesh? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Bangladesh #SheikhHasina #India\n\n📸 DelwarHossain / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "ai_image": false,
   "created_at": "2026-11-23T20:13+05:00",
   "targets": [
@@ -24,5 +24,18 @@
   ],
   "issue": 1,
   "decided_at": "2026-11-23T20:40+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184912134988633",
+      "post_id": "790959357430859_122184912170988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184912134988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/922110283_122184912140988633_9198386059858447087_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGn2t2vt6WYMMiQL4AfuBq7ZAJ8rQHSIipkAnytAdIiKkWIEBAXlMb5uKTf9DfTGYsNULzfG4kWwpWurmPhsJ5i&_nc_ohc=dGhviadfWZkQ7kNvwFwDvgx&_nc_oc=AdplTzerncHz_X1n6EdDCqq2OFvHKGz3zgPMI0ENgCfqlb8c6L4nOfJFZTeV4TSSL9I&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=lETEhbGdWdLupjYIff_LRQ&_nc_tpa=Q5bMBQIALgB3gWCMDDaMMXTjwBF2nIr0kqjj_3CxquIqyKZMsA6C4aq6Ph-UfapSEC9CMW38WTG0ZyKrvQ&oh=00_AQSN2vJwHI4LelpG8GjQLaCWeVgDXoRUSFxdZAwEFKPNyA&oe=6B0A2799"
+    },
+    "instagram": {
+      "media_id": "18198589654351610",
+      "permalink": "https://www.instagram.com/p/DgFviU_DVUM/"
+    }
+  },
+  "published_at": "2026-11-23T20:50+05:00"
 }
