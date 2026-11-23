@@ -52,6 +52,46 @@
     {
       "name": "Google News",
       "url": "https://news.google.com/rss/search?q=when:1d+site:firstpost.com+(world+OR+Iran+OR+Israel+OR+Gaza+OR+Saudi)&hl=en-IN&gl=IN&ceid=IN:en"
+    },
+    {
+      "name": "The National (UAE)",
+      "url": "https://news.google.com/rss/search?q=site%3Athenationalnews.com+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Middle East Monitor",
+      "url": "https://news.google.com/rss/search?q=site%3Amiddleeastmonitor.com+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "TRT World",
+      "url": "https://news.google.com/rss/search?q=site%3Atrtworld.com+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Anadolu",
+      "url": "https://news.google.com/rss/search?q=site%3Aaa.com.tr+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Arab News",
+      "url": "https://news.google.com/rss/search?q=site%3Aarabnews.com+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Gulf News",
+      "url": "https://news.google.com/rss/search?q=site%3Agulfnews.com+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "AP News",
+      "url": "https://news.google.com/rss/search?q=site%3Aapnews.com+world+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Sky News",
+      "url": "https://news.google.com/rss/search?q=site%3Anews.sky.com+world+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Breaking world",
+      "url": "https://news.google.com/rss/search?q=breaking+news+world+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
+    },
+    {
+      "name": "Breaking Middle East",
+      "url": "https://news.google.com/rss/search?q=breaking+Middle+East+OR+Gaza+OR+Iran+OR+Israel+when%3A1d&hl=en-US&gl=US&ceid=US%3Aen"
     }
   ],
   "trusted_sources": [
@@ -80,7 +120,11 @@
     "DW",
     "NDTV",
     "The Express Tribune",
-    "Geo News"
+    "Geo News",
+    "The National",
+    "Middle East Monitor",
+    "TRT World",
+    "Gulf News"
   ],
   "require_trusted_source": true,
   "auto_approve_after_minutes": 15,
