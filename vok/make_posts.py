@@ -96,66 +96,60 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}-{n}"
             n += 1
         folder = POSTS / post_id
-        photo = images.best_photo([w.get("photo_person", ""), w.get("image_query", ""),
-                                   w.get("image_query_backup", "")],
-                                  person=w.get("photo_person", ""),
-                                  exclude=used, workdir=str(folder / "_candidates"))
-        if not photo:
-            shutil.rmtree(folder / "_candidates", ignore_errors=True)
-            if auto_approve or hold or not gh.enabled() or asked >= 2:
-                print(f"skip (no sharp free photo): {w['headline']}")
-                shutil.rmtree(folder, ignore_errors=True)
-                continue
-            meta = {
-                "headline": clean(w["headline"]), "label": w["label"],
-                "highlight": clean(w.get("highlight") or ""),
-                "caption": clean(w["caption"].rstrip()), "status": "needs_photo",
-                "ai_image": False, "created_at": now().isoformat(timespec="minutes"),
-                "targets": ["facebook", "instagram"],
-                "photo_hint": ", ".join(x for x in (w.get("photo_person"), w.get("image_query")) if x),
-                "sources_named": story["sources"],
-                "source_links": [i["link"] for i in story["items"][:8]],
-            }
-            folder.mkdir(parents=True, exist_ok=True)
-            meta["issue"] = gh.create_photo_request_issue(post_id, meta)
-            save_post(folder, meta)
-            print(f"photo needed: {post_id}")
-            asked += 1
-            made += 1
-            continue
-
         headline = clean(w["headline"])
-        try:
-            shutil.copy(photo["path"], folder / "photo.jpg")
-            render(str(folder / "photo.jpg"), headline, str(folder / "render.jpg"), w["label"],
-                   highlight=clean(w.get("highlight") or ""))
-        except Exception as e:
-            print(f"skip (render failed): {e}")
-            shutil.rmtree(folder, ignore_errors=True)
-            continue
-        finally:
-            shutil.rmtree(folder / "_candidates", ignore_errors=True)
-
-        from vok.write import check_photo
-        ok, why = check_photo(str(folder / "render.jpg"), headline, w["caption"][:600], cfg["gemini_models"])
-        print(f"  photo check: {'OK' if ok else 'REJECTED'} ({why})")
-        if not ok:
-            photo = None       # handled below as "no usable photo"
+        highlight = clean(w.get("highlight") or "")
+        # Photo search in rounds: 1) the person / the event itself, 2) safe generic pictures
+        # (Pexels, Pixabay, Openverse). Every pick must pass the Gemini photo check.
+        rounds = [([w.get("photo_person", ""), w.get("image_query", ""),
+                    w.get("image_query_backup", "")], False),
+                  ([q for q in (w.get("photo_ideas") or [])[:3] if isinstance(q, str)], True)]
+        photo, why = None, "no safe photo found"
+        folder.mkdir(parents=True, exist_ok=True)
+        for queries, generic in rounds:
+            if not any(queries):
+                continue
+            cand = images.best_photo(queries, person="" if generic else w.get("photo_person", ""),
+                                     exclude=used, workdir=str(folder / "_candidates"), generic=generic)
+            if not cand:
+                continue
+            try:
+                shutil.copy(cand["path"], folder / "photo.jpg")
+                render(str(folder / "photo.jpg"), headline, str(folder / "render.jpg"), w["label"],
+                       highlight=highlight)
+            except Exception as e:
+                print(f"render failed: {e}")
+                continue
+            from vok.write import check_photo
+            ok, why = check_photo(str(folder / "render.jpg"), headline, w["caption"][:600], cfg["gemini_models"])
+            print(f"  photo check ({'generic' if generic else 'main'}): {'OK' if ok else 'REJECTED'} ({why})")
+            if ok:
+                photo = cand
+                break
+            used.add(cand["page"])
             (folder / "render.jpg").unlink(missing_ok=True)
-            for x in folder.glob("photo.*"):
-                x.unlink()
+            (folder / "photo.jpg").unlink(missing_ok=True)
+        shutil.rmtree(folder / "_candidates", ignore_errors=True)
+
+        if not photo and w["label"] != "VIRAL":
+            # hard news never waits for a photo: clean VOK headline card instead
+            from vok.render import render_text_card
+            render_text_card(headline, str(folder / "render.jpg"), w["label"], highlight)
+            photo = {"credit": "", "page": "text-card", "sharpness": 0, "text_card": True}
+            print(f"  no usable photo ({why}): headline card used")
+
+        if not photo:
             if auto_approve or hold or not gh.enabled() or asked >= 2:
-                print(f"skip (photo rejected): {headline}")
+                print(f"skip (no photo for viral story): {headline}")
                 shutil.rmtree(folder, ignore_errors=True)
                 continue
             meta = {
-                "headline": headline, "label": w["label"],
+                "headline": headline, "label": w["label"], "highlight": highlight,
                 "caption": clean(w["caption"].rstrip()), "status": "needs_photo",
                 "priority": int(w.get("priority") or 1),
                 "ai_image": False, "created_at": now().isoformat(timespec="minutes"),
                 "targets": ["facebook", "instagram"],
                 "photo_hint": ", ".join(x for x in (w.get("photo_person"), w.get("image_query")) if x)
-                              + f" (auto photo rejected: {why})",
+                              + f" ({why})",
                 "sources_named": story["sources"],
                 "source_links": [i["link"] for i in story["items"][:8]],
             }
@@ -172,10 +166,12 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         elif photo.get("ai_enhanced"):
             from vok.words import AI_ENHANCED_NOTE
             caption = add_ai_note(caption, AI_ENHANCED_NOTE)
-        caption += f"\n\n📸 {photo['credit']}"
+        if photo.get("credit"):
+            caption += f"\n\n📸 {photo['credit']}"
         meta = {
             "headline": headline,
             "label": w["label"],
+            "highlight": highlight,
             "caption": caption,
             "status": "hold" if hold else ("approved" if auto_approve else "pending"),
             "priority": int(w.get("priority") or 1),
@@ -199,7 +195,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             preview = host_image(str(folder / "render.jpg")) if os.environ.get("META_PAGE_TOKEN") else None
             meta["issue"] = gh.create_post_issue(post_id, meta, preview)
         save_post(folder, meta)
-        if not photo["page"].startswith("library:"):     # Saad's library photos may be reused
+        if not photo.get("text_card") and not photo["page"].startswith("library:"):     # Saad's library photos may be reused
             st["photos"].append({"at": now().isoformat(), "page": photo["page"]})
         if telegram.enabled() and not (auto_approve or hold):
             telegram.send_for_approval(post_id, str(folder / "render.jpg"), meta)

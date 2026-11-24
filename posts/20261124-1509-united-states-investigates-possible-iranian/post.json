@@ -2,7 +2,7 @@
   "headline": "United States investigates possible Iranian role in cyberattacks targeting fifty commercial ships",
   "label": "NEWS",
   "caption": "The United States is investigating a possible Iranian role in a wave of cyberattacks targeting dozens of commercial ships 🚢\n\nAccording to Reuters and other reports, American officials are eyeing Iran as a possible culprit behind cyberattacks hitting up to fifty commercial tankers and ships.\n\nWSJ reports that the probe focuses on whether Iranian actors are linked to these digital attacks against energy tankers and transport vessels.\n\nAuthorities have not yet finalized conclusions as the investigation into the security breaches continues.\n\nWhat do you think is behind these rising maritime security threats? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Iran #CyberSecurity #USNews",
-  "status": "needs_photo",
+  "status": "expired",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T15:09+05:00",
@@ -30,5 +30,6 @@
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxNVjR1WG9RTVdfSTNnS1RTOWcwVlhpeGMtaUdMZGVIU1I0ZWt1ZlhtQ2F1ODJZOEwxVzB2ZHBYNDIxMkEtdjdMY1Z2X050QjY2VjYwR1VmTDZSbWxiQTNwZ09nZTRHYzdweXEzajYxcnZxTUp3eWdSdEtvX2RMTllnY205N3VoTlJnTEQtOEYySEVHNDZMa0p5bHdPWG9KTUw1Zzg3VnZuVEVGV3czanhjQUJxdDNqTXFvMXlZT1k4bmlQYkJfYXUya0lsbzRoUQ?oc=5",
     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaDNLV040WjYxakp4SFpkLW1ZSWo1M3dJOE8xV3pZTmRDZ0EwclVFclVWQlZpazJiRTJwNWtCdmZGeTZkcmJqQUlWbVo5ME92cFZXSUFFOUkyUmp3SldOYmR5S2xXZUVHR1lSZXgzSEFWdHhkTm5HeEM4NVEyc0djNFNrTW9GTFh5WW1j?oc=5"
   ],
-  "issue": 41
+  "issue": 41,
+  "note": "expired: no photo for hours (replaced by new photo system)"
 }

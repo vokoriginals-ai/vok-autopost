@@ -365,6 +365,41 @@ def render_viral_glass(image_path, headline, out_path, highlight="", focus=None)
     return out_path
 
 
+def render_text_card(headline: str, out_path: str, label: str = "NEWS", highlight: str = "") -> str:
+    """No safe photo: a clean VOK headline card instead of waiting. Dark VOK navy with a soft
+    glow, big headline (key words in VOK teal), tag, logo and READ CAPTION."""
+    c = Image.new("RGBA", (W, H), (5, 22, 30, 255))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    gd = ImageDraw.Draw(glow)
+    for r, a in ((620, 30), (480, 40), (340, 50)):
+        gd.ellipse((W - 200 - r, 150 - r, W - 200 + r, 150 + r), fill=(40, 150, 150, a + 30))
+    from PIL import ImageFilter
+    c.alpha_composite(glow.filter(ImageFilter.GaussianBlur(90)))
+    tex = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    td = ImageDraw.Draw(tex)
+    for x in range(-H, W, 46):                                  # faint diagonal texture
+        td.line((x, H, x + H, 0), fill=(255, 255, 255, 9), width=2)
+    c.alpha_composite(tex)
+    _logo(c)
+    d = ImageDraw.Draw(c)
+    f, lines = _fit_hl(_hl_words(headline, highlight), W - 120, (92, 84, 76, 68, 62), 6)
+    lh = round(f.size * 1.16)
+    block = len(lines) * lh
+    y = (H - block) // 2 + 40
+    if label.upper() == "BREAKING":
+        tf = font(700, 34)
+        text = "\u2022  B R E A K I N G"
+        _boxed_label(d, text, tf, 60, y - 110, 16, 10, bg=RED, fg=WHITE)
+    else:
+        tf = font(800, 40)
+        _boxed_label(d, label.upper(), tf, 60, y - 100, 12, 7)
+    _draw_hl(d, lines, f, 60, y, lh, VIRAL_TEAL)
+    d.rectangle((60, y + block + 40, 180, y + block + 48), fill=VIRAL_TEAL)
+    _boxed_label(d, "READ CAPTION", font(800, 28), 0, 1222, 10, 6, center=True)
+    c.convert("RGB").save(out_path, "JPEG", quality=92)
+    return out_path
+
+
 def render(image_path: str, headline: str, out_path: str,
            label: str = "NEWS", focus: tuple[float, float] | None = None,
            highlight: str = "", gaming: bool | None = None) -> str:

@@ -77,10 +77,14 @@ PHOTO (who or what the picture shows)
 - "image_query": 1–4 words for a backup photo of the place or object (e.g. "Strait of Hormuz",
   "Gaza City", "US Capitol").
 - "image_query_backup": a second, different backup query.
+- "photo_ideas": 3 short stock-photo searches that fit the story's mood WITHOUT showing any
+  specific real person or brand (e.g. "exam hall students", "landmine warning sign",
+  "night city street Hanoi", "hospital corridor", "oil tanker at sea"). Never anything
+  cheerful for a tragedy.
 
 Return ONLY JSON with these keys:
 {"publishable": true/false, "reason": "...", "label": "NEWS|VIRAL", "headline": "...",
- "caption": "...", "highlight": "...", "photo_person": "...", "priority": 1, "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
+ "caption": "...", "highlight": "...", "photo_person": "...", "priority": 1, "image_query": "...", "image_query_backup": "...", "photo_ideas": ["...", "...", "..."], "is_pakistan_story": true/false}
 """
 
 

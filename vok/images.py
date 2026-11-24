@@ -32,6 +32,18 @@ BAD_SOURCES = {"inaturalist", "nappy", "sketchfab", "thingiverse", "svgsilh", "p
                "europeana", "rijksmuseum", "smithsonian", "museumsvictoria", "nasa",
                "biodiversity", "met", "clevelandmuseum", "brooklynmuseum"}
 
+# Never use photos from news agencies / stock agencies, even if a site re-shares them
+AGENCY = re.compile(
+    r"(reuters|associated press|\bap photo|\(ap\)|getty|afp|agence france|\bepa\b|european pressphoto|"
+    r"anadolu|shutterstock|alamy|xinhua|imago|\bdpa\b|zuma|sipa|abaca|bloomberg|nurphoto|sopa images|"
+    r"apa images|wenn|pa images|pa wire|press association|\bap images|ansa|kyodo|yonhap|\bwam\b|"
+    r"saudi press agency|\bspa\b|\bqna\b|\bbbc\b|\bcnn\b|all rights reserved|©)", re.I)
+
+
+def is_agency(*texts: str) -> bool:
+    return any(t and AGENCY.search(t) for t in texts)
+
+
 MIN_SIDE = 1000          # smaller photos look soft on a 1080x1350 post
 MIN_SHARPNESS = 120      # below this the photo is blurry (see sharpness())
 MAX_DOWNLOADS = 6        # how many candidates to actually download and check
@@ -89,6 +101,71 @@ def wikimedia(query: str) -> list[dict]:
     return _parse(data)
 
 
+def wikimedia_recent(query: str) -> list[dict]:
+    """Newest uploads first: for fresh events, Commons often gets CC photos within hours
+    (government and CC-licensed outlets). Only files from the last 30 days count."""
+    data = _commons({
+        "action": "query", "format": "json", "generator": "search",
+        "gsrsearch": f"{query} filetype:bitmap", "gsrnamespace": 6, "gsrlimit": 20,
+        "gsrsort": "create_timestamp_desc",
+        "prop": "imageinfo", "iiprop": "url|size|extmetadata|mime|timestamp", "iiurlwidth": 2000,
+    })
+    out = _parse(data, newest_first=True)
+    pages = {p.get("title"): p for p in (data.get("query") or {}).get("pages", {}).values()}
+    import datetime as _d
+    cutoff = (_d.datetime.utcnow() - _d.timedelta(days=30)).strftime("%Y-%m-%d")
+    fresh = []
+    for c in out:
+        from urllib.parse import unquote
+        p = pages.get("File:" + unquote(c["page"].rsplit("File:", 1)[-1]).replace("_", " "))
+        ts = ((p or {}).get("imageinfo") or [{}])[0].get("timestamp", "")
+        if ts[:10] >= cutoff:
+            c["rank"] -= 3            # a photo of the actual event beats an old general one
+            fresh.append(c)
+    return fresh
+
+
+def pexels(query: str) -> list[dict]:
+    """Pexels: free for commercial use, no agency photos. Good for objects, places, moods."""
+    import os
+    key = os.environ.get("PEXELS_API_KEY")
+    if not key:
+        return []
+    data = json.loads(net.get("https://api.pexels.com/v1/search",
+                              {"query": query, "per_page": 15, "orientation": "portrait"},
+                              headers={"Authorization": key}))
+    out = []
+    for rank, r in enumerate(data.get("photos", [])):
+        if min(r.get("width", 0), r.get("height", 0)) < MIN_SIDE:
+            continue
+        if is_agency(r.get("photographer", ""), r.get("alt", "")):
+            continue
+        out.append({"url": r["src"].get("large2x") or r["src"]["original"],
+                    "credit": f"{r.get('photographer', 'Unknown')[:60]} / Pexels",
+                    "page": r.get("url", ""), "pixels": r["width"] * r["height"], "rank": rank + 4})
+    return out
+
+
+def pixabay(query: str) -> list[dict]:
+    """Pixabay: free for commercial use. Backup to Pexels."""
+    import os
+    key = os.environ.get("PIXABAY_API_KEY")
+    if not key:
+        return []
+    data = net.get_json("https://pixabay.com/api/", {"key": key, "q": query[:100],
+                                                     "image_type": "photo", "safesearch": "true",
+                                                     "per_page": 15, "min_width": MIN_SIDE})
+    out = []
+    for rank, r in enumerate(data.get("hits", [])):
+        if is_agency(r.get("user", ""), r.get("tags", "")):
+            continue
+        out.append({"url": r.get("largeImageURL") or r["webformatURL"],
+                    "credit": f"{r.get('user', 'Unknown')[:60]} / Pixabay",
+                    "page": r.get("pageURL", ""), "pixels": r.get("imageWidth", 0) * r.get("imageHeight", 0),
+                    "rank": rank + 5})
+    return out
+
+
 def _parse(data: dict, newest_first: bool = False) -> list[dict]:
     pages = list((data.get("query") or {}).get("pages", {}).values())
     if not newest_first:
@@ -106,6 +183,9 @@ def _parse(data: dict, newest_first: bool = False) -> list[dict]:
             continue
         artist = _strip(meta.get("Artist", {}).get("value", "")) or "Unknown"
         title = p.get("title", "")
+        if is_agency(artist, _strip(meta.get("Credit", {}).get("value", "")),
+                     _strip(meta.get("ImageDescription", {}).get("value", ""))[:400], title):
+            continue
         # news pages use event photos; studio portraits look stiff, so they go last
         if re.search(r"official.{0,15}(portrait|photo)|headshot|portrait", title, re.I):
             rank += 6
@@ -133,6 +213,8 @@ def openverse(query: str) -> list[dict]:
         if SKIP_WORDS.search(r.get("title") or ""):
             continue
         if (r.get("source") or "").lower() in BAD_SOURCES:
+            continue
+        if is_agency(r.get("creator") or "", r.get("title") or "", r.get("attribution") or ""):
             continue
         lic = f"CC {r.get('license', '').upper()} {r.get('license_version') or ''}".strip()
         if r.get("license") in ("cc0", "pdm"):
@@ -224,15 +306,21 @@ def library_photo(person: str, queries: list[str], recent: set) -> dict | None:
             "ai_enhanced": e.get("ai") == "enhanced"}
 
 
-def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "") -> dict | None:
+def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "",
+               generic: bool = False) -> dict | None:
     """Return the best checked photo (with 'path' to the downloaded file), or None.
     Saad's photo library first; then photos of the person; then the event/place."""
-    lib = library_photo(person, queries, exclude)
+    lib = None if generic else library_photo(person, queries, exclude)
     if lib:
         return lib
     cands: list[dict] = []
     for q in [q for q in queries if q]:
-        finders = (wikimedia_person, wikimedia, openverse) if q == person else (wikimedia, openverse)
+        if q == person:
+            finders = (wikimedia_person, wikimedia, openverse)
+        elif generic:
+            finders = (pexels, pixabay, openverse, wikimedia)
+        else:
+            finders = (wikimedia_recent, wikimedia, openverse, pexels, pixabay)
         for finder in finders:
             try:
                 for c in finder(q):

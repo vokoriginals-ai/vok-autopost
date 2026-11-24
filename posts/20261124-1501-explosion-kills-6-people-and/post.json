@@ -2,7 +2,7 @@
   "headline": "Explosion k!lls 6 people and injures 10 others in Vietnam capital Hanoi",
   "label": "NEWS",
   "caption": "A deadly blast has struck the heart of Vietnam.\n\nAccording to Reuters and LBCI Lebanon, an explosion has k!lled 6 people in the capital city of Hanoi.\n\nAt least 10 other people sustained injuries in the sudden blast, according to the reports.\n\nAuthorities have not yet released further details regarding the cause of the explosion.\n\nWhat do you think is causing these sudden industrial accidents lately? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Vietnam #Hanoi #Explosion",
-  "status": "needs_photo",
+  "status": "expired",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-24T15:01+05:00",
@@ -19,5 +19,6 @@
     "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTTFvQ3l5YUR5XzJsdEdyM04zVzFSTEdRRzRiRHpMY09yczhId0o0RFdhZ1VFZlhJM1FsV2F2bGlHRXpsZDV1d3ZXLTJQaFNFdEdOaFVIVmZpQzVSRE1UazlPWnZEOFVvUGJLai1fa2F6RTBlUFhWZzdOc1hsWllyRUdCaWFQYW5DS2NWdGJwVDdGWER2RzYtTmdBd1ZDck8ydWNiQmxR?oc=5",
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZldRdngyRk9qdWlNdVBkYlFrTnBtV3M3WU45al9qVVp6OE9VRktQTWVKRWY0aWlfNjBhTVFNVlhaYkp4aEJVeVItSlpIUjAwd2I5RGh5MV9wZHVnNkc5c3F1MzA0elVvZ2x2bVFrMUM3NHgwVjJYaHpPRS0xa25Tb0VIUVBySTd5blMxNXhQYlVWMkh5bG0tbHRNN3hvck8zQnI3SG4tdGg?oc=5"
   ],
-  "issue": 40
+  "issue": 40,
+  "note": "expired: no photo for hours (replaced by new photo system)"
 }
