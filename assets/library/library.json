@@ -1,824 +1,884 @@
 [
- {
-  "file": "west-bank-settler-clash.jpg",
-  "people": [],
-  "tags": [
-   "west bank",
-   "settler",
-   "settlers",
-   "outpost",
-   "palestinians"
-  ],
-  "ai": false,
-  "credit": "Reuters",
-  "size": [
-   860,
-   573
-  ],
-  "note": ""
- },
- {
-  "file": "drone-thermal-target.jpg",
-  "people": [],
-  "tags": [
-   "drone",
-   "shot down",
-   "reaper",
-   "uav"
-  ],
-  "ai": false,
-  "credit": "Image via social media",
-  "size": [
-   664,
-   462
-  ],
-  "note": ""
- },
- {
-  "file": "drone-shot-down-burning.jpg",
-  "people": [],
-  "tags": [
-   "drone",
-   "shot down",
-   "downed"
-  ],
-  "ai": false,
-  "credit": "Image via social media",
-  "size": [
-   691,
-   444
-  ],
-  "note": ""
- },
- {
-  "file": "drone-altair-coast.png",
-  "people": [],
-  "tags": [
-   "drone",
-   "uav",
-   "surveillance drone"
-  ],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": ""
- },
- {
-  "file": "marco-rubio-lectern.png",
-  "people": [
-   "Marco Rubio"
-  ],
-  "tags": [
-   "state department",
-   "secretary of state"
-  ],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": ""
- },
- {
-  "file": "person-01-iran-flag.png",
-  "people": [
-   "Abbas Araghchi"
-  ],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": ""
- },
- {
-  "file": "person-02-foreign-ministry.jpg",
-  "people": [
-   "Esmaeil Baghaei"
-  ],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   726,
-   423
-  ],
-  "note": ""
- },
- {
-  "file": "person-03-lectern-iran-flag.png",
-  "people": [
-   "Abbas Araghchi"
-  ],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1092,
-   1440
-  ],
-  "note": ""
- },
- {
-  "file": "ai-01-cleric-and-us-leader.png",
-  "people": [
-   "Mojtaba Khamenei",
-   "Donald Trump"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": ""
- },
- {
-  "file": "person-05-white-hair.png",
-  "people": [
-   "Mohammad Reza Aref"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": ""
- },
- {
-  "file": "macron-tv-mics.webp",
-  "people": [
-   "Emmanuel Macron"
-  ],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1067,
-   800
-  ],
-  "note": ""
- },
- {
-  "file": "ship-at-port.webp",
-  "people": [],
-  "tags": [
-   "ship",
-   "vessel",
-   "port",
-   "cargo ship",
-   "tanker",
-   "shipping"
-  ],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   640,
-   360
-  ],
-  "note": ""
- },
- {
-  "file": "ai-trump-pointing-clock.png",
-  "people": [
-   "Donald Trump"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1086,
-   1448
-  ],
-  "note": ""
- },
- {
-  "file": "mojtaba-khamenei-portrait.jpg",
-  "people": [
-   "Mojtaba Khamenei"
-  ],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   904,
-   905
-  ],
-  "note": ""
- },
- {
-  "file": "batch2-01.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   582,
-   343
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-02.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   600,
-   338
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-03.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   679,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-04.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   675,
-   455
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-05.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   739,
-   415
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-06.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   738,
-   415
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-07.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   679,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-08.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   739,
-   415
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-09.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   766,
-   400
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-10.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   678,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-11.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   679,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-12.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   547,
-   365
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-13.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   678,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-14.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   679,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-15.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   678,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-16.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   650,
-   472
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-17.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   554,
-   554
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-18.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   546,
-   366
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-19.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   679,
-   452
-  ],
-  "note": "waiting for Saad to name"
- },
- {
-  "file": "batch2-20.jpg",
-  "people": [],
-  "tags": [],
-  "ai": false,
-  "credit": "VOK",
-  "size": [
-   1920,
-   1278
-  ],
-  "note": "waiting for Saad to name (hi-res of #3)"
- },
- {
-  "file": "rezaei-1.png",
-  "people": [
-   "Mohsen Rezaei"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "rezaei-2.png",
-  "people": [
-   "Mohsen Rezaei"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "ai-trump-pezeshkian-handshake.png",
-  "people": [
-   "Donald Trump",
-   "Masoud Pezeshkian"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "AI-made: this meeting is not real"
- },
- {
-  "file": "trump-podium.png",
-  "people": [
-   "Donald Trump"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "jd-vance.png",
-  "people": [
-   "JD Vance"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "pete-hegseth.png",
-  "people": [
-   "Pete Hegseth"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "putin.png",
-  "people": [
-   "Vladimir Putin"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "xi-jinping.png",
-  "people": [
-   "Xi Jinping"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "modi.png",
-  "people": [
-   "Narendra Modi"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "pezeshkian-1.png",
-  "people": [
-   "Masoud Pezeshkian"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "pezeshkian-2.png",
-  "people": [
-   "Masoud Pezeshkian"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "pezeshkian-3.png",
-  "people": [
-   "Masoud Pezeshkian"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "shehbaz-sharif-1.png",
-  "people": [
-   "Shehbaz Sharif"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "shehbaz-sharif-2.png",
-  "people": [
-   "Shehbaz Sharif"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "asim-munir-1.png",
-  "people": [
-   "Asim Munir"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "asim-munir-2.png",
-  "people": [
-   "Asim Munir"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "asim-munir-ghalibaf.png",
-  "people": [
-   "Asim Munir",
-   "Mohammad Bagher Ghalibaf"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "baghaei-1.png",
-  "people": [
-   "Esmaeil Baghaei"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1092,
-   1440
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "trump-2.png",
-  "people": [
-   "Donald Trump"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1092,
-   1440
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "netanyahu-1.png",
-  "people": [
-   "Benjamin Netanyahu"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "painted/illustration style: AI note"
- },
- {
-  "file": "netanyahu-2.png",
-  "people": [
-   "Benjamin Netanyahu"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "painted/illustration style: AI note"
- },
- {
-  "file": "netanyahu-3.png",
-  "people": [
-   "Benjamin Netanyahu"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "painted/illustration style: AI note"
- },
- {
-  "file": "ben-gvir.png",
-  "people": [
-   "Itamar Ben Gvir"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "painted/illustration style: AI note"
- },
- {
-  "file": "israel-katz-1.png",
-  "people": [
-   "Israel Katz"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "israel-katz-2.png",
-  "people": [
-   "Israel Katz"
-  ],
-  "tags": [],
-  "ai": "enhanced",
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "real photo, enhanced with AI by Saad"
- },
- {
-  "file": "smotrich.png",
-  "people": [
-   "Bezalel Smotrich"
-  ],
-  "tags": [],
-  "ai": true,
-  "credit": "VOK",
-  "size": [
-   1122,
-   1402
-  ],
-  "note": "painted/illustration style: AI note"
- }
+  {
+    "file": "west-bank-settler-clash.jpg",
+    "people": [],
+    "tags": [
+      "west bank",
+      "settler",
+      "settlers",
+      "outpost",
+      "palestinians"
+    ],
+    "ai": false,
+    "credit": "Reuters",
+    "size": [
+      860,
+      573
+    ],
+    "note": ""
+  },
+  {
+    "file": "drone-thermal-target.jpg",
+    "people": [],
+    "tags": [
+      "drone",
+      "shot down",
+      "reaper",
+      "uav"
+    ],
+    "ai": false,
+    "credit": "Image via social media",
+    "size": [
+      664,
+      462
+    ],
+    "note": ""
+  },
+  {
+    "file": "drone-shot-down-burning.jpg",
+    "people": [],
+    "tags": [
+      "drone",
+      "shot down",
+      "downed"
+    ],
+    "ai": false,
+    "credit": "Image via social media",
+    "size": [
+      691,
+      444
+    ],
+    "note": ""
+  },
+  {
+    "file": "drone-altair-coast.png",
+    "people": [],
+    "tags": [
+      "drone",
+      "uav",
+      "surveillance drone"
+    ],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": ""
+  },
+  {
+    "file": "marco-rubio-lectern.png",
+    "people": [
+      "Marco Rubio"
+    ],
+    "tags": [
+      "state department",
+      "secretary of state"
+    ],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": ""
+  },
+  {
+    "file": "person-01-iran-flag.png",
+    "people": [
+      "Abbas Araghchi"
+    ],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": ""
+  },
+  {
+    "file": "person-02-foreign-ministry.jpg",
+    "people": [
+      "Esmaeil Baghaei"
+    ],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      726,
+      423
+    ],
+    "note": ""
+  },
+  {
+    "file": "person-03-lectern-iran-flag.png",
+    "people": [
+      "Abbas Araghchi"
+    ],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1092,
+      1440
+    ],
+    "note": ""
+  },
+  {
+    "file": "ai-01-cleric-and-us-leader.png",
+    "people": [
+      "Mojtaba Khamenei",
+      "Donald Trump"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": ""
+  },
+  {
+    "file": "person-05-white-hair.png",
+    "people": [
+      "Mohammad Reza Aref"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": ""
+  },
+  {
+    "file": "macron-tv-mics.webp",
+    "people": [
+      "Emmanuel Macron"
+    ],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1067,
+      800
+    ],
+    "note": ""
+  },
+  {
+    "file": "ship-at-port.webp",
+    "people": [],
+    "tags": [
+      "ship",
+      "vessel",
+      "port",
+      "cargo ship",
+      "tanker",
+      "shipping"
+    ],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      640,
+      360
+    ],
+    "note": ""
+  },
+  {
+    "file": "ai-trump-pointing-clock.png",
+    "people": [
+      "Donald Trump"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1086,
+      1448
+    ],
+    "note": ""
+  },
+  {
+    "file": "mojtaba-khamenei-portrait.jpg",
+    "people": [
+      "Mojtaba Khamenei"
+    ],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      904,
+      905
+    ],
+    "note": ""
+  },
+  {
+    "file": "batch2-01.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      582,
+      343
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-02.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      600,
+      338
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-03.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      679,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-04.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      675,
+      455
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-05.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      739,
+      415
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-06.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      738,
+      415
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-07.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      679,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-08.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      739,
+      415
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-09.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      766,
+      400
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-10.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      678,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-11.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      679,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-12.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      547,
+      365
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-13.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      678,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-14.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      679,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-15.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      678,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-16.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      650,
+      472
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-17.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      554,
+      554
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-18.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      546,
+      366
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-19.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      679,
+      452
+    ],
+    "note": "waiting for Saad to name"
+  },
+  {
+    "file": "batch2-20.jpg",
+    "people": [],
+    "tags": [],
+    "ai": false,
+    "credit": "VOK",
+    "size": [
+      1920,
+      1278
+    ],
+    "note": "waiting for Saad to name (hi-res of #3)"
+  },
+  {
+    "file": "rezaei-1.png",
+    "people": [
+      "Mohsen Rezaei"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "rezaei-2.png",
+    "people": [
+      "Mohsen Rezaei"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "ai-trump-pezeshkian-handshake.png",
+    "people": [
+      "Donald Trump",
+      "Masoud Pezeshkian"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "AI-made: this meeting is not real"
+  },
+  {
+    "file": "trump-podium.png",
+    "people": [
+      "Donald Trump"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "jd-vance.png",
+    "people": [
+      "JD Vance"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "pete-hegseth.png",
+    "people": [
+      "Pete Hegseth"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "putin.png",
+    "people": [
+      "Vladimir Putin"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "xi-jinping.png",
+    "people": [
+      "Xi Jinping"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "modi.png",
+    "people": [
+      "Narendra Modi"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "pezeshkian-1.png",
+    "people": [
+      "Masoud Pezeshkian"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "pezeshkian-2.png",
+    "people": [
+      "Masoud Pezeshkian"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "pezeshkian-3.png",
+    "people": [
+      "Masoud Pezeshkian"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "shehbaz-sharif-1.png",
+    "people": [
+      "Shehbaz Sharif"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "shehbaz-sharif-2.png",
+    "people": [
+      "Shehbaz Sharif"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "asim-munir-1.png",
+    "people": [
+      "Asim Munir"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "asim-munir-2.png",
+    "people": [
+      "Asim Munir"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "asim-munir-ghalibaf.png",
+    "people": [
+      "Asim Munir",
+      "Mohammad Bagher Ghalibaf"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "baghaei-1.png",
+    "people": [
+      "Esmaeil Baghaei"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1092,
+      1440
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "trump-2.png",
+    "people": [
+      "Donald Trump"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1092,
+      1440
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "netanyahu-1.png",
+    "people": [
+      "Benjamin Netanyahu"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "painted/illustration style: AI note"
+  },
+  {
+    "file": "netanyahu-2.png",
+    "people": [
+      "Benjamin Netanyahu"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "painted/illustration style: AI note"
+  },
+  {
+    "file": "netanyahu-3.png",
+    "people": [
+      "Benjamin Netanyahu"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "painted/illustration style: AI note"
+  },
+  {
+    "file": "ben-gvir.png",
+    "people": [
+      "Itamar Ben Gvir"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "painted/illustration style: AI note"
+  },
+  {
+    "file": "israel-katz-1.png",
+    "people": [
+      "Israel Katz"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "israel-katz-2.png",
+    "people": [
+      "Israel Katz"
+    ],
+    "tags": [],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "real photo, enhanced with AI by Saad"
+  },
+  {
+    "file": "smotrich.png",
+    "people": [
+      "Bezalel Smotrich"
+    ],
+    "tags": [],
+    "ai": true,
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "painted/illustration style: AI note"
+  },
+  {
+    "file": "andy-burnham.png",
+    "people": [
+      "Andy Burnham"
+    ],
+    "tags": [
+      "uk",
+      "britain",
+      "prime minister",
+      "downing street"
+    ],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "supplied by Saad, Nov 25"
+  },
+  {
+    "file": "burnham-zelenskyy.png",
+    "people": [
+      "Andy Burnham",
+      "Volodymyr Zelenskyy"
+    ],
+    "tags": [
+      "uk",
+      "ukraine",
+      "press conference"
+    ],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1092,
+      1440
+    ],
+    "note": "supplied by Saad, Nov 25"
+  },
+  {
+    "file": "shenzhou24-crew.png",
+    "people": [
+      "Muhammad Zeeshan Ali",
+      "Tang Hongbo",
+      "Wu Yi"
+    ],
+    "tags": [
+      "shenzhou",
+      "astronaut",
+      "space",
+      "pakistan",
+      "china"
+    ],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "supplied by Saad, Nov 25"
+  }
 ]

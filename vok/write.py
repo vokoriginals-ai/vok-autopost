@@ -199,7 +199,13 @@ def write_post(story: dict, models: list[str]) -> dict:
         f"- [{i['source']}] {i['title']}" + (f" — {i['summary']}" if i["summary"] else "")
         for i in story["items"][:12])
     article = _article_text(story)
-    prompt = f"{STYLE}\n\nSOURCE MATERIAL ({len(story['sources'])} outlets):\n{material}\n"
+    try:
+        _lead = json.load(open("config.json", encoding="utf-8")).get("current_leaders", {})
+    except Exception:
+        _lead = {}
+    leaders = "\n".join(f"- {k}: {v}" for k, v in _lead.items())
+    prompt = (f"{STYLE}\n\nCURRENT OFFICE HOLDERS (today; these override anything you remember):\n"
+              f"{leaders}\n") + f"\n\nSOURCE MATERIAL ({len(story['sources'])} outlets):\n{material}\n"
     if article:
         prompt += f"\nARTICLE TEXT (from {article[0]}):\n{article[1]}\n"
     out = _gemini(prompt, models)

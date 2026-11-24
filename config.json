@@ -133,5 +133,21 @@
   "require_trusted_source": true,
   "auto_approve_after_minutes": 15,
   "cycle_start_hour_pkt": 12,
-  "pause_publishing": false
+  "pause_publishing": false,
+  "current_leaders": {
+    "United Kingdom prime minister": "Andy Burnham (since July 2026; Keir Starmer is the FORMER PM)",
+    "United States president": "Donald Trump",
+    "Iran supreme leader": "Mojtaba Khamenei",
+    "Iran president": "Masoud Pezeshkian",
+    "Israel prime minister": "Benjamin Netanyahu",
+    "Pakistan prime minister": "Shehbaz Sharif",
+    "Pakistan army chief": "Asim Munir",
+    "Russia president": "Vladimir Putin",
+    "China president": "Xi Jinping",
+    "India prime minister": "Narendra Modi",
+    "France president": "Emmanuel Macron",
+    "Ukraine president": "Volodymyr Zelenskyy",
+    "US vice president": "JD Vance",
+    "US secretary of state": "Marco Rubio"
+  }
 }
