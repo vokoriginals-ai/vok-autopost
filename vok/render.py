@@ -167,6 +167,10 @@ def _balanced_lines(words: list[str], f: ImageFont.FreeTypeFont, max_w: int, n_l
 def fit_headline(text: str):
     """Pick font size (64 down to 50) and 2 to 4 lines so the block looks even.
     Bigger text wins unless a slightly smaller size gives clearly straighter lines."""
+    orig = text.split()
+    # never split a name ("Zeeshan | Ali"): pairs of capitalised words stay on one line
+    name_pairs = {i for i in range(len(orig) - 1)
+                  if orig[i][:1].isupper() and orig[i + 1][:1].isupper() and i > 0}
     words = text.upper().split()
     merged: list[str] = []
     for w in words:                     # never start a line with a dash
@@ -185,6 +189,11 @@ def fit_headline(text: str):
             lines, rag = r
             # cost: uneven lines + smaller text + extra lines
             cost = rag * 1.0 + (64 - size) * 0.012 + (n_lines - 1) * 0.02
+            pos = 0
+            for ln in lines[:-1]:
+                pos += len(ln.split())
+                if (pos - 1) in name_pairs and len(merged) == len(orig):
+                    cost += 0.5
             if n_lines == 1 and len(words) > 3:
                 cost += 0.3
             options.append((cost, size, lines))
