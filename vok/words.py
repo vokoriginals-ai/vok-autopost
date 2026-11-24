@@ -104,13 +104,16 @@ AI_NOTE = "Note: AI image used for illustration purposes."
 CTA = "Follow Vok for more stories like this."
 
 
-def add_ai_note(caption: str) -> str:
-    """Put the AI-image disclaimer right after the CTA line (before hashtags)."""
-    if AI_NOTE in caption:
+AI_ENHANCED_NOTE = "Note: Image enhanced using AI."
+
+
+def add_ai_note(caption: str, note: str = AI_NOTE) -> str:
+    """Put the AI disclaimer right after the CTA line (before hashtags)."""
+    if note in caption:
         return caption
     if CTA in caption:
-        return caption.replace(CTA, f"{CTA}\n\n{AI_NOTE}", 1)
-    return caption.rstrip() + f"\n\n{AI_NOTE}"
+        return caption.replace(CTA, f"{CTA}\n\n{note}", 1)
+    return caption.rstrip() + f"\n\n{note}"
 
 
 def _question_mark(text: str) -> str:

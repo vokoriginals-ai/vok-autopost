@@ -220,7 +220,8 @@ def library_photo(person: str, queries: list[str], recent: set) -> dict | None:
     e = random.choice(hits)          # rotate between Saad's photos of the same person
     print(f"  photo from Saad's library: {e['file']}")
     return {"path": str(LIBRARY / e["file"]), "credit": e.get("credit", "VOK"),
-            "page": f"library:{e['file']}", "sharpness": 999, "ai_generated": bool(e.get("ai"))}
+            "page": f"library:{e['file']}", "sharpness": 999, "ai_generated": e.get("ai") is True,
+            "ai_enhanced": e.get("ai") == "enhanced"}
 
 
 def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "") -> dict | None:

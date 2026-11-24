@@ -162,6 +162,9 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         caption = clean(w["caption"].rstrip())
         if photo.get("ai_generated"):
             caption = add_ai_note(caption)
+        elif photo.get("ai_enhanced"):
+            from vok.words import AI_ENHANCED_NOTE
+            caption = add_ai_note(caption, AI_ENHANCED_NOTE)
         caption += f"\n\n📸 {photo['credit']}"
         meta = {
             "headline": headline,

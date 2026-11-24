@@ -461,13 +461,13 @@
    "Mohsen Rezaei"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "rezaei-2.png",
@@ -475,13 +475,13 @@
    "Mohsen Rezaei"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "ai-trump-pezeshkian-handshake.png",
@@ -504,13 +504,13 @@
    "Donald Trump"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "jd-vance.png",
@@ -518,13 +518,13 @@
    "JD Vance"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "pete-hegseth.png",
@@ -532,13 +532,13 @@
    "Pete Hegseth"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "putin.png",
@@ -546,13 +546,13 @@
    "Vladimir Putin"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "xi-jinping.png",
@@ -560,13 +560,13 @@
    "Xi Jinping"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  },
  {
   "file": "modi.png",
@@ -574,12 +574,12 @@
    "Narendra Modi"
   ],
   "tags": [],
-  "ai": false,
+  "ai": "enhanced",
   "credit": "VOK",
   "size": [
    1122,
    1402
   ],
-  "note": "real photo, enhanced by Saad"
+  "note": "real photo, enhanced with AI by Saad"
  }
 ]
