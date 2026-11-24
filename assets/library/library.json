@@ -722,5 +722,103 @@
    1440
   ],
   "note": "real photo, enhanced with AI by Saad"
+ },
+ {
+  "file": "netanyahu-1.png",
+  "people": [
+   "Benjamin Netanyahu"
+  ],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "painted/illustration style: AI note"
+ },
+ {
+  "file": "netanyahu-2.png",
+  "people": [
+   "Benjamin Netanyahu"
+  ],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "painted/illustration style: AI note"
+ },
+ {
+  "file": "netanyahu-3.png",
+  "people": [
+   "Benjamin Netanyahu"
+  ],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "painted/illustration style: AI note"
+ },
+ {
+  "file": "ben-gvir.png",
+  "people": [
+   "Itamar Ben Gvir"
+  ],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "painted/illustration style: AI note"
+ },
+ {
+  "file": "israel-katz-1.png",
+  "people": [
+   "Israel Katz"
+  ],
+  "tags": [],
+  "ai": "enhanced",
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "real photo, enhanced with AI by Saad"
+ },
+ {
+  "file": "israel-katz-2.png",
+  "people": [
+   "Israel Katz"
+  ],
+  "tags": [],
+  "ai": "enhanced",
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "real photo, enhanced with AI by Saad"
+ },
+ {
+  "file": "smotrich.png",
+  "people": [
+   "Bezalel Smotrich"
+  ],
+  "tags": [],
+  "ai": true,
+  "credit": "VOK",
+  "size": [
+   1122,
+   1402
+  ],
+  "note": "painted/illustration style: AI note"
  }
 ]

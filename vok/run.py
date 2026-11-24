@@ -145,12 +145,11 @@ def drip(max_hours: float = 5.5) -> None:
             tick.publish_next(cfg, st)
             save_state(st)
             _sync()
-        elif not any(m.get("status") in ("approved", "pending") for _, m in all_posts()):
-            print("outside window and nothing queued: stopping")
-            return
+        else:
+            print("outside posting hours: waiting")        # public repo: running is free
         time.sleep(300)
     # hand over to a fresh run so the queue keeps going
-    if any(m.get("status") in ("approved", "pending") for _, m in all_posts()):
+    if True:                       # always hand over: the publisher never stops
         repo, token = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_TOKEN")
         if repo and token:
             req = urllib.request.Request(
