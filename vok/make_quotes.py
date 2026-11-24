@@ -23,6 +23,7 @@ from vok.write import WriteError, _article_text, _gemini, check_photo
 PER_DAY = 5
 
 PROMPT = """You pick quotes for VOK, a news page for Pakistan and the Middle East.
+The speaker MUST be one of these people: {people}. Ignore quotes by anyone else.
 From the ARTICLE TEXT below, find the single most striking DIRECT QUOTE: words a named
 politician, official, military leader or famous person actually said, shown inside quotation
 marks in the article. Prefer quotes that are bold, controversial, emotional or newsworthy.
@@ -71,7 +72,17 @@ def main(count: int = 1) -> int:
         return 0
     st = load_state()
     used = set(st.get("quotes_used", []))
-    stories = collect.top_stories(cfg, [], 30)
+    lib = json.loads((images.LIBRARY / "library.json").read_text())
+    people = sorted({p for e in lib if min(e.get("size", [0, 0])) >= 600 for p in e.get("people", [])})
+    surnames = {p.split()[-1].lower(): p for p in people}
+    stories = collect.top_stories(cfg, [], 80)
+
+    def mentions(story):
+        text = (story["headline"] + " " + " ".join(i.get("summary", "") for i in story["items"][:4])).lower()
+        return [surnames[s] for s in surnames if s in text]
+    # only stories about people in Saad's photo library, most mentioned first
+    stories = [st_ for st_ in stories if mentions(st_)]
+    print(f"{len(stories)} stories mention people in the photo library")
     made = 0
     for story in stories:
         if made >= room:
@@ -83,7 +94,8 @@ def main(count: int = 1) -> int:
         if text.count('"') + text.count("“") < 2:      # no quotation marks at all
             continue
         try:
-            q = _gemini(PROMPT.format(headline=story["headline"], outlet=outlet, text=text[:5000]),
+            q = _gemini(PROMPT.format(people=", ".join(mentions(story)), headline=story["headline"],
+                                      outlet=outlet, text=text[:5000]),
                         cfg["gemini_models"], budget_s=90)
         except (WriteError, Exception) as e:
             print(f"quote writer: {str(e)[:80]}")
@@ -102,11 +114,7 @@ def main(count: int = 1) -> int:
         key = _norm(speaker + " " + quote)[:120]
         if key in used:
             continue
-        photo = images.library_photo(speaker, [], set())
-        if not photo:
-            found = images.best_photo([speaker], set(), "/tmp/qphoto", person=speaker)
-            if found and found.get("query") == speaker:
-                photo = found
+        photo = images.library_photo(speaker, [], set())     # library only
         if not photo:
             print(f"skip (no photo of {speaker})")
             continue
