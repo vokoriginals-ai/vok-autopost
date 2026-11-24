@@ -2,7 +2,7 @@
   "headline": "Massive fire destroys six hotels in Zanzibar popular Nungwi Beach area forcing tourist evacuations",
   "label": "NEWS",
   "caption": "A massive fire completely destroyed six hotels in Zanzibar and forced tourists to evacuate.\n\nAccording to AP News and Sky News, an investigation is currently under way into the blaze that engulfed six hotels along Nungwi Beach.\n\nAuthorities and emergency services responded to the incident at the popular tourist destination.\n\nNo official reports on casualties have been detailed yet as investigations continue.\n\nHave you ever experienced an emergency while travelling abroad? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Zanzibar #TravelNews #BreakingNews",
-  "status": "approved",
+  "status": "hold",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T16:52+05:00",
@@ -23,6 +23,6 @@
   ],
   "issue": 44,
   "decided_at": "2026-11-24T17:08+05:00",
-  "note": "auto-approved: no reply in 15 min | photo removed by Claude review: did not match story",
+  "note": "held: needs a real photo (Saad: headline card only for breaking)",
   "highlight": "six hotels"
 }

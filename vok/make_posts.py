@@ -130,7 +130,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             (folder / "photo.jpg").unlink(missing_ok=True)
         shutil.rmtree(folder / "_candidates", ignore_errors=True)
 
-        if not photo and w["label"] != "VIRAL":
+        if not photo and w["label"] == "BREAKING":
             # hard news never waits for a photo: clean VOK headline card instead
             from vok.render import render_text_card
             render_text_card(headline, str(folder / "render.jpg"), w["label"], highlight)
@@ -138,8 +138,9 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             print(f"  no usable photo ({why}): headline card used")
 
         if not photo:
-            if auto_approve or hold or not gh.enabled() or asked >= 2:
-                print(f"skip (no photo for viral story): {headline}")
+            # Saad: no headline cards for normal news; pick another story that has a photo
+            if True:
+                print(f"skip (no safe photo, trying another story): {headline}")
                 shutil.rmtree(folder, ignore_errors=True)
                 continue
             meta = {

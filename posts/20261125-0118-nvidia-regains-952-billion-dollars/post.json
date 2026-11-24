@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "952 billion dollars",
   "caption": "Jensen Huang is back at the helm of Nvidia just weeks after his abrupt resignation. 📈\n\nAccording to Al Jazeera and Dawn, Nvidia regained 952 billion dollars in market value and shares jumped 31 percent on Monday as Huang returned to the company offices. The board voted to reinstate Huang amid unprecedented pressure from United States President Donald Trump.\n\nNvidia previously lost 1.16 trillion dollars in market value when Huang resigned amid reports of extramarital affairs including one with an alleged Chinese spy. Dan Ives of Yorkville Ives noted that the board knew it had no choice but to bring him back.\n\nHowever, Nvidia stock reversed course on Tuesday and fell more than 5 percent over reports that new tariffs on China could be on the horizon. Other semiconductor stocks like Advanced Micro Devices and Broadcom also suffered losses.\n\nWhat do you think about the sudden return of tech founders after major scandals? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Nvidia #JensenHuang #TechNews",
-  "status": "pending",
+  "status": "hold",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T01:18+05:00",
@@ -22,5 +22,6 @@
     "https://www.aljazeera.com/economy/2026/11/24/nvidia-stock-cools-after-huangs-return-driven-surge?traffic_source=rss",
     "https://www.dawn.com/news/2046744/huangs-nvidia-return-sparks-relief-for-battered-ai-trade-but-questions-remain"
   ],
-  "issue": 58
+  "issue": 58,
+  "note": "held: needs a real photo (Saad: headline card only for breaking)"
 }
