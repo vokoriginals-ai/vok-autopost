@@ -2,7 +2,7 @@
   "headline": "Armenia Proposes New Constitution In Major Step Toward Peace With Azerbaijan",
   "label": "NEWS",
   "caption": "Could this finally bring lasting peace to the region 🇦🇪🇵🇰\n\nAccording to Reuters and Arab News, Armenia has proposed a new constitution as a step toward peace with Azerbaijan.\n\nThe announcement comes amid ongoing diplomatic efforts between the two neighboring countries.\n\nFurther details on the contents of the proposed constitutional changes and the timeline for implementation were not immediately detailed in the reports.\n\nWhat are your thoughts on this peace initiative? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Armenia #Azerbaijan #Peace\n\n📸 Yerevantsi / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T01:08+05:00",
@@ -24,5 +24,18 @@
   ],
   "issue": 22,
   "decided_at": "2026-11-24T01:23+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184977618988633",
+      "post_id": "790959357430859_122184977642988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184977618988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/924022596_122184977624988633_255064810033881394_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE-VZWctOFgqm6SvKwADmcimBoUZIRXCpSYGhRkhFcKlOX8Q9678sHffDuA3SRg0Sq5aEmrf8558iBL0wxMHMNe&_nc_ohc=7YhKXNU3Yp0Q7kNvwHJu_-i&_nc_oc=AdoNWKzVBx_JpdE7MRkmTGu_--03jnrQoRKdMB8pl4zmxlqJcW3s2tIA2vAL8D20x_8&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=YxPKvlvoBm1_4CBIk2CYbg&_nc_tpa=Q5bMBQJehDCeagoT0rYxrt8GfQgxV40EhmXd6S-SsAQQkHDkMiRQjBWEl6xVmhuk34N1upjUf-QDQ1-MbQ&oh=00_AQTLfFvgsYs1jRvqxAPTKFO5DGmNFDSXQroVg0Y92eziyw&oe=6B0AA95D"
+    },
+    "instagram": {
+      "media_id": "18013888440003823",
+      "permalink": "https://www.instagram.com/p/DgGuj8hCW-I/"
+    }
+  },
+  "published_at": "2026-11-24T06:01+05:00"
 }
