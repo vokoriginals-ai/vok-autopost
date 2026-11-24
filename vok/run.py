@@ -171,8 +171,10 @@ if __name__ == "__main__":
     if len(sys.argv) >= 3 and sys.argv[1] == "igsource":
         from vok import collect
         from datetime import datetime, timezone
-        for it in collect._instagram({"name": "test", "instagram": sys.argv[2]}, datetime.now(timezone.utc), 48)[:8]:
-            print(it["published"][:16], it["title"][:110])
+        handle, _, word = sys.argv[2].partition(":")
+        for it in collect._instagram({"name": "test", "instagram": handle, "limit": 100}, datetime.now(timezone.utc), 24 * 8):
+            if not word or word.lower() in (it["title"] + " " + it["summary"]).lower():
+                print(it["published"][:16], it["title"][:110], it["link"])
         sys.exit(0)
     if len(sys.argv) >= 3 and sys.argv[1] == "check":
         from vok.write import check_photo

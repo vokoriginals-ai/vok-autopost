@@ -95,7 +95,7 @@ def _instagram(f: dict, now, max_age_hours: int) -> list[dict]:
     if not os.environ.get("META_PAGE_TOKEN"):
         return []
     fields = (f"business_discovery.username({f['instagram']})"
-              "{media.limit(25){caption,timestamp,permalink}}")
+              "{media.limit(%d){caption,timestamp,permalink}}" % f.get("limit", 25))
     try:
         data = net.get_json(f"{GRAPH}/{IG_ID}", {"fields": fields,
                                                   "access_token": os.environ["META_PAGE_TOKEN"]})
