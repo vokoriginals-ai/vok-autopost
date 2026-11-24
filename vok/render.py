@@ -223,15 +223,18 @@ def _logo(canvas: Image.Image):
         d.text((44, 36), "VOK", font=font(800, 56), fill=WHITE)
 
 
+RED = (214, 32, 48)
+
+
 def _boxed_label(d: ImageDraw.ImageDraw, text: str, f, x: int, y: int,
-                 pad_x: int, pad_y: int, center: bool = False):
+                 pad_x: int, pad_y: int, center: bool = False, bg=None, fg=None):
     bx = f.getbbox(text)
     tw, th = bx[2] - bx[0], bx[3] - bx[1]
     bw, bh = tw + 2 * pad_x, th + 2 * pad_y
     if center:
         x = (W - bw) // 2
-    d.rectangle((x, y, x + bw, y + bh), fill=WHITE)
-    d.text((x + pad_x - bx[0], y + pad_y - bx[1]), text, font=f, fill=NAVY)
+    d.rectangle((x, y, x + bw, y + bh), fill=bg or WHITE)
+    d.text((x + pad_x - bx[0], y + pad_y - bx[1]), text, font=f, fill=fg or NAVY)
     return bh
 
 
@@ -249,9 +252,15 @@ def render(image_path: str, headline: str, out_path: str,
     y = HEADLINE_BOTTOM - block_h
 
     # tag sits just above the headline, left-aligned with it
-    tag_f = font(800, 44)
-    tag_h = tag_f.getbbox(label.upper())[3] - tag_f.getbbox(label.upper())[1] + 14
-    _boxed_label(d, label.upper(), tag_f, MARGIN_X, y - tag_h - 14, 12, 7)
+    if label.upper() == "BREAKING":      # Saad's breaking template: red tag with a dot
+        tag_f = font(700, 34)
+        text = "\u2022  B R E A K I N G"
+        tag_h = tag_f.getbbox(text)[3] - tag_f.getbbox(text)[1] + 20
+        _boxed_label(d, text, tag_f, MARGIN_X, y - tag_h - 18, 16, 10, bg=RED, fg=WHITE)
+    else:
+        tag_f = font(800, 44)
+        tag_h = tag_f.getbbox(label.upper())[3] - tag_f.getbbox(label.upper())[1] + 14
+        _boxed_label(d, label.upper(), tag_f, MARGIN_X, y - tag_h - 14, 12, 7)
 
     for i, line in enumerate(lines):
         top = hf.getbbox(line)[1]
