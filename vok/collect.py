@@ -154,7 +154,7 @@ def overlaps(words: set[str], seen: list[list[str]]) -> bool:
 
 # clear sports words block a story on their own; ambiguous ones ("final", "league", "cup")
 # only count when two or more appear together
-SPORTS_STRONG = re.compile(r"\b(football|soccer|cricket|tennis|golf|nba|nfl|mlb|nhl|ufc|formula 1|f1|"
+SPORTS_STRONG = re.compile(r"\b(football|soccer|australian open|us open|french open|roland garros|sinner|alcaraz|djokovic|galatasaray|fenerbahce|besiktas|aston villa|liverpool fc|arsenal|chelsea|manchester united|man utd|manchester city|real madrid|barcelona|bayern|juventus|inter milan|ac milan|psg|tottenham|europa league|cricket|tennis|golf|nba|nfl|mlb|nhl|ufc|formula 1|f1|"
                            r"grand prix|olympics?|world cup|premier league|la liga|bundesliga|serie a|"
                            r"champions league|atp|wta|wimbledon|grand slam|striker|goalkeeper|"
                            r"pitcher|quarterback|touchdown|innings|wicket|t20|odi|ipl|psl|boxing|"
@@ -170,10 +170,19 @@ def is_sports(text: str) -> bool:
 def top_stories(cfg: dict, seen: list[list[str]], limit: int) -> list[dict]:
     groups = cluster(fetch(cfg["feeds"], cfg["story_max_age_hours"]))
     picked = []
+    trusted = set(cfg.get("trusted_sources", []))
+    singles = []
     for g in groups:
         if len(g["sources"]) < cfg["min_sources"]:
+            # one trusted outlet is enough when nothing else is around (quiet night hours)
+            title = g["items"][0]["title"]
+            if cfg.get("allow_single_trusted", True) and trusted & set(g["sources"]) \
+                    and len(title.split()) >= 7 and not re.search(r"^(opinion|analysis|comment|the news feed)|\?$|\u2018|'.*'\.", title, re.I) \
+                    and not overlaps(g["words"], seen) \
+                    and not any(is_sports(it["title"]) for it in g["items"][:3]):
+                g["trusted"] = sorted(trusted & set(g["sources"]))
+                singles.append(g)
             continue
-        trusted = set(cfg.get("trusted_sources", []))
         if cfg.get("require_trusted_source") and not trusted & set(g["sources"]):
             continue                      # at least one credible outlet must carry it
         g["trusted"] = sorted(trusted & set(g["sources"]))
@@ -186,6 +195,9 @@ def top_stories(cfg: dict, seen: list[list[str]], limit: int) -> list[dict]:
         picked.append(g)
         if len(picked) >= limit:
             break
+    if len(picked) < limit:                 # top up with single-outlet stories, newest first
+        singles.sort(key=lambda g: max(it["published"] for it in g["items"]), reverse=True)
+        picked += singles[:limit - len(picked)]
     return picked
 
 
