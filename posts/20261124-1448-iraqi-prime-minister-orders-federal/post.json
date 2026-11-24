@@ -2,7 +2,7 @@
   "headline": "Iraqi Prime Minister orders federal takeover of Kurdistan oil exports and border crossings",
   "label": "NEWS",
   "caption": "Iraq moves to take control of key economic assets in the northern region 🚨\n\nAccording to The National and Arab News, Iraqi Prime Minister has ordered a federal takeover of Kurdistan oil exports, border crossings and oilfields in disputed areas.\n\nThe Iraqi oil minister has also demanded federal control of northern fields currently held by the Kurdistan region, as part of an anti smuggling drive reaching border crossings.\n\nWhat does this mean for the stability of the region? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Iraq #Kurdistan #MiddleEastNews\n\n📸 U.S. Department of State / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T14:48+05:00",
@@ -26,5 +26,18 @@
   ],
   "issue": 37,
   "decided_at": "2026-11-24T15:07+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185095932988633",
+      "post_id": "790959357430859_122185095968988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185095932988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/920489340_122185095944988633_1528315959880028374_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeH-xIDpg6oDtHLZQxv-X8rgdBqIrbbt6aZ0Goittu3ppsJ71fxbgqmRHq2WuXFUShNvSfW4aYBecR9jFnKaHw-D&_nc_ohc=NFfBVzhF-2cQ7kNvwF-zoDG&_nc_oc=AdpJ35hAW0tu2LFkvI2ePsvwfNnK7BYfOU1NFWZmZZ-ELONV9pdq2xoU4axQEU2Z3vQ&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=HuBVcIXDADt804ZMBXkhCQ&_nc_tpa=Q5bMBQIVOOx0XS3Jp3g6jyMqVjUTH5UIBH7JWtb0W0s4CTarxTYdvO_YCZdLtnHGDn8pLLBu34R8CsZKtw&oh=00_AQTulElwimW8En7OB8ltpnCy_6oJzRmXlJYf5-WtC-5p5Q&oe=6B0B7749"
+    },
+    "instagram": {
+      "media_id": "18228617365340590",
+      "permalink": "https://www.instagram.com/p/DgIVExMjWHG/"
+    }
+  },
+  "published_at": "2026-11-24T20:57+05:00"
 }
