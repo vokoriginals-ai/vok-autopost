@@ -2,7 +2,7 @@
   "headline": "Yemeni military says Houthi rebels will not capture temporary capital Aden",
   "label": "NEWS",
   "caption": "Yemeni military officials insist Houthi rebels will not capture the temporary capital of Aden despite advancing close to the city 🇾🇪\n\nAccording to Middle East Eye, Yemen's Iran aligned Houthis have pushed as close as 60 km to Aden, but the military says the situation is not as dire as reported.\n\nColonel Majed Abdullah Al Nuzaily, spokesperson for Yemen's armed forces, told reporters that fighting has resumed in parallel with the wider regional war.\n\nThe internationally recognised government is backed by Saudi Arabia, which has carried out air strikes while the Houthis have struck Saudi targets.\n\nWhat do you think will happen next in Yemen's ongoing conflict? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Yemen #Houthis #MiddleEast\n\n📸 T3n60 / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T22:40+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 54,
   "decided_at": "2026-11-24T22:56+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185127480988633",
+      "post_id": "790959357430859_122185127504988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185127480988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/926303316_122185127486988633_7528577100188499865_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGVu6TaJqzpbgu2qWr1gtueR1yJ5cJQFLxHXInlwlAUvNgff0ekHWUwbpg199i9RxCePHjPQoF8Nd3eyJ9-npX6&_nc_ohc=R5aP9oxB6i4Q7kNvwEAop73&_nc_oc=AdqlnVQmVyU0YW6rQBZGd5PWNpH8sMGzetX2TGmzRWtCvqb9OoG-78u_jWpP44j1bYQ&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ImUB5iu3CZVM1NRXqErgzw&_nc_tpa=Q5bMBQIVackDOgBRuprL5hznVgP24okl3vVMjt85Z3RquXreB-lVECBJ4ZaeKjfdWq0yJqiEC9xsApbAvw&oh=00_AQTqOSCJKRV74oVwDlCzuzOxFZzJkYMknD7nfbyIRrr6Lg&oe=6B0BF2AD"
+    },
+    "instagram": {
+      "media_id": "18112500641351848",
+      "permalink": "https://www.instagram.com/p/DgJEgu6D7_o/"
+    },
+    "story": {
+      "media_id": "18108047765647729"
+    }
+  },
+  "published_at": "2026-11-25T03:51+05:00"
 }
