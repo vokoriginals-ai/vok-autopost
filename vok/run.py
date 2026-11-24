@@ -114,6 +114,7 @@ def drip(max_hours: float = 5.5) -> None:
     from vok.state import all_posts, config, in_window, load_state, save_state
     started = time.time()
     last_news = 0.0
+    last_quote = time.time() - 7200     # first quote ~30 min after start
     st0 = load_state()
     st0["drip_until"] = (now() + timedelta(hours=max_hours, minutes=10)).isoformat()
     save_state(st0)
@@ -137,6 +138,14 @@ def drip(max_hours: float = 5.5) -> None:
                 except Exception as e:
                     print(f"news check failed: {str(e)[:120]}")
             _sync()                      # get the latest edits BEFORE deciding anything
+            # quote cards: one every ~2.5 hours, up to 5 a day
+            if time.time() - last_quote > 9000 and os.environ.get("GEMINI_API_KEY"):
+                last_quote = time.time()
+                try:
+                    from vok import make_quotes
+                    make_quotes.main(1)
+                except Exception as e:
+                    print(f"quote check failed: {str(e)[:120]}")
             st = load_state()
             st["drip_until"] = st0["drip_until"]
             tick.apply_decisions(st)
