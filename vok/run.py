@@ -207,6 +207,51 @@ if __name__ == "__main__":
             if not word or word.lower() in (it["title"] + " " + it["summary"]).lower():
                 print(it["published"][:16], it["title"][:110], it["link"])
         sys.exit(0)
+    if len(sys.argv) >= 3 and sys.argv[1] == "rephoto":
+        # rephoto "post_id|person|query1;query2;query3" ... : find a safe real photo, render,
+        # Gemini check; approve on success, reject (never a headline card) on failure
+        import re as _re, shutil as _sh
+        from vok import images
+        from vok.render import render
+        from vok.write import check_photo
+        from vok.state import config as _cfg, load_state, save_state
+        st = load_state()
+        used = {u["page"] for u in st.setdefault("photos", [])}
+        for spec in sys.argv[2:]:
+            pid, person, qs = (spec.split("|") + ["", ""])[:3]
+            folder, meta = load_post(pid)
+            queries = [q for q in qs.split(";") if q]
+            got = None
+            for qset, generic in (([person] + queries if person else queries, False), (queries, True)):
+                cand = images.best_photo(qset, exclude=used, workdir=str(folder / "_c"),
+                                         person=person if not generic else "", generic=generic)
+                if not cand:
+                    continue
+                for x in folder.glob("photo.*"):
+                    x.unlink()
+                _sh.copy(cand["path"], folder / "photo.jpg")
+                render(str(folder / "photo.jpg"), meta["headline"], str(folder / "render.jpg"),
+                       meta.get("label", "NEWS"), highlight=meta.get("highlight", ""))
+                ok, why = check_photo(str(folder / "render.jpg"), meta["headline"], meta["caption"][:600],
+                                      _cfg()["gemini_models"])
+                print(pid, "check:", ok, why, cand["credit"])
+                if ok:
+                    got = cand
+                    break
+                used.add(cand["page"])
+            _sh.rmtree(folder / "_c", ignore_errors=True)
+            if got:
+                cap = _re.sub(r"\n\n📸 [^\n]*", "", meta["caption"]).rstrip()
+                meta.update(caption=cap + f"\n\n📸 {got['credit']}", photo_credit=got["credit"],
+                            photo_page=got["page"], status="approved", decided_at=now().isoformat(timespec="minutes"),
+                            note="real photo found by rephoto")
+                st["photos"].append({"at": now().isoformat(), "page": got["page"]})
+            else:
+                meta.update(status="rejected", note="no safe real photo found (headline cards only for breaking)")
+            save_post(folder, meta)
+            print(pid, "->", meta["status"])
+        save_state(st)
+        sys.exit(0)
     if len(sys.argv) >= 3 and sys.argv[1] == "check":
         from vok.write import check_photo
         from vok.state import config as _cfg

@@ -66,6 +66,9 @@ jobs:
             python3 -m vok.run drip
           elif [ "$ALL" = "yes" ]; then
             python3 -m vok.run publish-all 180
+          elif [ "${POST_ID#rephoto:}" != "$POST_ID" ]; then
+            IFS='#' read -ra SPECS <<< "${POST_ID#rephoto:}"
+            python3 -m vok.run rephoto "${SPECS[@]}"
           elif [ "${POST_ID#phototest:}" != "$POST_ID" ]; then
             python3 -c "import sys; from vok import images; r=images.pixabay(sys.argv[1]); print('pixabay results:', len(r)); [print(' ', c['credit'], c['page']) for c in r[:5]]" "${POST_ID#phototest:}"
           elif [ "$POST_ID" = "report" ]; then
