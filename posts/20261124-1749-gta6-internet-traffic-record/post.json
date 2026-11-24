@@ -17,7 +17,7 @@
     "DE CIX"
   ],
   "note": "re-approved: different story from the livestream post",
-  "status": "approved",
+  "status": "published",
   "photo_credit": "AI image supplied by Saad",
   "photo_page": "supplied by Saad",
   "decided_at": "2026-11-24T23:37+05:00",
@@ -27,5 +27,21 @@
   "focus": [
     0.55,
     0.22
-  ]
+  ],
+  "result": {
+    "facebook": {
+      "photo_id": "122185152560988633",
+      "post_id": "790959357430859_122185152584988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185152560988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/928181025_122185152566988633_4835060273726697710_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeF8Dd3oGsJ3bI5CMEHBZWHAXgGR5Iv0DedeAZHki_QN57m1BD64DqwWFcdoSP-o5rt-noYqDWOSNCAEu-YCd888&_nc_ohc=TNX5qxtloOAQ7kNvwHLy99H&_nc_oc=AdqNc4izdDXGrIPopdS6DQxj3_zjo3xPvig-6qz4l3T9DHQQirL284_D_QuQBxMAyTA&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=emuwKPEnO9qoimtrB8YXjw&_nc_tpa=Q5bMBQKbXPal00HvsAdj59DuP7ue2z4Oc1P9PfuHEPbgSnSXSAZFdR7HlYCXCLse5MGMhInF8_-bvFOd6A&oh=00_AQRiBTrMtMoLb_4VDfWQE9c1mOW_y7L5R-CpvtilWwYp8g&oe=6B0BE922"
+    },
+    "instagram": {
+      "media_id": "18102259424090157",
+      "permalink": "https://www.instagram.com/p/DgJIwrhl17F/"
+    },
+    "story": {
+      "media_id": "18076767893596934"
+    }
+  },
+  "published_at": "2026-11-25T04:28+05:00"
 }
