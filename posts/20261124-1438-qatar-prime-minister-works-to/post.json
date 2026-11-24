@@ -2,7 +2,7 @@
   "headline": "Qatar Prime Minister works to revive US and Iran talks after meeting Marco Rubio",
   "label": "NEWS",
   "caption": "Qatar is stepping up diplomatic efforts to calm regional tensions between Washington and Tehran. 🇦🇶\n\nAccording to Al Jazeera and Middle East Eye, Qatar Prime Minister Sheikh Mohammed bin Abdulrahman Al Thani said he is working to revive the diplomatic track between the US and Iran.\n\nThe comments followed his meeting with US Secretary of State Marco Rubio, according to the reports.\n\nSheikh Mohammed bin Abdulrahman Al Thani stated that the situation in the Middle East cannot afford a new escalation between the US and Iran.\n\nHe also described strategic dialogue with the US as central to Qatar relations and expressed a goal to strengthen defence cooperation.\n\nCan diplomatic efforts prevent further escalation in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Qatar #US #Iran\n\n📸 UK Government / Wikimedia Commons (CC BY 2.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T14:39+05:00",
@@ -23,5 +23,7 @@
     "https://www.aljazeera.com/video/newsfeed/2026/11/24/qatar-pm-looks-to-revive-us-iran-talks-after-meeting-rubio?traffic_source=rss",
     "https://www.middleeasteye.net/live-blog/live-blog-update/qatar-striving-revive-us-iran-negotiations"
   ],
-  "issue": 36
+  "issue": 36,
+  "decided_at": "2026-11-24T14:55+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
