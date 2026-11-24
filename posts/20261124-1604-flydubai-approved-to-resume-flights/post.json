@@ -2,7 +2,7 @@
   "headline": "Flydubai approved to resume flights to Tel Aviv after two months following thwarted attack",
   "label": "NEWS",
   "caption": "Dubai carrier Flydubai gets the green light to fly to Tel Aviv again after a security review ✈️\n\nAccording to reports from The National and The Times of Israel, Israeli authorities have given Flydubai approval to resume flights to Tel Aviv.\n\nThis decision comes two months after a thwarted attack prompted security concerns in the region.\n\nFlydubai is now set to restore its flight routes to the Israeli city following the clearance.\n\nWould you travel on this route right now? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Flydubai #TelAviv #Aviation\n\n📸 Chris Hoare / Wikimedia Commons (CC BY 2.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T16:05+05:00",
@@ -23,5 +23,18 @@
   ],
   "issue": 42,
   "decided_at": "2026-11-24T16:24+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185104092988633",
+      "post_id": "790959357430859_122185104116988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185104092988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/931302025_122185104098988633_602151592145166176_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeG8eEBQNoWPDjbxiZrPhseZ7tjnbK4sOSHu2Odsriw5IY26d3w10ZZRE0Cpw7ugvm6v_WN1eHDlU--qRVrVwOf2&_nc_ohc=nTxZI7JV8ZMQ7kNvwE6IeTr&_nc_oc=AdohxkTYrAkKSrhdWVxQ1ha86a0_iD8pE1GfwrXnZxE7ngiyx9mC5BdvI3LwG7Q56Tw&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=C-GMkGNTFn_zhn8OaTlv0Q&_nc_tpa=Q5bMBQIg3KtFGe-ci2-DoZk0wROt6sG67zftiZaan93ZB25eKI6BnmbpTEVEOSP4-ZeddW_mAi0aboJwAw&oh=00_AQSH1UbS0zsQ3Jf3beKrckPieKdnJ_aQ2Ko7Twmck-tH8A&oe=6B0BAE80"
+    },
+    "instagram": {
+      "media_id": "18572798449076902",
+      "permalink": "https://www.instagram.com/p/DgIirILCRlK/"
+    }
+  },
+  "published_at": "2026-11-24T22:56+05:00"
 }
