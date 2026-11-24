@@ -2,7 +2,7 @@
   "headline": "UK heat de@ths hit record high of 5258 during extreme summer",
   "label": "NEWS",
   "caption": "UK summer heat de@ths hit a record high of 5,258 in 2026 according to official estimates 🌡️\n\nAccording to the UK Health Security Agency, this is the highest number of such cases since records began in 2016. The deadliest period was between June 21 and 28 when an estimated 2,401 de@ths were linked to extreme heat.\n\nResearchers from Imperial College London and the London School of Hygiene and Tropical Medicine also estimated that more than 50,000 heat related de@ths occurred in urban areas across 30 European countries during the summer.\n\nScientists say extreme heat events are becoming more frequent and intense because of climate change.\n\nHow is your city coping with rising summer temperatures lately? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UKNews #ClimateChange #Europe\n\n📸 Print artist: Utagawa Kuniyoshi (歌川国芳) / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "failed",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T18:55+05:00",
@@ -23,5 +23,6 @@
   ],
   "issue": 47,
   "decided_at": "2026-11-24T19:11+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "error": "Meta API: HTTP 400: {\n   \"error\": {\n      \"message\": \"Cannot call API for app 1687838166028340 on behalf of user 2415288562577563\",\n      \"type\": \"OAuthException\",\n      \"code\": 200,\n      \"fbtrace_id\": \"AU6fBWmS2Zd91loaUXcgrsm\"\n   }\n}"
 }
