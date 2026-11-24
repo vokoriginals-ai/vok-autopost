@@ -2,7 +2,7 @@
   "headline": "Court of Arbitration for Sport reinstates Senegal as AFCON 2025 champions after overturning decision",
   "label": "NEWS",
   "caption": "Senegal has been officially reinstated as the AFCON 2025 champions following a major court ruling 🏆\n\nThe Court of Arbitration for Sport has overturned a decision made by CAF and reinstated Senegal as the champions, according to reports from Anadolu and Sky News.\n\nThe court ruling in favor of Senegal reasserted that the decision of the referee is final, according to Arab News.\n\nDuring the appeal process, the Moroccan federation also reported an incident to the court, according to a source cited by Reuters.\n\nWhat are your thoughts on this final decision? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #AFCON2025 #Senegal #Morocco\n\n📸 Bryan Berlin / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "rejected",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T20:06+05:00",
@@ -28,5 +28,5 @@
   ],
   "issue": 49,
   "decided_at": "2026-11-24T20:23+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "sports: removed at Saad's request"
 }

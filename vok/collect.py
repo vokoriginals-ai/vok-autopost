@@ -158,7 +158,7 @@ SPORTS_STRONG = re.compile(r"\b(football|soccer|cricket|tennis|golf|nba|nfl|mlb|
                            r"grand prix|olympics?|world cup|premier league|la liga|bundesliga|serie a|"
                            r"champions league|atp|wta|wimbledon|grand slam|striker|goalkeeper|"
                            r"pitcher|quarterback|touchdown|innings|wicket|t20|odi|ipl|psl|boxing|"
-                           r"fifa|uefa|icc|matchday|hat trick|ballon d.or|mets|yankees|lakers)\b", re.I)
+                           r"fifa|uefa|icc|matchday|hat trick|ballon d.or|mets|yankees|lakers|afcon|copa america|court of arbitration for sport|footballer|cricketer|athlete|athletics|super bowl|world series|ligue 1|messi|ronaldo|neymar|mbappe|babar azam|virat kohli)\b", re.I)
 SPORTS_WEAK = re.compile(r"\b(match|matches|final|finals|semifinal|league|cup|tournament|coach|"
                          r"medal|title|season|club|player|players|team|transfer|stadium|fans)\b", re.I)
 
