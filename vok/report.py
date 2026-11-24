@@ -37,10 +37,16 @@ def _ig_posts(hours: int) -> list[dict]:
 
 def _fb_posts(hours: int) -> list[dict]:
     cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
-    data = net.get_json(f"{GRAPH}/{PAGE_ID}/posts", {
-        "fields": "message,created_time,permalink_url,reactions.summary(true).limit(0),"
-                  "comments.summary(true).limit(0),shares",
-        "limit": 60, "access_token": _token()}).get("data", [])
+    try:
+        data = net.get_json(f"{GRAPH}/{PAGE_ID}/posts", {
+            "fields": "message,created_time,reactions.summary(true).limit(0),"
+                      "comments.summary(true).limit(0),shares",
+            "limit": 60, "access_token": _token()}).get("data", [])
+    except Exception:
+        # likes/comments on Facebook need an extra permission; shares still work
+        data = net.get_json(f"{GRAPH}/{PAGE_ID}/posts", {
+            "fields": "message,created_time,shares", "limit": 60,
+            "access_token": _token()}).get("data", [])
     out = []
     for m in data:
         ts = datetime.strptime(m["created_time"], "%Y-%m-%dT%H:%M:%S%z")
