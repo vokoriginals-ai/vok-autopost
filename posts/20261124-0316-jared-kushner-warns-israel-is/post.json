@@ -2,7 +2,7 @@
   "headline": "Jared Kushner warns Israel is heading toward becoming a global pariah state",
   "label": "NEWS",
   "caption": "Former US official Jared Kushner warns that Israel is currently on a path toward global pariah status. 🌍\n\nAccording to Middle East Eye and Haaretz, Kushner stated in a New York Magazine interview that Israel stands at a critical crossroads following the events of October 7, 2023.\n\nHe warned that the country can either choose to become more secure and integrated globally or continue on its current trajectory.\n\nWhat are your thoughts on these remarks from Kushner? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Israel #JaredKushner #MiddleEast\n\n📸 U.S. Embassy Jerusalem / Wikimedia Commons (CC BY 2.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T03:17+05:00",
@@ -27,5 +27,18 @@
   ],
   "issue": 25,
   "decided_at": "2026-11-24T03:35+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184983282988633",
+      "post_id": "790959357430859_122184983306988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184983282988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/922868831_122184983288988633_7703322343076803248_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFTYZK7fw6cRiC-l-G5CwxqbRCCnAM2aaltEIKcAzZpqRQVoGRUCkHV0TvJHLkv0by_CkoyitWUebQHic_rtVPt&_nc_ohc=hKxNz9qoAFkQ7kNvwGzWf35&_nc_oc=AdoYlvSwKERWOQxZNMA0HHduL_DNckB3vu1FfdK1ys1oc5817m5qYBJ_blLFRT0tAEg&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ll6-zogBw8KG8-C9V7TxPA&_nc_tpa=Q5bMBQK2VHeZLwil6PIMmlc3IATyfqAO7WvvouwlbFpgCGqtUC0WJQCd8Qdpiqok6aQOhN_k507EeF--2A&oh=00_AQR-_AlCQeI-jTgTPtl7CfiufRxlYXivhCcu_93nb582iw&oe=6B0ACB5C"
+    },
+    "instagram": {
+      "media_id": "18002577219118634",
+      "permalink": "https://www.instagram.com/p/DgG1j1vCShG/"
+    }
+  },
+  "published_at": "2026-11-24T07:02+05:00"
 }
