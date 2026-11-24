@@ -223,7 +223,11 @@ Reject the photo (ok=false) if ANY of these is true:
   military story, soldiers of another country, a random building)
 - it is a screenshot, a social media post, a chart, a graph, an infographic or a document
 - it contains offensive words, swear words or hateful text
-- the mood is wrong for the story (someone smiling on a story about deaths, war or genocide)
+- the mood is wrong for the story: a celebration, rally, victory pose, smiling or cheering
+  photo on a story about a raid, arrest, accusation, scandal, lawsuit, deaths, war, attack,
+  disaster or any negative event (judge it strictly: when in doubt, reject)
+- it is a group photo where other well-known people are as prominent as the story's person
+  (readers may think those people are involved)
 - it is blurry, distorted, or the main subject is cut off
 - it could mislead readers about what happened
 Otherwise ok=true. A general photo of the right place, the right type of object or the right
