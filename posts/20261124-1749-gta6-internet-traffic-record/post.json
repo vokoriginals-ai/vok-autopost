@@ -16,10 +16,11 @@
     "Streams Charts",
     "DE CIX"
   ],
-  "note": "VOK already posted this story",
-  "status": "rejected",
+  "note": "re-approved: different story from the livestream post",
+  "status": "approved",
   "photo_credit": "AI image supplied by Saad",
   "photo_page": "supplied by Saad",
-  "decided_at": "2026-11-24T14:01+05:00",
-  "photo_sharpness": 1431.7
+  "decided_at": "2026-11-24T23:37+05:00",
+  "photo_sharpness": 1431.7,
+  "force": true
 }

@@ -163,7 +163,7 @@ def publish_next(cfg: dict, st: dict) -> bool:
     if meta.get("status") != "approved":
         print(f"{folder.name}: no longer approved, skipping")
         return True
-    if not meta.get("result"):
+    if not meta.get("result") and not meta.get("force"):
         try:
             from vok.publish import recent_vok_posts
             from vok.collect import _similar, _words
