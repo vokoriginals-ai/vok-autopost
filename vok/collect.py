@@ -48,6 +48,9 @@ def fetch(feeds: list[dict], max_age_hours: int) -> list[dict]:
     now = datetime.now(timezone.utc)
     items: list[dict] = []
     for f in feeds:
+        if f.get("instagram"):
+            items += _instagram(f, now, max_age_hours)
+            continue
         try:
             root = ET.fromstring(net.get(f["url"], timeout=25))
         except Exception as e:  # one bad feed shouldn't stop the run
@@ -81,6 +84,40 @@ def fetch(feeds: list[dict], max_age_hours: int) -> list[dict]:
             })
     print(f"fetched {len(items)} fresh headlines")
     return items
+
+
+def _instagram(f: dict, now, max_age_hours: int) -> list[dict]:
+    """Latest posts of a public Instagram business page (e.g. @gethefame.official),
+    read through VOK's own Instagram connection. These are tips: a story still needs
+    a trusted outlet reporting it before VOK posts it."""
+    import os
+    from vok.publish import GRAPH, IG_ID
+    if not os.environ.get("META_PAGE_TOKEN"):
+        return []
+    fields = (f"business_discovery.username({f['instagram']})"
+              "{media.limit(25){caption,timestamp,permalink}}")
+    try:
+        data = net.get_json(f"{GRAPH}/{IG_ID}", {"fields": fields,
+                                                  "access_token": os.environ["META_PAGE_TOKEN"]})
+    except Exception as e:
+        print(f"instagram source failed: {f['instagram']} {str(e)[:120]}")
+        return []
+    out = []
+    for m in (data.get("business_discovery", {}).get("media", {}) or {}).get("data", []):
+        cap = (m.get("caption") or "").strip()
+        if not cap:
+            continue
+        try:
+            pub = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        except Exception:
+            pub = now
+        if now - pub > timedelta(hours=max_age_hours):
+            continue
+        title = _clean(cap.splitlines()[0])[:200]
+        out.append({"title": title, "summary": _clean(cap)[:500], "link": m.get("permalink", ""),
+                    "source": f["name"], "published": pub.isoformat(), "words": _words(title)})
+    print(f"instagram {f['instagram']}: {len(out)} fresh posts")
+    return out
 
 
 def _similar(a: set[str], b: set[str]) -> bool:

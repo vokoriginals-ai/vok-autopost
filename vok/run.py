@@ -168,6 +168,12 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
         gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
         sys.exit(0 if publish_all_approved(gap) else 1)
+    if len(sys.argv) >= 3 and sys.argv[1] == "igsource":
+        from vok import collect
+        from datetime import datetime, timezone
+        for it in collect._instagram({"name": "test", "instagram": sys.argv[2]}, datetime.now(timezone.utc), 48)[:8]:
+            print(it["published"][:16], it["title"][:110])
+        sys.exit(0)
     if len(sys.argv) >= 3 and sys.argv[1] == "check":
         from vok.write import check_photo
         from vok.state import config as _cfg
