@@ -880,5 +880,41 @@
       1402
     ],
     "note": "supplied by Saad, Nov 25"
+  },
+  {
+    "file": "shenzhou24-rocket-pad.png",
+    "people": [],
+    "tags": [
+      "shenzhou",
+      "rocket",
+      "launch pad",
+      "jiuquan",
+      "china space"
+    ],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1092,
+      1440
+    ],
+    "note": "supplied by Saad, Nov 25"
+  },
+  {
+    "file": "long-march-2f-liftoff.png",
+    "people": [],
+    "tags": [
+      "shenzhou",
+      "rocket",
+      "launch",
+      "liftoff",
+      "china space"
+    ],
+    "ai": "enhanced",
+    "credit": "VOK",
+    "size": [
+      1122,
+      1402
+    ],
+    "note": "supplied by Saad, Nov 25"
   }
 ]
