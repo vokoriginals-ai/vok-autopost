@@ -2,7 +2,7 @@
   "headline": "Trump administration weighs targeted k!llings of top Iranian leaders, NBC reports",
   "label": "BREAKING",
   "caption": "Washington is reportedly weighing a new way to end the Iran war: going after the men at the top 🎯\n\nAccording to an exclusive NBC News report cited by The Times of Israel and Israel Hayom, officials in the Trump administration are debating targeted k!llings of senior Iranian leaders, aimed at hardliners who oppose a deal with the United States.\n\nSupporters inside the administration argue it would show Washington can reach Iran's leaders at will and give President Trump a way to close out the war without a full return to fighting.\n\nOthers warn it could push the remaining leadership to dig in and escalate the conflict further. No final decision has been made.\n\nWould this end the war or make it worse? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #Iran #Trump #MiddleEast",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-24T23:45+05:00",
@@ -18,5 +18,18 @@
     "The Times of Israel",
     "Israel Hayom"
   ],
-  "note": "added by Claude at Saad's request (breaking news check)"
+  "note": "added by Claude at Saad's request (breaking news check)",
+  "result": {
+    "facebook": {
+      "photo_id": "122185107032988633",
+      "post_id": "790959357430859_122185107056988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185107032988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-dfw5-3.xx.fbcdn.net/v/t39.30808-6/929802684_122185107038988633_186180329766808245_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFFyi--9HqtumGwR8vOfpPdMCU1njqNyP8wJTWeOo3I_1CNobN-BcdosOIt_imxLSL-o2G3hywYIo6SSXIrXEs7&_nc_ohc=7ZOALwCHJpsQ7kNvwGm7O3F&_nc_oc=Ado1TzJtKTITriCBsafymA9Ptd2ekm1gtGbyqTzGxyoEO3MfHuTjnekXCqMXmfxtnHI&_nc_zt=23&_nc_ht=scontent-dfw5-3.xx&edm=AMAeTUEEAAAA&_nc_gid=GAk96cpcv-6V0nbWYdT9ig&_nc_tpa=Q5bMBQJfyPUSZMJ7jh_dumB1r0CsAXDFIdyvxTnqJaFB6iniRf1XHguWwzk0XZEMLqKDz4rQZNV_jH2ACA&oh=00_AQSk8SFzEGMuSvadzpRTJlBq0s7MrnXyW2r5-XVH48SwaQ&oe=6B0B9AB8"
+    },
+    "instagram": {
+      "media_id": "17894233977619211",
+      "permalink": "https://www.instagram.com/p/DgIn044Grqw/"
+    }
+  },
+  "published_at": "2026-11-24T23:41+05:00"
 }
