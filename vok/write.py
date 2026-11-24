@@ -54,6 +54,9 @@ sports deals and results (baseball, American football, college sports, routine t
 results), celebrity gossip with no wider angle, and local business news. Global sports moments
 (World Cup, Olympics, cricket, a Muslim athlete's historic win) are fine.
 
+OPINION: opinion columns, editorials, "X must / should ..." arguments and analysis pieces are
+NOT news: set "publishable": false for them.
+
 PRIORITY: "priority": 3 = breaking news (just happened, big: war moves, strikes, deaths of
 leaders, major disasters, huge political shocks), 2 = important, 1 = normal/viral.
 
