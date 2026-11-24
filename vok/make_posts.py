@@ -35,11 +35,13 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
 
     made_today = sum(1 for _, m in all_posts()
                      if m.get("created_at") and cycle_day(_dt.fromisoformat(m["created_at"])) == today
-                     and m.get("status") not in ("rejected", "expired"))
+                     and m.get("status") not in ("rejected", "expired", "needs_photo", "failed"))
     room = min(count or cfg["posts_per_run"], cfg["posts_per_day"] - made_today)
+    breaking_only = False
     if room <= 0:
-        print(f"daily limit reached ({made_today} made today)")
-        return 0
+        # the daily target is reached, but BREAKING news must still go out
+        print(f"daily limit reached ({made_today} made today): breaking news only")
+        breaking_only, room = True, 2
 
     recent = (now() - timedelta(days=2)).isoformat()
     seen = [s["words"] for s in st["seen"] if s.get("at", "") >= recent]
@@ -82,6 +84,9 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         mark_seen()
         if not w.get("publishable"):
             print(f"skip: {story['headline'][:70]} – {w.get('reason')}")
+            continue
+        if breaking_only and int(w.get("priority") or 1) < 3:
+            print(f"skip (daily limit, not breaking): {w['headline'][:70]}")
             continue
 
         used = {u["page"] for u in st.setdefault("photos", [])}
