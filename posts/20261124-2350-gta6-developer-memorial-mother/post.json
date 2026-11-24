@@ -2,7 +2,7 @@
   "headline": "GTA VI developer hides a memorial to his late mother inside the game",
   "label": "VIRAL",
   "caption": "A GTA VI developer has hidden a permanent tribute to his late mother inside the game 🕊️\n\nRockstar Games QA developer Matt Green shared on Instagram that his mother, Beverly Green, is now honoured on a memorial wall just north of Hamlet in the game's state of Leonida, as reported by Dexerto and The Express Tribune.\n\nShe passed away on March 30, 2026, almost eight months before GTA VI launched on November 19, so she never got to see the finished game. Green said her choice to buy him an old GTA game as a kid is what set him on the path to Rockstar.\n\nPlayers have since found other names on the same wall, including the father and daughter of production designer Terrance Radcliff, both lost during development.\n\nWould you go and visit the memorial in game? 👇\n\nFollow Vok for more stories like this.\n\nNote: AI image used for illustration purposes.\n#Vok #VokOriginals #GTAVI #GTA6 #RockstarGames",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": true,
   "created_at": "2026-11-24T23:50+05:00",
@@ -19,5 +19,21 @@
   "decided_at": "2026-11-25T01:10+05:00",
   "photo_credit": "AI image supplied by Saad",
   "photo_page": "supplied by Saad",
-  "highlight": "late mother"
+  "highlight": "late mother",
+  "result": {
+    "facebook": {
+      "photo_id": "122185114712988633",
+      "post_id": "790959357430859_122185114736988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185114712988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/927648465_122185114718988633_6748096692003565443_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE7rgkgRJRwgntatn-J1yTszBQ7H0mTEs3MFDsfSZMSzeb6AG1jlmo5f-fuO-FPwTNqm-NLg8DpmEOwXHa7LbNL&_nc_ohc=DHVqk2EeyasQ7kNvwGChBPi&_nc_oc=AdpUUwXO0pE66b6pmPV9WYp1CPhINue6kHNS4iQuZkWFME4PvbNi-ABla2zJTN-OqFs&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=VCePmc2kP-0YT_lPdPQT4w&_nc_tpa=Q5bMBQIeiFkvcrXGVZe_2L9iIDsCYfMWNGC4XUWM2Zl6wz4UMI-1e38D_0e1MwiMnhkdk5G6Gar-kWVL2A&oh=00_AQRawsncLhLdl1CROSj0wlOJN3BFYLtjHnZPvpGBOP0scg&oe=6B0BB5CC"
+    },
+    "instagram": {
+      "media_id": "17969508771214555",
+      "permalink": "https://www.instagram.com/p/DgIxYmLl-LZ/"
+    },
+    "story": {
+      "media_id": "18084434234356002"
+    }
+  },
+  "published_at": "2026-11-25T01:04+05:00"
 }
