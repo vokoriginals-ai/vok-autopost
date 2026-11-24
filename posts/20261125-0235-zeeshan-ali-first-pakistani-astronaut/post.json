@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "first Pakistani astronaut",
   "caption": "Pakistan is about to make space history 🚀🇵🇰\n\nMuhammad Zeeshan Ali has been named to the crew of China's Shenzhou 24 mission, set to become the first Pakistani astronaut to fly into orbit, according to Xinhua and Dawn.\n\nHe will fly alongside Chinese astronauts Tang Hongbo, the mission commander, and Wu Yi. He will also be the first foreign astronaut ever to visit China's Tiangong space station.\n\nThe launch is scheduled for Wednesday at 8:18 am Beijing time (5:18 am in Pakistan) from the Jiuquan Satellite Launch Center. Zeeshan will serve as a payload specialist, carrying out scientific experiments for Pakistan during a short stay of about a week.\n\nWhat does this mission mean for Pakistan's future in space? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #Pakistan #China #Shenzhou24 #ZeeshanAli",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-25T02:35+05:00",
@@ -20,5 +20,21 @@
     "AP"
   ],
   "note": "added by Claude at Saad's request",
-  "force": true
+  "force": true,
+  "result": {
+    "facebook": {
+      "photo_id": "122185122962988633",
+      "post_id": "790959357430859_122185122986988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185122962988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/923882498_122185122968988633_83291589423023252_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHANby-X58tQBwINZdUhJlPTghR2uiibrlOCFHa6KJuuVEo7kxWHHEa0UFlLFH9GRRC2MVSd_Pm73QFWI_-usHT&_nc_ohc=xTXp_3VTQcIQ7kNvwGuTpLv&_nc_oc=AdpBKM0JrBAaj55Y42A7He1cIvcVdwm73A3rEI05iIbuKZTFYdOuonhKj4FfGpDVCMI&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Ev5Ygqlk1RsEopQ5nd0dLA&_nc_tpa=Q5bMBQKxMbb21_3VWKY4B1Xzqru7yaRwiwVPOeHxkUL0EvTEgoowUOB6QlOhGfbj-Myvi9pSOKdF3IRVQQ&oh=00_AQQ61C0zsvsd4IhctVbZCKvws7QhAXHDEV9STn9vlozgqA&oe=6B0BE0C3"
+    },
+    "instagram": {
+      "media_id": "18043764824906841",
+      "permalink": "https://www.instagram.com/p/DgI7tHpjYSl/"
+    },
+    "story": {
+      "media_id": "18646704832039291"
+    }
+  },
+  "published_at": "2026-11-25T02:34+05:00"
 }
