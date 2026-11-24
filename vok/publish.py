@@ -114,7 +114,51 @@ def publish(image_path: str, caption: str, targets=("facebook", "instagram"),
         result["instagram"] = post_instagram(image_url, caption)
         if on_step:
             on_step(result)
+
+    # Instagram Story copy of the post: extra reach. Best effort, never fails the post.
+    if "instagram" in result and "story" not in result and os.environ.get("VOK_STORIES", "1") != "0":
+        try:
+            result["story"] = post_story(image_path)
+            if on_step:
+                on_step(result)
+        except Exception as e:
+            print(f"story failed (post itself is fine): {str(e)[:200]}")
+            result["story"] = {"error": str(e)[:200]}
     return result
+
+
+def make_story_image(image_path: str) -> str:
+    """1080x1920 Story: the post card in the middle on a blurred, darkened copy of itself."""
+    from PIL import Image, ImageFilter, ImageEnhance
+    card = Image.open(image_path).convert("RGB")
+    bg = card.resize((int(card.width * 1920 / card.height), 1920))
+    left = (bg.width - 1080) // 2
+    bg = bg.crop((left, 0, left + 1080, 1920)).filter(ImageFilter.GaussianBlur(40))
+    bg = ImageEnhance.Brightness(bg).enhance(0.45)
+    w = 1000
+    fg = card.resize((w, int(card.height * w / card.width)))
+    bg.paste(fg, ((1080 - w) // 2, (1920 - fg.height) // 2))
+    out = image_path.rsplit(".", 1)[0] + "_story.jpg"
+    bg.save(out, quality=92)
+    return out
+
+
+def post_story(image_path: str) -> dict:
+    tok = _token()
+    url = post_facebook(make_story_image(image_path), "", published=False)["image_url"]
+    container = _call(net.post_form, f"{GRAPH}/{IG_ID}/media",
+                      {"image_url": url, "media_type": "STORIES", "access_token": tok})["id"]
+    for _ in range(30):
+        status = _call(net.get_json, f"{GRAPH}/{container}",
+                       {"fields": "status_code", "access_token": tok}).get("status_code")
+        if status == "FINISHED":
+            break
+        if status in {"ERROR", "EXPIRED"}:
+            raise PublishError(f"Story image not processed ({status})")
+        time.sleep(5)
+    media_id = _call(net.post_form, f"{GRAPH}/{IG_ID}/media_publish",
+                     {"creation_id": container, "access_token": tok})["id"]
+    return {"media_id": media_id}
 
 
 def recent_vok_posts(hours: int = 24) -> list[list[str]]:

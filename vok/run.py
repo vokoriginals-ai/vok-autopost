@@ -156,6 +156,18 @@ def drip(max_hours: float = 5.5) -> None:
             _sync()
         else:
             print("outside posting hours: waiting")        # public repo: running is free
+        # daily report at 10am PKT, once per day
+        try:
+            stp = load_state()
+            today = t.strftime("%Y-%m-%d")
+            if t.hour >= 10 and t.hour < 12 and stp.get("report_sent") != today:
+                from vok import report
+                report.send(22)
+                stp["report_sent"] = today
+                save_state(stp)
+                _sync()
+        except Exception as e:
+            print(f"report failed: {str(e)[:150]}")
         time.sleep(300)
     # hand over to a fresh run so the queue keeps going
     if True:                       # always hand over: the publisher never stops
