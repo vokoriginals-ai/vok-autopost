@@ -216,7 +216,8 @@ def library_photo(person: str, queries: list[str], recent: set) -> dict | None:
         hits = [e for e in lib if ok(e) and not e.get("people") and any(t in text for t in e.get("tags", []))]
     if not hits:
         return None
-    e = max(hits, key=lambda e: min(e["size"]))
+    import random
+    e = random.choice(hits)          # rotate between Saad's photos of the same person
     print(f"  photo from Saad's library: {e['file']}")
     return {"path": str(LIBRARY / e["file"]), "credit": e.get("credit", "VOK"),
             "page": f"library:{e['file']}", "sharpness": 999, "ai_generated": bool(e.get("ai"))}
