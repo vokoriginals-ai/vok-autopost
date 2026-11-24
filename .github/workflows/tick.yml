@@ -64,6 +64,8 @@ jobs:
             python3 -m vok.run drip
           elif [ "$ALL" = "yes" ]; then
             python3 -m vok.run publish-all 180
+          elif [ "$POST_ID" = "tokencheck" ]; then
+            python3 -m vok.run tokencheck x
           elif [ "${POST_ID#quotes:}" != "$POST_ID" ]; then
             python3 -m vok.make_quotes "${POST_ID#quotes:}"
           elif [ "${POST_ID#igsource:}" != "$POST_ID" ]; then

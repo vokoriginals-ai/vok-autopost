@@ -177,6 +177,15 @@ if __name__ == "__main__":
     if len(sys.argv) >= 2 and sys.argv[1] == "publish-all":
         gap = int(sys.argv[2]) if len(sys.argv) > 2 else 180
         sys.exit(0 if publish_all_approved(gap) else 1)
+    if len(sys.argv) >= 3 and sys.argv[1] == "tokencheck":
+        from vok import net
+        from vok.publish import GRAPH, PAGE_ID, IG_ID, _token
+        for path, fields in [("me", "id,name"), (PAGE_ID, "name"), (IG_ID, "username")]:
+            try:
+                print(path, net.get_json(f"{GRAPH}/{path}", {"fields": fields, "access_token": _token()}))
+            except Exception as e:
+                print(path, "ERROR", str(e)[:300])
+        sys.exit(0)
     if len(sys.argv) >= 3 and sys.argv[1] == "igsource":
         from vok import collect
         from datetime import datetime, timezone
