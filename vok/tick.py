@@ -128,6 +128,9 @@ def expire_old() -> None:
 
 def publish_next(cfg: dict, st: dict) -> bool:
     t = now()
+    if config().get("pause_publishing"):        # e.g. the Meta token needs renewing
+        print("publishing is paused")
+        return True
     if not in_window(t):
         print("outside posting hours")
         return True

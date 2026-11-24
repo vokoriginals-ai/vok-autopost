@@ -2,7 +2,7 @@
   "headline": "Flydubai approved to resume flights to Tel Aviv after two months following thwarted attack",
   "label": "NEWS",
   "caption": "Dubai carrier Flydubai gets the green light to fly to Tel Aviv again after a security review ✈️\n\nAccording to reports from The National and The Times of Israel, Israeli authorities have given Flydubai approval to resume flights to Tel Aviv.\n\nThis decision comes two months after a thwarted attack prompted security concerns in the region.\n\nFlydubai is now set to restore its flight routes to the Israeli city following the clearance.\n\nWould you travel on this route right now? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Flydubai #TelAviv #Aviation\n\n📸 Chris Hoare / Wikimedia Commons (CC BY 2.0)",
-  "status": "failed",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T16:05+05:00",
@@ -23,6 +23,5 @@
   ],
   "issue": 42,
   "decided_at": "2026-11-24T16:24+05:00",
-  "note": "auto-approved: no reply in 15 min",
-  "error": "Meta API: HTTP 400: {\n   \"error\": {\n      \"message\": \"Cannot call API for app 1687838166028340 on behalf of user 2415288562577563\",\n      \"type\": \"OAuthException\",\n      \"code\": 200,\n      \"fbtrace_id\": \"Aut17l-HyGdQjbAGaDiY7Fv\"\n   }\n}"
+  "note": "auto-approved: no reply in 15 min"
 }
