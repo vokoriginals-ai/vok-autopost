@@ -133,5 +133,5 @@
   "require_trusted_source": true,
   "auto_approve_after_minutes": 15,
   "cycle_start_hour_pkt": 12,
-  "pause_publishing": true
+  "pause_publishing": false
 }
