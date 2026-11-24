@@ -2,7 +2,7 @@
   "headline": "UK launches worlds largest trial to test artificial intelligence in breast cancer screening",
   "label": "NEWS",
   "caption": "Artificial intelligence is stepping into healthcare in a massive way. 🩺\n\nAccording to Gulf News and Anadolu, the UK has launched a major trial to test artificial intelligence in breast cancer screening.\n\nThe initiative is being described as the worlds largest trial of its kind, aiming to evaluate how AI technology performs in detecting breast cancer early.\n\nHealth authorities hope the trial will improve diagnostic accuracy and speed up the screening process for patients across the country.\n\nWould you trust artificial intelligence with your medical diagnosis? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #BreastCancerAwareness #ArtificialIntelligence #HealthNews\n\n📸 The White House / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-24T03:20+05:00",
@@ -23,5 +23,18 @@
   ],
   "issue": 26,
   "decided_at": "2026-11-24T03:35+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122184994226988633",
+      "post_id": "790959357430859_122184994250988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122184994226988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sjc6-1.xx.fbcdn.net/v/t39.30808-6/928445564_122184994232988633_8857565653568591270_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFCZuvvKPrgLoEEfPk8O2TMM6t6YEibmVkzq3pgSJuZWW-pQmbuxbg6X-Y7Gn0YcghUt5uNZcUDc-M5PMZQb_In&_nc_ohc=qqGlso1ykC0Q7kNvwF02YiP&_nc_oc=Adr1XYV4HRB9bLguu-eN3cwRJyOU5fcB35_lKxoVv78HYd3OWKNzGwQM5QSxtKfgvCk&_nc_zt=23&_nc_ht=scontent-sjc6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=jkr7tUkET_xnPjV6p2mXMQ&_nc_tpa=Q5bMBQLf4Wil4rQqMbhTFfgJf9KzWFm4kup3IsWdiUmPACWW5fLybtIqy6bSEEddV71PwE4G61CN0vR13Q&oh=00_AQT13THQ0bPt_UxWVjx8m8pNhkGdd1vjns_C_vke4pFwww&oe=6B0ADB67"
+    },
+    "instagram": {
+      "media_id": "18180220069443556",
+      "permalink": "https://www.instagram.com/p/DgHDjMciWkw/"
+    }
+  },
+  "published_at": "2026-11-24T09:04+05:00"
 }
