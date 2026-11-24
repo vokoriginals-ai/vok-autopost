@@ -57,7 +57,9 @@ results), celebrity gossip with no wider angle, and local business news. Global 
 PRIORITY: "priority": 3 = breaking news (just happened, big: war moves, strikes, deaths of
 leaders, major disasters, huge political shocks), 2 = important, 1 = normal/viral.
 
-LABEL: "NEWS" for hard news, "VIRAL" for viral/social/celebrity stories.
+LABEL: "NEWS" for hard news, "VIRAL" for viral/social/celebrity/gaming/tech-moment stories.
+HIGHLIGHT: "highlight": 1 to 3 consecutive words copied exactly from your headline that carry the
+emotion or surprise (e.g. "late mother", "roasts", "1 billion"). They are coloured on the image.
 
 PHOTO (who or what the picture shows)
 - "photo_person": the full name of the person the picture should show, chosen in this order:
@@ -78,7 +80,7 @@ PHOTO (who or what the picture shows)
 
 Return ONLY JSON with these keys:
 {"publishable": true/false, "reason": "...", "label": "NEWS|VIRAL", "headline": "...",
- "caption": "...", "photo_person": "...", "priority": 1, "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
+ "caption": "...", "highlight": "...", "photo_person": "...", "priority": 1, "image_query": "...", "image_query_backup": "...", "is_pakistan_story": true/false}
 """
 
 
@@ -202,6 +204,8 @@ def write_post(story: dict, models: list[str]) -> dict:
         out["publishable"] = False
         out["reason"] = f"teaser headline not allowed on single posts: {out['headline']}"
     out["label"] = "VIRAL" if str(out.get("label", "")).upper() == "VIRAL" else "NEWS"
+    if out["label"] == "NEWS" and int(out.get("priority") or 1) >= 3:
+        out["label"] = "BREAKING"          # Saad's red breaking template
     return out
 
 

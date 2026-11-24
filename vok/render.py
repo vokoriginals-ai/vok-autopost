@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import argparse
 import itertools
+import re
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
@@ -238,8 +239,140 @@ def _boxed_label(d: ImageDraw.ImageDraw, text: str, f, x: int, y: int,
     return bh
 
 
+# ---------------- VIRAL templates ----------------
+VIRAL_TEAL = (94, 214, 196)      # bright VOK teal, chosen by Saad
+GAMING = re.compile(r"\b(gta|grand theft auto|rockstar|playstation|ps5|xbox|nintendo|switch 2|gamer|gamers|"
+                    r"gaming|video game|esports|steam|fortnite|minecraft|call of duty|twitch|streamer|"
+                    r"roblox|valorant|pubg|ea sports fc|elden ring)\b", re.I)
+
+
+def is_gaming(text: str) -> bool:
+    return bool(GAMING.search(text or ""))
+
+
+def _hl_words(headline: str, highlight: str) -> list[tuple[str, bool]]:
+    ws = headline.upper().split()
+    hl = highlight.upper().split()
+    mark = [False] * len(ws)
+    if hl:
+        n = len(hl)
+        strip = lambda w: re.sub(r"[^\w!@*]", "", w)
+        for i in range(len(ws) - n + 1):
+            if [strip(w) for w in ws[i:i + n]] == [strip(w) for w in hl]:
+                for j in range(i, i + n):
+                    mark[j] = True
+                break
+    return list(zip(ws, mark))
+
+
+def _wrap_hl(ws, f, max_w):
+    lines, cur = [], []
+    for w in ws:
+        test = " ".join(x for x, _ in cur + [w])
+        if cur and f.getlength(test) > max_w:
+            lines.append(cur)
+            cur = [w]
+        else:
+            cur.append(w)
+    lines.append(cur)
+    return lines
+
+
+def _fit_hl(ws, max_w, sizes, max_lines):
+    for size in sizes:
+        f = font(800, size)
+        lines = _wrap_hl(ws, f, max_w)
+        if len(lines) <= max_lines:
+            return f, lines
+    f = font(800, sizes[-1])
+    return f, _wrap_hl(ws, f, max_w)
+
+
+def _draw_hl(d, lines, f, x, y, lh, color):
+    for line in lines:
+        cx = x
+        for w, hl in line:
+            d.text((cx, y), w, font=f, fill=color if hl else WHITE)
+            cx += f.getlength(w) + f.getlength(" ")
+        y += lh
+    return y
+
+
+def _pill(d, x, y, text, f, bg, fg):
+    b = f.getbbox(text)
+    w, h = b[2] - b[0] + 44, b[3] - b[1] + 24
+    d.rounded_rectangle((x, y, x + w, y + h), radius=h // 2, fill=bg)
+    d.text((x + 22 - b[0], y + 12 - b[1]), text, font=f, fill=fg)
+    return w, h
+
+
+def render_viral_spotlight(image_path, headline, out_path, highlight="", focus=None):
+    c = smart_crop(Image.open(image_path), focus).convert("RGBA")
+    g = Image.new("RGBA", (W, H))
+    gd = ImageDraw.Draw(g)
+    for yy in range(H):
+        t = max(0, (yy - 620) / (H - 620))
+        gd.line((0, yy, W, yy), fill=(0, 0, 0, int(235 * min(1, t ** 1.2))))
+    c.alpha_composite(g)
+    _logo(c)
+    d = ImageDraw.Draw(c)
+    pf = font(800, 34)
+    pw = pf.getbbox("VIRAL")[2] + 44
+    _pill(d, W - 40 - pw, 44, "VIRAL", pf, VIRAL_TEAL, NAVY)
+    f, lines = _fit_hl(_hl_words(headline, highlight), W - 80, (70, 64, 58, 52), 4)
+    lh = round(f.size * 1.14)
+    y = 1250 - len(lines) * lh
+    _draw_hl(d, lines, f, 40, y, lh, VIRAL_TEAL)
+    d.rectangle((40, 1272, 140, 1278), fill=VIRAL_TEAL)
+    d.text((160, 1260), "READ CAPTION  \u2022  VOK ORIGINALS", font=font(600, 24), fill=(220, 220, 220))
+    c.convert("RGB").save(out_path, "JPEG", quality=92)
+    return out_path
+
+
+def render_viral_glass(image_path, headline, out_path, highlight="", focus=None):
+    from PIL import ImageFilter, ImageEnhance
+    base = smart_crop(Image.open(image_path), focus).convert("RGBA")
+    f, lines = _fit_hl(_hl_words(headline, highlight), W - 140, (60, 56, 52, 48), 4)
+    lh = round(f.size * 1.2)
+    text_h = len(lines) * lh
+    top = H - 30 - (90 + 30 + text_h + 105)       # tag + gap + headline + footer
+    box = (30, top, W - 30, H - 30)
+    blur = base.crop(box).filter(ImageFilter.GaussianBlur(28))
+    blur = ImageEnhance.Brightness(blur).enhance(0.55)
+    mask = Image.new("L", blur.size, 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, blur.width - 1, blur.height - 1), radius=40, fill=255)
+    base.paste(blur, box[:2], mask)
+    d = ImageDraw.Draw(base)
+    d.rounded_rectangle(box, radius=40, outline=(255, 255, 255, 90), width=2)
+    _logo(base)
+    tag = Image.new("RGBA", (230, 58))
+    td = ImageDraw.Draw(tag)
+    a, b = (255, 61, 127), (140, 60, 255)
+    for x in range(230):
+        t = x / 229
+        td.line((x, 0, x, 58), fill=tuple(int(a[i] * (1 - t) + b[i] * t) for i in range(3)))
+    m = Image.new("L", tag.size, 0)
+    ImageDraw.Draw(m).rounded_rectangle((0, 0, 229, 57), radius=29, fill=255)
+    base.paste(tag, (70, top + 35), m)
+    tf = font(800, 30)
+    d.text((70 + (230 - tf.getlength("VIRAL")) / 2, top + 45), "VIRAL", font=tf, fill=WHITE)
+    _draw_hl(d, lines, f, 70, top + 125, lh, VIRAL_TEAL)
+    d.text((70, H - 85), "READ CAPTION", font=font(700, 24), fill=(230, 230, 230))
+    pf = font(700, 22)
+    pw = pf.getbbox("TRENDING")[2] + 44
+    _pill(d, W - 70 - pw, H - 98, "TRENDING", pf, WHITE, NAVY)
+    base.convert("RGB").save(out_path, "JPEG", quality=92)
+    return out_path
+
+
 def render(image_path: str, headline: str, out_path: str,
-           label: str = "NEWS", focus: tuple[float, float] | None = None) -> str:
+           label: str = "NEWS", focus: tuple[float, float] | None = None,
+           highlight: str = "", gaming: bool | None = None) -> str:
+    if label.upper() == "VIRAL":
+        if gaming is None:
+            gaming = is_gaming(headline)
+        fn = render_viral_glass if gaming else render_viral_spotlight
+        return fn(image_path, headline, out_path, highlight, focus)
     photo = smart_crop(Image.open(image_path), focus)
     canvas = photo.convert("RGBA")
     _gradient(canvas)

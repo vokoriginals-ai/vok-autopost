@@ -103,6 +103,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
                 continue
             meta = {
                 "headline": clean(w["headline"]), "label": w["label"],
+                "highlight": clean(w.get("highlight") or ""),
                 "caption": clean(w["caption"].rstrip()), "status": "needs_photo",
                 "ai_image": False, "created_at": now().isoformat(timespec="minutes"),
                 "targets": ["facebook", "instagram"],
@@ -121,7 +122,8 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
         headline = clean(w["headline"])
         try:
             shutil.copy(photo["path"], folder / "photo.jpg")
-            render(str(folder / "photo.jpg"), headline, str(folder / "render.jpg"), w["label"])
+            render(str(folder / "photo.jpg"), headline, str(folder / "render.jpg"), w["label"],
+                   highlight=clean(w.get("highlight") or ""))
         except Exception as e:
             print(f"skip (render failed): {e}")
             shutil.rmtree(folder, ignore_errors=True)

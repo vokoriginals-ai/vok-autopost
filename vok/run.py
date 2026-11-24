@@ -20,7 +20,8 @@ def do_render(post_id: str):
     photo = next(folder.glob("photo.*"))
     out = folder / "render.jpg"
     focus = tuple(meta["focus"]) if meta.get("focus") else None
-    render(str(photo), meta["headline"], str(out), meta.get("label", "NEWS"), focus)
+    render(str(photo), meta["headline"], str(out), meta.get("label", "NEWS"), focus,
+           highlight=meta.get("highlight", ""))
     print(f"rendered {out}")
     return out
 
