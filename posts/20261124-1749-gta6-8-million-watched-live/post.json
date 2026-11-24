@@ -17,9 +17,22 @@
     "DE CIX"
   ],
   "note": "GTA VI post written by Claude at Saad's request; facts from Take Two release via Deadline/Yahoo, Streams Charts, DE CIX",
-  "status": "approved",
+  "status": "published",
   "photo_credit": "Eduardo Cano Photo Co. / Unsplash (Unsplash licence)",
   "photo_page": "https://unsplash.com/photos/FnUKtjZ-P4c",
   "decided_at": "2026-11-24T14:00+05:00",
-  "photo_sharpness": 21.9
+  "photo_sharpness": 21.9,
+  "result": {
+    "facebook": {
+      "photo_id": "122185090046988633",
+      "post_id": "790959357430859_122185090082988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185090046988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sjc3-1.xx.fbcdn.net/v/t39.30808-6/927343428_122185090058988633_9121536531052878952_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeH4NNUbLDjGfAQrZlGO3ozWY_RY-7c9lexj9Fj7tz2V7GZaoJU2E25Szr4D7QBSP352IuuemJ3mR5jbM14bYuvm&_nc_ohc=66EraWTqpgQQ7kNvwGcbVXC&_nc_oc=AdqtsftjVc6PvuNwiPiOc7Htt6j3Kr_9dC8xUJLlrjvPN2MHJDZvE3pCjMHZwtbtYIE&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=f-S2hxvbxu8iX6xiZiJgrw&_nc_tpa=Q5bMBQJa_MskOrfgsXZaOhcBCoOb5AbcRnxlGqx_o8hrqkipTrmLE-H-8O4gROXC7v9be_22LLxoNxHUkA&oh=00_AQT5oRrbNHJB4QNgqQ-p_onjZi08vYg9eCat2G4k47_9dw&oe=6B0B6D6A"
+    },
+    "instagram": {
+      "media_id": "18148811812718516",
+      "permalink": "https://www.instagram.com/p/DgINM1ZGuYM/"
+    }
+  },
+  "published_at": "2026-11-24T19:48+05:00"
 }
