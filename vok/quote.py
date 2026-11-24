@@ -106,7 +106,7 @@ def render_quote(quote: str, highlight: str, name: str, title: str, photo: str |
     else:
         tokens = [(w, False) for w in quote.split()]
     top, bottom = 300, 1060
-    for size in range(60, 30, -2):
+    for size in range(78, 30, -2):
         fonts = {False: serif(400, size), True: serif(700, size)}
         lh = int(size * 1.32)
         def room(i, lh=lh):
