@@ -111,6 +111,11 @@ def smart_crop(img: Image.Image, focus: tuple[float, float] | None = None) -> Im
     img = img.convert("RGB")
     sx, sy = _subject(img) if focus is None else focus
     scale = max(W / img.width, H / img.height)
+    # a face low in the photo would sit behind the headline: zoom in (max 1.7x) so the
+    # crop can move down and keep the face in the clear top part of the post
+    if sy < 0.98:
+        need = H * (1 - FOCUS_Y) / ((1 - sy) * img.height)
+        scale = min(max(scale, need), scale * 1.7)
     nw, nh = round(img.width * scale), round(img.height * scale)
     img = img.resize((nw, nh), Image.LANCZOS)
     left = max(0, min(round(sx * nw - W / 2), nw - W))
@@ -279,13 +284,30 @@ def _wrap_hl(ws, f, max_w):
 
 
 def _fit_hl(ws, max_w, sizes, max_lines):
+    """Biggest size whose lines are EVEN (same balancing as the news template), with
+    the highlight flags carried onto each word."""
+    words = [w for w, _ in ws]
+    best = None
     for size in sizes:
         f = font(800, size)
-        lines = _wrap_hl(ws, f, max_w)
-        if len(lines) <= max_lines:
-            return f, lines
-    f = font(800, sizes[-1])
-    return f, _wrap_hl(ws, f, max_w)
+        for n in range(2, max_lines + 1):
+            r = _balanced_lines(words, f, max_w, n)
+            if not r:
+                continue
+            lines, rag = r
+            cost = rag + (sizes[0] - size) * 0.03 + (n - 2) * 0.02
+            if best is None or cost < best[0]:
+                best = (cost, f, lines)
+    if best is None:
+        f = font(800, sizes[-1])
+        return f, _wrap_hl(ws, f, max_w)
+    _, f, lines = best
+    out, i = [], 0
+    for line in lines:
+        k = len(line.split())
+        out.append(ws[i:i + k])
+        i += k
+    return f, out
 
 
 def _draw_hl(d, lines, f, x, y, lh, color):

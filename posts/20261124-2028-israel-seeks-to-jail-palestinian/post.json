@@ -1,7 +1,7 @@
 {
   "headline": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
   "label": "NEWS",
-  "caption": "Protests erupted in Jerusalem following the arrest of a Palestinian student activist by Israeli authorities. 👆\n\nAccording to The Guardian, Israel is seeking to jail the activist without trial following a raid and arrest at a dorm.\n\nArab News reported that demonstrations quickly followed the detention, drawing crowds to the streets in protest.\n\nHow should authorities handle student activism and security measures during ongoing tensions? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Jerusalem #Palestine #Israel\n\n📸 amir appel from Israel / Wikimedia Commons (CC BY 2.0)",
+  "caption": "Protests erupted in Jerusalem following the arrest of a Palestinian student activist by Israeli authorities. 👆\n\nAccording to The Guardian, Israel is seeking to jail the activist without trial following a raid and arrest at a dorm.\n\nArab News reported that demonstrations quickly followed the detention, drawing crowds to the streets in protest.\n\nHow should authorities handle student activism and security measures during ongoing tensions? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Jerusalem #Palestine #Israel",
   "status": "approved",
   "priority": 2,
   "ai_image": false,
@@ -10,8 +10,8 @@
     "facebook",
     "instagram"
   ],
-  "photo_credit": "amir appel from Israel / Wikimedia Commons (CC BY 2.0)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:Protest_in_Paris_Circle,_Jerusalem_-_Flickr_-_amira_a.jpg",
+  "photo_credit": "",
+  "photo_page": "text-card",
   "photo_sharpness": 1146.7,
   "sources_named": [
     "Arab News",
@@ -23,5 +23,6 @@
   ],
   "issue": 50,
   "decided_at": "2026-11-24T23:37+05:00",
-  "note": "requeued after token fix"
+  "note": "requeued after token fix | photo removed by Claude review: did not match story",
+  "highlight": "without trial"
 }

@@ -1,7 +1,7 @@
 {
   "headline": "North Korea considers closing Swiss diplomatic office after sanctions on youth camp",
   "label": "NEWS",
-  "caption": "North Korea is reviewing its relations with Switzerland and considering shutting down its diplomatic office in Pyongyang.\n\nAccording to Reuters and Anadolu, the move comes after Switzerland imposed sanctions on a North Korean youth camp linked to the Russia Ukraine war.\n\nNorth Korea has strongly slammed Switzerland over these measures, KCNA reports.\n\nShould diplomatic ties be cut over youth camp sanctions?\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #NorthKorea #Switzerland #Diplomacy\n\n📸 Presidential Executive Office of Russia / Wikimedia Commons (CC BY 4.0)",
+  "caption": "North Korea is reviewing its relations with Switzerland and considering shutting down its diplomatic office in Pyongyang.\n\nAccording to Reuters and Anadolu, the move comes after Switzerland imposed sanctions on a North Korean youth camp linked to the Russia Ukraine war.\n\nNorth Korea has strongly slammed Switzerland over these measures, KCNA reports.\n\nShould diplomatic ties be cut over youth camp sanctions?\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #NorthKorea #Switzerland #Diplomacy",
   "status": "approved",
   "priority": 1,
   "ai_image": false,
@@ -10,8 +10,8 @@
     "facebook",
     "instagram"
   ],
-  "photo_credit": "Presidential Executive Office of Russia / Wikimedia Commons (CC BY 4.0)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:Vladimir_Putin_and_Kim_Jong-un_(2024-06-19)_06.jpg",
+  "photo_credit": "",
+  "photo_page": "text-card",
   "photo_sharpness": 1024.1,
   "sources_named": [
     "AP News",
@@ -25,5 +25,6 @@
   ],
   "issue": 43,
   "decided_at": "2026-11-24T16:24+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min | photo removed by Claude review: did not match story",
+  "highlight": "closing Swiss"
 }

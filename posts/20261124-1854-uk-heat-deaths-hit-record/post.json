@@ -1,7 +1,7 @@
 {
   "headline": "UK heat de@ths hit record high of 5258 during extreme summer",
   "label": "NEWS",
-  "caption": "UK summer heat de@ths hit a record high of 5,258 in 2026 according to official estimates 🌡️\n\nAccording to the UK Health Security Agency, this is the highest number of such cases since records began in 2016. The deadliest period was between June 21 and 28 when an estimated 2,401 de@ths were linked to extreme heat.\n\nResearchers from Imperial College London and the London School of Hygiene and Tropical Medicine also estimated that more than 50,000 heat related de@ths occurred in urban areas across 30 European countries during the summer.\n\nScientists say extreme heat events are becoming more frequent and intense because of climate change.\n\nHow is your city coping with rising summer temperatures lately? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UKNews #ClimateChange #Europe\n\n📸 Print artist: Utagawa Kuniyoshi (歌川国芳) / Wikimedia Commons (Public domain)",
+  "caption": "UK summer heat de@ths hit a record high of 5,258 in 2026 according to official estimates 🌡️\n\nAccording to the UK Health Security Agency, this is the highest number of such cases since records began in 2016. The deadliest period was between June 21 and 28 when an estimated 2,401 de@ths were linked to extreme heat.\n\nResearchers from Imperial College London and the London School of Hygiene and Tropical Medicine also estimated that more than 50,000 heat related de@ths occurred in urban areas across 30 European countries during the summer.\n\nScientists say extreme heat events are becoming more frequent and intense because of climate change.\n\nHow is your city coping with rising summer temperatures lately? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UKNews #ClimateChange #Europe",
   "status": "approved",
   "priority": 2,
   "ai_image": false,
@@ -10,8 +10,8 @@
     "facebook",
     "instagram"
   ],
-  "photo_credit": "Print artist: Utagawa Kuniyoshi (歌川国芳) / Wikimedia Commons (Public domain)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:Shochu_no_yudachi_%E6%9A%91%E4%B8%AD%E3%81%AE%E5%A4%95%E7%AB%8B_(Sudden_Shower_in_the_Summer_Heat)_(BM_2008,3037.18615).jpg",
+  "photo_credit": "",
+  "photo_page": "text-card",
   "photo_sharpness": 5191.6,
   "sources_named": [
     "Al Jazeera",
@@ -23,5 +23,6 @@
   ],
   "issue": 47,
   "decided_at": "2026-11-24T19:11+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min | photo removed by Claude review: did not match story",
+  "highlight": "record high"
 }

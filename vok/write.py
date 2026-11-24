@@ -222,6 +222,9 @@ Reject the photo (ok=false) if ANY of these is true:
 - the scene does not match the story (e.g. a petrol station for a bus crash, a mountain for a
   military story, soldiers of another country, a random building)
 - it is a screenshot, a social media post, a chart, a graph, an infographic or a document
+- it is a painting, drawing, woodblock print, illustration, artwork or an old historical image
+  (a news story needs a real modern photo, unless the story itself is about that artwork)
+- it shows a different country's leader, flags or ceremony than the story is about
 - it contains offensive words, swear words or hateful text
 - the mood is wrong for the story: a celebration, rally, victory pose, smiling or cheering
   photo on a story about a raid, arrest, accusation, scandal, lawsuit, deaths, war, attack,
