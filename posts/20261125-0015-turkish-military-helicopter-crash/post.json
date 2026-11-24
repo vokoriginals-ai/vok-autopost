@@ -2,7 +2,7 @@
   "headline": "Turkish military helicopter crashes during training flight, k!lling all five crew",
   "label": "BREAKING",
   "caption": "A Turkish Air Force helicopter has crashed during a training flight, k!lling all five crew on board 🚁\n\nAccording to the Associated Press and Turkey's Defense Ministry, the AS 532 Cougar took off from Eskisehir, home of the air force's 1st Main Jet Base, and went down near the village of Yorukakcayir in western Turkey on Tuesday evening.\n\nFootage from the scene showed the wreckage on fire as emergency teams rushed in. The cause of the crash has not yet been revealed and an investigation is underway.\n\nIt is the second military helicopter crash in Turkey in less than two weeks, after a Sikorsky S 70 went down near Malatya on November 12, k!lling four.\n\nWhat do you think is behind two crashes in two weeks? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Turkey #Eskisehir #BreakingNews\n\n📸 File photo of an AS 532 Cougar: Bene Riobó / Wikimedia Commons (CC BY SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-25T00:15+05:00",
@@ -18,5 +18,21 @@
     "Turkish Defense Ministry",
     "Daily Sabah"
   ],
-  "note": "added by Claude at Saad's request"
+  "note": "added by Claude at Saad's request",
+  "result": {
+    "facebook": {
+      "photo_id": "122185110410988633",
+      "post_id": "790959357430859_122185110434988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185110410988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/928407793_122185110416988633_1148048539792024494_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFvkIKsGhhRtBJ5Wy6L69znTjYS-fs_DzZONhL5-z8PNieZqVkdoYrF1KIIuQkwLVRgNeMHNwoITx0ekVeiMbRJ&_nc_ohc=WV3bdcHyM1YQ7kNvwHUZaEi&_nc_oc=AdoTDrHq3qjF4auFoo3lebZdRicGPUcTfjBLhRFIieqK49AG6vsItNbIBMEh7VcTDu4&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Kno3PTzfvtJwdbnol_rYgw&_nc_tpa=Q5bMBQLu2v5TvFDdm11imbSWywkjzEHBkEu3OatUU6mocE5esL4gyUQnTF73wmue-kH8z44qnz5xmccheA&oh=00_AQTi7X8OriZOy0DPmT_ThCVsqdY2Nd4P2bFGDoK3nyzonA&oe=6B0BC50E"
+    },
+    "instagram": {
+      "media_id": "18227075359342445",
+      "permalink": "https://www.instagram.com/p/DgIr6k3F_if/"
+    },
+    "story": {
+      "media_id": "18423699970083010"
+    }
+  },
+  "published_at": "2026-11-25T00:16+05:00"
 }
