@@ -94,7 +94,9 @@ def main(count: int = 1) -> int:
         n = len(quote.split())
         if not (15 <= n <= 75) or not speaker:
             continue
-        if _norm(quote) not in _norm(text):                 # word for word, or nothing
+        body = _norm(text)
+        parts = [p for p in re.split(r"(?<=[.!?])\s+|\s*\.\.\.\s*|\s*\u2026\s*", _norm(quote).strip('"')) if p]
+        if not parts or not all(p.strip('" ') in body for p in parts):   # every sentence word for word
             print(f"skip (quote not verbatim in article): {speaker}")
             continue
         key = _norm(speaker + " " + quote)[:120]
