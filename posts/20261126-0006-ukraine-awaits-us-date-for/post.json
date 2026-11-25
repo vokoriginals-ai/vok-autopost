@@ -2,8 +2,8 @@
   "headline": "Ukraine Awaits US Date For Next Peace Talks With Russia",
   "label": "NEWS",
   "highlight": "Peace Talks",
-  "caption": "Ukraine is currently waiting for the United States to set a date for the next round of peace talks with Russia according to President Volodymyr Zelenskyy.\n\nZelenskyy made the statement as diplomatic efforts continue to find a resolution to the ongoing conflict.\n\nNo official timeline has been confirmed yet by American authorities for the upcoming diplomatic meetings.\n\nWhat are your thoughts on these peace talks progress? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Ukraine #Russia #PeaceTalks\n\n📸 Ministry of Foreign Affairs Republic of Poland / Wikimedia Commons (CC BY 3.0 pl)",
-  "status": "hold",
+  "caption": "Ukraine is currently waiting for the United States to set a date for the next round of peace talks with Russia according to President Volodymyr Zelenskyy.\n\nZelenskyy made the statement as diplomatic efforts continue to find a resolution to the ongoing conflict.\n\nNo official timeline has been confirmed yet by American authorities for the upcoming diplomatic meetings.\n\nWhat are your thoughts on these peace talks progress? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Ukraine #Russia #PeaceTalks\n\n📸 European Commission / Wikimedia Commons (CC BY 4.0)",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T00:06+05:00",
@@ -11,8 +11,8 @@
     "facebook",
     "instagram"
   ],
-  "photo_credit": "Ministry of Foreign Affairs Republic of Poland / Wikimedia Commons (CC BY 3.0 pl)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:Volodymyr_Zelenskyy,_Rados%C5%82aw_Sikorski.jpg",
+  "photo_credit": "European Commission / Wikimedia Commons (CC BY 4.0)",
+  "photo_page": "https://commons.wikimedia.org/wiki/File:Volodymyr_Zelenskyy_at_the_Special_European_Council_-_2023_-_P060202-813956.jpg",
   "photo_sharpness": 895.6,
   "sources_named": [
     "TRT World"
@@ -20,5 +20,7 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBveFRudlZMX2Z3cDl5X2g2OUgwSmJ6bHBPZDVRbE4talhZUGtHY181Qlp6TGVzZU9GNVJIWU5OSVdhQS02REFLSTh5ZVBwZ0dDUEVEdkh1SlE?oc=5"
   ],
-  "issue": 84
+  "issue": 84,
+  "decided_at": "2026-11-26T00:18+05:00",
+  "note": "real photo found by rephoto"
 }
