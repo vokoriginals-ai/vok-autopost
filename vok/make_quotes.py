@@ -104,7 +104,7 @@ def main(count: int = 1) -> int:
             continue
         quote, speaker = q.get("quote", "").strip(), q.get("speaker", "").strip()
         n = len(quote.split())
-        if not (15 <= n <= 75) or not speaker:
+        if not (8 <= n <= 32) or not speaker:      # longer quotes look cramped on the card
             continue
         body = _norm(text)
         parts = [p for p in re.split(r"(?<=[.!?])\s+|\s*\.\.\.\s*|\s*\u2026\s*", _norm(quote).strip('"')) if p]

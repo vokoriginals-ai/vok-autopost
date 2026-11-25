@@ -106,6 +106,7 @@ def render_quote(quote: str, highlight: str, name: str, title: str, photo: str |
     else:
         tokens = [(w, False) for w in quote.split()]
     top, bottom = 300, 1060
+    first = chosen = None
     for size in range(78, 30, -2):
         fonts = {False: serif(400, size), True: serif(700, size)}
         lh = int(size * 1.32)
@@ -115,8 +116,15 @@ def render_quote(quote: str, highlight: str, name: str, title: str, photo: str |
                 return max(360, person_left - MARGIN - 30)
             return 800
         lines = _wrap(tokens, fonts, room)
-        if len(lines) * lh <= bottom - top:
+        if len(lines) * lh > bottom - top:
+            continue
+        first = first or (fonts, lh, lines)
+        # avoid a thin column of 1 to 2 words beside the person: allow at most 2 narrow lines
+        narrow = sum(1 for i in range(len(lines)) if top + (i + 1) * lh > person_top - 10)
+        if narrow <= 2 or size <= 44:
+            chosen = (fonts, lh, lines)
             break
+    fonts, lh, lines = chosen or first
     y = top
     for line in lines:
         x = MARGIN
