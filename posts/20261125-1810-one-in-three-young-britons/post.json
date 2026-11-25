@@ -3,7 +3,7 @@
   "label": "VIRAL",
   "highlight": "still virgins",
   "caption": "Britain's young people are waiting longer than any generation before them 📉\n\nOne in three Britons aged 16 to 24 are still virgins, according to Natsal 4, Britain's biggest national survey on relationships and lifestyles, published in The Lancet. That is up from around one in five between 1990 and 2010.\n\nThe study surveyed about 6,700 people across England, Scotland and Wales between September 2022 and January 2024. Among under 25s, 38 percent of women and 28 percent of men said they had never been in a physical relationship.\n\nIntimacy is falling among older adults too, with under 45s now reporting it about twice a month, half the rate recorded in 1990. Researchers point to more time spent online, young people living longer with their parents and a stronger focus on consent as possible reasons.\n\nWhat do you think is behind this change? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UK #Britain #GenZ #Study",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-25T18:10+05:00",
@@ -24,5 +24,21 @@
   "focus": [
     0.48,
     0.45
-  ]
+  ],
+  "result": {
+    "facebook": {
+      "photo_id": "122185266098988633",
+      "post_id": "790959357430859_122185266122988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185266098988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/922639069_122185266104988633_5534491522245745447_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHxC8erFchTut0Au8oYjYdZeAHTV6Fu5Ch4AdNXoW7kKAkVrikFSNx35HL_FpSSz9iRTN_PmTIVQ87NcxjUhvil&_nc_ohc=2KAaZ8GL-hsQ7kNvwEzgz_b&_nc_oc=AdqvyikANPW-DBS4cbpqfywiDa11P8TiJSZxXGVKhRk8vcOgMOr796lzRiRj3vUBV3U&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=TKWC58bKRc_dSDYo4yfECg&_nc_tpa=Q5bMBQJOsS_fHtkGCIN3MzFIkeZNGvEx5EKojYyE7omXrfWt8omd2LkxuoEfJfQZY83iqiQAnx3yZz35og&oh=00_AQQlKpUvdWvP8WoJ316WrzW0IKagWecy3oCrN33jms4l9w&oe=6B0CC432"
+    },
+    "instagram": {
+      "media_id": "18107796074022373",
+      "permalink": "https://www.instagram.com/p/DgK3ULHDe04/"
+    },
+    "story": {
+      "media_id": "18102643874404448"
+    }
+  },
+  "published_at": "2026-11-25T20:34+05:00"
 }
