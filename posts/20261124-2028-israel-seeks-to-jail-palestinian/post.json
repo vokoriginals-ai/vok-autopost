@@ -2,7 +2,7 @@
   "headline": "Israel seeks to jail Palestinian student activist without trial after dorm arrest",
   "label": "NEWS",
   "caption": "Protests erupted in Jerusalem following the arrest of a Palestinian student activist by Israeli authorities. 👆\n\nAccording to The Guardian, Israel is seeking to jail the activist without trial following a raid and arrest at a dorm.\n\nArab News reported that demonstrations quickly followed the detention, drawing crowds to the streets in protest.\n\nHow should authorities handle student activism and security measures during ongoing tensions? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Jerusalem #Palestine #Israel\n\n📸 Undeka 11 / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-24T20:29+05:00",
@@ -24,5 +24,21 @@
   "issue": 50,
   "decided_at": "2026-11-25T01:46+05:00",
   "note": "real photo found by rephoto",
-  "highlight": "without trial"
+  "highlight": "without trial",
+  "result": {
+    "facebook": {
+      "photo_id": "122185154864988633",
+      "post_id": "790959357430859_122185154888988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185154864988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/927685291_122185154870988633_6602828430896713638_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGYkuqzj6rQqpusLLPov23msXliorvfX2ixeWKiu99faDYVsUva8wO-Fy0hPihUx0_bp7dfH2NPO1PGv2Pe-YaI&_nc_ohc=_qdR2v5oG0EQ7kNvwFYUZ32&_nc_oc=AdrbfhXPzBcW6JOucGs-uuADN7Xwe1OFAlVYm3N5J0et29IHbWW7nia-X3333xoxQhE&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=zZtlAijmEOr3zZeAWs0jjA&_nc_tpa=Q5bMBQLaryapDREiD27nKQGuWgH_AkHLtvcvs_IV7YXIcsNSp3COVhq5_nTNsplL_4KWdK0oj8qt8XIAGw&oh=00_AQQx6zoDQ0XqbSuJ_3l_3Wj_xYvtqFjvD_XugC7ahY_kgQ&oe=6B0C0B47"
+    },
+    "instagram": {
+      "media_id": "18511454959113384",
+      "permalink": "https://www.instagram.com/p/DgJNjphgPtD/"
+    },
+    "story": {
+      "media_id": "18145789372623348"
+    }
+  },
+  "published_at": "2026-11-25T05:10+05:00"
 }
