@@ -61,6 +61,9 @@ def _faces(img: Image.Image) -> list:
     return found
 
 
+_LAST_FACE = None      # (x, y, w, h) of the face found by the last _subject() call, 0..1
+
+
 def _subject(img: Image.Image) -> tuple[float, float]:
     """Return the subject's position (x, y as 0..1) in the source photo.
 
@@ -92,6 +95,8 @@ def _subject(img: Image.Image) -> tuple[float, float]:
             biggest = max(f[2] for f in found)
             # most certain face wins; size only breaks near-ties
             x, y, w, h, _ = max(found, key=lambda f: f[4] + 0.5 * f[2] / biggest)
+            global _LAST_FACE
+            _LAST_FACE = (x / arr.shape[1], y / arr.shape[0], w / arr.shape[1], h / arr.shape[0])
             # aim a bit below the face centre so the head isn't cut at the top
             return (x + w / 2) / arr.shape[1], (y + h * 0.8) / arr.shape[0]
 
@@ -107,15 +112,46 @@ def _subject(img: Image.Image) -> tuple[float, float]:
 
 
 def smart_crop(img: Image.Image, focus: tuple[float, float] | None = None) -> Image.Image:
-    """Cover-scale to 1080x1350, keep the subject in frame and above the text."""
+    """Cover-scale to 1080x1350, keep the subject in frame and above the text.
+
+    With a face, two hard rules: the WHOLE head (hair included) stays inside the
+    top of the post, and the chin stays above the headline area. The least zoom
+    that satisfies both wins; if they can't both be met, the head wins."""
+    global _LAST_FACE
     img = img.convert("RGB")
+    _LAST_FACE = None
     sx, sy = _subject(img) if focus is None else focus
-    scale = max(W / img.width, H / img.height)
-    # a face low in the photo would sit behind the headline: zoom in (max 1.7x) so the
-    # crop can move down and keep the face in the clear top part of the post
-    if sy < 0.98:
-        need = H * (1 - FOCUS_Y) / ((1 - sy) * img.height)
-        scale = min(max(scale, need), scale * 1.7)
+    face = _LAST_FACE if focus is None else None
+    base = max(W / img.width, H / img.height)
+
+    if face:
+        fx, fy, fw, fh = face
+        best = None
+        for k in range(0, 15):                                  # zoom 1.0x .. 1.7x
+            scale = base * (1 + 0.05 * k)
+            nw, nh = img.width * scale, img.height * scale
+            head_top = (fy - 0.55 * fh) * nh                    # forehead + hair
+            chin = (fy + fh * 1.05) * nh
+            hi = min(head_top - 25, nh - H)                     # crop top may not pass the hair
+            lo = max(chin - 0.60 * H, 0)                        # chin above the text zone
+            if fh * nh > 0.42 * H:                              # never a giant face
+                break
+            if lo <= hi:
+                ideal = (fy + fh / 2) * nh - 0.30 * H           # face centre near 30% height
+                best = (scale, min(max(ideal, lo), hi))
+                break
+        if best is None:                                        # can't do both: keep the head
+            scale = base
+            nh = img.height * scale
+            best = (scale, max(0, min((fy - 0.55 * fh) * nh - 25, nh - H)))
+        scale, top = best
+        nw, nh = round(img.width * scale), round(img.height * scale)
+        img = img.resize((nw, nh), Image.LANCZOS)
+        left = max(0, min(round((fx + fw / 2) * nw - W / 2), nw - W))
+        top = round(max(0, min(top, nh - H)))
+        return img.crop((left, top, left + W, top + H))
+
+    scale = base
     nw, nh = round(img.width * scale), round(img.height * scale)
     img = img.resize((nw, nh), Image.LANCZOS)
     left = max(0, min(round(sx * nw - W / 2), nw - W))

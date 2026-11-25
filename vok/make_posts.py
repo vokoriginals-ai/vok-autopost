@@ -89,7 +89,10 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             print(f"skip (daily limit, not breaking): {w['headline'][:70]}")
             continue
 
-        used = {u["page"] for u in st.setdefault("photos", [])}
+        week_ago = (now() - timedelta(days=7)).isoformat()
+        # web photos: never twice. Saad's library photos: not again within 7 days
+        used = {u["page"] for u in st.setdefault("photos", [])
+                if not u["page"].startswith("library:") or u.get("at", "") >= week_ago}
         post_id = f"{now():%Y%m%d-%H%M}-{slug(w['headline'])}"
         n = 2
         while (POSTS / post_id).exists():          # never overwrite another post
@@ -196,7 +199,7 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             preview = host_image(str(folder / "render.jpg")) if os.environ.get("META_PAGE_TOKEN") else None
             meta["issue"] = gh.create_post_issue(post_id, meta, preview)
         save_post(folder, meta)
-        if not photo.get("text_card") and not photo["page"].startswith("library:"):     # Saad's library photos may be reused
+        if not photo.get("text_card"):     # library photos are recorded too (no repeat within 7 days)
             st["photos"].append({"at": now().isoformat(), "page": photo["page"]})
         if telegram.enabled() and not (auto_approve or hold):
             telegram.send_for_approval(post_id, str(folder / "render.jpg"), meta)
