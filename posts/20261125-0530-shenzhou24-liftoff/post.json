@@ -1,7 +1,7 @@
 {
   "headline": "Shenzhou 24 launches carrying Zeeshan Ali, Pakistan's first astronaut",
   "label": "BREAKING",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "force": true,
   "ai_image": false,
@@ -23,5 +23,21 @@
     "Dawn",
     "Anadolu",
     "Xinhua"
-  ]
+  ],
+  "result": {
+    "facebook": {
+      "photo_id": "122185157672988633",
+      "post_id": "790959357430859_122185157702988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185157672988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/922269864_122185157684988633_1582240747320766690_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE97bAa5n1VC5nzPDDazLdpwVQHOc-PqgXBVAc5z4-qBfAhoOHiFwFmRwetltek2Dp3ZDyvweEjBioG0d72SQln&_nc_ohc=-AFaTZC55pEQ7kNvwFEUJqR&_nc_oc=AdoEDFqOxqQALo2eehnhCVx8pJzydHW0qOnqbyVDnPGcflHftFtkYspWyk6smQgkcf8&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=r4jFhHGd8MNnjpVByMS9tw&_nc_tpa=Q5bMBQJudcRym8sjl3dME0XUYd18B3X9R5ZVYKoE5DqEwMzALskcZ62STDCyBqsCGSSTbsnC_b5AHvDuiQ&oh=00_AQRtJ0RSdSSmzChvX10HrSqC9svMvdGQgDC7sPHwqr8BSA&oe=6B0C11AD"
+    },
+    "instagram": {
+      "media_id": "17913720372595253",
+      "permalink": "https://www.instagram.com/p/DgJRRMDlqZE/"
+    },
+    "story": {
+      "media_id": "18034860278684704"
+    }
+  },
+  "published_at": "2026-11-25T05:43+05:00"
 }
