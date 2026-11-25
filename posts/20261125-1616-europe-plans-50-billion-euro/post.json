@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "50 billion euro",
   "caption": "Europe is stepping up its global tech game with a massive new financial push 🇪🇺\n\nAccording to Reuters and the Financial Times, Europe plans to launch a 50 billion euro sovereign tech equity fund.\n\nThe goal of this major initiative is to boost quantum technology and challenge the dominance of the United States and China in the tech sector.\n\nWould you like to see Europe catch up to US and China in tech development? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #EuropeTech #QuantumTech #GlobalEconomy\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T16:16+05:00",
@@ -23,5 +23,21 @@
   ],
   "issue": 74,
   "decided_at": "2026-11-25T16:32+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185275350988633",
+      "post_id": "790959357430859_122185275374988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185275350988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/926954179_122185275356988633_8914851282019160354_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHv_8vpBT81P6E-gP1ev8sa2UQDOr-ozOTZRAM6v6jM5COIgVn8CuDUZosKGoXCmX69WL8dQ_yUrtVV_u0SMfnn&_nc_ohc=SO00jrK6BjYQ7kNvwHBhz9W&_nc_oc=Adrmh5UHq-mlmPFsmTAQDOq78W5XyKDmMdNdKfV7jSXt2FiZGbfVS682SG7UXZ3Oe2c&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=MIiJdLfCtUrLkU81caCloQ&_nc_tpa=Q5bMBQLR88Mu-vvRCfvbjz5g-nqYne8-hi5x9AVM1ZzY-Uw3ZmJOgX5p0vcA8sQYzv5fnG7J9ApaabsbpA&oh=00_AQSxlCB1KlY0B1Vv5qIj_d8noAr3arjtiVZE6aaI29M2Pg&oe=6B0D0CBE"
+    },
+    "instagram": {
+      "media_id": "18129633934676274",
+      "permalink": "https://www.instagram.com/p/DgLHdG-DnjC/"
+    },
+    "story": {
+      "media_id": "17894661255619577"
+    }
+  },
+  "published_at": "2026-11-25T22:55+05:00"
 }
