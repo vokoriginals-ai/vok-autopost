@@ -114,7 +114,10 @@ def main(count: int = 1) -> int:
         key = _norm(speaker + " " + quote)[:120]
         if key in used:
             continue
-        photo = images.library_photo(speaker, [], set())     # library only
+        week_ago = (now() - timedelta(days=7)).isoformat()
+        recent_lib = {u["page"] for u in st.get("photos", [])
+                      if u["page"].startswith("library:") and u.get("at", "") >= week_ago}
+        photo = images.library_photo(speaker, [], recent_lib)     # library only, no repeat within 7 days
         if not photo:
             print(f"skip (no photo of {speaker})")
             continue
@@ -159,6 +162,7 @@ def main(count: int = 1) -> int:
         })
         used.add(key)
         st["quotes_used"] = sorted(used)[-300:]
+        st.setdefault("photos", []).append({"at": now().isoformat(), "page": photo["page"]})
         save_state(st)
         _save_to_github(post_id)
         print(f"made quote: {speaker}")
