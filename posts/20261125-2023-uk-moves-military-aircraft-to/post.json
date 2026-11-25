@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "potential drone threats",
   "caption": "British military aircraft are reportedly being moved into hangars at night to protect them from potential drone threats 🛩️\n\nAccording to Reuters and Sky News, the Royal Air Force has been taking precautions to safeguard its planes amid growing security concerns.\n\nMedia reports indicate that the night time movements are a direct response to the risk posed by unauthorized drones near military sites.\n\nDefense officials have not yet released detailed operational specifics regarding the exact locations affected by the new security protocol.\n\nWould you take extra security measures like this for military bases? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #UKNews #Military #Defense\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T20:23+05:00",
@@ -25,5 +25,21 @@
   ],
   "issue": 80,
   "decided_at": "2026-11-25T20:40+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185292804988633",
+      "post_id": "790959357430859_122185292828988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185292804988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/927904354_122185292810988633_4681655454276085162_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGMNs75B4uh9-4ad8acJoL5PWnZ0HOONxM9adnQc443E1vm5z4uLnp6-eHJt64Nx1jO0WVny_UlsT3ukdxdJD2T&_nc_ohc=c_TjmAjeP-UQ7kNvwGbrjFf&_nc_oc=Adqzt8jkvRoq8x3dDvvYRqZC-pb0Qt0M--k2SVVgYl99pYHD-B7WW5E34D5rZzfsdoI&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ZEXQYLxrvjkohTJZM6Qnhw&_nc_tpa=Q5bMBQIk-vazbToxNj8rDDVKFyjlcOXIrMDcn_I4i06l0kbiHHp8sIHytrfz5JE842bpFdDyZ7d2HHZjhg&oh=00_AQRsKH_an7rqUEtHH-awy6EuVyL9TtX18_rAGu3_DfvyZg&oe=6B0D3180"
+    },
+    "instagram": {
+      "media_id": "18102809849431064",
+      "permalink": "https://www.instagram.com/p/DgLgXemEYRD/"
+    },
+    "story": {
+      "media_id": "18103227983533287"
+    }
+  },
+  "published_at": "2026-11-26T02:33+05:00"
 }
