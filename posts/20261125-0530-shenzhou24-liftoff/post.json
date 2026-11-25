@@ -1,7 +1,7 @@
 {
   "headline": "Shenzhou 24 launches carrying Zeeshan Ali, Pakistan's first astronaut",
   "label": "BREAKING",
-  "status": "hold",
+  "status": "approved",
   "priority": 3,
   "force": true,
   "ai_image": false,
@@ -12,10 +12,16 @@
   ],
   "photo_credit": "VOK",
   "photo_page": "library:long-march-2f-liftoff.png",
-  "caption": "(to be written after the launch is confirmed)",
-  "note": "prepared in advance; 5:40am check confirms launch, writes caption, approves",
+  "caption": "History made 🚀🇵🇰 China's Shenzhou 24 has lifted off with Pakistan's Zeeshan Ali on board.\n\nThe spacecraft launched on a Long March 2F rocket from the Jiuquan Satellite Launch Center early on Wednesday morning, Pakistan time, according to Dawn and Anadolu.\n\nZeeshan Ali, a 40 year old Pakistani fighter pilot, is now set to become the first Pakistani astronaut in orbit and the first foreign national ever to visit China's Tiangong space station. He flies as payload specialist alongside commander Tang Hongbo and flight engineer Wu Yi.\n\nHe will spend about a week aboard the station carrying out scientific experiments for Pakistan before returning to Earth aboard the Shenzhou 23 spacecraft.\n\nWhat message would you send to Zeeshan Ali in space? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #Pakistan #China #Shenzhou24 #ZeeshanAli #Space",
+  "note": "launch confirmed by Dawn and Anadolu at 5:40am check",
   "focus": [
     0.5,
     0.3
+  ],
+  "decided_at": "2026-11-25T05:41+05:00",
+  "sources_named": [
+    "Dawn",
+    "Anadolu",
+    "Xinhua"
   ]
 }
