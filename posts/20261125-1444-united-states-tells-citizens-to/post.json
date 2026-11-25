@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "escalate fast",
   "caption": "The United States government has issued a warning telling all its citizens to leave Iran immediately. 🚨\n\nAccording to Euronews, officials warn that regional hostilities could escalate very fast and put American lives at risk.\n\nThe urgent travel advisory comes amid rising tensions in the Middle East and growing concerns over security.\n\nHave you or anyone you know ever had to travel during a sudden security crisis? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #Iran #USCitizens #TravelAdvisory\n\n📸 VOK",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-25T14:44+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNN2h0czZjQ1cydFo3RGpOclctVm9zeU52VVBrRmlaUUs4LVVNT3BzVUpaemNWSi1oQWhpWEpndmJDdS0taTFaYnNQcjJEWE81S2NVT1c3VkhIeDZ4aGVZVzdDdmdtM3dfNFpqYWNJRGFLUmFfazJnMTVPbm15THlGZlJlTDlvOUpsMUVoS0paNUozYVZuOHdoOTJzUnp5aVdCeE83aFlyWTU?oc=5"
   ],
-  "issue": 71
+  "issue": 71,
+  "decided_at": "2026-11-25T14:55+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185227566988633",
+      "post_id": "790959357430859_122185227590988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185227566988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/913841497_122185227572988633_4548174940869080481_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHcfteE6hMsETzml0eFUWDAeiZiVpFuh-J6JmJWkW6H4tTAYl2INQD7FW0zGUTTbhkcs25OI7avwwCEhD-60bVz&_nc_ohc=3l_Su_f_qTgQ7kNvwHm7xTs&_nc_oc=AdqCog3VN01Hf0I4iTqDsijyDE7CWlpMyYwy8H8WXmCHevysUwgbVlg6ZgljD7hBwqA&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=Ik2IaRA97UvRGMbQTjUEfw&_nc_tpa=Q5bMBQJZJBQ5ibsGifK5Us2mIeVPGq9m2cJqhiexGuvkG_B6Oht9hCKh_IAqapza5f9GabcjwlvKtVNqgw&oh=00_AQQ6iWUBB_akXUhC-UWosxfXAvsDb4dEctj3qB-xBBodnQ&oe=6B0C9A32"
+    },
+    "instagram": {
+      "media_id": "17943670068393408",
+      "permalink": "https://www.instagram.com/p/DgKQg0LIBOw/"
+    },
+    "story": {
+      "media_id": "17975052678188142"
+    }
+  },
+  "published_at": "2026-11-25T14:55+05:00"
 }
