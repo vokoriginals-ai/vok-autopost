@@ -6,7 +6,7 @@
   "speaker": "Vladimir Putin",
   "title": "Russian President",
   "caption": "Russian President Vladimir Putin has warned that retaliation against Ukraine is inevitable after ongoing drone strikes on energy infrastructure. Speaking during a Kremlin meeting on Tuesday, Putin accused Kyiv of ignoring direct appeals from Washington to halt attacks on Russian refineries. According to Al Jazeera, these continuing drone operations have significantly impacted Russia domestic fuel processing capabilities.\n\nThis escalation comes amid rising tensions along European borders, following recent airspace violations and strategic retaliations reported across the region. VOK brings you the latest developments on this intensifying conflict.\n\nHow will these escalating energy strikes shape the future of the war? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n\n#Vok #VokOriginals #RussiaUkraine #Putin #EnergyWar",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "created_at": "2026-11-25T05:37+05:00",
   "decided_at": "2026-11-25T05:37+05:00",
@@ -27,5 +27,21 @@
     "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQM2ZZQnd0c3JtbHl5NFozeGhRRUotLUVZODlvQTVHT2ZmdVBoQ2lnanJyNVFkM0RaSXdCT3BncnMtRVdLdjM4UTVpS2JZeHNwbWlKSnhoZ0NQcmd3N1Mtd2hZaGxkZDBoUW80TXpVMHVtS0ctNmlWTE5nYlZXZXpqb2kxcW85VzRCTlFEWGprbTlhYnFpUFhiN3RzYW5MQU9GcTR2NVd6SHhSRTN3VWV2bjktWHRkdnY0djdRdlJXRG5VUEU?oc=5"
   ],
   "note": "quote verified word for word against the article text",
-  "highlight": "despite the US president’s appeal"
+  "highlight": "despite the US president’s appeal",
+  "result": {
+    "facebook": {
+      "photo_id": "122185204178988633",
+      "post_id": "790959357430859_122185204202988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185204178988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/925273255_122185204184988633_1047766074739128193_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeElAcPm7YOtKLDJWrrV4nHfGJpeAsCx3MwYml4CwLHczPWagN2Hp593atMv3eeAmlbhjPhnB7pxmOU2iPc5H5q1&_nc_ohc=MpCbw9aYkLAQ7kNvwGveT5c&_nc_oc=AdqYKPUSwC2lLxAjM8wJ1c-xsDb-sDDiLSb8NMDv84iZZUDcllArKn_On9-AshX6xks&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=Tq-o6VhFhjbhw5lothayeQ&_nc_tpa=Q5bMBQJzAtrngNvPkPZ2krsEoGuAP5JlCXWJWh_lEjPwsq60Z9bxvDdbdso4m0pHJXvuxnbK8poDBYt87g&oh=00_AQSRn8p7qzpiGvdH4h_W6HVMJ6p-iR1ToyU8fx5IPJFx-Q&oe=6B0C74BD"
+    },
+    "instagram": {
+      "media_id": "18054015302811174",
+      "permalink": "https://www.instagram.com/p/DgJ9FrBDcA6/"
+    },
+    "story": {
+      "media_id": "18152271622573875"
+    }
+  },
+  "published_at": "2026-11-25T12:06+05:00"
 }
