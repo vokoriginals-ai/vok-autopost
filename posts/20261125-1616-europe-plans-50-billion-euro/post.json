@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "50 billion euro",
   "caption": "Europe is stepping up its global tech game with a massive new financial push 🇪🇺\n\nAccording to Reuters and the Financial Times, Europe plans to launch a 50 billion euro sovereign tech equity fund.\n\nThe goal of this major initiative is to boost quantum technology and challenge the dominance of the United States and China in the tech sector.\n\nWould you like to see Europe catch up to US and China in tech development? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #EuropeTech #QuantumTech #GlobalEconomy\n\n📸 VOK",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T16:16+05:00",
@@ -21,5 +21,7 @@
     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNQXB4bkpfdVM2Rkh0NTZKZmIxOHJkOEZGMnNkdy1mVHl5T2NTSmxzQVUzUHd4eHBKeFFKQU5DUnFmTG9neTRHakJCSkF2aTk3eUlPdEVZMWI2YUVGZjBoTTVjQkJqc3hmUW9ua2JQR3BsTHVKSDdoWU5oOE1qUC1hdkhYZVZRdFNMbEc2WWtQaXJHYkNxMmxPU2ZLU0EyQ0hxb2JEZjZUWEtRYXFSUUVKSm56MlZRdkMzWmlvRnBNbkc?oc=5",
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOUUNwSjZLMGhnbjRUT3dCanR4NUNvbFlkOHpleklINGJuU3p4X1dqQlpTZHYtYm85OTBLSlQ2ZjVudXJrQ2xvazBWN3lydjZXOUdzdjJ0amJ0Ulh5X3dXVEszdTM5QTdlMU9PbkszRmd4djFaLWh1M0FxQ1E5NzJQeDY5QTdSN2lvSGJpNUlUTGlSeVJjeGFzX0xpdlFzbS1GNzlfdDZLMTIwY0E?oc=5"
   ],
-  "issue": 74
+  "issue": 74,
+  "decided_at": "2026-11-25T16:32+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }

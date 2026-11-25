@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "camel riders",
   "caption": "An Israeli minister sparked massive outrage after directing racist slurs at Palestinians and Muslims during a parliamentary session. 🐪\n\nAccording to Middle East Eye, outgoing Israeli Heritage Minister Amichai Eliyahu called Palestinians and Muslims camel riders and barbarians during a speech in the Knesset on Monday.\n\nEliyahu addressed Palestinian members of parliament and attacked Muslims worldwide while speaking during a discussion on crime in Palestinian society inside Israel.\n\nHe also claimed that they destroyed the Twin Towers and make a mess everywhere they touch, according to the report.\n\nEliyahu previously suggested that dropping an atomic bomb on the Gaza Strip was an option during a previous controversy.\n\nWhat are your thoughts on this rhetoric in parliament? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Israel #Palestinians #MiddleEast\n\n📸 Ronen Horesh / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T16:13+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.middleeasteye.net/news/israeli-minister-calls-palestinians-and-muslims-camel-riders-and-barbarians"
   ],
-  "issue": 73
+  "issue": 73,
+  "decided_at": "2026-11-25T16:32+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
