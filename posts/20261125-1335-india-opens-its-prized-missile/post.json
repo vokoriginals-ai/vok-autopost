@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "first time",
   "caption": "India is opening its missile test range to Japan for the very first time. 🚀\n\nAccording to Firstpost, the move paves the way for potential collaboration on hypersonic technology between the two nations.\n\nDefense ties have been strengthening as both countries look to expand security cooperation in the region.\n\nWhat does this defense partnership mean for regional stability? Let us know your thoughts? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #India #Japan #Defense\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T13:36+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 68,
   "decided_at": "2026-11-25T13:52+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185233854988633",
+      "post_id": "790959357430859_122185233878988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185233854988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/920544687_122185233860988633_5741415576908972735_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeH4-Xa96LfrR9hqd6gmcnWBFvLkvXYi6TsW8uS9diLpO7TE-FXu4MZZ0BCJV6-JGXxJlB5aKet3GrTZ7YUOHXt5&_nc_ohc=sRLeWRPfnaQQ7kNvwGMhqDb&_nc_oc=AdrO26qEPfc_URbBBDhODbBzbGkYe9iFUxMJUJ3JlbPNU369Fu7uVhB4LHeBkqHHLOg&_nc_zt=23&_nc_ht=scontent-atl3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=8ioN2U5Us6t36_R0Y1bUVg&_nc_tpa=Q5bMBQK7tUfVWbgDPl4vYx8Xg_-cOAKJYsUwGXgPTYSPcCDNyZ4oUIHb9oWtUo02v5YT1dSNgPOMyagGfQ&oh=00_AQSsA96tZoN4AA4dMD9Te8xUMd-Y4vMT2xoq1JwLjlxAtw&oe=6B0C9F62"
+    },
+    "instagram": {
+      "media_id": "18661105435046273",
+      "permalink": "https://www.instagram.com/p/DgKXWiKDSni/"
+    },
+    "story": {
+      "media_id": "17885591967629634"
+    }
+  },
+  "published_at": "2026-11-25T15:55+05:00"
 }
