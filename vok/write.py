@@ -234,6 +234,9 @@ Reject the photo (ok=false) if ANY of these is true:
 - it is a painting, drawing, woodblock print, illustration, artwork or an old historical image
   (a news story needs a real modern photo, unless the story itself is about that artwork)
 - it shows a different country's leader, flags or ceremony than the story is about
+- the story is about an event (crash, sinking, fire, flood, attack, explosion, protest) but
+  the photo only shows scenery, a skyline, mountains, a map or a satellite view of the area;
+  an event story needs a photo of that kind of event (vehicles, boat, rescuers, smoke...)
 - it contains offensive words, swear words or hateful text
 - the mood is wrong for the story: a celebration, rally, victory pose, smiling or cheering
   photo on a story about a raid, arrest, accusation, scandal, lawsuit, deaths, war, attack,
