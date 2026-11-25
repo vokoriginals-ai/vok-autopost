@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "20 percent",
   "caption": "The United States has unveiled plans for major new trade duties on key international partners 🚨\n\nThe US administration has proposed new tariffs of up to 20 percent on 14 trading partners, according to senior US officials cited by Dawn.\n\nThe proposed duties target major economies including China, the European Union, India, Japan, and South Korea after a months long probe into excess production capacity.\n\nA senior US official said the measures come over allegations that these economies promote production divorced from market demand, adding that the duties could take effect in January at the earliest.\n\nThe announcement also includes proposed additional tariffs on goods from Brazil, including aircraft, over alleged trade concerns.\n\nWhat do you think about these proposed US trade tariffs? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USTariffs #GlobalTrade #Economy\n\n📸 Gordon Leggett / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T19:00+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 78,
   "decided_at": "2026-11-25T19:29+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185288502988633",
+      "post_id": "790959357430859_122185288526988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185288502988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/915350022_122185288508988633_2772427503162181497_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGcmfMR3adPWVUoDoC8c-MuiuwcD91b9bOK7BwP3Vv1s8NPXrUD3gamgD2x-9nZmZvTmqEGDxK0ZzgZILnmgita&_nc_ohc=69THTeaB09wQ7kNvwE8VD0d&_nc_oc=AdoWofdlpPVlGFAzm1DvcODVHZk3OFKoFTi0Fzc8Vw955MH-HIbgvZ1KqG8aDKa_Fhs&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=DvYiljvAaPCqEe-yPk73xg&_nc_tpa=Q5bMBQIxtATok9BpsPyWS7ghlg6IK-_lbw4J0rQTZIUkZk3ErTvhn61u2iL0kO2oPxujqY2ryaM3-Trx6w&oh=00_AQSUH7LhL7UDURrEa0pEzMuLXCnmuhFbNu16YHg26erIDg&oe=6B0D2CCD"
+    },
+    "instagram": {
+      "media_id": "17992850972999242",
+      "permalink": "https://www.instagram.com/p/DgLZCfcjaM8/"
+    },
+    "story": {
+      "media_id": "17944635399390725"
+    }
+  },
+  "published_at": "2026-11-26T01:29+05:00"
 }
