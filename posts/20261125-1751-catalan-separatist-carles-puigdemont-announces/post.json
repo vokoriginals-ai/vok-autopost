@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "return to Spain",
   "caption": "Catalan separatist leader Carles Puigdemont is heading back home after years away. 🇪🇸\n\nAccording to Al Jazeera, former regional leader Carles Puigdemont has announced he will return to Spain on December 12 and end nearly a decade of self imposed exile. Speaking at a news conference in Brussels, he stated that he will unveil a proposal for a renewed Catalan independence push on December 17.\n\nPuigdemont fled to Belgium in October 2017 after organising an independence referendum that Spanish courts deemed illegal. That event triggered Spain's worst political crisis in decades and deepened tensions between Madrid and Catalonia.\n\nHe previously made a brief return to Spain in August 2024 to deliver a defiant speech in Barcelona before disappearing and prompting a police operation. His upcoming return follows an amnesty approved by parliament in 2024 as part of a deal between Prime Minister Pedro Sanchez and Catalan separatist groups.\n\nWill this move spark a new political crisis in Spain? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Catalonia #Spain #CarlesPuigdemont\n\n📸 PsiEva / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T17:51+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 76,
   "decided_at": "2026-11-25T18:14+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185281146988633",
+      "post_id": "790959357430859_122185281170988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185281146988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/929802694_122185281152988633_4025728475092041420_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFWomatlhp1KVxTkOY6GQ5853L-v4GSnQrncv6_gZKdCqh0ThPu_e4dLiD-EnKELOv2QHE4e08-pBkGyNS-mu0R&_nc_ohc=y7VeYMY-BDMQ7kNvwFT4cUI&_nc_oc=AdoQmt8LPbZvBtBgSvjobytBq9DWVdJbXsrkYHmaKgoCBIF-TnKVOEPSIKhfdxfV5Uc&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=FpQDG6mad2MMYzWDFjonXg&_nc_tpa=Q5bMBQLHaLVtPS2dcp6ZTgtZsWAsMWwTEbSfKYjVog5PJbuTBAKDUXkYniz7nrjm9ceS0VAEMDdXcAv0cw&oh=00_AQRE0JtnNMdJqr5ua035_0f7KK4mXPWFm0mX77KVgrgD-w&oe=6B0CF85E"
+    },
+    "instagram": {
+      "media_id": "18089073326530369",
+      "permalink": "https://www.instagram.com/p/DgLOnbfmq0v/"
+    },
+    "story": {
+      "media_id": "18121021565006400"
+    }
+  },
+  "published_at": "2026-11-25T23:58+05:00"
 }
