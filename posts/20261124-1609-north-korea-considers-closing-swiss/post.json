@@ -2,7 +2,7 @@
   "headline": "North Korea considers closing Swiss diplomatic office after sanctions on youth camp",
   "label": "NEWS",
   "caption": "North Korea is reviewing its relations with Switzerland and considering shutting down its diplomatic office in Pyongyang.\n\nAccording to Reuters and Anadolu, the move comes after Switzerland imposed sanctions on a North Korean youth camp linked to the Russia Ukraine war.\n\nNorth Korea has strongly slammed Switzerland over these measures, KCNA reports.\n\nShould diplomatic ties be cut over youth camp sanctions?\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #NorthKorea #Switzerland #Diplomacy\n\n📸 Christophe95 / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-24T16:09+05:00",
@@ -26,5 +26,21 @@
   "issue": 43,
   "decided_at": "2026-11-25T01:41+05:00",
   "note": "real photo found by rephoto",
-  "highlight": "closing Swiss"
+  "highlight": "closing Swiss",
+  "result": {
+    "facebook": {
+      "photo_id": "122185188890988633",
+      "post_id": "790959357430859_122185188914988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185188890988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/927734807_122185188896988633_2004158604155259389_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeG6GobO8bOJ6ckbp75-viAKrmUXLgMGFiGuZRcuAwYWIYMdV5-wPdcr5erHdHjiuCEFX4Fq8cwiSDp7zRYKN0vc&_nc_ohc=kDRkVzH2hO0Q7kNvwEkYREE&_nc_oc=AdoJy-r07UtqU2C-t1hGX6zAReM5YgF3ib7x_IH2Ad-j2p96OWMG68ctRFadQ770slU&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=gPgDdcNPFvRoSsW6dh6wcg&_nc_tpa=Q5bMBQJ73eZ6qa-FPcPRx9ATfGYtZBAKQ7vREqHAqJGZV3kNBEzJjFu-YiZKEZ0HY_i6XtF3cY4mfDNmuA&oh=00_AQQ3bRMkvVvRXBO0LgJabhqrJSMSbueo4A8kN6Gu8lZnqg&oe=6B0C37C6"
+    },
+    "instagram": {
+      "media_id": "18113945366222591",
+      "permalink": "https://www.instagram.com/p/DgJrFVVjqXV/"
+    },
+    "story": {
+      "media_id": "18237679528325671"
+    }
+  },
+  "published_at": "2026-11-25T09:28+05:00"
 }
