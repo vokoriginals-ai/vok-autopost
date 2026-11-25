@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "first coalition pact",
   "caption": "Israel could soon see a new government after a major political breakthrough 🇮🇱\n\nYashar party leader Gadi Eisenkot agreed to a coalition pact with Avigdor Lieberman head of the Israel Our Home party according to reports by Dawn and Israeli media.\n\nThe deal marks the first coalition alliance formed since the October 27 election stripped caretaker Prime Minister Benjamin Netanyahu of his majority in parliament.\n\nEisenkot was tasked by President Isaac Herzog to build a government under a 28 day mandate that expires on Dec 6.\n\nMeanwhile the left wing Democrats party suspended talks with Eisenkot over ongoing discussions regarding a potential unity government with Netanyahu Likud party.\n\nDo you think Eisenkot will succeed in forming a stable government? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Israel #Eisenkot #MiddleEast\n\n📸 יהב טרודלר (Yahav Trudler - Yahav Studio‬‏) / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T23:00+05:00",
@@ -29,5 +29,21 @@
   ],
   "issue": 81,
   "decided_at": "2026-11-25T23:18+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185296056988633",
+      "post_id": "790959357430859_122185296080988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185296056988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/915719184_122185296062988633_3767819637909449557_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeF9NiJWS8YTpQ0Q1bKvMuS1Pz16wRtNbCg_PXrBG01sKMIXB-Pr7IzjoK4K1eG7_qxaqPh52chzpmyIe4MXfpTJ&_nc_ohc=-qjU1mpHtkEQ7kNvwGe3r4B&_nc_oc=Ado5zvrAReSliU_hHPj8TI_vVBmGjL0XGxhKWXmbBFhOApiiFALa-clkK6uDPN6XVP8&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=JVdRTvbqtbhkb1pqJ3eXjQ&_nc_tpa=Q5bMBQJEHNoDBomHNHtOM7pURYIjQcEZG8O-Xhz1neP7nPTpWcrfs9MJvjhm_7iYdvkG8IDERWP2VXf6AA&oh=00_AQSvtEk9B0df7Q0XTKkPpdqR9cxzSQryS2rLovHhXImZsQ&oe=6B0D3625"
+    },
+    "instagram": {
+      "media_id": "18120868327789957",
+      "permalink": "https://www.instagram.com/p/DgLnbK9jev2/"
+    },
+    "story": {
+      "media_id": "17959714938055473"
+    }
+  },
+  "published_at": "2026-11-26T03:35+05:00"
 }
