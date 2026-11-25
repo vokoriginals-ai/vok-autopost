@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "361 billion dollars",
   "caption": "A new report reveals massive financial flows from Europe to companies tied to the region. 🌍\n\nAccording to a report by TRT World, European banks have provided 361 billion dollars in financing to firms linked to the Israeli occupation.\n\nThis funding involves various institutions and corporate entities operating across the sector.\n\nWhat are your thoughts on this financial backing? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #EuropeanBanks #IsraeliOccupation #FinanceNews\n\n📸 Jörg Braukmann / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T15:07+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 72,
   "decided_at": "2026-11-25T15:25+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185242062988633",
+      "post_id": "790959357430859_122185242086988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185242062988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/915634138_122185242068988633_6439075736736508051_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGDNoVg4RiYw-RiuHLCZ_4FzXmHosdQzTzNeYeix1DNPHlTAlqyuuwixxc2_IvFIlNzptvP3Mbvx-qIxTCd3tzp&_nc_ohc=3RmfBFZPc9MQ7kNvwG0KMWO&_nc_oc=AdqTAzygF6x_3QuxARNI9SYK2oRHYyFtVntV-ozJv2ijzatkkIsrwO5J0Dp5PMQFr8g&_nc_zt=23&_nc_ht=scontent-atl3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=trTlMGB44slp4YyzOlFsfQ&_nc_tpa=Q5bMBQL50QmwliXKakJPSyuLnPSGL9uJu0hXgUOaQc5bKjPfSR_SHH7n5WVZU55y7xKBVXEnCfNfOFJCSA&oh=00_AQR_vDJpl180PMXhLt29F6Xs3qssbKBZrNVKmWvfXktJqA&oe=6B0CB6E2"
+    },
+    "instagram": {
+      "media_id": "18137440897740660",
+      "permalink": "https://www.instagram.com/p/DgKeJkgjRqM/"
+    },
+    "story": {
+      "media_id": "18018858833979980"
+    }
+  },
+  "published_at": "2026-11-25T16:55+05:00"
 }
