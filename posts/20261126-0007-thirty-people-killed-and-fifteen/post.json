@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "Thirty people k!lled",
   "caption": "A devastating fuel tanker fire in Giza leaves dozens de@d and injured. 🕯️\n\nAccording to Anadolu Ajansa, 30 people were k!lled and 15 others were injured in the tragic fuel tanker fire in Giza, Egypt.\n\nEmergency services and local authorities responded to the severe incident as the flames engulfed the area.\n\nInvestigations into the exact cause of the deadly tanker fire are expected to follow as the community deals with the heavy toll.\n\nWhat safety measures should be enforced for fuel transport vehicles? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Egypt #Giza #FuelTankerFire",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-26T00:11+05:00",
@@ -21,5 +21,23 @@
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxNX25NYXBrbFBsdnpHdDBFckd1S2VSa2xua1RMWDVNaUlRSXVROTFTUmJuWXQ2T3FDd2Z6NjV2UnRkaE1ER3RNSUpESU52TjltTmJDVjc3Zm5HRHVSMWl3UTBVUi13UFZvQ3JxRC1TVndPbzhwZWNXTFBLSGNNdFpHQVRkWEw5RFp5eUI0YlFab3c1ak95OTY0RUFscUdKV1JE?oc=5",
     "https://news.google.com/rss/articles/CBMinwFBVV95cUxPOE5NRlQtMmpfQXVQWmozWkVwekRONnhzS1VuUktkdU0wY2Y0ZVh3cG9JYUZ5YnZOZXVFaHNaNnJ3cnRBRDFqcXJiN1kxbkJKNTl2bmNzOUQ1SGZWMEs4dmZOMW9tYzFTWWtvX0MxVEZVaEgzRGF5THdjemVabm1sd3JZYUxBeGVteHRKT2Z2cm9jWTM2OEhKdkFJQ1lWdFE?oc=5"
   ],
-  "issue": 85
+  "issue": 85,
+  "decided_at": "2026-11-26T00:27+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185284392988633",
+      "post_id": "790959357430859_122185284416988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185284392988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/927930243_122185284398988633_3109868034156866650_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeECov9nryJowBk9c9f9NCyz0nAtT6lRpy3ScC1PqVGnLauYrFbgK2-0wLMMN9ToO-xOqgAF7krenKgXKif9aFJ5&_nc_ohc=eFDbaoSat5wQ7kNvwFxcV-n&_nc_oc=AdoPFdJ-TRZcTgMQnfDwljJPBh--7OKBaxU6-lLQdQpFthGX9d8fCyPXAxlyXcIBv8c&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=a6Nm1yuKTP78aB4Xwntwaw&_nc_tpa=Q5bMBQInLbaRLR0oN76W4PiaebtLQ5s9SSbnkbFJZVAxSl_un19Vt2805o8xQj9e9IZNRjgw93V2SUKD8g&oh=00_AQRqu1V1sebkD2_C5qpQ9uwJnpO0le3C6M1yXioUF0QUzQ&oe=6B0D112B"
+    },
+    "instagram": {
+      "media_id": "18108337001340637",
+      "permalink": "https://www.instagram.com/p/DgLR9x5kXhX/"
+    },
+    "story": {
+      "media_id": "18136062118688540"
+    }
+  },
+  "published_at": "2026-11-26T00:27+05:00"
 }
