@@ -264,10 +264,17 @@ NOT_A_PERSON = re.compile(r"stadium|airport|road|street|station|bridge|building|
 
 
 def _has_face(path: str) -> bool:
+    """A photo OF the person: one clearly visible main face (at least 9% of the photo
+    width), not a crowd or a far-away stage shot where the person is tiny."""
     try:
         from PIL import Image
         from vok.render import _faces
-        return bool(_faces(Image.open(path)))
+        im = Image.open(path)
+        faces = _faces(im)
+        if not faces:
+            return False
+        biggest = max(f[2] for f in faces)
+        return biggest / im.width >= 0.09
     except Exception:
         return True          # if detection itself fails, don't block the photo
 
