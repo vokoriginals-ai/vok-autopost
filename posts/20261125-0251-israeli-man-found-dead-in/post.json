@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "found de@d",
   "caption": "An Israeli man was found de@d in a French villa in a case where kidnapping and m*rder are suspected 🇫🇷\n\nThe Times of Israel reported that the man was discovered de@d at the property in France, with authorities investigating the circumstances surrounding the incident.\n\nInvestigators are treating kidnapping and m*rder as suspected motives behind the de@th, according to the reports.\n\nFurther details regarding the identity of the victim and the progress of the local police investigation have not yet been released.\n\nWhat do you think is happening with rising security incidents abroad? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #France #Israel #Crime\n\n📸 Kidfly182 / Wikimedia Commons (CC BY 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T02:52+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 62,
   "decided_at": "2026-11-25T03:09+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185170224988633",
+      "post_id": "790959357430859_122185170248988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185170224988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/926632276_122185170230988633_9095968207659332152_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHqPclSkPgG3PEjt_FaiT-tqnOH2OldcyWqc4fY6V1zJTCPK3fxwYz4FRVHC_BYe4tGkea7ANqBY9ev9A_gKAnM&_nc_ohc=4ax7beBgofsQ7kNvwEaLVLu&_nc_oc=AdqZlezCeRFanFelCtPPyIHMG_ZQT2UExte6WtElHP612_LyiFQAKm4ZaTBC_znG33I&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=eZM8IUgcL_VgsIgN0C-2gQ&_nc_tpa=Q5bMBQLrZXG1_HvhsWGHZjM1MIMKEkQXItmeKQf0Ify0xUwlwnVlYWXveefGcsBk5qMUVxkwhppcuDRprQ&oh=00_AQRbh_CXDmxYXZGmDjfWXppajRz-LJ_yXfiVu_JousU1kw&oe=6B0C38E7"
+    },
+    "instagram": {
+      "media_id": "18112868258235129",
+      "permalink": "https://www.instagram.com/p/DgJf9w8miRX/"
+    },
+    "story": {
+      "media_id": "17969520306231298"
+    }
+  },
+  "published_at": "2026-11-25T07:51+05:00"
 }
