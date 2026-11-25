@@ -1,0 +1,32 @@
+name: Watchdog (restart publisher if stopped)
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"      # every 30 minutes
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Start the publisher if no run is active
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          active=$(gh run list -R "$REPO" -w tick.yml --limit 20 --json status \
+                   -q '[.[] | select(.status=="in_progress" or .status=="queued")] | length')
+          echo "active tick runs: $active"
+          if [ "$active" = "0" ]; then
+            for i in 1 2 3 4 5; do
+              gh api -X POST "repos/$REPO/actions/workflows/tick.yml/dispatches" \
+                 -f ref=main -f 'inputs[drip]=yes' && echo "publisher restarted" && exit 0
+              sleep 30
+            done
+            exit 1
+          fi

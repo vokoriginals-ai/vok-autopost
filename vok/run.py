@@ -179,8 +179,16 @@ def drip(max_hours: float = 5.5) -> None:
                 data=json.dumps({"ref": "main", "inputs": {"drip": "yes"}}).encode(), method="POST",
                 headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
                          "User-Agent": "vok-autopost"})
-            urllib.request.urlopen(req, timeout=30)
-            print("handed over to a new drip run")
+            for wait in (0, 15, 45, 90, 180, 300, 600):     # GitHub sometimes answers 500
+                time.sleep(wait)
+                try:
+                    urllib.request.urlopen(req, timeout=30)
+                    print("handed over to a new drip run")
+                    break
+                except Exception as e:
+                    print(f"handover failed ({str(e)[:80]}), retrying")
+            else:
+                print("handover failed: the watchdog will restart the publisher")
 
 
 if __name__ == "__main__":
