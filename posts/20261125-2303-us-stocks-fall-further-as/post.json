@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "tech shares plunge",
   "caption": "Wall Street took another hit as tech stocks tumbled amid rising concerns over artificial intelligence investments 📉\n\nAll three main US stock market indices fell in early trading, with the tech dominated Nasdaq shedding over 2% according to BBC reports. Shares in major firms including Nvidia, Amazon, Tesla, SpaceX, Microsoft and Meta dropped sharply.\n\nNvidia saw its share price slide by 8% following recent volatility surrounding boss Jensen Huang and broader market jitters. Analysts say investors are questioning whether the massive sums being poured into artificial intelligence will ultimately pay off.\n\nGoldman Sachs expects AI investment to exceed 1 trillion dollars in 2026, though Wall Street remains cautious about near term returns. The latest market decline also coincides with new US tariffs announced under President Donald Trump.\n\nAre tech stocks still a safe investment right now? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #WallStreet #ArtificialIntelligence #StockMarket\n\n📸 u_dmobkt686b / Pixabay",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T23:06+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss"
   ],
-  "issue": 82
+  "issue": 82,
+  "decided_at": "2026-11-25T23:23+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
