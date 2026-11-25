@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "twelve year backlog",
   "caption": "A new watchdog report reveals a massive delay in addressing human rights claims 🇮🇱\n\nAccording to a report by the Office of the Inspector General, the US Department of State has a 12 year backlog of alleged cases of gross human rights violations in Israel.\n\nThe report highlights issues with applying the Leahy Law, which prohibits US military assistance to foreign security forces if there is credible information of human rights ab*ses.\n\nFormer state department officials said that opponents within the administration advanced legal arguments to avoid enforcing the law regarding Israel.\n\nHow should governments handle human rights violations by military allies? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USPolitics #Israel #HumanRights\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T03:36+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 63,
   "decided_at": "2026-11-25T03:51+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185182488988633",
+      "post_id": "790959357430859_122185182512988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185182488988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/928737759_122185182494988633_8503953505527056662_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFz1IZQ5LIn9s4vaRSujIjJju68rehPdbqO7ryt6E91uioIlnqJusHMiTW_fLGC_q_0yvCI6ox3O69z8IUbRaZR&_nc_ohc=-WMdx915BJgQ7kNvwGIcnT9&_nc_oc=Adq20wXYYlBORNsE7HE7IfpmTG4QS2dReGxDMKASqXf14QbfU1dUkEtYSYag4FlNMZ8&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=k9bQBLsg0nguy4j-5pwGBg&_nc_tpa=Q5bMBQIXAmcvzZFBxA46RNIATpBhf-jm2Ndr_wucXK5SQVKdwAJwEqtmr6ibR70Eu9vWxkC6FqwZkkwJ-g&oh=00_AQQftXZOBH45nJNY9BK439Xttqc8pXM86WtsR7lZlaKEbg&oe=6B0C0CD0"
+    },
+    "instagram": {
+      "media_id": "18028006661941771",
+      "permalink": "https://www.instagram.com/p/DgJjrHNIWDX/"
+    },
+    "story": {
+      "media_id": "18084041927566726"
+    }
+  },
+  "published_at": "2026-11-25T08:24+05:00"
 }
