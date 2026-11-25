@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "completed their sentences",
   "caption": "At least 48 Palestinian prisoners from Gaza remain locked up in Israeli custody despite completing their full prison sentences 🇵🇸\n\nAccording to the Palestinian Commission of Detainees and Ex Detainees Affairs, dozens of Gaza detainees are still held after their prison terms expired.\n\nFamilies in Gaza say they expected long awaited reunions after sentence terms ended, only to learn their relatives remain in custody under Israeli legal classifications.\n\nThe UN Human Rights Office verified the de@ths of at least 92 Palestinians in Israeli custody since October 2023 amid reported worsening prison conditions.\n\nWhat are your thoughts on this situation? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Gaza #Palestine #MiddleEast\n\n📸 Renata3 / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T13:11+05:00",
@@ -23,5 +23,21 @@
   ],
   "issue": 67,
   "decided_at": "2026-11-25T13:28+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185223000988633",
+      "post_id": "790959357430859_122185223024988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185223000988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/921676494_122185223006988633_4892290001741295390_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFjJb4RoHh1FO_SOug92Vhcc5HXdqV61_lzkdd2pXrX-WQze6F7x0l0LqIjMOHyyjI8xLnzCaMylwymZzpjIwlS&_nc_ohc=HOg5Z3p83OcQ7kNvwHbsgzI&_nc_oc=Adq4mW4IzTsSyC2aF0TwrIQ3ivEPre64kzE-xqLZaNRHv-0Pj5_at0GCjnoAJZmquEE&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=tyx_F22I3AcNuy0DY44Q-A&_nc_tpa=Q5bMBQLhbB-WtB2Z8qCCswtfc0D6btjFqIvHjNekW2nF9oi0KnN-BfX-UFxdnF2GzcEPuDmxys2fGi-EKQ&oh=00_AQS04aYGjL3HTmk7d0_WtMzoKYKSI1owAc_gIi4bw2Tg5w&oe=6B0C9525"
+    },
+    "instagram": {
+      "media_id": "18202904875385354",
+      "permalink": "https://www.instagram.com/p/DgKLss3mHMT/"
+    },
+    "story": {
+      "media_id": "18072673121610002"
+    }
+  },
+  "published_at": "2026-11-25T14:13+05:00"
 }
