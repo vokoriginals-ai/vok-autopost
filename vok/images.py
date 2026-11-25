@@ -154,7 +154,8 @@ def pixabay(query: str) -> list[dict]:
         return []
     data = net.get_json("https://pixabay.com/api/", {"key": key, "q": query[:100],
                                                      "image_type": "photo", "safesearch": "true",
-                                                     "per_page": 15, "min_width": MIN_SIDE})
+                                                     "orientation": "vertical",
+                                                     "per_page": 15, "min_height": 1200})
     out = []
     for rank, r in enumerate(data.get("hits", [])):
         if is_agency(r.get("user", ""), r.get("tags", "")):
@@ -162,7 +163,7 @@ def pixabay(query: str) -> list[dict]:
         out.append({"url": r.get("largeImageURL") or r["webformatURL"],
                     "credit": f"{r.get('user', 'Unknown')[:60]} / Pixabay",
                     "page": r.get("pageURL", ""), "pixels": r.get("imageWidth", 0) * r.get("imageHeight", 0),
-                    "rank": rank + 5})
+                    "rank": rank + 5, "min_side": 800})   # Pixabay's free size is 1280px tall
     return out
 
 
@@ -346,7 +347,7 @@ def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "",
             from PIL import Image
             with Image.open(path) as im:
                 w, h = im.size
-            if min(w, h) < MIN_SIDE:
+            if min(w, h) < c.get("min_side", MIN_SIDE):
                 continue
             c["sharpness"] = round(sharpness(path), 1)
         except Exception as e:
