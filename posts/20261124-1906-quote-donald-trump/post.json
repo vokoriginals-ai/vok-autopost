@@ -6,7 +6,7 @@
   "speaker": "Donald Trump",
   "title": "U.S. President",
   "caption": "Trump defends Nvidia CEO return\n\nUS President Donald Trump revealed he personally intervened to reinstate Jensen Huang as the boss of Nvidia following pressure from the White House and market turbulence. Speaking in an interview with CNBC, the president argued that retaining the tech leader was vital for national stability despite mounting backlash from lawmakers.\n\nThe controversial decision comes as Nvidia faces intense scrutiny over national security concerns and export controls, with Huang scheduled to appear before Congress next week. The BBC reported on the dramatic corporate comeback which added almost $1 trillion to the company market value.\n\nWhat do you think about political interference in major tech companies? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n\n#Vok #VokOriginals #Nvidia #DonaldTrump #TechNews",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "created_at": "2026-11-24T19:06+05:00",
   "decided_at": "2026-11-24T19:06+05:00",
@@ -26,5 +26,21 @@
     "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQb1U3UDRWbWd4Unk1ZjhzbDltdjNsX1kteVh2bUY4TjhZbDhTTEN4OWUzU2xIVUd3eTB3YXdjT3lORVRIQ1c0Zk1Ia0ZxWEkwNkVXQkcySGdsNzZRVmxoRUpxRFpRQTNzT1llLXU3aG5yYTNBV0tnMVRYdWxpWHVxOUZHbHRyS2V1UWJRQ1BnR3FHeHF5OW11cEhPRC0tTFZWTFZ4R0ZXcjhPbGlUaXBXcV9kVEdPOGlySkpQWm1kemtfWkUwczFjbENWcDdvck9idHNmb3RPSHZMaWNqSHM4MF9qazZpRk9t0gHuAUFVX3lxTFBWdGdFbXo1NG5SZDRmRWU3cGJLSlhsbGRzM1BhT3dxRk5DYTBCWkR2OGhGQUlWU3VKY2F5MTZ3LTBNeVZGcE9FUFZKc3duTnQtbVVfYnhRNHZ4bnZTZ3ZNdVlPOE9CMnF3VjNsQ3NZbm1qYzREMlMzMlpqQXV6MEJSdHBidXZFc0RNTm9uVzJ5MWVLR2FieGdkYS13NXFqNHNFRVhwdzBNM1hSNUF2alZjZE5rcDViRXpGdW9ma1RNT19aaW1qWjNHM04yaEQzZkZOS0xyMEYyVDUxQ0tMaXNMd2JiZXk2M1U0ZGJtUkE?oc=5",
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxNaTZ6TUZYZWVkRjE2bWxnV3RrVlZlLVhmUkJCYkNzZzhkNGJ0cUZuTFNTY3ktRFB0X252eVpXdmxVTHhVbm9zOC1mcXVfcDJ5Q1RWMFdqOFBwWWNtazJfV0prNXhpUHRLZHJLSXlzTVR0eTdKZG9yRWxYdGE2SnJPT1Fwd2VYNlhXclRaQjJvTVRFTXg2Z0MzUGc3bkp6SXVDT1ZKMV9DX044UzZRQjRpZ2pHbmwxcDBjTnc?oc=5"
   ],
-  "note": "quote verified word for word against the article text"
+  "note": "quote verified word for word against the article text",
+  "result": {
+    "facebook": {
+      "photo_id": "122185185938988633",
+      "post_id": "790959357430859_122185185962988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185185938988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/928194989_122185185944988633_3521788260000222428_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGx5ZJV8ed5pTkyY8RljDUnXuyxsyLdGwle7LGzIt0bCY0ZE74HWPcxtSKOrUw4d_vWf2TrbKZKrrrKJjt41Dmj&_nc_ohc=AUeE-PrtJBoQ7kNvwHlR9ZB&_nc_oc=Adphf5cURqT46vhSGnFBNyrstnGbthIlI_9C_2pK3xGtNesD5Y40oiNjAXQgc1t_C1Y&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=IlW-sqJ0LswF0F8eHM70nQ&_nc_tpa=Q5bMBQKFJQ5kW2vLo9ly_t03g7Dz7g1k6rDcgjHJHCW21uVNAZoXrowQwcWC8mbfRQBVDOlP3oW1TfXydg&oh=00_AQTZJW2Veq4CMwDyt8U5OMKJ5xsSVjXGXLSaZO80PJABbw&oe=6B0C15BA"
+    },
+    "instagram": {
+      "media_id": "18146669176611438",
+      "permalink": "https://www.instagram.com/p/DgJnZ8GoGQ6/"
+    },
+    "story": {
+      "error": "Meta API: HTTP 400: {\"error\":{\"message\":\"Media ID is not available\",\"code\":9007,\"type\":\"OAuthException\",\"error_subcode\":2207027,\"is_transient\":false,\"error_user_msg\":\"The media is not ready for publis"
+    }
+  },
+  "published_at": "2026-11-25T08:56+05:00"
 }
