@@ -1,9 +1,9 @@
 {
-  "headline": "One in three young Britons have never had s*x, major Lancet study finds",
+  "headline": "One in three young Britons are still virgins, major Lancet study finds",
   "label": "VIRAL",
-  "highlight": "never had s*x",
-  "caption": "Britain's young people are having far less s*x than any generation before them 📉\n\nOne in three Britons aged 16 to 24 say they have never had s*x, according to the fourth National Survey of S*xual Attitudes and Lifestyles (Natsal 4), published in The Lancet. That is up from around one in five between 1990 and 2010.\n\nThe study surveyed about 6,700 people across England, Scotland and Wales between September 2022 and January 2024. Among under 25s, 38 percent of women and 28 percent of men reported never having had intercourse.\n\nAdults under 45 now report having s*x about twice a month on average, half the rate of four times a month recorded in 1990. Researchers point to more time spent online, young people living longer with their parents and a stronger focus on consent as possible reasons.\n\nWhat do you think is behind this change? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UK #Britain #GenZ #Study\n\n📸 DimiTalen / Wikimedia Commons (CC0)",
-  "status": "hold",
+  "highlight": "still virgins",
+  "caption": "Britain's young people are waiting longer than any generation before them 📉\n\nOne in three Britons aged 16 to 24 are still virgins, according to Natsal 4, Britain's biggest national survey on relationships and lifestyles, published in The Lancet. That is up from around one in five between 1990 and 2010.\n\nThe study surveyed about 6,700 people across England, Scotland and Wales between September 2022 and January 2024. Among under 25s, 38 percent of women and 28 percent of men said they had never been in a physical relationship.\n\nIntimacy is falling among older adults too, with under 45s now reporting it about twice a month, half the rate recorded in 1990. Researchers point to more time spent online, young people living longer with their parents and a stronger focus on consent as possible reasons.\n\nWhat do you think is behind this change? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #UK #Britain #GenZ #Study",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-25T18:10+05:00",
@@ -17,8 +17,12 @@
     "LBC",
     "BBC"
   ],
-  "note": "waiting for photo from Saad (Gemini photo check quota used up today)",
-  "photo_credit": "DimiTalen / Wikimedia Commons (CC0)",
-  "photo_page": "https://commons.wikimedia.org/wiki/File:Young_women_taking_a_selfie,_Place_du_Ch%C3%A2teau,_Strasbourg,_2025.jpg",
-  "decided_at": "2026-11-25T18:08+05:00"
+  "note": "photo supplied by Saad",
+  "photo_credit": "VOK",
+  "photo_page": "supplied by Saad",
+  "decided_at": "2026-11-25T18:50+05:00",
+  "focus": [
+    0.48,
+    0.45
+  ]
 }
