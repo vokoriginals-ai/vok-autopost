@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "k!lls 11",
   "caption": "A deadly drone strike leaves families devastated in Sudan. 🕊️\n\nA drone attack k!lled 11 people in Sudan's West Kordofan region, according to a medical source cited by Arab News.\n\nFurther details about the exact targets and the responsible party have not yet been officially confirmed by authorities.\n\nWhat can be done to protect civilians in conflict zones like Sudan? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Sudan #WestKordofan #DroneAttack",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-26T22:19+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMVZjMl9NakxSTnhOeXlRMV82UGNEZGpSR1JZOHYtMV9nQnpaM0VzQkFJQ0p0cW9ya3E3b1M4QW9VRW9WSlR3Z0NTbEM3ajhxLWNUV205NlNMQUdqa0FRZDU2UlhDSDJqQm1XSm1VbjQ1S3lRR0ZqSzN6SkpTUDFValNOR0t4NzJEY2ktVnBHdUx6ZXFieWZmaXhuS1RIa2xGeHh1ZTJ6bkc?oc=5"
   ],
-  "issue": 104
+  "issue": 104,
+  "decided_at": "2026-11-26T22:30+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185455854988633",
+      "post_id": "790959357430859_122185455878988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185455854988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-2.xx.fbcdn.net/v/t39.30808-6/929132098_122185455860988633_1830800325669487071_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEo0ZgoAD00fOJ8Xd5DxTP0mLvfb1fVt86Yu99vV9W3zuc-qW06kzJlrRi2Qs26LIf5zh2ulvr_0WB7g5ko0FGl&_nc_ohc=nKRAMk8LagAQ7kNvwERCpXh&_nc_oc=AdplWRnJoZyQcdFOzA59h5OsQXppLqC62V4k6ozKyJh38XezMbMamiVZbLJC56xCmdk&_nc_zt=23&_nc_ht=scontent-sea5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=GRc8Ed9EZOLVJber6h0Tkg&_nc_tpa=Q5bMBQJQpzHzprnrHoDcoZ7Mf46mHxO7m4TSgn8oYVAhSEhLAoR52Fhg5xa7v1ozfwLbA1gA-D23u1Bg6Q&oh=00_AQRtP2r-w9dTznEOjVTfaVAYmlW9XwNYBQAp5e_DN97ZMA&oe=6B0E383D"
+    },
+    "instagram": {
+      "media_id": "18126760582935394",
+      "permalink": "https://www.instagram.com/p/DgNpU4TlxK_/"
+    },
+    "story": {
+      "media_id": "18119752334080221"
+    }
+  },
+  "published_at": "2026-11-26T22:30+05:00"
 }
