@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "missing Jordanian sailor",
   "caption": "Tragic news emerging from the region today. 🌊\n\nAccording to The National, the body of a missing Jordanian sailor was found off the coast of the UAE eight days after a tanker attack.\n\nAuthorities recovered the remains following an extensive search operation in the area.\n\nFurther details regarding the incident and the condition of the vessel are awaited.\n\nWhat more should be done to protect sailors in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #UAE #Jordan #Sailor\n\n📸 Eduard Marmet / Wikimedia Commons (CC BY-SA 2.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T19:45+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMivAFBVV95cUxPQy02enhSTFVURkF1MTNrZDgyRHluWUMwSFdFSUVEOWo4REctd2o3VThLM0VQYXdqalB4a0NoOG9Vc0dtYktFMmZobXFpTmRIUVhJQ1JLcE9YM2J2RXlQVE4xWkVmaGNHbTZOdHpBMkhMTGNPVnh6cUVDZUFhVWF2bE55dWdNREZ5WnRDRnNfNlIwLVI3YjFRRi1wb1pZUGg2Ry1QTnRabWFWRjlMcWQ5eXNMRzhiWjFXTTN6Zw?oc=5"
   ],
-  "issue": 99
+  "issue": 99,
+  "decided_at": "2026-11-26T20:01+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
