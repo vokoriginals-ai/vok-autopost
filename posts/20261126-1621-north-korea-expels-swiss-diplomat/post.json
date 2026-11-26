@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "expels Swiss diplomat",
   "caption": "North Korea has kicked out the head of Switzerland’s diplomatic office in Pyongyang following a fierce sanctions dispute 🇨🇭.\n\nAccording to North Korea's foreign ministry, the decision to expel diplomat Sylvain Astier came after Switzerland placed sanctions on the Songdowon International Children’s Camp.\n\nKim Yo Jong, a top foreign policy official and sister to leader Kim Jong Un, condemned the move as an open hostile act and a violation of sovereignty.\n\nSwiss authorities added the camp to their sanctions list over allegations it was used to host and indoctrinate children from Russian occupied areas of Ukraine.\n\nSwitzerland stated it regrets the decision and will continue diplomatic relations through its embassy in Beijing and North Korea's embassy in Bern.\n\nShould Western nations cut all diplomatic ties with North Korea over its alliance with Russia? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #NorthKorea #Switzerland #Sanctions\n\n📸 Jan Engelhardt / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T16:21+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 93,
   "decided_at": "2026-11-26T16:36+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185418930988633",
+      "post_id": "790959357430859_122185418954988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185418930988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/934445984_122185418936988633_5315774459511700878_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGbVmRNL_aQ62dReJ9GKPsEGdOKZD-s6zkZ04pkP6zrOW1_-daFjNutWCidFatzZWnrfb1fj0OxbYthnFJQIWX9&_nc_ohc=v4ZEnACN5p4Q7kNvwGfL1u9&_nc_oc=Adp_XXlD8sgItKyquqr79NqlW3eKduW3ezOTNqFhSC-EkNDeX3dXSfUEYo2NyqAe8os&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=zob8eUnZu-BL9s73WNkNtg&_nc_tpa=Q5bMBQKOzt1yb-S5ICowOB09ogJN-5YwIaumKbCASpCwUpn5McLk2gBtukJ6d2sNLg25UGnvPTk2WAQYkw&oh=00_AQSe3OWTpZe2uv_1pxmQLx49GTX9__fTJbpKX4bqb0MONQ&oe=6B0DEDE4"
+    },
+    "instagram": {
+      "media_id": "17908885002352174",
+      "permalink": "https://www.instagram.com/p/DgNMblGDhoN/"
+    },
+    "story": {
+      "media_id": "18121729015982701"
+    }
+  },
+  "published_at": "2026-11-26T18:17+05:00"
 }
