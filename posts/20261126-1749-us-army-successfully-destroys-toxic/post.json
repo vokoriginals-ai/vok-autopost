@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "zero airborne lead",
   "caption": "US military officials have hailed the controlled detonation of nearly five tonnes of volatile explosives in Iowa as a huge success. \n\nAccording to the BBC, the Army detonated the aging lead azide compound at an ammunition plant after pausing plans several times due to public outcry and legal challenges. \n\nEnvironmental Protection Agency Administrator Lee Zeldin stated on X that air monitors detected zero airborne lead following the explosion. \n\nPresident Donald Trump said reports showed mitigation efforts far exceeded expectations as teams continue to collect post detonation samples from homes and parks. \n\nWhat are your thoughts on how officials handled this operation? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #IowaNews #USArmy #EnvironmentalSafety\n\n📸 Emphyrio / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T17:50+05:00",
@@ -29,5 +29,21 @@
   ],
   "issue": 95,
   "decided_at": "2026-11-26T18:07+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185430306988633",
+      "post_id": "790959357430859_122185430342988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185430306988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/927790789_122185430312988633_7126990560737376742_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFJyy-MPBXtiGIWhj8hJg_YIpmRoS-raZkimZGhL6tpmfkNvXlSqukSv-dqJbSsCm-8bJYHs9w7c5yiiMGJRa6g&_nc_ohc=SYdWV1t9iBQQ7kNvwGZNPrq&_nc_oc=Adr27Zfmasvp2wSAgJtX_ZcSPJyv9v8rxXc2lvtt6MhH2P1o_Kj3jA_PjzQ0wtdGHpc&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=FyKNpMP92O7Xhd9Q8gJNcw&_nc_tpa=Q5bMBQJ-K6qX-1cV5hCmiZqXPNu12GqAC7PfqYeIxtdyAuBn4z058X_U88g-6sI6AFd_vymbh0g3SW37Dg&oh=00_AQQd_p_cdVHeVKFdGmdHN_6JnmHqnYStfSwgS1xHvMTnGw&oe=6B0E152B"
+    },
+    "instagram": {
+      "media_id": "18094710230692632",
+      "permalink": "https://www.instagram.com/p/DgNTzLVDkdy/"
+    },
+    "story": {
+      "media_id": "18203150233380492"
+    }
+  },
+  "published_at": "2026-11-26T19:22+05:00"
 }
