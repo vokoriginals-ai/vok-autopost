@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "strongly condemns",
   "caption": "Iran is backing Lebanon and condemning recent Israeli attacks in the south of the country. 🇱🇧\n\nAccording to the Iranian Foreign Ministry, the aggressive actions coincide with Lebanon independence commemorations and violate the United Nations Charter and the November 2024 ceasefire agreement.\n\nThe ministry stated that the actions constitute a flagrant violation and underscore that the enemy represents the gravest threat to regional security and stability.\n\nIran also expressed support for Lebanon and its inherent right to defend its territorial integrity and national sovereignty.\n\nWhat steps should international b0dies take to protect regional ceasefires? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n#Vok #VokOriginals #Iran #Lebanon #Israel\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T00:05+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 83,
   "decided_at": "2026-11-26T00:27+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185329248988633",
+      "post_id": "790959357430859_122185329278988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185329248988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/915629884_122185329254988633_6296238113087928184_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGREfPq0SjTDgWigxMSlfuo0l0CKfstGArSXQIp-y0YCvOq8fwsxxsBGthG3zypCYBTJAslUc8vhPMphZ9za-6D&_nc_ohc=_oMXQlpgylwQ7kNvwHTfVzv&_nc_oc=Adpbb6aMan1Qn2lrw5xhsC0oNqyJj_2IRX2DohiDXOMb0ie4NTvClVCgmyerZki0aWU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=anLoHT99EqRYq-rr-HUmRw&_nc_tpa=Q5bMBQL0ZXheZYd4uz6z-hG-1acDLH7RPb-IvSsYANrg-dAu3ChMNrMWJtfa8i0zyxxBg76fY7JbnEVEyg&oh=00_AQQ5bDfPlnmuMlboNT_m1d6LEYN-7G_YFAJ4hXOtczyoxA&oe=6B0D4087"
+    },
+    "instagram": {
+      "media_id": "18354872476284519",
+      "permalink": "https://www.instagram.com/p/DgL2OXojdku/"
+    },
+    "story": {
+      "media_id": "18026884142712387"
+    }
+  },
+  "published_at": "2026-11-26T05:44+05:00"
 }
