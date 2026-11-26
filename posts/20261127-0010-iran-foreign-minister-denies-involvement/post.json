@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "denies involvement",
   "caption": "Tehran denies any role in a deadly drone attack on Kuwait that k!lled two Italian nationals. 🇮🇷\n\nAccording to Iran's Foreign Ministry, Foreign Minister Abbas Araghchi rejected claims that Tehran was behind the strike during a phone call with his Kuwaiti counterpart.\n\nThe attack also left two other people injured.\n\nIran stated it is willing to take part in an investigation into the incident according to the foreign ministry.\n\nWhat do you think is next for regional security after this attack? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Kuwait #Iran #MiddleEast\n\n📸 Tony Webster / Wikimedia Commons (CC BY 2.0)",
-  "status": "pending",
+  "status": "rejected",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-27T00:10+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.middleeasteye.net/live-blog/live-blog-update/araghchi-says-iran-not-behind-drone-attack-killed-two-kuwait"
   ],
-  "issue": 107
+  "issue": 107,
+  "decided_at": "2026-11-27T00:21+05:00",
+  "note": "VOK already posted this story"
 }
