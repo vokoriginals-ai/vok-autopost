@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "cheaper HIV prevention injection",
   "caption": "A cheaper version of a ground breaking HIV prevention injection has arrived in Africa, raising hopes for millions of people.\n\nAccording to the Global Fund and Reuters, India's Hetero has begun shipments of the generic dr*g known as lenacapavir. The injection, given twice a year, is nearly 100 percent effective at preventing HIV infection and will cost about $40 per person annually.\n\nThe first global shipment arrived in Zambia on Wednesday, with deliveries to Uganda expected in the coming days and Zimbabwe due to receive supplies early next year. The original version developed by US company Gilead Sciences cost about $28,000 annually in the US.\n\nIn a landmark clinical trial involving more than 5,000 adolescent girls and young women in Uganda and South Africa in 2024, none of those who received the injection contracted HIV. The Global Fund plans to reach at least three million people by the end of 2028 with the support of the US government.\n\nWould you take a twice yearly injection for prevention? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #HIV #Africa #Health\n\n📸 National Aeronautics and Space Administration. Lyndon B. Joh / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T23:47+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 105,
   "decided_at": "2026-11-27T00:04+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185479764988633",
+      "post_id": "790959357430859_122185479788988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185479764988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/916972928_122185479770988633_5219024281286907966_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFyDO6hqRivLxohXC4AOHmE6oOfSGzYkyTqg59IbNiTJGtA33-ZyRrwADi-5AZ92KgapAnuLpqR0MtZfBzs3NCs&_nc_ohc=rrgbtJKfCcUQ7kNvwGhi8gl&_nc_oc=AdqFi0OBZhYxrOuJR01pnyByJBM1jqJXhBeKfQ31bMRz3O4L6kYjKZYxexZKKhyjnT4&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=PbPHM5Z1yisR4AynS23sNA&_nc_tpa=Q5bMBQKak9OofwA7rR7Tg06zEfF6RtnAeqf7joD6KWgdJjJqQ-aFGGPcwIPdaZbYD2ZZ8yONy4jdQj4l4w&oh=00_AQUnGr9G9lAwmLPSmYTwgehSNbbr5P1v1Ho2g4OmmAuNlQ&oe=6B0E91EA"
+    },
+    "instagram": {
+      "media_id": "18163009363513655",
+      "permalink": "https://www.instagram.com/p/DgOH9fbDQA8/"
+    },
+    "story": {
+      "media_id": "18081305063435685"
+    }
+  },
+  "published_at": "2026-11-27T02:58+05:00"
 }
