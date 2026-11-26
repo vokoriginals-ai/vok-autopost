@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "missing Jordanian sailor",
   "caption": "Tragic news emerging from the region today. 🌊\n\nAccording to The National, the body of a missing Jordanian sailor was found off the coast of the UAE eight days after a tanker attack.\n\nAuthorities recovered the remains following an extensive search operation in the area.\n\nFurther details regarding the incident and the condition of the vessel are awaited.\n\nWhat more should be done to protect sailors in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #UAE #Jordan #Sailor\n\n📸 Eduard Marmet / Wikimedia Commons (CC BY-SA 2.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T19:45+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 99,
   "decided_at": "2026-11-26T20:01+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185444802988633",
+      "post_id": "790959357430859_122185444826988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185444802988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/921716825_122185444808988633_138763856817341725_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEGIHOGlxUUoSCJJRJHj3MzTTRnGvZbQ0NNNGca9ltDQ5ARHgRUPLPdW-dJL_1_iwQVNgF5S3BV8N8vt-MIVFSA&_nc_ohc=2O_Kk2LpwHsQ7kNvwFmlh4-&_nc_oc=AdrcNyq5DaEkO_9tyDyOnk-lNwOZCuLa0OwpT3-4i90-MM5TauPHNJ-hyJYhhLhpxHw&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=rcLMoI5HTQ71bSENW781uw&_nc_tpa=Q5bMBQK3izTnQ510HF7V1cqWQu06tZ4W-nnK9TsekHurV4b5KHV8BjlrUHphs-NXV5Z-37RFfxoDuDZj0A&oh=00_AQRYGXe3P4oBunURmN8at9M5rG-z0xVAov02LuNL3PsWKQ&oe=6B0E34C8"
+    },
+    "instagram": {
+      "media_id": "18109669916345844",
+      "permalink": "https://www.instagram.com/p/DgNcYRHl_li/"
+    },
+    "story": {
+      "media_id": "18378339217245168"
+    }
+  },
+  "published_at": "2026-11-26T20:37+05:00"
 }
