@@ -64,6 +64,22 @@ def _faces(img: Image.Image) -> list:
 _LAST_FACE = None      # (x, y, w, h) of the face found by the last _subject() call, 0..1
 
 
+def face_visible(render_path: str) -> bool:
+    """Hard check on the FINISHED post: a clear face (at least 8% of the width) that is
+    fully inside the frame and above the headline area. Used for every story about a
+    person, so a crop can never cut the person out again."""
+    try:
+        im = Image.open(render_path)
+        for b in _faces(im):
+            x, y, w, h = (int(v) for v in b[:4])
+            if w >= 0.08 * im.width and y > 8 and x > 4 and x + w < im.width - 4 \
+                    and y + h < 0.70 * im.height:
+                return True
+        return False
+    except Exception:
+        return False
+
+
 def _subject(img: Image.Image) -> tuple[float, float]:
     """Return the subject's position (x, y as 0..1) in the source photo.
 

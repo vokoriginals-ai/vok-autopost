@@ -249,6 +249,11 @@ if __name__ == "__main__":
                 _sh.copy(cand["path"], folder / "photo.jpg")
                 render(str(folder / "photo.jpg"), meta["headline"], str(folder / "render.jpg"),
                        meta.get("label", "NEWS"), highlight=meta.get("highlight", ""))
+                from vok.render import face_visible
+                if person and not generic and not face_visible(str(folder / "render.jpg")):
+                    print(pid, "check: False (face not fully visible)")
+                    used.add(cand["page"])
+                    continue
                 ok, why = check_photo(str(folder / "render.jpg"), meta["headline"], meta["caption"][:600],
                                       _cfg()["gemini_models"])
                 print(pid, "check:", ok, why, cand["credit"])

@@ -122,6 +122,12 @@ def main(count: int | None = None, auto_approve: bool = False, hold: bool = Fals
             except Exception as e:
                 print(f"render failed: {e}")
                 continue
+            from vok.render import face_visible
+            if not generic and w.get("photo_person") and not cand["page"].startswith("library:") \
+                    and not face_visible(str(folder / "render.jpg")):
+                print("  photo REJECTED: the person's face is not fully visible in the post")
+                used.add(cand["page"])
+                continue
             from vok.write import check_photo
             ok, why = check_photo(str(folder / "render.jpg"), headline, w["caption"][:600], cfg["gemini_models"])
             print(f"  photo check ({'generic' if generic else 'main'}): {'OK' if ok else 'REJECTED'} ({why})")
