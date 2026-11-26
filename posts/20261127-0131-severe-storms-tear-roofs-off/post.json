@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "tear roofs off",
   "caption": "Roofs have been torn off and streets left under water as severe weather hits parts of the US. 🌊\n\nAccording to the BBC, hundreds of thousands of people have been affected by the storms across the country. The severe weather arrived just as the Thanksgiving holiday weekend began.\n\nAuthorities and residents are dealing with the aftermath of the damaging winds and heavy flooding. More updates are expected as emergency services assess the damage.\n\nHow do you stay safe during extreme weather events in your area? Let us know in the comments below? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USWeather #Storms #Thanksgiving\n\n📸 Metropolitan Transportation Authority from United States of  / Wikimedia Commons (CC BY 2.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T01:31+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.bbc.co.uk/news/videos/cq808d704m22o?at_medium=RSS&at_campaign=rss"
   ],
-  "issue": 110
+  "issue": 110,
+  "decided_at": "2026-11-27T01:48+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
