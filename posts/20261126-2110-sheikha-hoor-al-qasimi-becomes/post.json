@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "first Arab curator",
   "caption": "A historic moment for the region as a leading arts figure takes the global stage 🎨\n\nSheikha Hoor Al Qasimi has been appointed as the curator of the 2028 Venice Biennale, according to reports from The National and Arab News.\n\nShe makes history as the first Arab curator to take on the prestigious role for the international art exhibition.\n\nHer appointment highlights the growing global recognition of artists and cultural leaders from the Middle East.\n\nWhat is your favorite art exhibition or museum in the region?\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #VeniceBiennale #ArtNews #UAE\n\n📸 gnomonic / Wikimedia Commons (CC BY 2.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T21:10+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 101,
   "decided_at": "2026-11-26T21:26+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185468616988633",
+      "post_id": "790959357430859_122185468640988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185468616988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-2.xx.fbcdn.net/v/t39.30808-6/928265617_122185468622988633_8217109520812001028_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFoI60D6Ha7c3JLFcuQpuUCmZCLWvekkT6ZkIta96SRPsqXUjiFpJloMIhrks0O3FwX5HdHbd_u0Zpo0Bl4gTpt&_nc_ohc=aQJqRBi3jqAQ7kNvwHzzj2X&_nc_oc=Adpg9e-rdeGbKQIhXpb_weN0mRQ6jeKmHHx8k2n51nnk8SuE7OJO5eW_Yc-U-wq3cFQ&_nc_zt=23&_nc_ht=scontent-sea5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=bMeWVWwzdGVr0AFVkDL6mg&_nc_tpa=Q5bMBQLvDOu0-Gk7Q_4CzugDf26n8Nb4XgkRywoN2_6NFbJJ8xxkvU_zeN1pl19M7qzbQQM92Au3yNZVcg&oh=00_AQTAcGd13cfp5nAmbpua_gv15HNpyJodLkoDPVs7tTXQyw&oe=6B0E7618"
+    },
+    "instagram": {
+      "media_id": "18111743681259671",
+      "permalink": "https://www.instagram.com/p/DgN3Xbdl4bB/"
+    },
+    "story": {
+      "media_id": "18057465530814971"
+    }
+  },
+  "published_at": "2026-11-27T00:33+05:00"
 }
