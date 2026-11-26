@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "k!ll nine people",
   "caption": "Airstrikes hit parts of Gaza k!lling nine people according to officials. 🕊️\n\nAccording to Reuters and Arab News, the de@d include a Hamas appointed deputy education minister.\n\nFirstpost reports that the strikes also targeted and k!lled Hamas finance chief Khaled Abu Nada in Gaza.\n\nOfficials confirmed the casualties as military operations continue in the region.\n\nWhat are your thoughts on these ongoing developments in Gaza? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #Israel #MiddleEast",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-26T17:04+05:00",
@@ -27,5 +27,23 @@
     "https://news.google.com/rss/articles/CBMitwFBVV95cUxPaFI2clBvWk5MUUpiYXZ6M2tldGhydTZFc1RWWHNTUldGZ3c2VkVrclpUamlkckF4SU5HMG5KU1BDSEZyX1JUUDJyVVloT0lmWlZnaW1WdVB4MzZtOGU3NWlndkZKZnk5T1BrWG9SV2Y1QnUxT25HMDdnQWdhajZPTmI1SWUwb1I3djhBa21XZjJwRWlaZEtiby01Qi1HaUxwQjJfdGVEN2IzTUpBSlRxQVZEWXpkZUE?oc=5",
     "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRy0ySzYweFA0N2dYR1lPcXhZT1liaWw3VW1Scmlld1lGd2d0UDctdUlZbHFuVFRLOG1odWN2MkZoY1N5aF9ZOTFUUHZtV3JfWGE0dElhNW1CbmVIUjdXZ29qNGR0TGtpVHRkVlJoZEo2ZWhheWtuSWtaOW16ZUIwVGlCTkJDZ2RpclcwSHkwcVRsZklXRUl6b2xXcTc2R0xOTUpHeHRsYVQzN3lQNGNWZ2xR?oc=5"
   ],
-  "issue": 94
+  "issue": 94,
+  "decided_at": "2026-11-26T17:16+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185410512988633",
+      "post_id": "790959357430859_122185410536988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185410512988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/927369954_122185410518988633_2276917071952183514_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFrH5rAAVXSL71mk9AJ82JOsdOP9KFbPIKx04_0oVs8ggqS9XX5LuKYy1a8duLBQpZdpvmOE4cF8dNZQCqJ5QPb&_nc_ohc=aYay-P-wmo4Q7kNvwExumwP&_nc_oc=AdoVqNm5a9xyVTk8owAO3Ynp3GkIIFz0BvJBg3dgDvJ1IQ02QiAIS8eygro2GUrMLuQ&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Ae-zouR_nhbEbircIIrleg&_nc_tpa=Q5bMBQLc8Q0nZ-jRljqhvvr92FCziNZPXFigkuPIiCp4yLapFLLEx-xOGgWY5fiNTG7mqD5KBU-OxihfZw&oh=00_AQS28WLl4kAzePMv_I2Ig9myYEreDuLpWhGpRAQXhozIjw&oe=6B0DE576"
+    },
+    "instagram": {
+      "media_id": "17920038318498717",
+      "permalink": "https://www.instagram.com/p/DgNFaR5jluL/"
+    },
+    "story": {
+      "media_id": "18085985957385207"
+    }
+  },
+  "published_at": "2026-11-26T17:16+05:00"
 }
