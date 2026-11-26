@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "healthcare workers arrested",
   "caption": "Healthcare scandals spark outrage across the region. 🚨\n\nAccording to Al Jazeera, at least 13 healthcare workers have been arrested and institution heads have resigned following ab*se scandals in Croatia and Bosnia and Herzegovina. Protesters gathered in Zagreb carrying white pillows marked with bloody handprints in memory of 32 year old Kristian Josip Peris, who d!ed at a psychiatric clinic after staff allegedly placed a pillow over his face.\n\nA separate video from a public hospital in Zenica showed medical staff physically ass@ulting a patient, triggering widespread public anger. Croatia's Ministry of Health identified multiple shortcomings at the clinic, including faults in staff training, supervision and staffing levels, after an inspection ordered by officials.\n\nHealth Minister Irena Hrstic stated that corrective measures must be implemented immediately, with the clinic given 60 days to meet required staffing standards. The incidents have renewed scrutiny over persistent failures, weak oversight and staff shortages in regional psychiatric care.\n\nHave you ever witnessed or heard about similar institutional issues in local healthcare systems? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #PsychiatricCare #Croatia #Bosnia\n\n📸 Runolist / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T00:32+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 108,
   "decided_at": "2026-11-27T00:49+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185482956988633",
+      "post_id": "790959357430859_122185482980988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185482956988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-6/916309470_122185482962988633_426952737416030151_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEZ-jZZY-GgZoSPpbfEgEne4puNYwFH3vfim41jAUfe9xxVNUUqsr9CpyKqeew4EcqF4TqNfycdmEFbIxztkN86&_nc_ohc=EyXCNIW5QXoQ7kNvwGealTw&_nc_oc=AdoWHV-1GBB7BVZXRCoO4NJoqQc6RRc2XX1h0kRA5PBF39mmuN-F0ox6jtLh_teC3Z4&_nc_zt=23&_nc_ht=scontent-iad3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=eAaRm44VSH-7oC6V6xDj_A&_nc_tpa=Q5bMBQKCuLo3cdT80o2e66_FLco0jUtxDcSjSiiW6m8LIBz2lITraCDnyYjiQjbQV7YniU5B5LAGPNbDeg&oh=00_AQUOAuAN-yxq0yLTv2uox_1uhAS-N71HeXaQ4dji5BAwng&oe=6B0E8BD2"
+    },
+    "instagram": {
+      "media_id": "17869869600675899",
+      "permalink": "https://www.instagram.com/p/DgONlINDVY_/"
+    },
+    "story": {
+      "media_id": "18134359852826633"
+    }
+  },
+  "published_at": "2026-11-27T03:47+05:00"
 }
