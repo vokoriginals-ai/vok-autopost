@@ -263,6 +263,15 @@ if __name__ == "__main__":
                             photo_page=got["page"], status="approved", decided_at=now().isoformat(timespec="minutes"),
                             note="real photo found by rephoto")
                 st["photos"].append({"at": now().isoformat(), "page": got["page"]})
+            elif meta.get("label") == "BREAKING":
+                from vok.render import render_text_card
+                for x in folder.glob("photo.*"):
+                    x.unlink()
+                render_text_card(meta["headline"], str(folder / "render.jpg"), "BREAKING",
+                                 meta.get("highlight", ""))
+                meta["caption"] = _re.sub(r"\n\n📸 [^\n]*", "", meta["caption"]).rstrip()
+                meta.update(status="approved", photo_page="text-card", photo_credit="",
+                            note="breaking: no fitting photo, headline card")
             else:
                 meta.update(status="rejected", note="no safe real photo found (headline cards only for breaking)")
             save_post(folder, meta)
