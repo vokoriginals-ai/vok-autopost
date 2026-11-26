@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "healthcare workers arrested",
   "caption": "Healthcare scandals spark outrage across the region. 🚨\n\nAccording to Al Jazeera, at least 13 healthcare workers have been arrested and institution heads have resigned following ab*se scandals in Croatia and Bosnia and Herzegovina. Protesters gathered in Zagreb carrying white pillows marked with bloody handprints in memory of 32 year old Kristian Josip Peris, who d!ed at a psychiatric clinic after staff allegedly placed a pillow over his face.\n\nA separate video from a public hospital in Zenica showed medical staff physically ass@ulting a patient, triggering widespread public anger. Croatia's Ministry of Health identified multiple shortcomings at the clinic, including faults in staff training, supervision and staffing levels, after an inspection ordered by officials.\n\nHealth Minister Irena Hrstic stated that corrective measures must be implemented immediately, with the clinic given 60 days to meet required staffing standards. The incidents have renewed scrutiny over persistent failures, weak oversight and staff shortages in regional psychiatric care.\n\nHave you ever witnessed or heard about similar institutional issues in local healthcare systems? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #PsychiatricCare #Croatia #Bosnia\n\n📸 Runolist / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T00:32+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.aljazeera.com/news/2026/11/26/behind-the-doors-of-psychiatric-institutions-patient-care-turns-into-abuse?traffic_source=rss"
   ],
-  "issue": 108
+  "issue": 108,
+  "decided_at": "2026-11-27T00:49+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
