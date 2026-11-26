@@ -2,7 +2,7 @@ name: Watchdog (restart publisher if stopped)
 
 on:
   schedule:
-    - cron: "7,37 * * * *"      # every 30 minutes
+    - cron: "*/10 * * * *"      # every 10 minutes (GitHub skips some; more tries = safer)
   workflow_dispatch:
 
 permissions:

@@ -116,10 +116,17 @@ def drip(max_hours: float = 5.5) -> None:
     started = time.time()
     last_news = 0.0
     last_quote = time.time() - 7200     # first quote ~30 min after start
-    st0 = load_state()
-    st0["drip_until"] = (now() + timedelta(hours=max_hours, minutes=10)).isoformat()
-    save_state(st0)
+    def beat():
+        # heartbeat: "a publisher is alive" for the next 20 minutes only, so a crashed
+        # run can never block the others for hours
+        s = load_state()
+        s["drip_until"] = (now() + timedelta(minutes=20)).isoformat()
+        save_state(s)
+        return s["drip_until"]
+    st0 = {"drip_until": beat()}
     while time.time() - started < max_hours * 3600:
+      try:
+        st0["drip_until"] = (now() + timedelta(minutes=20)).isoformat()
         cfg = config()
         t = now()
         if in_window(t):
@@ -169,7 +176,9 @@ def drip(max_hours: float = 5.5) -> None:
                 _sync()
         except Exception as e:
             print(f"report failed: {str(e)[:150]}")
-        time.sleep(300)
+      except Exception as e:                 # never let one error stop the publisher
+        print(f"loop error (continuing): {type(e).__name__}: {str(e)[:150]}")
+      time.sleep(300)
     # hand over to a fresh run so the queue keeps going
     if True:                       # always hand over: the publisher never stops
         repo, token = os.environ.get("GITHUB_REPOSITORY"), os.environ.get("GITHUB_TOKEN")

@@ -43,16 +43,29 @@ def load_post(post_id: str) -> tuple[Path, dict]:
     return folder, json.loads((folder / "post.json").read_text(encoding="utf-8"))
 
 
+def _clean_text(text: str) -> str:
+    """Join broken emoji halves (surrogates) from the AI's text, drop any left over."""
+    try:
+        return text.encode("utf-16", "surrogatepass").decode("utf-16")
+    except UnicodeError:
+        return text.encode("utf-8", "replace").decode("utf-8")
+
+
 def save_post(folder: Path, meta: dict) -> None:
     folder.mkdir(parents=True, exist_ok=True)
-    (folder / "post.json").write_text(
-        json.dumps(meta, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    data = _clean_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n")
+    tmp = folder / "post.json.tmp"
+    tmp.write_text(data, encoding="utf-8")          # never leave a half-written post.json
+    tmp.replace(folder / "post.json")
 
 
 def all_posts() -> list[tuple[Path, dict]]:
     out = []
     for p in sorted(POSTS.glob("*/post.json")):
-        out.append((p.parent, json.loads(p.read_text(encoding="utf-8"))))
+        try:
+            out.append((p.parent, json.loads(p.read_text(encoding="utf-8"))))
+        except Exception as e:                  # one broken file must not stop everything
+            print(f"skipping broken {p.parent.name}: {str(e)[:60]}")
     return out
 
 
