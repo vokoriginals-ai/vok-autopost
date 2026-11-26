@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "621.9 million dollar",
   "caption": "US officials just greenlit major military support for Kyiv 🇺🇸\n\nAccording to reports from Firstpost and Anadolu Ajansi, the United States has approved a 621.9 million dollar F 16 sustainment sale to Ukraine.\n\nThe package provides vital maintenance, equipment and support for the fighter jets.\n\nFurther details on the delivery timeline have not yet been fully outlined.\n\nWould this aid change the course of the conflict in the region?\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Ukraine #USMilitary #F16\n\n📸 Official Navy Page from United States of America Michael Rus / Wikimedia Commons (Public domain)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T16:00+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 92,
   "decided_at": "2026-11-26T16:16+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185408394988633",
+      "post_id": "790959357430859_122185408418988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185408394988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/925407173_122185408400988633_4960565872655280478_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFfr4pze8hqN4LkADe0j8iT8gVSlyUIUojyBVKXJQhSiLTy058JblZsSB_rhjj_ScNIw_BQg2QbPbwhfteuDQhu&_nc_ohc=pzFlOvGdn2EQ7kNvwHOzVTA&_nc_oc=AdoKvYUdZZuXuM_Jskr1p02_JZVblAy0SYYx095NWCge2zr80WDbh7YYR9oQ9Vd0djU&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=40exQjSpSlxQY3wvqEAn1Q&_nc_tpa=Q5bMBQJqwJx-zuq4rzrk_F0eFU6oQnCmKnOcwthxFSiNZSbGm2YhiL73zQ2NQuyVGHdhoVHE6HKvQfEEbA&oh=00_AQQDKQJ-DZV-lktuLobt4CkJAZ44yh0HGOGp9cQmT36rBQ&oe=6B0DD9B2"
+    },
+    "instagram": {
+      "media_id": "18019657676969265",
+      "permalink": "https://www.instagram.com/p/DgNEK7gjYfV/"
+    },
+    "story": {
+      "media_id": "18117692363602847"
+    }
+  },
+  "published_at": "2026-11-26T17:05+05:00"
 }
