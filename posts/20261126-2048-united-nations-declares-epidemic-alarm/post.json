@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "epidemic alarm",
   "caption": "Health authorities have raised grave concerns over the worsening situation in Gaza 🚨\n\nAccording to Anadolu and Al Jazeera, an epidemic alarm has been declared due to a sharp increase in meningitis cases across the territory.\n\nVatican News reports that the rise in infections is being driven by a severe water crisis and collapsing infrastructure that has left health systems struggling.\n\nInternational organizations warn that the deteriorating conditions are fueling widespread health fears for civilians trapped in the area.\n\nWhat measures can be taken to prevent a wider health catastrophe in Gaza?\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #HealthCrisis #UnitedNations\n\n📸 Kobi Gideon / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-26T20:48+05:00",
@@ -26,5 +26,21 @@
   ],
   "issue": 100,
   "decided_at": "2026-11-26T21:04+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185462460988633",
+      "post_id": "790959357430859_122185462484988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185462460988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/925810554_122185462466988633_4675435199239475716_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFNP1UPG3EYuzH_7iPCM0lE_FsDKdiBHk78WwMp2IEeTvDfsBFZD1AzZRhGB0R6A3cl7Mr1UTFWtZrHJU4SZHq3&_nc_ohc=GVO56rljXjAQ7kNvwERrEO0&_nc_oc=Adqk1SMSrXLhziLVCdYQSlzhTK-AOyJmmzb0Xcu_S6j_sW5ryOve3cQY_ZkuCbdKFyY&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=wZf65xB3HhJoGmhXhb6dHQ&_nc_tpa=Q5bMBQIiUyBQLiSwjjFtFTVOr6ekl1N2LqeSdjCBPePSmKr7GP9AKLPpdb44_tO8ug8rXujw7Vb_teVwtg&oh=00_AQT8iKGEy-5gp4IcjrSah1M8It-wMSTOInIxocKy-Qs0LA&oe=6B0E5339"
+    },
+    "instagram": {
+      "media_id": "18181341193446350",
+      "permalink": "https://www.instagram.com/p/DgNwQ5bl-OF/"
+    },
+    "story": {
+      "media_id": "18134632240684107"
+    }
+  },
+  "published_at": "2026-11-26T23:31+05:00"
 }
