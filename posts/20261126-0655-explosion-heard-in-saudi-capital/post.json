@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "Explosion heard",
   "caption": "An explosion shook the Saudi capital Riyadh late Wednesday night following a hostile aerial threat alert 🚨\n\nAccording to an AFP journalist and residents, the blast occurred around midnight after authorities issued a warning that was lifted shortly after.\n\nResidents in the northern and eastern parts of the city confirmed hearing the loud noise to reporters.\n\nThe incident follows just a day after 11 people were wounded in a Houthi claimed attack on the city financial district.\n\nWhat security steps should be taken to protect civilians in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #SaudiArabia #Riyadh #MiddleEastNews",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-26T06:59+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 87,
   "decided_at": "2026-11-26T07:11+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185339142988633",
+      "post_id": "790959357430859_122185339166988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185339142988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/929767930_122185339148988633_5025777571439940702_n.jpg?_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGhs15g5cIK-r3dA6ME3AjEsyuOS1jyf7qzK45LWPJ_uqE3enSvzzdGwhUUfC__A3LjCQ0DLquXC_iRoenYbDQg&_nc_ohc=9_L2LuI9dOMQ7kNvwFPS-cu&_nc_oc=AdqpUkRChVgoBR7EHkJ_Evj9XLyF40YKtolxTkxkXes_mu5Nk-6TtPHAEruWgR4jxCo&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=p4r8wTx8D-bZkXdM75RzPw&_nc_tpa=Q5bMBQL2dycJA17uvJ_Y-cf7FB-EcsDQ2RV7ppahyy1Ij_EJbs82H_nlw66hDvQ4NuW03GvmG3mJAJ20zw&oh=00_AQSdQVg65S4GKfFZhbJmhO6yOnDh2pMMPyjScbFjRRRyyw&oe=6B0D831E"
+    },
+    "instagram": {
+      "media_id": "17878494603636951",
+      "permalink": "https://www.instagram.com/p/DgMAt7pDhNZ/"
+    },
+    "story": {
+      "media_id": "18117649390863990"
+    }
+  },
+  "published_at": "2026-11-26T07:16+05:00"
 }
