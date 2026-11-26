@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "migration emergency",
   "caption": "Spain has sent military personnel to the island of El Hierro after declaring a migration emergency, according to Anadolu Ajansi.\n\nThe deployment comes as authorities respond to increasing arrivals and mounting pressure on local resources in the region.\n\nFurther details regarding the exact number of deployed personnel and their specific duties are expected as the situation develops.\n\nWhat measures should governments take to manage migration crises effectively? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Spain #Migration #ElHierro\n\n📸 hdbernd / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T01:10+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 109,
   "decided_at": "2026-11-27T01:26+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185514492988633",
+      "post_id": "790959357430859_122185514516988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185514492988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad3-1.xx.fbcdn.net/v/t39.30808-6/921896002_122185514498988633_4568186071837859255_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGNbW6fei2pB28RHAX3RT660iSK-ffOOp_SJIr59846n3kydcXCA4fuWOSYTSqZC8K-yTZr0G8SGDqexX0FBT-V&_nc_ohc=VUL07KPrQNAQ7kNvwEvf4BO&_nc_oc=AdraMk5rZXW79dSIF0g8c5MK8zIeGPlE_mY1BxKimsY7u_r5_wNWI4vK16obSBkLe24&_nc_zt=23&_nc_ht=scontent-iad3-1.xx&edm=AMAeTUEEAAAA&_nc_gid=K6KYOphGtLWNGqMsAVRWEA&_nc_tpa=Q5bMBQIXJFV1YNAOwynZWgWHW_yumjEp92Exbv65YxCXzAs6Pf56jZhqyAAIB4eqQJlshUo2Cjf1TlX8LQ&oh=00_AQVDpG-6lT0zf53fh2n84rC7s9p3JkGb5hdHD81tK5wy1Q&oe=6B0E7CAE"
+    },
+    "instagram": {
+      "media_id": "17933995809424878",
+      "permalink": "https://www.instagram.com/p/DgOU3ZkjV7D/"
+    },
+    "story": {
+      "media_id": "18228196717353134"
+    }
+  },
+  "published_at": "2026-11-27T04:50+05:00"
 }
