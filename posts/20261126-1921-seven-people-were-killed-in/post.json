@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "Seven people",
   "caption": "Seven people have tragically lost their lives in Mexico after a violent shootout with gunmen 🇲🇽\n\nAccording to Arab News, the deadly confrontation resulted in seven fatalities at the scene.\n\nLocal authorities have not yet released further details regarding the identities of those involved or the exact motive behind the violence.\n\nInvestigations are currently ongoing as security forces secure the area and gather more evidence about the clash.\n\nWhat measures can authorities take to stop rising cartel violence? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Mexico #Shootout #WorldNews",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-26T19:22+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTjlKLUJqTkZDcDdNbWVTT0Z4X0cxMmRGRlNITGVzRE5yZjdiTG1FRThKeVJGLVY4RnlPSXJSVVcwUk1MVzJQLVcwdFhjR01BRDdtZFJFWDh0ZktZQXJkNmllcGZYb2lNTGJTQy00aTBHN1dIQXJxbERxYkRkSV9Vd1ZkLVVvN2VyU1hDOVpn?oc=5"
   ],
-  "issue": 97
+  "issue": 97,
+  "decided_at": "2026-11-26T19:33+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185439018988633",
+      "post_id": "790959357430859_122185439042988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185439018988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/925679630_122185439024988633_5495581064491020427_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEeYfANmK2UDSzfshrODZ1gEH1bkQNZxMYQfVuRA1nExrax77UcplzzHtea8A4ccKA8MIf0Tx8Krx0yZqrmsazI&_nc_ohc=KraRD1Z7mRoQ7kNvwF4-Ts1&_nc_oc=AdrLtBOEtK5Q4g5_fpHpxks5Tk9uBXbSNLDnAdgrPvksBf79FNQrCCOML1hcNEYKboU&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=hFkx7-SqTM88PiqCeDlmLQ&_nc_tpa=Q5bMBQISMh2Jgv6s1xakrZeFXSkyI3BjQk2cOA0Q6LPQeLLjBRwkfdn9KStC3cdAqSPcrAyljQOUPBCYSA&oh=00_AQTh-kk5DeP6JLfz_mOK58ztO76wkSeqyXDaU7ti5VF7Zg&oe=6B0E0665"
+    },
+    "instagram": {
+      "media_id": "18204127219378275",
+      "permalink": "https://www.instagram.com/p/DgNVCxADi9G/"
+    },
+    "story": {
+      "media_id": "17904052047389622"
+    }
+  },
+  "published_at": "2026-11-26T19:33+05:00"
 }
