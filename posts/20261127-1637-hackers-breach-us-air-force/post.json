@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "breach US Air Force",
   "caption": "Major cyber security breach hits the US military infrastructure 💻\n\nHackers have breached the US Air Force flagship cloud computing platform called Cloud One, according to three people familiar with the matter cited by Reuters. The intrusion could jeopardise a vast swathe of sensitive tactical, personnel and logistics data.\n\nThe breach was discovered within the past month during system upgrade work and has led to widespread disruption across the platform. Reuters could not establish the identity of the hackers, the full scope of the intrusion or whether any data was stolen.\n\nInvestigators have called in US Cyber Command to assess the damage according to one source. Efforts to migrate back office applications have been paused and updates to existing applications have been blocked.\n\nThe Air Force stated it does not comment on the security posture or vulnerabilities of specific networks. Cloud One combines resources from major tech companies including Microsoft, Amazon, Oracle and Alphabet to power scores of applications.\n\nWhat are the biggest cyber security risks facing global defense networks today? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #CyberSecurity #USAirForce #TechNews",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-27T16:38+05:00",
@@ -22,5 +22,23 @@
     "https://www.dawn.com/news/2047476/hackers-breach-us-air-force-flagship-cloud-one-computing-platform",
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5"
   ],
-  "issue": 121
+  "issue": 121,
+  "decided_at": "2026-11-27T16:49+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185579646988633",
+      "post_id": "790959357430859_122185579670988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185579646988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-lga3-3.xx.fbcdn.net/v/t39.30808-6/920440885_122185579652988633_8651689660341968401_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFHsS4Mn-_R6_zJTkIf0xKz4p4845e6UB3injzjl7pQHf1_2Im42rCnccE4nlp9C5CgK3sx3BHgEHDkV5eEcydj&_nc_ohc=FFwZAUBGkNgQ7kNvwESaDxV&_nc_oc=AdoIPq4SPZkh2vE5gup7NyDsoe34o2AmE1sCM7aj98gd9qlyRbLrT2PlSUTn5ULFuGU&_nc_zt=23&_nc_ht=scontent-lga3-3.xx&edm=AMAeTUEEAAAA&_nc_gid=6q0X7hKgBTnfMf3bsdi19A&_nc_tpa=Q5bMBQKOoV1m9qDYOYbrHLX7jq5xU_AJ4WEniLPkuOZtcW9_FNNh7CW1PXcMRiNOi9I9D-mMcUE2cbkeyw&oh=00_AQWxGMhSv1FjrkyjSLVzEY6zcqJDUkt0wbFK9xZaSG6Fuw&oe=6B0F272E"
+    },
+    "instagram": {
+      "media_id": "18131244082883471",
+      "permalink": "https://www.instagram.com/p/DgPnFM7I3SQ/"
+    },
+    "story": {
+      "media_id": "18126759887289795"
+    }
+  },
+  "published_at": "2026-11-27T16:49+05:00"
 }
