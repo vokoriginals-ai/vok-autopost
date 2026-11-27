@@ -2,168 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T23:43:30.820279+05:00",
-   "words": [
-    "116",
-    "2026",
-    "absent",
-    "all",
-    "booed",
-    "chasing",
-    "contestant",
-    "contestants",
-    "costume",
-    "crown",
-    "delegates",
-    "full",
-    "israel",
-    "israeli",
-    "list",
-    "miss",
-    "palestine",
-    "peace",
-    "universe"
-   ],
-   "headline": "Israeli contestant with 'peace' costume booed at Miss Universe 2026"
-  },
-  {
-   "at": "2026-11-23T23:44:07.494147+05:00",
-   "words": [
-    "2026",
-    "23rd",
-    "bulletin",
-    "evening",
-    "midday",
-    "morning",
-    "november",
-    "quiz",
-    "sport"
-   ],
-   "headline": "Video. Latest news bulletin | November 23rd, 2026 – Evening"
-  },
-  {
-   "at": "2026-11-23T23:44:31.925091+05:00",
-   "words": [
-    "aside",
-    "big",
-    "clash",
-    "democrats",
-    "hollen",
-    "israel",
-    "leadership",
-    "led",
-    "now",
-    "schumer",
-    "senate",
-    "should",
-    "some",
-    "step",
-    "van",
-    "vie",
-    "win"
-   ],
-   "headline": "Schumer, Van Hollen clash over Israel as Democrats vie for Senate leadership"
-  },
-  {
-   "at": "2026-11-23T23:44:33.051886+05:00",
-   "words": [
-    "cairo",
-    "closer",
-    "coordination",
-    "ease",
-    "egypt",
-    "energy",
-    "iraq",
-    "leaders",
-    "makes",
-    "meet",
-    "military",
-    "pledge",
-    "regional",
-    "tensions",
-    "ties",
-    "visit",
-    "zaidi"
-   ],
-   "headline": "Egypt and Iraq pledge closer energy and military ties as Al Zaidi makes first Cairo visit"
-  },
-  {
-   "at": "2026-11-23T23:44:37.426022+05:00",
-   "words": [
-    "2026",
-    "cup",
-    "map",
-    "qatar",
-    "results",
-    "schedule",
-    "times",
-    "venue",
-    "world"
-   ],
-   "headline": "2026 World Cup venue map"
-  },
-  {
-   "at": "2026-11-23T23:45:04.621303+05:00",
-   "words": [
-    "commitment",
-    "defence",
-    "defense",
-    "economic",
-    "erdogan",
-    "free",
-    "growth",
-    "independence",
-    "independent",
-    "industry",
-    "president",
-    "progress",
-    "renews",
-    "rkiye",
-    "terror",
-    "toward",
-    "turkish",
-    "vows"
-   ],
-   "headline": "Erdogan renews commitment to 'Terror-Free Türkiye', independent defence industry"
-  },
-  {
-   "at": "2026-11-23T23:45:26.710948+05:00",
-   "words": [
-    "calls",
-    "concern",
-    "lavrov",
-    "lebanon",
-    "national",
-    "situation",
-    "syria",
-    "unity",
-    "voices"
-   ],
-   "headline": "Lavrov voices concern over situation in Lebanon, calls for national unity in Syria"
-  },
-  {
-   "at": "2026-11-23T23:45:28.595649+05:00",
-   "words": [
-    "450",
-    "agrees",
-    "contract",
-    "last",
-    "mets",
-    "million",
-    "mlb",
-    "old",
-    "record",
-    "ridiculous",
-    "skubal",
-    "source",
-    "tarik",
-    "vestige",
-    "world",
-    "york"
-   ],
-   "headline": "The Mets’ ridiculous Tarik Skubal contract is the last vestige of MLB’s old world"
-  },
-  {
    "at": "2026-11-23T23:48:37.841390+05:00",
    "words": [
     "49ers",
@@ -18704,6 +18542,140 @@
     "weapon"
    ],
    "headline": "'The Ultimate Hunter': India's New Weapon That Shoots and Blows Apart Swarms of Drones | Vantage"
+  },
+  {
+   "at": "2026-11-27T23:46:39.333613+05:00",
+   "words": [
+    "another",
+    "backing",
+    "faces",
+    "kyiv",
+    "punishing",
+    "sign",
+    "war",
+    "weary",
+    "winter"
+   ],
+   "headline": "Weary of war but with no sign of backing down, Kyiv faces another punishing winter"
+  },
+  {
+   "at": "2026-11-27T23:47:00.929096+05:00",
+   "words": [
+    "around",
+    "bound",
+    "flotilla",
+    "libya",
+    "military",
+    "nov",
+    "russian",
+    "sources",
+    "sunk",
+    "turns",
+    "warship"
+   ],
+   "headline": "Russian military flotilla bound for Libya turns around after warship sunk on Nov 22, sources says"
+  },
+  {
+   "at": "2026-11-27T23:47:01.948360+05:00",
+   "words": [
+    "close",
+    "couple",
+    "israel",
+    "netanyahu",
+    "odd",
+    "politics",
+    "toppling"
+   ],
+   "headline": "How Israel’s odd-couple politics could be close to toppling Netanyahu"
+  },
+  {
+   "at": "2026-11-27T23:47:02.930315+05:00",
+   "words": [
+    "bibas",
+    "demolish",
+    "family",
+    "home",
+    "hostage",
+    "kibbutz",
+    "urges",
+    "yarden"
+   ],
+   "headline": "Ex-hostage Yarden Bibas urges kibbutz not to demolish his family’s home"
+  },
+  {
+   "at": "2026-11-27T23:47:03.803451+05:00",
+   "words": [
+    "100",
+    "banks",
+    "biggest",
+    "britain's",
+    "eight",
+    "equity",
+    "ftse",
+    "funds",
+    "gain",
+    "global",
+    "log",
+    "miners",
+    "months",
+    "outflow",
+    "posts",
+    "rally",
+    "weekly"
+   ],
+   "headline": "Britain's FTSE 100 posts biggest weekly gain in eight months as miners, banks rally"
+  },
+  {
+   "at": "2026-11-27T23:47:04.689852+05:00",
+   "words": [
+    "becomes",
+    "blogs",
+    "brotherhood",
+    "complicity",
+    "vayishlach"
+   ],
+   "headline": "The Blogs: When Brotherhood Becomes Complicity (Vayishlach)"
+  },
+  {
+   "at": "2026-11-27T23:47:06.071754+05:00",
+   "words": [
+    "boundaries",
+    "government",
+    "netanyahu",
+    "next",
+    "sets"
+   ],
+   "headline": "Netanyahu Still Sets the Boundaries of the Next Government"
+  },
+  {
+   "at": "2026-11-27T23:47:07.046561+05:00",
+   "words": [
+    "deadlock",
+    "despite",
+    "eisenkot",
+    "form",
+    "government",
+    "israel",
+    "likud",
+    "vows",
+    "within"
+   ],
+   "headline": "Israel’s Eisenkot vows to form government within 8 days despite deadlock with Likud"
+  },
+  {
+   "at": "2026-11-27T23:47:07.970405+05:00",
+   "words": [
+    "ancient",
+    "back",
+    "crop",
+    "galilee",
+    "grind",
+    "israeli",
+    "revive",
+    "scientists",
+    "sesame"
+   ],
+   "headline": "Back to the grind: Israeli scientists revive ancient sesame crop in the Galilee"
   }
  ],
  "published": [
