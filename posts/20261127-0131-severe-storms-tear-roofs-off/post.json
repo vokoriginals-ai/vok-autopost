@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "tear roofs off",
   "caption": "Roofs have been torn off and streets left under water as severe weather hits parts of the US. 🌊\n\nAccording to the BBC, hundreds of thousands of people have been affected by the storms across the country. The severe weather arrived just as the Thanksgiving holiday weekend began.\n\nAuthorities and residents are dealing with the aftermath of the damaging winds and heavy flooding. More updates are expected as emergency services assess the damage.\n\nHow do you stay safe during extreme weather events in your area? Let us know in the comments below? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USWeather #Storms #Thanksgiving\n\n📸 Metropolitan Transportation Authority from United States of  / Wikimedia Commons (CC BY 2.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T01:31+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 110,
   "decided_at": "2026-11-27T01:48+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185521992988633",
+      "post_id": "790959357430859_122185522016988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185521992988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-dfw6-2.xx.fbcdn.net/v/t39.30808-6/927685167_122185521998988633_6960567598080833250_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGulyObimJFzML9ia4C4IkDX-KjS8jCYLtf4qNLyMJgu4C1aeLlVFwHuu3QbKo_pQyK_3Ce1rZykSWtwhBGBJWv&_nc_ohc=n2hu73AeAeIQ7kNvwFk451x&_nc_oc=Adqdv0oZLuXTQOKRhaEAwtw92V4EkucipsHpgmkenvkbLyGq7n_EOXhPrRsJcyR_xcc&_nc_zt=23&_nc_ht=scontent-dfw6-2.xx&edm=AMAeTUEEAAAA&_nc_gid=23aEopJXz31QzCvdDUXEIA&_nc_tpa=Q5bMBQKNGDeizURiimLWlHW3srAGTJwS3VBT6R8Zia6otFgT5Rv8DgiWU4hbHMoZr37dsNpusWhw1md95A&oh=00_AQXjb1k5Ixk53Si1Y3Vuvb0P1m3eG9rVJwHKwEFWwXq6bQ&oe=6B0E94EC"
+    },
+    "instagram": {
+      "media_id": "17997420615112825",
+      "permalink": "https://www.instagram.com/p/DgOfssDjc0q/"
+    },
+    "story": {
+      "media_id": "18082301726412545"
+    }
+  },
+  "published_at": "2026-11-27T06:25+05:00"
 }
