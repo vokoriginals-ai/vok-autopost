@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "highest pace",
   "caption": "Qatari energy exports hit a significant milestone amid ongoing regional tensions. ⚡\n\nAccording to Middle East Monitor, Qatar has recorded its highest pace of liquefied natural gas shipments since the start of the US Iran war.\n\nThe surge in shipments highlights ongoing efforts to maintain global energy supplies amidst regional instability.\n\nHow will this impact global energy markets in the coming weeks? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Qatar #LNG #EnergyCrisis\n\n📸 Gordon Leggett / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T01:32+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 111,
   "decided_at": "2026-11-27T01:48+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185517330988633",
+      "post_id": "790959357430859_122185517354988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185517330988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-iad6-1.xx.fbcdn.net/v/t39.30808-6/916257161_122185517336988633_516316721226805839_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGMbCGHAJQnnbvwJC8HzDRU4GVA2INn_zjgZUDYg2f_OM5FolMUAksnAumPM7dUL7LJV3AHwdujvKqZqurtlZXd&_nc_ohc=nPmYtnkFFfUQ7kNvwFajp4C&_nc_oc=Adr6xLfvRuoHSRWdy-_bNyxkJYhpXNBzGCsNaUMtz2mK2xwPXl_45pbOQpYkswjBrVU&_nc_zt=23&_nc_ht=scontent-iad6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=wjrOVh5h6urTEA3svWH5dA&_nc_tpa=Q5bMBQJvFIxMJbW_9eLjXyGE_9rvz3gWQk8Mdbp0WfXdjh2SfMPc8r_Tyv4uNVHR3AssgMzYbKdBq-hZEg&oh=00_AQXRea7W-I3jWiXpzdDrJ_qXAjjm6FpBVOtdwjvgP9URXA&oe=6B0EBD59"
+    },
+    "instagram": {
+      "media_id": "18509110747097700",
+      "permalink": "https://www.instagram.com/p/DgOaHoFDcHI/"
+    },
+    "story": {
+      "media_id": "18130500944483929"
+    }
+  },
+  "published_at": "2026-11-27T05:36+05:00"
 }
