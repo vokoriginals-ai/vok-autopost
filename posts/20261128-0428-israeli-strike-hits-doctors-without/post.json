@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "k!lling two staff",
   "caption": "Two Doctors Without Borders employees have been k!lled after an Israeli strike directly hit a clinic in Gaza. 🚨\n\nAccording to Doctors Without Borders, an Israeli strike directly hit one of its clinics in the Gaza Strip on Friday night, k!lling two watchmen.\n\nThe medical charity stated that the building was clearly marked with logos and that its precise location had been shared with the Israeli military.\n\nThe organization noted that this latest attack brings the total number of its staff members k!lled by Israeli forces in Gaza to 17.\n\nThe strike occurred near al Shifa Hospital and contributed to a total de@th toll of eight across Gaza on Friday, according to local reports.\n\nWhat are your thoughts on this situation? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #MSF #MiddleEast\n\n📸 Israel Defense Forces from Israel / Wikimedia Commons (CC BY-SA 2.0)",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T04:29+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://www.middleeasteye.net/live-blog/live-blog-update/doctors-without-borders-says-two-staff-killed-israeli-direct-hit-gaza"
   ],
-  "issue": 145
+  "issue": 145,
+  "decided_at": "2026-11-28T04:39+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185659152988633",
+      "post_id": "790959357430859_122185659194988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185659152988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/931636357_122185659158988633_4160676292530473514_n.jpg?_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHkZw38gJrVRvzwHuM7sOCpFpHsV_NMk2kWkexX80yTaXwZ1v8PvQjHhfoV0yW_J74hjK3gZa3kv5YnvcMtvM5w&_nc_ohc=8UJt7Wjl0hIQ7kNvwGujx5-&_nc_oc=Adqs6PvCyeGavo0zXPKvEY3Y7sUHr7FFddzHeENOFxljwESxYX2RVxzBNaZoU2E_VdU&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=Hb5ZPZ24z8Ld5O0J2TUEhA&_nc_tpa=Q5bMBQKtEKmwolTCKMoCiDswvitIAIh7ZvlYr84NKKU_haBIsRxSFfmDu8NZmHfi9ex2Z71e-AdpNiNi-g&oh=00_AQVENlmhAtTjE0ws7aTkR40QjecQdPIzKM4n3mYXNKyI4A&oe=6B1002D4"
+    },
+    "instagram": {
+      "media_id": "18121951301008118",
+      "permalink": "https://www.instagram.com/p/DgQ4ZEjD3Px/"
+    },
+    "story": {
+      "media_id": "17995691103059361"
+    }
+  },
+  "published_at": "2026-11-28T04:39+05:00"
 }
