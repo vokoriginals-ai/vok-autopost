@@ -2,42 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T19:34:49.126234+05:00",
-   "words": [
-    "100",
-    "america",
-    "chapter",
-    "form",
-    "gaza",
-    "group",
-    "issues",
-    "other",
-    "pen",
-    "seek",
-    "splinter",
-    "tensions",
-    "unhappy",
-    "writers"
-   ],
-   "headline": "Over 100 writers from PEN America to form splinter group over Gaza tensions"
-  },
-  {
-   "at": "2026-11-23T19:34:49.917427+05:00",
-   "words": [
-    "4th",
-    "becomes",
-    "country",
-    "diplomatic",
-    "fourth",
-    "icc",
-    "push",
-    "since",
-    "tajikistan",
-    "withdraw"
-   ],
-   "headline": "Tajikistan becomes 4th country to withdraw from ICC since US diplomatic push"
-  },
-  {
    "at": "2026-11-23T20:06:43.182838+05:00",
    "words": [
     "arrest",
@@ -17687,10 +17651,159 @@
     "shortfall"
    ],
    "headline": "Czech Republic rejects EU budget proposal over $3.7B funding shortfall"
+  },
+  {
+   "at": "2026-11-27T19:39:10.994503+05:00",
+   "words": [
+    "blockade",
+    "crisis",
+    "cuts",
+    "deepens",
+    "depth",
+    "economic",
+    "exposes",
+    "iran",
+    "nationwide",
+    "regime",
+    "strike",
+    "subsidies",
+    "truckers"
+   ],
+   "headline": "Iran’s nationwide truckers’ strike exposes the depth of the regime’s economic crisis |"
+  },
+  {
+   "at": "2026-11-27T19:39:11.939553+05:00",
+   "words": [
+    "above",
+    "arrest",
+    "arrests",
+    "case",
+    "declares",
+    "drug",
+    "drugs",
+    "family",
+    "kuwait",
+    "law",
+    "member",
+    "no",
+    "one",
+    "royal",
+    "ruling"
+   ],
+   "headline": "Kuwait says 'no one above the law' after arrest of royal family member in drugs case"
+  },
+  {
+   "at": "2026-11-27T19:39:13.724092+05:00",
+   "words": [
+    "congo",
+    "diplomatic",
+    "row",
+    "spat",
+    "town",
+    "troops",
+    "uganda",
+    "withdraw"
+   ],
+   "headline": "Uganda to withdraw troops from DR Congo amid diplomatic spat"
+  },
+  {
+   "at": "2026-11-27T19:39:35.690538+05:00",
+   "words": [
+    "assassination",
+    "attempt",
+    "chief",
+    "hamas",
+    "head's",
+    "israeli",
+    "life",
+    "son",
+    "survive",
+    "survives"
+   ],
+   "headline": "Hamas head's son said to survive attempt on his life"
+  },
+  {
+   "at": "2026-11-27T19:39:36.881675+05:00",
+   "words": [
+    "academic",
+    "alone",
+    "bench",
+    "chemistry",
+    "children's",
+    "ckaufpark",
+    "cry",
+    "dealing",
+    "financial",
+    "fined",
+    "germany",
+    "gone",
+    "old",
+    "playground",
+    "she",
+    "sitting",
+    "stress",
+    "student",
+    "woman"
+   ],
+   "headline": "Woman fined €25 for sitting alone on playground bench in Germany"
+  },
+  {
+   "at": "2026-11-27T19:39:37.658922+05:00",
+   "words": [
+    "activists",
+    "amazon",
+    "deals",
+    "german",
+    "israel",
+    "sit",
+    "stage",
+    "technology",
+    "warehouse"
+   ],
+   "headline": "German activists stage sit-in at Amazon warehouse over Israel technology deals"
+  },
+  {
+   "at": "2026-11-27T19:39:38.623781+05:00",
+   "words": [
+    "between",
+    "blair",
+    "deleted",
+    "government",
+    "mahmood",
+    "meeting",
+    "record",
+    "shabana"
+   ],
+   "headline": "UK government deleted record of meeting between Blair and Shabana Mahmood"
+  },
+  {
+   "at": "2026-11-27T19:39:39.661951+05:00",
+   "words": [
+    "abusive",
+    "backs",
+    "government",
+    "lawsuits",
+    "measures",
+    "tackle"
+   ],
+   "headline": "Government backs measures to tackle abusive lawsuits"
+  },
+  {
+   "at": "2026-11-27T19:39:40.806078+05:00",
+   "words": [
+    "deal",
+    "firm",
+    "military",
+    "palantir",
+    "poland",
+    "signs",
+    "system",
+    "tech"
+   ],
+   "headline": "Poland signs deal with US tech firm Palantir for military AI system"
   }
  ],
  "published": [
-  "2026-11-23T19:37+05:00",
   "2026-11-23T19:41+05:00",
   "2026-11-23T19:44+05:00",
   "2026-11-23T19:47+05:00",
