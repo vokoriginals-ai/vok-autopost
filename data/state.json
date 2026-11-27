@@ -2,30 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T23:18:29.411811+05:00",
-   "words": [
-    "attacks",
-    "bank",
-    "condemns",
-    "denounce",
-    "france",
-    "israeli",
-    "jewish",
-    "leaders",
-    "localities",
-    "palestinian",
-    "political",
-    "serious",
-    "settlers",
-    "several",
-    "terrorism",
-    "very",
-    "violent",
-    "west"
-   ],
-   "headline": "Israeli Political Leaders Denounce ‘Jewish Terrorism’ After West Bank Attacks"
-  },
-  {
    "at": "2026-11-23T23:36:31.602380+05:00",
    "words": [
     "alireza",
@@ -18790,6 +18766,103 @@
     "wave"
    ],
    "headline": "Is Another Tech Layoff Wave Incoming? Sap, Swiggy Consider Cutting Roles | Vantage on Firstpost"
+  },
+  {
+   "at": "2026-11-27T23:23:21.823359+05:00",
+   "words": [
+    "1971",
+    "2025",
+    "approach",
+    "assessment",
+    "bangladesh",
+    "bengalis",
+    "bind",
+    "contradicts",
+    "did",
+    "edge",
+    "extradite",
+    "hasina",
+    "hasina's",
+    "help",
+    "icj",
+    "india",
+    "pak",
+    "planned",
+    "puts",
+    "refuses",
+    "return",
+    "sheikh",
+    "speaker",
+    "weakened"
+   ],
+   "headline": "Bangladesh may approach ICJ if India refuses to extradite Sheikh Hasina, says Speaker"
+  },
+  {
+   "at": "2026-11-27T23:24:04.745488+05:00",
+   "words": [
+    "africa's",
+    "ebola",
+    "launches",
+    "mrna",
+    "trial",
+    "uganda",
+    "vaccine"
+   ],
+   "headline": "Uganda launches Africa's first mRNA Ebola vaccine trial"
+  },
+  {
+   "at": "2026-11-27T23:24:42.184246+05:00",
+   "words": [
+    "back",
+    "bill",
+    "calls",
+    "congressman",
+    "epstein",
+    "files",
+    "lawmakers",
+    "public",
+    "urge"
+   ],
+   "headline": "US congressman calls public to urge lawmakers to back Epstein files bill"
+  },
+  {
+   "at": "2026-11-27T23:24:43.099594+05:00",
+   "words": [
+    "boosts",
+    "impaired",
+    "inclusion",
+    "israeli",
+    "technology",
+    "visually"
+   ],
+   "headline": "Israeli Technology Boosts Inclusion for the Visually Impaired"
+  },
+  {
+   "at": "2026-11-27T23:24:43.991965+05:00",
+   "words": [
+    "authorities",
+    "boxer",
+    "champion",
+    "immigration",
+    "linares",
+    "released"
+   ],
+   "headline": "Ex-champion boxer Linares released by US immigration authorities"
+  },
+  {
+   "at": "2026-11-27T23:24:46.126238+05:00",
+   "words": [
+    "black",
+    "ceasefire",
+    "expands",
+    "kyiv",
+    "navy",
+    "offers",
+    "putin",
+    "russia",
+    "sea"
+   ],
+   "headline": "Kyiv offers Black Sea ceasefire, as Putin expands Russia’s navy"
   }
  ],
  "published": [
@@ -19338,6 +19411,10 @@
   {
    "at": "2026-11-27T23:02:13.211797+05:00",
    "page": "library:modi.png"
+  },
+  {
+   "at": "2026-11-27T23:25:12.823656+05:00",
+   "page": "https://pixabay.com/photos/ship-container-port-cargo-export-4490852/"
   }
  ],
  "drip_until": "2026-11-27T23:38:00.525172+05:00",
