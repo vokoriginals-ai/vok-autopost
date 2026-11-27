@@ -2,27 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T04:30:02.192542+05:00",
-   "words": [
-    "backs",
-    "court",
-    "danish",
-    "denmark",
-    "ghetto",
-    "hardline",
-    "immigration",
-    "law",
-    "non",
-    "policy",
-    "ruling",
-    "supports",
-    "supreme",
-    "top",
-    "westerners"
-   ],
-   "headline": "Denmark: Supreme Court backs hardline immigration law against 'non-Westerners'"
-  },
-  {
    "at": "2026-11-24T04:33:28.614284+05:00",
    "words": [
     "china",
@@ -18920,6 +18899,39 @@
     "without"
    ],
    "headline": "Doctors Without Borders says two staff killed in Israeli 'direct hit' on Gaza clinic"
+  },
+  {
+   "at": "2026-11-28T04:30:22.216035+05:00",
+   "words": [
+    "eisenkot",
+    "netanyahu",
+    "ready",
+    "reportedly",
+    "rotation",
+    "second",
+    "serve"
+   ],
+   "headline": "Netanyahu reportedly ready to serve as second PM in rotation with Eisenkot"
+  },
+  {
+   "at": "2026-11-28T04:30:56.593915+05:00",
+   "words": [
+    "centre",
+    "data",
+    "demand",
+    "facilities",
+    "gas",
+    "gazprom",
+    "help",
+    "idle",
+    "meet",
+    "plans",
+    "plants",
+    "power",
+    "russian",
+    "turn"
+   ],
+   "headline": "Gazprom plans to turn idle Russian gas facilities into power plants to help meet data centre demand"
   }
  ],
  "published": [
