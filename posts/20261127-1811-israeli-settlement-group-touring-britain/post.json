@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "reported to police",
   "caption": "An Israeli non profit group promoting illegal settlements in the West Bank has been reported to Scottish police over an alleged threat against Glasgow University rector Dr Ghassan Abu Sittah. \n\nAccording to Middle East Eye, Shivat Zion senior official Shraga Evers responded to criticism by making remarks that critics described as incitement and a de@th threat.\n\nActivist group Jewish Anti Zionist Action reported the organisation and Evers to Police Scotland, calling the remarks a racist and violent diatribe.\n\nBritish officials stated that the UK does not want to see settlement property advertising and will ensure a comprehensive sanctions regime is implemented.\n\nHow should authorities handle foreign groups promoting illegal settlements on domestic soil? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #GlasgowUniversity #WestBank #UKNews\n\n📸 Argymeg / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T18:11+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 123,
   "decided_at": "2026-11-27T18:28+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185599446988633",
+      "post_id": "790959357430859_122185599476988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185599446988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/916790104_122185599452988633_7128668894447643085_n.jpg?_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeErAEzBapUVRKH3I6tLUTePZ63RpGyYGshnrdGkbJgayKXVlfOkW6wZkF2FrZn88MFGX2GZhqIRXi8nHH7kAghT&_nc_ohc=oZ4DJR4R_bAQ7kNvwGJANEt&_nc_oc=AdpreIB8LeAsmr9dxGnMaEFRJrqGstnNrDDIObGeaAqt4mECXnNYj5UwKiSMdxPOguQ&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=B67Otekjeq1Da9i2zCq6Fg&_nc_tpa=Q5bMBQJW98r_WizGFUK--C-hV_Jb5KKVL9vK8C7FoSvznkiSqwIgHp0lNHgfr7RtZ-rdWnQ4pk4zO91NfA&oh=00_AQU66tggAEephsNUzxTppL7aKMmj1Khttv5ao9WLzpTKOw&oe=6B0F5F6F"
+    },
+    "instagram": {
+      "media_id": "18140285938704369",
+      "permalink": "https://www.instagram.com/p/DgP7xdNDQYG/"
+    },
+    "story": {
+      "media_id": "17883654765630761"
+    }
+  },
+  "published_at": "2026-11-27T19:50+05:00"
 }
