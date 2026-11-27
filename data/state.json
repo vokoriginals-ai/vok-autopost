@@ -2,85 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T04:05:32.996761+05:00",
-   "words": [
-    "intelligence",
-    "planning",
-    "russia",
-    "shows",
-    "strikes",
-    "ukraine",
-    "zelenskiy",
-    "zelensky"
-   ],
-   "headline": "Zelensky says intelligence shows Russia planning new strikes on Ukraine"
-  },
-  {
-   "at": "2026-11-24T04:07:06.901718+05:00",
-   "words": [
-    "california",
-    "death",
-    "department",
-    "erasure",
-    "justice",
-    "newsom",
-    "row",
-    "sentences",
-    "speak",
-    "speech",
-    "targets",
-    "trump"
-   ],
-   "headline": "Trump targets Newsom in Justice Department speech over erasure of death row sentences in California"
-  },
-  {
-   "at": "2026-11-24T04:07:10.771267+05:00",
-   "words": [
-    "2025",
-    "author",
-    "breaking",
-    "capitalist",
-    "countries",
-    "crude",
-    "indebted",
-    "international",
-    "oil",
-    "producers",
-    "rank",
-    "ranked",
-    "see",
-    "today",
-    "top",
-    "visual",
-    "world"
-   ],
-   "headline": "RANKED: The Top Crude Oil Producers in 2025 – Visual Capitalist – See How Countries Rank"
-  },
-  {
-   "at": "2026-11-24T04:07:12.758633+05:00",
-   "words": [
-    "coin",
-    "crash",
-    "despite",
-    "dinner",
-    "exclusive",
-    "gala",
-    "holders",
-    "holds",
-    "hosts",
-    "investors",
-    "lows",
-    "meme",
-    "plunges",
-    "price",
-    "record",
-    "token",
-    "top",
-    "trump"
-   ],
-   "headline": "Trump hosts gala for meme coin investors as his token plunges to record lows"
-  },
-  {
    "at": "2026-11-24T04:30:02.192542+05:00",
    "words": [
     "backs",
@@ -18844,6 +18765,97 @@
     "ties"
    ],
    "headline": "Don’t Bet on Spain’s Right to Fix Ties With Israel"
+  },
+  {
+   "at": "2026-11-28T04:07:12.618458+05:00",
+   "words": [
+    "agents",
+    "approach",
+    "black",
+    "broker",
+    "brooklyn",
+    "company",
+    "compete",
+    "diy",
+    "estate",
+    "friday",
+    "going",
+    "holds",
+    "israeli",
+    "land",
+    "real",
+    "sale"
+   ],
+   "headline": "Israeli real estate company holds 'Black Friday' land sale in Brooklyn"
+  },
+  {
+   "at": "2026-11-28T04:07:37.710364+05:00",
+   "words": [
+    "agrees",
+    "deal",
+    "diego",
+    "jojo",
+    "lefty",
+    "padres",
+    "reliever",
+    "romero",
+    "san"
+   ],
+   "headline": "Lefty reliever JoJo Romero agrees to 3-year deal with San Diego Padres"
+  },
+  {
+   "at": "2026-11-28T04:09:05.456448+05:00",
+   "words": [
+    "downs",
+    "drone",
+    "laser",
+    "russian",
+    "time",
+    "ukraine"
+   ],
+   "headline": "Ukraine says laser downs Russian drone for first time"
+  },
+  {
+   "at": "2026-11-28T04:09:41.340434+05:00",
+   "words": [
+    "andrea",
+    "cousins",
+    "dies",
+    "leader",
+    "role",
+    "senate",
+    "stewart",
+    "woman"
+   ],
+   "headline": "NY Senate leader Andrea Stewart-Cousins, first woman in the role, dies at 76"
+  },
+  {
+   "at": "2026-11-28T04:10:19.799770+05:00",
+   "words": [
+    "court",
+    "italian",
+    "landmark",
+    "orders",
+    "reinstate",
+    "richemont",
+    "ruling",
+    "workers"
+   ],
+   "headline": "Italian court orders Richemont to reinstate workers, in landmark ruling"
+  },
+  {
+   "at": "2026-11-28T04:11:50.955631+05:00",
+   "words": [
+    "collects",
+    "deepest",
+    "earth",
+    "eruption",
+    "evidence",
+    "known",
+    "robot",
+    "volcanic"
+   ],
+   "headline": "Robot collects evidence of deepest known volcanic eruption on Earth"
   }
  ],
  "published": [
