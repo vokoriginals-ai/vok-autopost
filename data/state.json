@@ -2,73 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T21:47:14.754235+05:00",
-   "words": [
-    "australia",
-    "challenge",
-    "democracy",
-    "flags",
-    "foreign",
-    "growing",
-    "key",
-    "policy",
-    "risks",
-    "treat",
-    "warns"
-   ],
-   "headline": "Australia flags AI as a growing foreign policy challenge, warns of risks to democracy"
-  },
-  {
-   "at": "2026-11-23T21:47:15.587936+05:00",
-   "words": [
-    "canada",
-    "exclusive",
-    "investment",
-    "pact",
-    "qatar",
-    "sign",
-    "source",
-    "tuesday"
-   ],
-   "headline": "EXCLUSIVE: Canada and Qatar to sign investment pact on Tuesday, source says"
-  },
-  {
-   "at": "2026-11-23T21:48:58.385442+05:00",
-   "words": [
-    "bank",
-    "holds",
-    "interest",
-    "israel",
-    "keeps",
-    "month",
-    "rate",
-    "rates",
-    "second",
-    "steady",
-    "straight"
-   ],
-   "headline": "Bank of Israel keeps interest rate steady at 3.25%"
-  },
-  {
-   "at": "2026-11-23T21:49:31.257214+05:00",
-   "words": [
-    "000",
-    "concert",
-    "crowd",
-    "don",
-    "evacuate",
-    "evacuated",
-    "people",
-    "police",
-    "release",
-    "released",
-    "substance",
-    "toliver",
-    "unknown"
-   ],
-   "headline": "Don Toliver concert evacuated in U.K. after ‘unknown substance’ released in crowd"
-  },
-  {
    "at": "2026-11-23T21:59:19.765376+05:00",
    "words": [
     "analysis",
@@ -18381,6 +18314,134 @@
     "western"
    ],
    "headline": "Armed group kills 13 soldiers in western Niger attack, defense ministry says"
+  },
+  {
+   "at": "2026-11-27T21:51:09.286424+05:00",
+   "words": [
+    "belgian",
+    "hit",
+    "information",
+    "outage",
+    "passenger",
+    "stations",
+    "systems",
+    "train"
+   ],
+   "headline": "Belgian train stations hit by IT outage, passenger information systems down"
+  },
+  {
+   "at": "2026-11-27T21:51:43.801564+05:00",
+   "words": [
+    "allies",
+    "attacks",
+    "benghazi",
+    "informing",
+    "italy",
+    "not",
+    "telling",
+    "truth",
+    "zelenskyy"
+   ],
+   "headline": "Italy says Zelenskyy 'not telling the truth' about informing allies of Benghazi attacks"
+  },
+  {
+   "at": "2026-11-27T21:51:44.623988+05:00",
+   "words": [
+    "balkans",
+    "bloc's",
+    "commissioner",
+    "integration",
+    "interest",
+    "own",
+    "western"
+   ],
+   "headline": "Integration of Western Balkans into EU in bloc's own interest: Commissioner"
+  },
+  {
+   "at": "2026-11-27T21:51:45.461051+05:00",
+   "words": [
+    "believes",
+    "brian",
+    "cowboys",
+    "despite",
+    "jerry",
+    "jones",
+    "meltdowns",
+    "mounting",
+    "schottenheimer"
+   ],
+   "headline": "Jerry Jones says he still believes in Brian Schottenheimer despite mounting meltdowns by Cowboys"
+  },
+  {
+   "at": "2026-11-27T21:51:46.612483+05:00",
+   "words": [
+    "algeria",
+    "change",
+    "elections",
+    "israel",
+    "morocco",
+    "right",
+    "spain's",
+    "wing",
+    "wins"
+   ],
+   "headline": "What will change for Israel, Algeria and Morocco if Spain's right-wing wins elections"
+  },
+  {
+   "at": "2026-11-27T21:51:47.543447+05:00",
+   "words": [
+    "earth",
+    "explainer",
+    "mean",
+    "million",
+    "satellites",
+    "space",
+    "spacex's",
+    "starmind"
+   ],
+   "headline": "Explainer: A million satellites? What SpaceX's Starmind could mean for Earth and space"
+  },
+  {
+   "at": "2026-11-27T21:51:48.484313+05:00",
+   "words": [
+    "deal",
+    "democrats",
+    "golan",
+    "likud",
+    "touts",
+    "unity",
+    "warns",
+    "yashar"
+   ],
+   "headline": "Golan touts Democrats’ deal with Yashar, warns against unity with Likud"
+  },
+  {
+   "at": "2026-11-27T21:51:49.333756+05:00",
+   "words": [
+    "antonelli",
+    "fastest",
+    "mercedes",
+    "one",
+    "practice",
+    "qatar",
+    "two"
+   ],
+   "headline": "Antonelli fastest as Mercedes one-two in first Qatar GP practice"
+  },
+  {
+   "at": "2026-11-27T21:51:50.070307+05:00",
+   "words": [
+    "act",
+    "chipmaking",
+    "controls",
+    "discuss",
+    "dutch",
+    "export",
+    "g20",
+    "match",
+    "trump"
+   ],
+   "headline": "Dutch PM to discuss MATCH Act chipmaking export controls with Trump at G20"
   }
  ],
  "published": [
