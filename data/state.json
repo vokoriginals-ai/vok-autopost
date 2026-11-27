@@ -2,151 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T03:40:59.223832+05:00",
-   "words": [
-    "000",
-    "62bn",
-    "6bn",
-    "aid",
-    "announces",
-    "balen",
-    "balendra",
-    "billion",
-    "bolster",
-    "crore",
-    "economic",
-    "flood",
-    "give",
-    "hit",
-    "india",
-    "india's",
-    "meet",
-    "modi",
-    "nepal",
-    "package",
-    "pacts",
-    "pledges",
-    "recovery",
-    "relief",
-    "reset",
-    "shah",
-    "takeaways",
-    "ties",
-    "top",
-    "visits"
-   ],
-   "headline": "India pledges $1.6bn in flood relief for Nepal as Balendra Shah visits Modi"
-  },
-  {
-   "at": "2026-11-24T03:41:59.131961+05:00",
-   "words": [
-    "britain",
-    "burnham",
-    "hails",
-    "ignore",
-    "past",
-    "pms",
-    "referendum",
-    "rejoin",
-    "rejoining",
-    "reset",
-    "rules",
-    "slams",
-    "stuck",
-    "unthinkable",
-    "without"
-   ],
-   "headline": "Burnham rules out rejoining EU without referendum, slams ex-PMs as 'stuck in past'"
-  },
-  {
-   "at": "2026-11-24T03:42:29.103828+05:00",
-   "words": [
-    "2028",
-    "candidates",
-    "dark",
-    "debate",
-    "debates",
-    "democrats",
-    "election",
-    "june",
-    "make",
-    "money",
-    "plan",
-    "presidential",
-    "primary",
-    "reject",
-    "require",
-    "schedule",
-    "stage"
-   ],
-   "headline": "Democrats schedule first primary debate in US presidential election for June"
-  },
-  {
-   "at": "2026-11-24T03:42:30.370437+05:00",
-   "words": [
-    "asian",
-    "blacklist",
-    "chip",
-    "firm",
-    "linked",
-    "megaspeed",
-    "nvidia",
-    "scandal",
-    "source"
-   ],
-   "headline": "US to blacklist Asian AI firm Megaspeed after Nvidia scandal"
-  },
-  {
-   "at": "2026-11-24T03:44:12.982961+05:00",
-   "words": [
-    "2026",
-    "assembly",
-    "headlines",
-    "international",
-    "national",
-    "november",
-    "school",
-    "sports",
-    "top"
-   ],
-   "headline": "School Assembly News Headlines (November 24): Top National, International News"
-  },
-  {
-   "at": "2026-11-24T03:44:13.673806+05:00",
-   "words": [
-    "catalan",
-    "court",
-    "exile",
-    "hurdle",
-    "last",
-    "leader's",
-    "removes",
-    "return",
-    "spanish"
-   ],
-   "headline": "Spanish court removes last hurdle to Catalan leader's return from exile"
-  },
-  {
-   "at": "2026-11-24T03:44:51.375509+05:00",
-   "words": [
-    "coyne",
-    "cyrus",
-    "drummer",
-    "intimate",
-    "marries",
-    "maxx",
-    "miley",
-    "morando",
-    "palm",
-    "presiding",
-    "rock",
-    "springs",
-    "wayne",
-    "wedding"
-   ],
-   "headline": "Miley Cyrus marries Maxx Morando, with Wayne Coyne presiding"
-  },
-  {
    "at": "2026-11-24T04:05:32.996761+05:00",
    "words": [
     "intelligence",
@@ -18909,6 +18764,86 @@
     "paraguay"
    ],
    "headline": "Paraguay ex-minister arrested in latest bank failure fallout"
+  },
+  {
+   "at": "2026-11-28T03:45:47.989473+05:00",
+   "words": [
+    "bosnia",
+    "camps",
+    "compensate",
+    "croatia",
+    "montenegro",
+    "victims",
+    "wartime"
+   ],
+   "headline": "Montenegro to compensate victims of wartime camps in Croatia, Bosnia"
+  },
+  {
+   "at": "2026-11-28T03:45:48.814395+05:00",
+   "words": [
+    "channel",
+    "english",
+    "free",
+    "ndtv",
+    "online",
+    "streaming"
+   ],
+   "headline": "NDTV Live TV, Live English News Channel, Free Live Streaming Online, Watch Live News"
+  },
+  {
+   "at": "2026-11-28T03:45:50.155757+05:00",
+   "words": [
+    "ask",
+    "canadian",
+    "kill",
+    "man",
+    "people",
+    "products",
+    "prosecutors",
+    "sold",
+    "themselves",
+    "used"
+   ],
+   "headline": "Prosecutors ask for 25 years for Canadian man who sold products used by 93 people to kill themselves"
+  },
+  {
+   "at": "2026-11-28T03:45:51.031052+05:00",
+   "words": [
+    "band",
+    "benched",
+    "game",
+    "marching",
+    "officials",
+    "prank",
+    "ucla",
+    "usc",
+    "vandalism"
+   ],
+   "headline": "USC marching band benched for UCLA game after vandalism prank, officials say"
+  },
+  {
+   "at": "2026-11-28T03:45:51.927898+05:00",
+   "words": [
+    "billion",
+    "deal",
+    "fidium",
+    "talks",
+    "verizon"
+   ],
+   "headline": "Verizon in talks over $6 billion deal for Fidium, FT reports"
+  },
+  {
+   "at": "2026-11-28T03:45:57.711815+05:00",
+   "words": [
+    "bet",
+    "don",
+    "fix",
+    "israel",
+    "right",
+    "spain",
+    "ties"
+   ],
+   "headline": "Don’t Bet on Spain’s Right to Fix Ties With Israel"
   }
  ],
  "published": [
