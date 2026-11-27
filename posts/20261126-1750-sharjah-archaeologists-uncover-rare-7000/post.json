@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "rare 7000 year old",
   "caption": "Archaeologists in Sharjah have made a remarkable discovery in the mountains.\n\nAccording to reports from Gulf News and The National, researchers found five rare rock carvings dating back 7,000 years.\n\nThe ancient carvings specifically depict sea turtles, offering a rare glimpse into the region's prehistoric past.\n\nExperts are continuing to study the site to learn more about the ancient communities that once lived there.\n\nWhat is the most fascinating historical site you have visited in the Middle East? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Sharjah #Archaeology #History\n\n📸 Zdeněk Bardon (bardon.cz)/ESO / Wikimedia Commons (CC BY 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-26T17:51+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 96,
   "decided_at": "2026-11-26T18:07+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185535786988633",
+      "post_id": "790959357430859_122185535810988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185535786988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/927685290_122185535792988633_9958971420702032_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeG9oBhGVnVFh8k40RFo3KCtTRFY8BoREcVNEVjwGhERxSCuY3agV-otrkSgvNW82VDW7O7-POW_xUARku8xno-Q&_nc_ohc=_6v2snmUhE0Q7kNvwEsZhMb&_nc_oc=AdqGSRpF4vLTOaSr6S3WGyNWciWctqoFYSyrdfCMgRGawQLpPnZ9CZ48Fx_Phvq_mGI&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Jjj444hEg7bQc5aht31VSA&_nc_tpa=Q5bMBQJlEMgG13OF1ch7lOTn1V-d8fKbm3uFQWuMCCTCaT5N5DnM1_4KHyN5SGaQl-VtQ7Yb9qDnEFVRPg&oh=00_AQXmA-G5klsZCZKXJu_4ytyXXnoQmco7Vk4zm9tQyksRpA&oe=6B0EBD4D"
+    },
+    "instagram": {
+      "media_id": "17869326906677931",
+      "permalink": "https://www.instagram.com/p/DgOspA2jAB5/"
+    },
+    "story": {
+      "media_id": "18151703677604251"
+    }
+  },
+  "published_at": "2026-11-27T08:18+05:00"
 }
