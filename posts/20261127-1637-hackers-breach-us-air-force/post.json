@@ -1,0 +1,26 @@
+{
+  "headline": "Hackers breach US Air Force Cloud One platform putting sensitive military data at risk",
+  "label": "BREAKING",
+  "highlight": "breach US Air Force",
+  "caption": "Major cyber security breach hits the US military infrastructure 💻\n\nHackers have breached the US Air Force flagship cloud computing platform called Cloud One, according to three people familiar with the matter cited by Reuters. The intrusion could jeopardise a vast swathe of sensitive tactical, personnel and logistics data.\n\nThe breach was discovered within the past month during system upgrade work and has led to widespread disruption across the platform. Reuters could not establish the identity of the hackers, the full scope of the intrusion or whether any data was stolen.\n\nInvestigators have called in US Cyber Command to assess the damage according to one source. Efforts to migrate back office applications have been paused and updates to existing applications have been blocked.\n\nThe Air Force stated it does not comment on the security posture or vulnerabilities of specific networks. Cloud One combines resources from major tech companies including Microsoft, Amazon, Oracle and Alphabet to power scores of applications.\n\nWhat are the biggest cyber security risks facing global defense networks today? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #CyberSecurity #USAirForce #TechNews",
+  "status": "pending",
+  "priority": 3,
+  "ai_image": false,
+  "created_at": "2026-11-27T16:38+05:00",
+  "targets": [
+    "facebook",
+    "instagram"
+  ],
+  "photo_credit": "",
+  "photo_page": "text-card",
+  "photo_sharpness": 0,
+  "sources_named": [
+    "Dawn",
+    "Reuters"
+  ],
+  "source_links": [
+    "https://www.dawn.com/news/2047476/hackers-breach-us-air-force-flagship-cloud-one-computing-platform",
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQnhWb2oyc2Qta3k0bUhwbGZTcWZMREZ0VU41eVNZWDJZTDlBcmMxZzFrLXlmVGJpUHBRbVdBRlNoQU9lWUlIcVpMcXQwWWpyYVJ2eDJQa1ZvNFU5MUFHLWdpQW1BVloyUW5lTUlVSlFpLXJwVHNLMl9fQnBFTTNnemY4Q0JiUkN3SXFndG1pX1l1TmdySFJDOHJlWC1fMnE3cjlaVFB5M1hWbU0?oc=5"
+  ],
+  "issue": 121
+}
