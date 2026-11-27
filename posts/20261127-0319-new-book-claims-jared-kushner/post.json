@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "received billions",
   "caption": "A new explosive book alleges that Jared Kushner received approximately 2 billion dollars from Saudi and Emirati governments.\n\nAccording to journalist Matthew Cole, 750 million dollars was held at First Abu Dhabi Bank through an Emirati charity and used for weapons purchases and covert military operations. Jared Kushner has vociferously denied these claims.\n\nPrinces and Thieves also makes numerous allegations regarding the UAE ruling family and regional political maneuvering.\n\nShould political figures face investigations over foreign financial dealings and book allegations?\n\nFollow Vok for more stories like this.\n\n📸 congerdesign / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T03:19+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 115,
   "decided_at": "2026-11-27T03:34+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185528772988633",
+      "post_id": "790959357430859_122185528796988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185528772988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-dfw6-1.xx.fbcdn.net/v/t39.30808-6/929822244_122185528778988633_2122550179225797436_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFeAC3SEA5Zj969KkQ4YgCfvJWRF_xbN3i8lZEX_Fs3eH7QlaOTIvJF1VN3xDsvvrNumJucSYTAZuB6U-gm1K5F&_nc_ohc=J4FqBt10pvYQ7kNvwFmKebs&_nc_oc=Adr5-2VXudCVgDeJfNDtM4xP6kOiCGkIyWdBjPor13nYdTVyTGYRelHHcP-VobepS90&_nc_zt=23&_nc_ht=scontent-dfw6-1.xx&edm=AMAeTUEEAAAA&_nc_gid=PKMP3cr3uF73fpRtikywVA&_nc_tpa=Q5bMBQKPFMSeEwmLNB-Csvc6GtscBzKI3rTtQF2YbFELDSizyLaKXorHPlARKXQtZDRIYW--DOMVd-U6XQ&oh=00_AQUVY1fCpD2LZrceNCk5h_6LAhxxQ0KIJ_fOqGfo4hcT0Q&oe=6B0EB2E9"
+    },
+    "instagram": {
+      "media_id": "18345793198253627",
+      "permalink": "https://www.instagram.com/p/DgOl1NPD4au/"
+    },
+    "story": {
+      "media_id": "17966881740245018"
+    }
+  },
+  "published_at": "2026-11-27T07:19+05:00"
 }
