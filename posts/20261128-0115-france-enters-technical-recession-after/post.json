@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "technical recession",
   "caption": "France has fallen into a technical recession following recent quarterly economic revisions 📉\n\nAccording to Reuters, official data shows the French economy contracted in consecutive quarters, triggering the technical recession status.\n\nThe downturn highlights mounting economic pressures in Europe as major nations struggle with growth and inflation.\n\nWhat does this mean for the wider European economy in the coming months? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #France #Economy #Recession\n\n📸 Benh LIEU SONG / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-28T01:15+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 140,
   "decided_at": "2026-11-28T01:31+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185639934988633",
+      "post_id": "790959357430859_122185639958988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185639934988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/921896016_122185639940988633_5459257512981465272_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGEo1RZDSBQu4pQPg-YgzIJybvSHfEwIvjJu9Id8TAi-NPjILOGUyLmBwel5ukhAAbsPRjwuSIJQCDxUdaG0Ufg&_nc_ohc=02suCJidb5AQ7kNvwE1vcvo&_nc_oc=AdqTIiuHKAe0BOuVQ3Uj4hqs0CnuBl6LCk0Ov2eHX70QUk7iTJJZxOlH35iQRARDOcM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=OPjWCvSzvoVKP-0hPzaZoQ&_nc_tpa=Q5bMBQJoKqMIe2qvNApnkdbfsZaPovcpaUQz4A8SUFjt2G92XvHljpEeV1mPtfZzBEZPkTdhQfKpKMwLKA&oh=00_AQUlIWWdJzOEzNWaKmP0mq8q12E6d4rWw51ReA1NIRHI-Q&oe=6B0FF3E3"
+    },
+    "instagram": {
+      "media_id": "18098163479671716",
+      "permalink": "https://www.instagram.com/p/DgQ2YHhDQa5/"
+    },
+    "story": {
+      "media_id": "18131330227861621"
+    }
+  },
+  "published_at": "2026-11-28T04:22+05:00"
 }
