@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "ridiculous",
   "caption": "Hamas has dismissed Israeli claims regarding the use of a Gaza hospital. 🚨\n\nAccording to Anadolu, Hamas has called the Israeli claim that it used Al Ahli hospital as an interrogation center ridiculous.\n\nThe statement comes amid ongoing military actions and disputes in the region regarding the use of medical facilities.\n\nFurther details from the ground remain limited as officials exchange statements.\n\nWhat do your thoughts say on this development? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Gaza #Hamas #Israel\n\n📸 Jaber Jehad Badwan / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T20:44+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 128,
   "decided_at": "2026-11-27T21:01+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185616552988633",
+      "post_id": "790959357430859_122185616576988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185616552988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/927855161_122185616558988633_3601958982197846605_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE5kfMOns0qOTRltvokJT4XhOALHj8QK0yE4AsePxArTJsJ26FKp2yQexSqaFEjWHbKCEFEByQlwh2-G-wX66T8&_nc_ohc=7CyvpO7TZ8wQ7kNvwFs91HB&_nc_oc=AdrnzrZmJdnc2A5NHFw1nHg9a2vyUhowIqqETwuXdIgcFaD2DEQUqvyw904KjEzGlIg&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=6MTZuSBe-lG9GbVXxz8veg&_nc_tpa=Q5bMBQKRw0jhoBT4GsvyDh00pQde4-5humrlQ-B95yk4ayD6nhFeRLzqF518Uc0W-pkEta5WrtaOrainGQ&oh=00_AQX8lmyf7BniJaF_e2lqqC42uJrPSuF_iUgQtc_793ZkMQ&oe=6B0F9989"
+    },
+    "instagram": {
+      "media_id": "17947165812147561",
+      "permalink": "https://www.instagram.com/p/DgQUabZDVTF/"
+    },
+    "story": {
+      "error": "Meta API: HTTP 400: {\"error\":{\"message\":\"The requested resource does not exist\",\"code\":24,\"type\":\"OAuthException\",\"error_subcode\":2207006,\"is_transient\":false,\"error_user_msg\":\"The media with 17,918,4"
+    }
+  },
+  "published_at": "2026-11-27T23:25+05:00"
 }
