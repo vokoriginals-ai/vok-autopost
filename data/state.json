@@ -2,29 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T23:01:47.371378+05:00",
-   "words": [
-    "army",
-    "bank",
-    "defense",
-    "handle",
-    "handled",
-    "idf",
-    "insists",
-    "israel",
-    "katz",
-    "minister",
-    "must",
-    "police",
-    "rather",
-    "settler",
-    "should",
-    "violence",
-    "west"
-   ],
-   "headline": "Israel defense minister says police, not army, should handle settler violence"
-  },
-  {
    "at": "2026-11-23T23:03:45.463171+05:00",
    "words": [
     "armed",
@@ -18833,6 +18810,117 @@
     "vantage"
    ],
    "headline": "'13000 Students Attended': Indian Air Force Holds Special Airshow in Pune | Vantage"
+  },
+  {
+   "at": "2026-11-27T23:01:36.266633+05:00",
+   "words": [
+    "building",
+    "collapse",
+    "death",
+    "missing",
+    "pakistan",
+    "rises",
+    "toll"
+   ],
+   "headline": "Death toll in Pakistan building collapse rises to 8 with about 10 missing"
+  },
+  {
+   "at": "2026-11-27T23:01:38.077455+05:00",
+   "words": [
+    "appeal",
+    "australian",
+    "bid",
+    "court",
+    "ditch",
+    "erin",
+    "files",
+    "high",
+    "last",
+    "launches",
+    "murderer",
+    "mushroom",
+    "patterson"
+   ],
+   "headline": "Australian mushroom murderer Erin Patterson files High Court appeal bid"
+  },
+  {
+   "at": "2026-11-27T23:02:04.319726+05:00",
+   "words": [
+    "anchors",
+    "detains",
+    "former",
+    "opposition",
+    "seized",
+    "turkiye",
+    "two"
+   ],
+   "headline": "Turkiye detains two former anchors of seized opposition TV"
+  },
+  {
+   "at": "2026-11-27T23:02:05.562544+05:00",
+   "words": [
+    "abuse",
+    "blackmail",
+    "com",
+    "evil",
+    "jailed",
+    "member",
+    "messages",
+    "online",
+    "ring",
+    "the"
+   ],
+   "headline": "'The com' online abuse ring member jailed for 'evil' blackmail messages"
+  },
+  {
+   "at": "2026-11-27T23:02:06.373309+05:00",
+   "words": [
+    "cash",
+    "craze",
+    "explains",
+    "hits",
+    "huge",
+    "microdrama",
+    "quick",
+    "vantage"
+   ],
+   "headline": "'Quick Hits, Huge Cash': What Explains The Microdrama Craze? | Vantage"
+  },
+  {
+   "at": "2026-11-27T23:02:07.101638+05:00",
+   "words": [
+    "bills",
+    "bukele",
+    "care",
+    "dictator",
+    "foreigners",
+    "free",
+    "medical",
+    "mess",
+    "migrant",
+    "no",
+    "offers",
+    "pay",
+    "vantage"
+   ],
+   "headline": "Why Pay US Medical Bills? Dictator Bukele Offers Foreigners Free Care; 'No Migrant Mess' | Vantage"
+  },
+  {
+   "at": "2026-11-27T23:02:08.568408+05:00",
+   "words": [
+    "brings",
+    "don't",
+    "gold",
+    "home",
+    "india",
+    "london",
+    "reserves",
+    "trust",
+    "vantage",
+    "we",
+    "you"
+   ],
+   "headline": "'We Don't Trust You, London': India Brings 84% of Its Gold Reserves Home | Vantage"
   }
  ],
  "published": [
@@ -19378,9 +19466,13 @@
   {
    "at": "2026-11-27T22:34:55.909714+05:00",
    "page": "https://pixabay.com/photos/football-stadium-sports-stadium-3952062/"
+  },
+  {
+   "at": "2026-11-27T23:02:13.211797+05:00",
+   "page": "library:modi.png"
   }
  ],
- "drip_until": "2026-11-27T23:14:08.089398+05:00",
+ "drip_until": "2026-11-27T23:20:21.334160+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
