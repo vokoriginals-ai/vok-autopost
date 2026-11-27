@@ -2,26 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T04:33:28.614284+05:00",
-   "words": [
-    "china",
-    "chinese",
-    "country",
-    "death",
-    "foreign",
-    "honeytrapped",
-    "leaking",
-    "official",
-    "secrets",
-    "sentenced",
-    "sentences",
-    "spy",
-    "spying",
-    "unidentified"
-   ],
-   "headline": "Chinese ‘spy’ honeytrapped? China sentences official to death for spying for unidentified country"
-  },
-  {
    "at": "2026-11-24T04:49:29.791563+05:00",
    "words": [
     "capture",
@@ -18932,6 +18912,94 @@
     "turn"
    ],
    "headline": "Gazprom plans to turn idle Russian gas facilities into power plants to help meet data centre demand"
+  },
+  {
+   "at": "2026-11-28T04:36:58.660048+05:00",
+   "words": [
+    "canada",
+    "palestinian",
+    "qatar",
+    "reaffirm",
+    "recovery",
+    "rights",
+    "support",
+    "syria"
+   ],
+   "headline": "Qatar, Canada reaffirm support for Syria’s recovery, Palestinian rights"
+  },
+  {
+   "at": "2026-11-28T04:36:59.539468+05:00",
+   "words": [
+    "airstrikes",
+    "dies",
+    "explosion",
+    "hit",
+    "official",
+    "provinces",
+    "security",
+    "sustained",
+    "wounds",
+    "yemeni"
+   ],
+   "headline": "Airstrikes hit 4 Yemeni provinces as security official dies from wounds sustained in explosion"
+  },
+  {
+   "at": "2026-11-28T04:37:09.035083+05:00",
+   "words": [
+    "limits",
+    "mexico",
+    "politically",
+    "popular",
+    "strategy",
+    "wage",
+    "weighs"
+   ],
+   "headline": "Mexico weighs the limits of politically popular wage strategy"
+  },
+  {
+   "at": "2026-11-28T04:38:36.856267+05:00",
+   "words": [
+    "backing",
+    "centre",
+    "far",
+    "give",
+    "government",
+    "party",
+    "right",
+    "stores",
+    "sweden",
+    "trouble"
+   ],
+   "headline": "Centre Party could give Sweden a government, but far-right backing stores up trouble"
+  },
+  {
+   "at": "2026-11-28T04:38:37.685313+05:00",
+   "words": [
+    "backs",
+    "iraq's",
+    "kurds",
+    "rise",
+    "tensions",
+    "trump",
+    "zaidi"
+   ],
+   "headline": "Trump backs Iraq's Al Zaidi as tensions rise with Kurds"
+  },
+  {
+   "at": "2026-11-28T04:39:37.964686+05:00",
+   "words": [
+    "acknowledged",
+    "cia",
+    "did",
+    "documents",
+    "newly",
+    "post",
+    "previously",
+    "released",
+    "suggest",
+    "waterboarding"
+   ],
+   "headline": "Newly released documents suggest CIA did more post-9/11 waterboarding than previously acknowledged"
   }
  ],
  "published": [
@@ -19516,7 +19584,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:Rocket_Strikes_Child%27s_Health_Clinic_(14669909615).jpg"
   }
  ],
- "drip_until": "2026-11-28T04:47:38.089934+05:00",
+ "drip_until": "2026-11-28T04:56:43.414116+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
