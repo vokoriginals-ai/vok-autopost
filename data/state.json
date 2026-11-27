@@ -2,63 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T00:48:33.508636+05:00",
-   "words": [
-    "2nd",
-    "africa",
-    "bangladesh",
-    "between",
-    "centurion",
-    "collapse",
-    "control",
-    "morning",
-    "rain",
-    "seize",
-    "session",
-    "south",
-    "test",
-    "washes"
-   ],
-   "headline": "Centurion Test: Bangladesh collapse to 91 as South Africa seize control"
-  },
-  {
-   "at": "2026-11-24T00:49:03.115686+05:00",
-   "words": [
-    "000",
-    "747",
-    "747sp",
-    "900",
-    "boeing",
-    "era",
-    "hussein",
-    "hussein's",
-    "iraq",
-    "know",
-    "lists",
-    "planes",
-    "puts",
-    "saddam",
-    "sale",
-    "yours"
-   ],
-   "headline": "Iraq puts Saddam Hussein-era planes up for sale for $1.8M: What to know"
-  },
-  {
-   "at": "2026-11-24T00:49:25.694412+05:00",
-   "words": [
-    "000",
-    "360",
-    "august",
-    "casualties",
-    "civilian",
-    "displaced",
-    "rising",
-    "since",
-    "yemen"
-   ],
-   "headline": "More than 360,000 displaced in Yemen since August as UN reports rising civilian casualties"
-  },
-  {
    "at": "2026-11-24T01:05:39.318611+05:00",
    "words": [
     "aim",
@@ -18660,6 +18603,64 @@
     "talks"
    ],
    "headline": "Russian domestic natural gas price may complicate talks with China, analyst says"
+  },
+  {
+   "at": "2026-11-28T00:53:42.011548+05:00",
+   "words": [
+    "cargo",
+    "cuba",
+    "dead",
+    "egyptian",
+    "halima",
+    "injured",
+    "killed",
+    "leaving",
+    "missing",
+    "ship",
+    "sinks"
+   ],
+   "headline": "Egyptian killed, 2 missing, 10 injured after cargo ship sinks off Cuba"
+  },
+  {
+   "at": "2026-11-28T00:53:43.054445+05:00",
+   "words": [
+    "affecting",
+    "families",
+    "flood",
+    "heavy",
+    "homes",
+    "hundreds",
+    "peru's",
+    "piura",
+    "rains"
+   ],
+   "headline": "Heavy rains flood homes in Peru's Piura, affecting hundreds of families"
+  },
+  {
+   "at": "2026-11-28T00:53:43.893880+05:00",
+   "words": [
+    "arabia",
+    "future",
+    "justice",
+    "past",
+    "question",
+    "south",
+    "yemen"
+   ],
+   "headline": "South Arabia is not a question about Yemen’s future: it is a question of justice for the past"
+  },
+  {
+   "at": "2026-11-28T00:53:45.295436+05:00",
+   "words": [
+    "ambassador",
+    "cnn",
+    "iran",
+    "iranian",
+    "negotiate",
+    "tells",
+    "willing"
+   ],
+   "headline": "Iranian ambassador tells CNN Iran is willing to negotiate with US"
   }
  ],
  "published": [
@@ -19217,6 +19218,10 @@
   {
    "at": "2026-11-28T00:08:22.065161+05:00",
    "page": "https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg"
+  },
+  {
+   "at": "2026-11-28T00:53:49.883439+05:00",
+   "page": "library:pezeshkian-3.png"
   }
  ],
  "drip_until": "2026-11-28T01:08:23.451132+05:00",
