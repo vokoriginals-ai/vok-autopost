@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "fell sharply",
   "caption": "New research shows that global freshwater levels dropped significantly during the two hottest years on record.\n\nAccording to studies reported by the Guardian and BreakingNews.ie, extreme heat in 2023 and 2024 drove unprecedented declines in the world rivers and lakes.\n\nScientists found that while there was more water in the atmosphere, less water remained in terrestrial rivers.\n\nHow will this severe freshwater decline impact communities around the world in the coming years? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Environment #ClimateChange #WaterCrisis\n\n📸 James St. John / Wikimedia Commons (CC BY 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T14:24+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 120,
   "decided_at": "2026-11-27T14:41+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185568468988633",
+      "post_id": "790959357430859_122185568582988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185568468988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/921819325_122185568474988633_4358253337760606996_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEE2RTThe-YdIHR-riKvKPR0EiKXc93iT_QSIpdz3eJP2pUg3wpnzxxZYSV6dojCIebtoc-JppUVw22zRDck0Ke&_nc_ohc=eiXL2tVjdR8Q7kNvwEQ5IaP&_nc_oc=AdrlJEIVI27QmMnQSZJQqh_v-6zE3SdmF64nzq3z99rHCtzdIexJhvwzdf-KHujLgJo&_nc_zt=23&_nc_ht=scontent-lga3-2.xx&edm=AMAeTUEEAAAA&_nc_gid=pnKPyf6LuJqsEJaey9XLTQ&_nc_tpa=Q5bMBQKVaRGr6zIa_FOFDV22vWA-cK2KWw7l4CH7UvQ2e-L3iNqOi4OjSBC-EGXrwIO4WPIC_9XMVDtAmg&oh=00_AQXZsHMyaiuijSLUDat5k2fIkUNHQXSR6EZ8io8MU3Y8Bw&oe=6B0F3201"
+    },
+    "instagram": {
+      "media_id": "18084015350379602",
+      "permalink": "https://www.instagram.com/p/DgPc3-9owQh/"
+    },
+    "story": {
+      "media_id": "17947106475363132"
+    }
+  },
+  "published_at": "2026-11-27T15:20+05:00"
 }
