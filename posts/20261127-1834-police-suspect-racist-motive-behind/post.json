@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "racist motive",
   "caption": "Police are investigating a possible racist motive behind a violent car ramming incident. 🚨\n\nAccording to The Times of Israel, police suspect a racist motive behind a car ramming in Kafr Qasim that left 8 people injured.\n\nAuthorities are continuing to investigate the circumstances surrounding the attack.\n\nWhat measures should be taken to prevent racially motivated violence? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #KafrQasim #IsraelPolice #BreakingNews",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-27T18:35+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMixAFBVV95cUxORTlGRzYtOFZ2QzVXZF83RjZsMFRJaElxNjVPTlZSX2hjZm1HYUQwU3hLb1p5bHd3X0xlQTNCaE1fekd2M0xJRTZURDFackk0VWhOSUU5ak53bGF1SjBib0xCYVlZblJ2TnJnODFJeTZma1hYbzR2cmN6M0h6R3dOUUtHUFJxMUhXckg5MmxQQ19HamRZR19KcWZPSTlma244SkFhMFZ4N1VpOHpTNDAzTVBSZEtzMzA3Qlo0TDNKUm9Eejhy?oc=5"
   ],
-  "issue": 125
+  "issue": 125,
+  "decided_at": "2026-11-27T18:45+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185593602988633",
+      "post_id": "790959357430859_122185593632988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185593602988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/928161057_122185593608988633_2090413108141576027_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFjdzBI_4lW7I52HLfoiFDXIkw78S0TqPEiTDvxLROo8dqi6diuPGuL7O_1Ls-9T3hPpx4exj5KtqJgnXZGdOOc&_nc_ohc=l1vh-m82zmUQ7kNvwEdCrl1&_nc_oc=Adoru0dlGbXYfB72TsPF5qNGchcypgRDOX1AxRA2uo_uV9DUaXuytw-YrItfcvw80M4&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=iddP91C1tJtCiNZ9aJQtWg&_nc_tpa=Q5bMBQIMVrjhrT5M56joOC4DUX_AJM5T0Is1WFQ1lCcoYRZbOwtdzA2hjcmQQn3pDBfghlZkpKNKVghasw&oh=00_AQUrHmYuwq__yv_5GFmJ8fNLN9eCKITbdJ3k7fGKwtiF4g&oe=6B0F6565"
+    },
+    "instagram": {
+      "media_id": "17916983406473046",
+      "permalink": "https://www.instagram.com/p/DgP0aqlHJTa/"
+    },
+    "story": {
+      "media_id": "18132368047643853"
+    }
+  },
+  "published_at": "2026-11-27T18:45+05:00"
 }
