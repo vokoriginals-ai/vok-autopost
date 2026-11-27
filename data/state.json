@@ -2,68 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T21:59:19.765376+05:00",
-   "words": [
-    "analysis",
-    "aviv",
-    "bolster",
-    "case",
-    "follows",
-    "gaza",
-    "genocide",
-    "icj",
-    "israel",
-    "judgment",
-    "likely",
-    "lose",
-    "myanmar",
-    "ruling",
-    "scholar",
-    "tel"
-   ],
-   "headline": "Analysis: Myanmar genocide judgment may bolster Gaza case against Israel"
-  },
-  {
-   "at": "2026-11-23T22:00:14.418080+05:00",
-   "words": [
-    "acquire",
-    "apl",
-    "apollo",
-    "billion",
-    "control",
-    "deal",
-    "eyes",
-    "india's",
-    "majority",
-    "offer",
-    "open",
-    "stake",
-    "steel",
-    "take",
-    "tata",
-    "worth"
-   ],
-   "headline": "Tata Steel to acquire 26.38% stake in APL Apollo, eyes majority control in open offer"
-  },
-  {
-   "at": "2026-11-23T22:00:26.897596+05:00",
-   "words": [
-    "case",
-    "control",
-    "government",
-    "greater",
-    "labour",
-    "make",
-    "makes",
-    "moving",
-    "public",
-    "renationalisation",
-    "towards",
-    "utilities"
-   ],
-   "headline": "Is the UK moving towards renationalisation? Labour makes case for greater control of utilities"
-  },
-  {
    "at": "2026-11-23T23:01:47.371378+05:00",
    "words": [
     "army",
@@ -18445,7 +18383,6 @@
   }
  ],
  "published": [
-  "2026-11-23T22:00+05:00",
   "2026-11-23T23:04+05:00",
   "2026-11-23T23:29+05:00",
   "2026-11-23T23:39+05:00",
@@ -18981,7 +18918,7 @@
    "page": "https://commons.wikimedia.org/wiki/File:M551_Sheridan,_Military_Vehicle_Technology_Foundation.jpg"
   }
  ],
- "drip_until": "2026-11-27T22:16:58.628334+05:00",
+ "drip_until": "2026-11-27T22:22:06.074057+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
