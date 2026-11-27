@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "900,000 without power",
   "caption": "A powerful storm disrupted Thanksgiving for millions across the United States. ⛈️\n\nHeavy rain and strong winds battered the central and eastern regions, leaving more than 900,000 homes and businesses without power according to tracking website PowerOutage. Pennsylvania, Maryland and Virginia were particularly hard hit by the severe weather conditions.\n\nNew Yorks famed Macys parade was postponed for the first time in its 100 year history, pushed back to Saturday due to an abundance of caution by organisers. Millions of people typically gather for the event, but gusting winds created dangerous conditions.\n\nAt airports, nearly 400 flights were cancelled and over 2,000 were delayed mostly in the East according to figures from FlightAware. Authorities urged people to limit road travel, while several major bridges were closed due to high winds.\n\nNew Jersey Governor Mikie Sherrill declared a state of emergency over the weather and urged residents to take precautions to stay safe. Officials in the Maryland suburbs also asked nearly two million customers to conserve tap water consumption due to power outage risks.\n\nHow do you usually spend your holidays? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #USStorm #MacysParade #Thanksgiving\n\n📸 Rhododendrites / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T16:38+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 122,
   "decided_at": "2026-11-27T16:55+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185586804988633",
+      "post_id": "790959357430859_122185586828988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185586804988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/916972886_122185586810988633_7359106062106073060_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEEomWkojX_hcFN4i4UJT9SBW4RXiRXtoAFbhFeJFe2gPMKZWc92fvGaLqNRT2VOjrlHxGKMucg-SV0_mhr9UI8&_nc_ohc=FriG_y2OA54Q7kNvwGB5njE&_nc_oc=AdpOFlff7abmM4Dpz9GdG-m6fMdbbEO8mGYDLLXD30iOr4smKb3978Y5COtACQxPfnY&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=u07tGCgUm2s3bOnet5eFGQ&_nc_tpa=Q5bMBQKEg2YEiwbOHy3bz53zM0XWC-SUh7Er30VG6efrDSnU0oryFntytKlpo9ISYQlsnM34ww4ZOo-l-Q&oh=00_AQWhPYsARGguTsYEhwI_VUlCOQDP6dnQAiqaQ-oAFfjN6g&oe=6B0F4E42"
+    },
+    "instagram": {
+      "media_id": "18008883630008154",
+      "permalink": "https://www.instagram.com/p/DgPt_0xDVDx/"
+    },
+    "story": {
+      "media_id": "18136894381740698"
+    }
+  },
+  "published_at": "2026-11-27T17:49+05:00"
 }
