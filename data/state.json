@@ -2,27 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-23T23:03:45.463171+05:00",
-   "words": [
-    "armed",
-    "assets",
-    "believes",
-    "defend",
-    "german",
-    "launch",
-    "media",
-    "nato",
-    "nuclear",
-    "planning",
-    "ready",
-    "russia",
-    "satellite",
-    "space",
-    "vows"
-   ],
-   "headline": "Nato vows to defend space assets after reports of Russia planning nuclear-armed satellite launch"
-  },
-  {
    "at": "2026-11-23T23:13:13.999180+05:00",
    "words": [
     "79b",
@@ -18960,7 +18939,6 @@
   }
  ],
  "published": [
-  "2026-11-23T23:04+05:00",
   "2026-11-23T23:29+05:00",
   "2026-11-23T23:39+05:00",
   "2026-11-24T00:55+05:00",
@@ -19508,7 +19486,7 @@
    "page": "library:modi.png"
   }
  ],
- "drip_until": "2026-11-27T23:20:21.340731+05:00",
+ "drip_until": "2026-11-27T23:27:46.415146+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
