@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "16bn Development Road",
   "caption": "Turkey and Iraq have finalised an oil for construction deal to fund the 16 billion dollar Iraq Development Road. 🛢️\n\nAccording to Turkish Transport Minister Abdulkadir Uraloglu, the two sides resolved all outstanding financing issues and aim to sign the agreement before the end of the year. Under the scheme, Iraq would sell 130,000 to 150,000 barrels of oil per day to Turkey, with proceeds deposited in a Turkish public bank to fund the project.\n\nUraloglu stated that Baghdad hopes to set the first stone in January with Turkish President Recep Tayyip Erdogan present. The project will prioritize a railway line linking Basra to Turkey, bypassing financial uncertainties and high interest foreign loans.\n\nRegional experts noted that regional tensions and the Hormuz crisis served as a wake up call for Iraq to diversify its export links and accelerate connectivity projects. Officials plan to complete the megaproject within a four year timeline.\n\nWhat do you think of this massive cross border infrastructure project? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Turkey #Iraq #Infrastructure\n\n📸 Fumikas Sagisavas / Wikimedia Commons (CC0)",
-  "status": "approved",
+  "status": "failed",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T01:53+05:00",
@@ -24,5 +24,14 @@
   ],
   "issue": 112,
   "decided_at": "2026-11-27T02:10+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185527194988633",
+      "post_id": "790959357430859_122185527218988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185527194988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/927860645_122185527200988633_3013659575554701624_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHj6IbYiUlPymfTPnTsDAHN8gD45frwEqHyAPjl-vASob6348CNJy3ra-iiTUEmhkSM_y9SqyC8ZoUnjQS9qpK8&_nc_ohc=no-wdk1TxssQ7kNvwHKWlkO&_nc_oc=Adou_NOa8UU_BZXt7FJao2YmhKQVBdtuuhQd_1iMumR941i76oR2R9QBAhfC3MGSDPQ&_nc_zt=23&_nc_ht=scontent-dfw5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=d6f-RfGgb_Z_ReS9DrrzYw&_nc_tpa=Q5bMBQL4kS35CGQmLIr3PVoXa4l3RG6o1vDzBAtXM4zocF_ETrkKbxknIRbcSJYfpNPQVc7t4Yr03DIOLw&oh=00_AQXIbZlVulAUs4eOGvU1DOrMnFAH_6PcXrR3QagF_FyH8w&oe=6B0E9DD1"
+    }
+  },
+  "error": "Meta API: HTTP 500: {\"error\":{\"message\":\"An unexpected error has occurred. Please retry your request later.\",\"code\":2,\"type\":\"OAuthException\",\"is_transient\":true,\"fbtrace_id\":\"AmDBPD2t4X8SLMGxsADZrV1\"}}"
 }
