@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "sweeping new Russia sanctions",
   "caption": "The European Union has proposed sweeping new sanctions against Russia targeting banks, crypto and sports events 🇪🇺\n\nThe European Union has proposed new sanctions targeting banks, crypto and sports events according to AP News.\n\nBrussels aims to tighten economic pressure on Moscow amid ongoing tensions.\n\nWhat do you think of these new economic measures against Russia? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #EUSanctions #Russia #Crypto\n\n📸 Diego Delso / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T18:12+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 124,
   "decided_at": "2026-11-27T18:28+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185603778988633",
+      "post_id": "790959357430859_122185603802988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185603778988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/928927025_122185603784988633_1944690930795083425_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE3_7Kqm5iKWF5FTg6iO4IYrt54ELEYkVyu3ngQsRiRXOyWseXrioTPsTKsXrwz3uZ4Alj-IDZtbJ70sXJMXP2E&_nc_ohc=WeA9zh7ixLYQ7kNvwFNUeNo&_nc_oc=Adob91MBiAmsjBVVbwvzUJYfTuO_q-LSnlB2EeaY2ArYqVephoB6cz42ESjr-uB3QFk&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=r6n31Hr2kHUKVD2Fm_dFTA&_nc_tpa=Q5bMBQLxbGPabZipUex4zwsdt1Mz75liBMi5bQNxFQfonmdplTVc36drJFnWCMehC37DRFQIx_UIGEO8Yw&oh=00_AQV9o9dn9qGkqBu3gwh5yXLaZmTuNdvmOV3S8ao2Tm6p9w&oe=6B0F62A3"
+    },
+    "instagram": {
+      "media_id": "17992218513089713",
+      "permalink": "https://www.instagram.com/p/DgQCvFFCQKH/"
+    },
+    "story": {
+      "media_id": "17909576463670784"
+    }
+  },
+  "published_at": "2026-11-27T20:50+05:00"
 }
