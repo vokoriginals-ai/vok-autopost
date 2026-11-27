@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "disables bulk carrier",
   "caption": "US forces have taken action against a bulk carrier in the Gulf of Oman. 🚢\n\nAccording to US Central Command, military forces disabled the bulk carrier during operations in the area.\n\nFurther details regarding the incident and the status of the crew have not been immediately detailed by authorities.\n\nWhat do you think is happening in the region right now? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #USMilitary #GulfOfOman #MiddleEastNews\n\n📸 US Navy / Wikimedia Commons (Public domain)",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-27T22:12+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMipgFBVV95cUxNYVNFUW5oY3c2VXZXa1ViQVB1RmlHY1VEbkdQVzM2VzdWRjUtbDRhTFRKUVpvMzg3WmhRNFpaTlF4S29qT19wVm5lQlpPRGFMdjRfZlhZNTNZaURGNEx6R0tVR0pRMHdOYVBOdVViUnEwLThibHByUzdZSHBIdzFuSlZYUUN4dU9DS1RaTHFyNjZ3ZXJzWXdVamxXUXZJSWdQWjRmbUdB?oc=5"
   ],
-  "issue": 132
+  "issue": 132,
+  "decided_at": "2026-11-27T22:23+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185611596988633",
+      "post_id": "790959357430859_122185611626988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185611596988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/916309462_122185611602988633_2085482171196350373_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGuWH5SHB7u7p6GmSf3OX1_4NFd12geeiPg0V3XaB56I2EzebY7dW4NKHW2cGYhXY_9PjW0ZKiuUCJFTjU844tK&_nc_ohc=fEZQf1ISR70Q7kNvwFFXH36&_nc_oc=AdrQwR1glo87wo6sL7B8Ro-S8pB4YXzXb_Zy1s9-T2ONWcY_ZZb-27IhEclMkmAijH8&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=2_L66WTj9fav-ScbPzzYzA&_nc_tpa=Q5bMBQLS9dFN3zzkXRA8JddRDg-HSXsO184qHljbUb9-xR6pMKQ4mPD886Gst3IathbaVQrJj1snvEbwrw&oh=00_AQWhTqhqm0Gsx2TE0nZQ9YjA7YlQY16s7CfgVzl3rxRQ_Q&oe=6B0F8ACA"
+    },
+    "instagram": {
+      "media_id": "17907114639608539",
+      "permalink": "https://www.instagram.com/p/DgQNUp5javr/"
+    },
+    "story": {
+      "media_id": "18290684140289743"
+    }
+  },
+  "published_at": "2026-11-27T22:23+05:00"
 }
