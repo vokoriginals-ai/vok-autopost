@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "expect action in air and sea",
   "caption": "Iran says its enemies should expect action in the air and at sea.\n\nAccording to Middle East Eye, Iran Revolutionary Guard Corps Aerospace Force commander Majid Mousavi made the statement on Friday. He stated that breaking the blockade of Iran was the country firm mission and unwavering determination, referring to the blockade imposed by the United States on Iranian ports. Mohammad Mokhber, an adviser to Iran Supreme Leader, also spoke to the Iranian press on Friday.\n\nWhat do you think will happen next in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Iran #IRGC #MiddleEast",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T00:32+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://www.middleeasteye.net/live-blog/live-blog-update/enemy-should-expect-action-air-and-sea-iranian-commander-says"
   ],
-  "issue": 138
+  "issue": 138,
+  "decided_at": "2026-11-28T00:42+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185622138988633",
+      "post_id": "790959357430859_122185622162988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185622138988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/916653265_122185622144988633_426178608879248790_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeGfLGYzPJ5LU_Kv1vIN9jO-fSpwwhZdVVF9KnDCFl1VUQyiuAOxEly_yW7_a0u4CozlYGDOaaCkEeVAdfbknSzx&_nc_ohc=uuLesdoA3OMQ7kNvwFbluyC&_nc_oc=Adp5kYDnPmgTfpcQgSfyZnOFJc8X5sxt8sS-DVgrOjFaFhU0EjNHdnAQT1d9N_F8MJQ&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=HtTP4IrfyxN-_p7hgbnjHQ&_nc_tpa=Q5bMBQInKFflYXxdyFi2mz5jRGdQ-zLnA0YcdhcQHEh19qT6_x2u09j3Jy_g2I5bvtY8SsIHPAqOmg7XOw&oh=00_AQUCdpD6UpG3zBPI_LoRIqHiKD6MZUufuRQtYnEj3ovggw&oe=6B0FBF2D"
+    },
+    "instagram": {
+      "media_id": "17923700739243428",
+      "permalink": "https://www.instagram.com/p/DgQdQ6kDT9Q/"
+    },
+    "story": {
+      "media_id": "18124596943820687"
+    }
+  },
+  "published_at": "2026-11-28T00:42+05:00"
 }
