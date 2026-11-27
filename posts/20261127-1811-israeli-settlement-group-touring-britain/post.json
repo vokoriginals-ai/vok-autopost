@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "reported to police",
   "caption": "An Israeli non profit group promoting illegal settlements in the West Bank has been reported to Scottish police over an alleged threat against Glasgow University rector Dr Ghassan Abu Sittah. \n\nAccording to Middle East Eye, Shivat Zion senior official Shraga Evers responded to criticism by making remarks that critics described as incitement and a de@th threat.\n\nActivist group Jewish Anti Zionist Action reported the organisation and Evers to Police Scotland, calling the remarks a racist and violent diatribe.\n\nBritish officials stated that the UK does not want to see settlement property advertising and will ensure a comprehensive sanctions regime is implemented.\n\nHow should authorities handle foreign groups promoting illegal settlements on domestic soil? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #GlasgowUniversity #WestBank #UKNews\n\n📸 Argymeg / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T18:11+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.middleeasteye.net/news/israeli-group-promoting-illegal-settlements-touring-uk-reported-police-over-threat-ghassan-abu"
   ],
-  "issue": 123
+  "issue": 123,
+  "decided_at": "2026-11-27T18:28+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
