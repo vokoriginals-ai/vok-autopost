@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "technical recession",
   "caption": "France has fallen into a technical recession following recent quarterly economic revisions 📉\n\nAccording to Reuters, official data shows the French economy contracted in consecutive quarters, triggering the technical recession status.\n\nThe downturn highlights mounting economic pressures in Europe as major nations struggle with growth and inflation.\n\nWhat does this mean for the wider European economy in the coming months? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #France #Economy #Recession\n\n📸 Benh LIEU SONG / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-28T01:15+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTER0b3otWTRCSmNQXzlVUXVMamtxeGxHV3BMQkVoRnBLTkhsYnFIdXdySXRYNUR4RWxBVU82Mk5oVDl1U2lNaTJ3U3FaVnpLUFM2UDZvSU92VERNcVBaOUtpVVpkek9vTFhZWG52TUQxUDNFVWs1UVZJQVpuM05SOGFQN29nblhlb19NeW9KYVM5OWlDV3NycXJkTG9Zc3d1Zm92VGNLaWlCN2It?oc=5"
   ],
-  "issue": 140
+  "issue": 140,
+  "decided_at": "2026-11-28T01:31+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
