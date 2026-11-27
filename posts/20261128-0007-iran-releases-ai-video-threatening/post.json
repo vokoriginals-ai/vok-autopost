@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "threatening military strikes",
   "caption": "An artificial intelligence video released by Iran has threatened military strikes against major American technology companies.\n\nAccording to Firstpost, the video targets Amazon, Microsoft and SpaceX because of their alleged links to the United States military.\n\nThe warning comes amid heightened regional tensions and scrutiny over big tech contracts with defence agencies.\n\nHow should tech companies handle military contracts and state threats? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Iran #ArtificialIntelligence #Technology\n\n📸 BalticServers.com / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T00:08+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPeEtBYnVTczVyLWtyOFhXWkV4NHJhMkJwb0tTRVYyYzdtY1RLWUVQQkcxZUJsalZfN1dYTkhUenU3RGRaOFZpWnVKNUdCS21uTmI1RVRCR2ZnYk84NUxGY19kanpOa19rTG9JZG13RUQyVGp5NE1oMXNpeVhFNEg2YUJXM3pZZXFfQnpadWZkTDlxM1AtTEhsVDhiWmowWHVzelBnbWFXYVM1S2tGZXZKNGNwQWJ5Zlo3ZDF1U0dSYXlXV0NGdGtfZGFPWmdiQ1NNVlE?oc=5"
   ],
-  "issue": 137
+  "issue": 137,
+  "decided_at": "2026-11-28T00:20+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185620464988633",
+      "post_id": "790959357430859_122185620488988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185620464988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-2.xx.fbcdn.net/v/t39.30808-6/920915763_122185620470988633_837776994588929391_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeEEMAcXD3oTKS5YhM0sEkIWr7m_SXbFKRqvub9JdsUpGkD6KSCTS5Tdhbb-eJ1IAXSutlqesGwjpj4JkC2xo5E2&_nc_ohc=lvAuES4SwJcQ7kNvwGWZZv3&_nc_oc=AdofCCx7ep7hGL4iZqWma8u1EL79J-_MhV-X2I30vIfLuDXE_lg3QRqbaOx1pxuuePE&_nc_zt=23&_nc_ht=scontent-sea5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=bbwRmotktId8Kz7N69ytrQ&_nc_tpa=Q5bMBQKVKGtRWs7dJtqFsialM_gsbXE6GHHB02WU7YKk-HokDy9lICLFekJ0v-tVKhe8gSk5R9cOrWlOwQ&oh=00_AQWdkI_jutjwuTH5k-umhAowZop1-3UcqnJTH9ieEuWiQQ&oe=6B0F92F9"
+    },
+    "instagram": {
+      "media_id": "18103076564400579",
+      "permalink": "https://www.instagram.com/p/DgQawitDfXS/"
+    },
+    "story": {
+      "media_id": "18125994926289642"
+    }
+  },
+  "published_at": "2026-11-28T00:20+05:00"
 }
