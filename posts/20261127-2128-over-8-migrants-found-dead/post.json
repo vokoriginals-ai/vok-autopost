@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "8 migrants found de@d",
   "caption": "Tragedy strikes again on the dangerous migration routes into Europe 🌊\n\nAccording to Firstpost, more than 8 migrants were found de@d and 90 others were rescued from a boat off Spain's Atlantic coast.\n\nRescue teams and authorities responded to the distressed vessel in the Atlantic Ocean.\n\nInvestigations and aid efforts are currently underway for the survivors.\n\nWhat more can be done to stop these tragedies at sea? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Spain #Migration #AtlanticOcean\n\n📸 Bahnfrend / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-27T21:29+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 130,
   "decided_at": "2026-11-27T21:45+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185626986988633",
+      "post_id": "790959357430859_122185627010988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185626986988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/923396651_122185626992988633_6118204080029119728_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeE_hIPcu8u4Zeb5cRbLNLv3Y_6CZl6w_4lj_oJmXrD_iXu-ELfJoP7Vx_cSsSt0v3JegasSn2BR3QvQdekgWZo5&_nc_ohc=kZJDlpL66h4Q7kNvwEngMl3&_nc_oc=AdqTfcJpjGJ55Szya2udFUtMJ7UySZUFHObDgoNrwGYwwtxfSUsfiCVBXfnF2sTc4Eo&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=Isc1c8NUuCO4NuZcYNrvbA&_nc_tpa=Q5bMBQJwirYzp-Mp4FDCmyAo3l8iYLic2D5qJZG-uRTMFSRsax-8ycyOh-ZFrUE7jYFCmQthDGhyiIokjw&oh=00_AQX1XImHc8Gruo7ZWUVB2Ci0dOYrkCEuKZpBpPNLJmRhZw&oe=6B0FB264"
+    },
+    "instagram": {
+      "media_id": "18059348291660703",
+      "permalink": "https://www.instagram.com/p/DgQjgJNjdmc/"
+    },
+    "story": {
+      "media_id": "17952689736068597"
+    }
+  },
+  "published_at": "2026-11-28T01:37+05:00"
 }
