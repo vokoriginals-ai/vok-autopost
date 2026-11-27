@@ -2,28 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T00:27:26.720966+05:00",
-   "words": [
-    "appeal",
-    "convicted",
-    "conviction",
-    "court",
-    "cuts",
-    "defamation",
-    "halves",
-    "insult",
-    "jail",
-    "lawmaker",
-    "opposition",
-    "royal",
-    "sentence",
-    "term",
-    "thai",
-    "upholds"
-   ],
-   "headline": "Thai court upholds royal defamation conviction for opposition lawmaker and cuts sentence to 3 years"
-  },
-  {
    "at": "2026-11-24T00:44:38.267433+05:00",
    "words": [
     "accuses",
@@ -18601,6 +18579,48 @@
     "winter"
    ],
    "headline": "The secret to looking well-dressed this winter? Start with these 5 men's jackets"
+  },
+  {
+   "at": "2026-11-28T00:31:41.213594+05:00",
+   "words": [
+    "amjad",
+    "asharq",
+    "awsat",
+    "cartoon",
+    "courtesy",
+    "rasmi"
+   ],
+   "headline": "Cartoon by Amjad Rasmi. (Courtesy of Asharq Al-Awsat)"
+  },
+  {
+   "at": "2026-11-28T00:31:42.242930+05:00",
+   "words": [
+    "advancing",
+    "cabinet",
+    "disarms",
+    "discuss",
+    "gaza",
+    "hamas",
+    "plan",
+    "security",
+    "set",
+    "trump"
+   ],
+   "headline": "Security cabinet said set to discuss advancing Trump’s Gaza plan before Hamas disarms"
+  },
+  {
+   "at": "2026-11-28T00:31:44.169037+05:00",
+   "words": [
+    "action",
+    "air",
+    "commander",
+    "enemy",
+    "expect",
+    "iranian",
+    "sea",
+    "should"
+   ],
+   "headline": "Enemy should expect action in air and at sea, Iranian commander says"
   }
  ],
  "published": [
