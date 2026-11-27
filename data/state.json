@@ -2,71 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T03:19:27.428460+05:00",
-   "words": [
-    "290",
-    "billion",
-    "bln",
-    "damages",
-    "iran",
-    "seeks"
-   ],
-   "headline": "Iran seeks $290 billion in damages against the US"
-  },
-  {
-   "at": "2026-11-24T03:19:28.155271+05:00",
-   "words": [
-    "budget",
-    "constitution",
-    "emmanuel",
-    "enshrine",
-    "fiscal",
-    "french",
-    "golden",
-    "macron",
-    "plan",
-    "proposes",
-    "reviving",
-    "rule",
-    "rules"
-   ],
-   "headline": "Emmanuel Macron proposes French budget ‘golden rule’"
-  },
-  {
-   "at": "2026-11-24T03:19:50.310562+05:00",
-   "words": [
-    "assisted",
-    "breast",
-    "cancer",
-    "largest",
-    "launches",
-    "major",
-    "screening",
-    "test",
-    "trial",
-    "world's"
-   ],
-   "headline": "UK launches major trial to test AI in breast cancer screening"
-  },
-  {
-   "at": "2026-11-24T03:20:28.717931+05:00",
-   "words": [
-    "2027",
-    "abu",
-    "alexandra",
-    "confirmed",
-    "dhabi",
-    "eala",
-    "filipina",
-    "mubadala",
-    "open",
-    "return",
-    "set",
-    "star"
-   ],
-   "headline": "Filipina star Alexandra Eala confirmed for 2027 Mubadala Abu Dhabi Open"
-  },
-  {
    "at": "2026-11-24T03:40:59.223832+05:00",
    "words": [
     "000",
@@ -18894,6 +18829,60 @@
     "weather"
    ],
    "headline": "Gaza weather system threatens 1.3M Palestinians with humanitarian disaster"
+  },
+  {
+   "at": "2026-11-28T03:24:04.964474+05:00",
+   "words": [
+    "cancer",
+    "face",
+    "film",
+    "kate",
+    "mortality",
+    "mountains",
+    "princess",
+    "recovery",
+    "takes"
+   ],
+   "headline": "Princess Kate takes to the mountains to face mortality in film about cancer recovery"
+  },
+  {
+   "at": "2026-11-28T03:24:05.939513+05:00",
+   "words": [
+    "africa",
+    "celebrated",
+    "charity",
+    "must",
+    "probe",
+    "south"
+   ],
+   "headline": "Why South Africa must probe a celebrated charity"
+  },
+  {
+   "at": "2026-11-28T03:24:06.739019+05:00",
+   "words": [
+    "5787",
+    "blogs",
+    "parshat",
+    "satisfaction",
+    "sense",
+    "vayishlach"
+   ],
+   "headline": "The Blogs: Parshat Vayishlach 5787: A Sense of Satisfaction"
+  },
+  {
+   "at": "2026-11-28T03:24:07.851847+05:00",
+   "words": [
+    "commanders",
+    "encouraged",
+    "gaza",
+    "human",
+    "israel's",
+    "palestinians",
+    "shields",
+    "use",
+    "widespread"
+   ],
+   "headline": "Israel's use of Palestinians as human shields in Gaza widespread, encouraged by commanders: Report"
   }
  ],
  "published": [
@@ -19467,6 +19456,10 @@
   {
    "at": "2026-11-28T03:02:50.518685+05:00",
    "page": "https://commons.wikimedia.org/wiki/File:Exodus_1.jpg"
+  },
+  {
+   "at": "2026-11-28T03:24:25.907053+05:00",
+   "page": "https://commons.wikimedia.org/wiki/File:Gaza_war_2023_-_2025_IMG_4111.jpg"
   }
  ],
  "drip_until": "2026-11-28T03:38:44.724783+05:00",
