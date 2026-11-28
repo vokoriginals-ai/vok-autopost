@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "record 7 billion dollars",
   "caption": "US online shoppers spent a record breaking amount during the holiday. 🛍️\n\nAccording to Anadolu, US online spending reached a record 7.1 billion dollars on Thanksgiving.\n\nConsumers flocked to digital platforms to secure holiday deals and discounts.\n\nDid you buy anything online during the holiday sales? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #BlackFriday #Shopping #US\n\n📸 HelenOnline / Wikimedia Commons (CC BY-SA 3.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-27T22:34+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 133,
   "decided_at": "2026-11-27T22:49+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185686566988633",
+      "post_id": "790959357430859_122185686596988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185686566988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/929487221_122185686578988633_8873941641139397033_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHm4AOFlb5YEN_CYKsAt5B_IfCcHqBm_uQh8JweoGb-5AC1eCJ4E1ImICdqB2Kmi3tw7p6pmPjFYSlSOTHEgVKA&_nc_ohc=LmBGgFdlMVQQ7kNvwEzohfT&_nc_oc=AdqsbzgZC5wwCEC1Bz21FYeW6syf3PdggeVQlim2BvjB4Bc5XV1ajotX-RFVwkdJqDI&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=SgW0hKZF7mwojmaZmapNsw&_nc_tpa=Q5bMBQIRy-p_2Jn1CbbvE89IVTVAQCbQkAiBULQsPbLiQxoQ6E0T6d-LVwYPJhZARCSkF8Glw41t-zUMzw&oh=00_AQU0Jxa1p3e9jgohWj9FPm30Bo8NIlmKkDv1RypHBwtDkg&oe=6B102D07"
+    },
+    "instagram": {
+      "media_id": "18453964768127840",
+      "permalink": "https://www.instagram.com/p/DgRPqAQjtmg/"
+    },
+    "story": {
+      "media_id": "18100035167457014"
+    }
+  },
+  "published_at": "2026-11-28T08:03+05:00"
 }
