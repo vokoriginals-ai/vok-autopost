@@ -131,7 +131,7 @@ def kremlin(query: str) -> list[dict]:
         keys = list(dict.fromkeys(re.findall(
             r"static\.kremlin\.ru/media/events/photos/(?:small|medium|big|original)/(\w+\.jpg)", e)))
         for k, key in enumerate(keys[:6]):
-            out.append({"url": f"http://static.kremlin.ru/media/events/photos/big/{key}",
+            out.append({"url": f"http://static.kremlin.ru/media/events/photos/big2x/{key}",
                         "credit": "Kremlin.ru (CC BY 4.0)",
                         "page": f"http://en.kremlin.ru/events/president/news/{eid}/photos#{key}",
                         "pixels": 2_000_000, "rank": n * 2 + k * 0.3 - 2})
