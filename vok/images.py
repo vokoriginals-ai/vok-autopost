@@ -205,8 +205,8 @@ def official_finders(query: str) -> tuple:
         f.append(kremlin)
     if US_GOV.search(query):
         f.append(whitehouse)
-    if IRAN.search(query):
-        f.append(mehr)
+    # Mehr (Iran, CC BY 4.0) is reachable but only offers 800px photos: too soft for a
+    # 1080x1350 post, so it stays off. Iran photos come from the library and Wikimedia.
     if SPACE.search(query):
         f.append(nasa)
     return tuple(f)
