@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "nuclear holocaust",
   "caption": "US President Donald Trump warned that the lack of Middle East peace could lead to a nuclear holocaust and claimed Iranian missiles can reach Europe. 🌍\n\nSpeaking to US military personnel from Mar a Lago, Trump stated that Iran could launch nuclear attacks against Israel and other regional nations without stability. He added that Washington must prevent Tehran from obtaining a nuclear weapon.\n\nMeanwhile, Iranian navy commander Shahram Irani claimed the armed forces recovered two oil tankers stolen by the US military. The Revolutionary Guards also claimed air defences forced an American F 16 jet to retreat near Hengam Island.\n\nIn Kuwait, the foreign ministry summoned the Iranian ambassador over a drone attack that k!lled two Italian nationals. Iranian Foreign Minister Abbas Araghchi denied involvement, calling the incident a pre cooked recipe for war.\n\nCould these rising tensions spark a wider conflict in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Iran #US #MiddleEast",
-  "status": "pending",
+  "status": "approved",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T08:36+05:00",
@@ -20,5 +20,7 @@
   "source_links": [
     "https://www.dawn.com/news/2047565/trump-scares-europe-with-spectre-of-nuclear-holocaust"
   ],
-  "issue": 146
+  "issue": 146,
+  "decided_at": "2026-11-28T08:48+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
