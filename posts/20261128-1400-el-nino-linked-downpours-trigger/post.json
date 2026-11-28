@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "34 de@d",
   "caption": "Severe weather caused by the El Nino phenomenon has triggered massive flooding across Peru and Ecuador. 🌊\n\nAccording to Al Jazeera and TRT World, heavy rains have left 34 people de@d and affected 47,000 people in Ecuador.\n\nIn northern Peru, waist high water filled the streets of Piura after 12 hours of heavy rains, affecting some 2,000 families according to preliminary reports.\n\nFloodwaters forced authorities to relocate patients from a hospital respiratory ward to its auditorium, while Peru armed forces deployed personnel to remove accumulated water.\n\nIn neighbouring Ecuador, residents waded through chest deep water and floated on mattresses in Manta after two rivers broke their banks.\n\nHow do you think governments should prepare for extreme weather disasters? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #ElNino #Peru #Ecuador\n\n📸 Pulakit Singh / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-28T14:00+05:00",
@@ -24,5 +24,21 @@
   ],
   "issue": 151,
   "decided_at": "2026-11-28T14:16+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185731866988633",
+      "post_id": "790959357430859_122185731890988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185731866988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/935880844_122185731872988633_7489275253587820221_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeG3Fncg1SMqecgTUeo2XWPkPcy63H-RcBk9zLrcf5FwGVNKmTclWxTrYh9XUKfobpIwFPnjvcgKPurUgF06_bOm&_nc_ohc=JyVWTRQPvREQ7kNvwH-zdNp&_nc_oc=AdrCwtlpSqetaz2Y-GdBhfkmCnAEX7A1YDPy-HxH1fVlH6H2xXp6BNuRSU16W7C9oFc&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=6c9obwN9aZ-Xa1F8Qw4OSg&_nc_tpa=Q5bMBQJZ8zeA0sUkl72k2Y5FSxqfgBlw8RWeYvNS8tIYJT8-kolNc1ZpkSbfgzCFooviunLzJhaa-fNm0A&oh=00_AQXeVNh2GCKncJAYUjooKN1nrEyfKufwQFGU3kr6ESzOPg&oe=6B109F7D"
+    },
+    "instagram": {
+      "media_id": "17995941435067285",
+      "permalink": "https://www.instagram.com/p/DgSKFOAkqGi/"
+    },
+    "story": {
+      "media_id": "17916759222574254"
+    }
+  },
+  "published_at": "2026-11-28T16:33+05:00"
 }
