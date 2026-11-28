@@ -3,7 +3,7 @@
   "label": "VIRAL",
   "highlight": "twenty six rare turtles",
   "caption": "Wildlife traffickers tried to sneak endangered reptiles across the globe 🐢\n\nAccording to the Netherlands Food and Consumer Product Safety Authority, customs officers seized twenty six rare Vallarta mud turtles from a checked bag at Amsterdam's Schiphol airport.\n\nThe endangered reptiles were bound with duct tape to prevent them from moving and were discovered inside a box with a toy car and a closed sock.\n\nOfficials stated the man was flying from Mexico to Hong Kong and the animals were presumably stolen from the wild. Conservation groups estimate that no more than 300 of these tiny freshwater turtles remain in the wild.\n\nWould you support harsher prison sentences for wildlife smugglers? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #WildlifeTrafficking #Amsterdam #EndangeredSpecies\n\n📸 huynhdatstc / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-27T18:57+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 126,
   "decided_at": "2026-11-27T19:12+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185673738988633",
+      "post_id": "790959357430859_122185673762988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185673738988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/929529619_122185673744988633_5449473914919079221_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFxI6_hPnitK0g9O2fsAmpdrUYqPn8xW86tRio-fzFbzv9zJ8Pou3e3qkqdZllMaKL8KNkf6bXXPZABXLZx9QGA&_nc_ohc=pzr_D9XeOWkQ7kNvwH4mrRw&_nc_oc=AdqPXqtRxwdaNYwc4a1mVRo3A3pEk8D989YdpP69hoXK6dGK_NjmO391hPqGOj4TtFg&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ee2CKdAnHKt0xauqJuU37A&_nc_tpa=Q5bMBQJXhPyYTjhHYV2q1SMpmuGBVlqV7DAdKNt7OzEFDxjOZNGn5jH0IuKG7rFTtaZQheBTph2aLb-3rw&oh=00_AQXQd4IQTqUZ2oWSfhDq7ZEl_SSYKxD-CtsMC0dBBS3lTA&oe=6B0FFDAD"
+    },
+    "instagram": {
+      "media_id": "18114365675228124",
+      "permalink": "https://www.instagram.com/p/DgRBlFSDskk/"
+    },
+    "story": {
+      "media_id": "18143044987645126"
+    }
+  },
+  "published_at": "2026-11-28T06:00+05:00"
 }
