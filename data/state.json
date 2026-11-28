@@ -2,26 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T16:04:40.239535+05:00",
-   "words": [
-    "approval",
-    "approved",
-    "attack",
-    "authorities",
-    "aviv",
-    "flights",
-    "flydubai",
-    "given",
-    "israeli",
-    "months",
-    "resume",
-    "tel",
-    "thwarted",
-    "two"
-   ],
-   "headline": "Flydubai given approval to resume flights to Tel Aviv by Israeli authorities"
-  },
-  {
    "at": "2026-11-24T16:09:14.983737+05:00",
    "words": [
     "camp",
@@ -20054,6 +20034,49 @@
     "win"
    ],
    "headline": "George Mason takes on Marist, looks for 4th straight home win"
+  },
+  {
+   "at": "2026-11-28T16:05:47.259767+05:00",
+   "words": [
+    "again",
+    "agreed",
+    "captain",
+    "early",
+    "indians",
+    "initially",
+    "lead",
+    "mumbai",
+    "opens",
+    "pre",
+    "reluctance",
+    "return",
+    "reveals",
+    "rohit",
+    "sharma"
+   ],
+   "headline": "Rohit Sharma reveals why he agreed to lead Mumbai Indians again"
+  },
+  {
+   "at": "2026-11-28T16:05:48.637725+05:00",
+   "words": [
+    "aircraft",
+    "airlines",
+    "airport",
+    "american",
+    "boeing",
+    "breaking",
+    "clip",
+    "collide",
+    "jets",
+    "one",
+    "plane",
+    "taxiing",
+    "two",
+    "washington",
+    "wing",
+    "wings"
+   ],
+   "headline": "Two Boeing Aircraft Collide While Taxiing in Washington, Breaking One Plane’s Wing"
   }
  ],
  "published": [
@@ -20661,6 +20684,10 @@
   {
    "at": "2026-11-28T15:09:07.270766+05:00",
    "page": "https://pixabay.com/photos/chess-chess-board-chess-pieces-5217922/"
+  },
+  {
+   "at": "2026-11-28T16:06:07.526291+05:00",
+   "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_plane_at_the_Cura%C3%A7ao_International_Airport_(CUR).jpg"
   }
  ],
  "drip_until": "2026-11-28T16:20:31.501007+05:00",
