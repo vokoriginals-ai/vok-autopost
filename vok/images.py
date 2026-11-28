@@ -128,13 +128,16 @@ def kremlin(query: str) -> list[dict]:
             e = _html(f"http://en.kremlin.ru/events/president/news/{eid}/photos")
         except Exception:
             continue
-        keys = list(dict.fromkeys(re.findall(
-            r"static\.kremlin\.ru/media/events/photos/(?:small|medium|big|original)/(\w+\.jpg)", e)))
-        for k, key in enumerate(keys[:6]):
-            out.append({"url": f"http://static.kremlin.ru/media/events/photos/big2x/{key}",
-                        "credit": "Kremlin.ru (CC BY 4.0)",
+        # use the exact large-size links the page offers (big2x, else big)
+        found = re.findall(r"(https?://static\.kremlin\.ru/media/events/photos/(?:big2x|big)/(\w+\.jpg))", e)
+        seen = set()
+        for url, key in found:
+            if key in seen or len(seen) >= 6:
+                continue
+            seen.add(key)
+            out.append({"url": url, "credit": "Kremlin.ru (CC BY 4.0)",
                         "page": f"http://en.kremlin.ru/events/president/news/{eid}/photos#{key}",
-                        "pixels": 2_000_000, "rank": n * 2 + k * 0.3 - 2})
+                        "pixels": 2_000_000, "rank": n * 2 + len(seen) * 0.3 - 2})
     return out
 
 
