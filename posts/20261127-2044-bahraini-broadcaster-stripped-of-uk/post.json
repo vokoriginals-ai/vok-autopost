@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "stripped of UK licence",
   "caption": "A Bahraini broadcaster has lost its official UK licence after airing a speech by a Houthi leader that praised the October 7 attacks, according to The National.\n\nRegulators took action against the network following the broadcast, which featured the Houthi leader commending the ass@ult on Israel.\n\nThe decision highlights growing scrutiny over foreign media broadcasts and the enforcement of local broadcasting standards in Britain.\n\nWhat are your thoughts on this regulatory crackdown? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Bahrain #UK #Media\n\n📸 PublicDomainPictures / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-27T20:44+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 129,
   "decided_at": "2026-11-27T21:01+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185678610988633",
+      "post_id": "790959357430859_122185678640988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185678610988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/928814700_122185678616988633_8916985776564632888_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeF9HA0PbijFUt4M9p4g7cxtzLb9syPF2p3Mtv2zI8XanfHsQxT5eW5NApWF4HNezShi7Exf-8x0mWe9ZURXiRb_&_nc_ohc=BP3d_C4fLy8Q7kNvwHlfwVg&_nc_oc=Adqg12f5neVi2CSK4dpTuTo8Icwxvyu1Uahk9OJiuc8ZvpKnHq2uWvs7p0UrtlV6lR8&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=5DnTxUmpDoD9gbP5TLGntw&_nc_tpa=Q5bMBQK5r4ecx_nURVvdeDBulm7gn3tLWJSUN6x1h7qYO2u3o-TClu8Ue8M63tIjBMtlwgQzf4t4Y_7ekw&oh=00_AQWyeViPpyUGioRqSiswD5PLnytI7ibVj-Dq7N8RUo36UA&oe=6B10145C"
+    },
+    "instagram": {
+      "media_id": "17887599954652184",
+      "permalink": "https://www.instagram.com/p/DgRGLdWoVST/"
+    },
+    "story": {
+      "media_id": "18228035824337477"
+    }
+  },
+  "published_at": "2026-11-28T06:40+05:00"
 }
