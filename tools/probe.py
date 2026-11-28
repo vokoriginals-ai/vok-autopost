@@ -1,35 +1,22 @@
-"""Check which official photo sources the GitHub server can reach."""
-import json, re, urllib.request, urllib.parse
-UA = {"User-Agent": "Mozilla/5.0 (VOK news bot; contact vok.originals@gmail.com)"}
-def get(url, n=400):
-    try:
-        r = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25)
-        b = r.read()
-        return r.status, b
-    except Exception as e:
-        return str(e)[:80], b""
-tests = {
- "kremlin_en_news": "http://en.kremlin.ru/events/president/news",
- "kremlin_search": "http://en.kremlin.ru/search?query=Putin",
- "whitehouse_wp_media": "https://www.whitehouse.gov/wp-json/wp/v2/media?search=Trump&per_page=5",
- "whitehouse_gallery": "https://www.whitehouse.gov/gallery/",
- "nasa_images": "https://images-api.nasa.gov/search?q=launch&media_type=image",
- "tasnim_en": "https://www.tasnimnews.com/en",
- "mehr_en": "https://en.mehrnews.com/",
- "defense_gov": "https://www.defense.gov/Multimedia/Photos/",
- "state_flickr": "https://www.flickr.com/photos/statephotos/",
- "gpo_israel_flickr": "https://www.flickr.com/photos/government_press_office/",
- "ec_audiovisual": "https://audiovisual.ec.europa.eu/en/",
-}
-for k, u in tests.items():
-    s, b = get(u)
-    imgs = len(re.findall(rb"\.(?:jpg|jpeg)", b, re.I))
-    print(f"{k:22} {s} bytes={len(b)} jpg_refs={imgs}")
-    if k == "whitehouse_wp_media" and b:
-        try:
-            for m in json.loads(b)[:3]:
-                print("   ", m.get("source_url","")[:90], "|", re.sub("<[^>]+>","",(m.get("caption") or {}).get("rendered",""))[:90])
-        except Exception as e:
-            print("   parse", e)
-    if k == "kremlin_en_news" and b:
-        print("   ", re.findall(rb'https?://static\.kremlin\.ru/media/events/photos/[^"\']+', b)[:3])
+import re, urllib.request
+UA = {"User-Agent": "Mozilla/5.0 (VOK news bot)"}
+def get(u):
+    return urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=25).read().decode("utf-8","replace")
+h = get("http://en.kremlin.ru/search?query=Putin")
+print("KREMLIN SEARCH links:", re.findall(r'href="(/events/president/[^"]+/\d+)"', h)[:5])
+print("KREMLIN imgs:", re.findall(r'(?:src|data-src)="([^"]+\.jpg)"', h)[:4])
+ev = re.findall(r'href="(/events/president/news/\d+)"', h)
+if ev:
+    e = get("http://en.kremlin.ru" + ev[0])
+    print("EVENT title:", re.findall(r"<title>([^<]+)", e)[:1])
+    print("EVENT imgs:", re.findall(r'(https?://static\.kremlin\.ru/media/events/photos/[^"\' ]+)', e)[:4])
+    print("EVENT photo links:", re.findall(r'href="(/events/president/news/\d+/photos[^"]*)"', e)[:3])
+    print("EVENT license?:", re.findall(r'(?i)creative commons[^<]{0,60}', e)[:1])
+w = get("https://www.whitehouse.gov/gallery/")
+print("WH gallery links:", re.findall(r'href="(https://www\.whitehouse\.gov/gallery/[^"]+)"', w)[:5])
+print("WH imgs:", re.findall(r'(https://www\.whitehouse\.gov/wp-content/uploads/[^"\' ]+\.jpe?g)', w)[:4])
+m = get("https://en.mehrnews.com/search?q=Araghchi")
+print("MEHR links:", re.findall(r'href="(/news/\d+/[^"]+)"', m)[:4])
+print("MEHR imgs:", re.findall(r'(https?://media\.mehrnews\.com/[^"\' ]+\.jpe?g)', m)[:4])
+s = get("https://www.flickr.com/search/?text=Rubio&user_id=9364837%40N06")
+print("STATE flickr imgs:", re.findall(r'(live\.staticflickr\.com/[^"\' ]+\.jpg)', s)[:4])
