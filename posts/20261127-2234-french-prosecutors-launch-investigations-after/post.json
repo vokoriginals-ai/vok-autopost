@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "11 injured",
   "caption": "French prosecutors have launched formal investigations following violent clashes between football fans that left 11 people injured.\n\nAccording to Anadolu Ajansı, the clashes broke out during a match involving Marseille and Levski Sofia.\n\nAuthorities are now working to determine the full sequence of events and identify those responsible for the violence.\n\nWhat measures should clubs take to prevent fan violence at international matches? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #France #Football #Marseille\n\n📸 c1n3ma / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-27T22:34+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 134,
   "decided_at": "2026-11-27T22:49+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185682666988633",
+      "post_id": "790959357430859_122185682690988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185682666988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/930505252_122185682672988633_7552920519534710431_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFkMByi9PGtGbRZWCJCTgtTR0TGLasJd2lHRMYtqwl3afUQo3Aq07XnSRd7cV32GJUEHItLWSUCBI_KXGs42r_p&_nc_ohc=Ik-11OUaorEQ7kNvwEifmMg&_nc_oc=AdprD9UfK2VJY3c5txh2BPDAM3KT2joYmVnS06MgjQAaQHSbC7zYMT5JcfYaPgZendA&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=NNBLCcH-1r_JfOfaJLsM1g&_nc_tpa=Q5bMBQL3WtQxa9DLzWgSV24F4IrxCQegzkCDOQNK5Hv-Pdo8CHqVczJvcfKQ_VXC2p6YRXYzkitMeHEpsQ&oh=00_AQX_34Jlg-sobIqsDaGqsUR_S8R4xzetPtKNeMgeFI2Iqw&oe=6B101844"
+    },
+    "instagram": {
+      "media_id": "18648364624051005",
+      "permalink": "https://www.instagram.com/p/DgRK-UtEVdh/"
+    },
+    "story": {
+      "media_id": "17897654427614424"
+    }
+  },
+  "published_at": "2026-11-28T07:22+05:00"
 }
