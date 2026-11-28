@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "seizes cargo ship",
   "caption": "An armed group has boarded and taken control of a cargo ship off the coast of Yemen according to reports.\n\nThe United Kingdom Maritime Trade Operations reported that armed individuals boarded the vessel near Balhaf.\n\nAuthorities have not yet provided further details about the identity of the ship or the armed group involved in the incident.\n\nInvestigations and monitoring operations are currently underway in the area following the seizure.\n\nWhat do you think is behind this new maritime attack in the region? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #Yemen #RedSea #MaritimeSecurity",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T13:17+05:00",
@@ -24,5 +24,23 @@
     "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5sUmRxTFpEYkdPNGx5Ukl3eTREdzAzMVE4UUo0MFlNczF1WDNmTnVwa1VreFpDdi1IYlVTM2RRVVdBLXRGcW53aXJDZVVORXdxSEJuMGZUbEFnWWF2?oc=5",
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSmJza0RDY1R0YmlvRDBuNkxHYkRHc012MDVlS0stTzcwTVZuNGpTZ3dHZFI4UlFXekZlek1VbE1rYTV2OXhJRUdkLWZDa0dUX0NxNWVUb3FCY3dBSlc0T1Y5d0NHdjhmeXVvSTA4Sk1EamlUaTdYMXJoMHRNWm5TQXJTcWYxRi1qTy1mNzk5NkxQNlhyTTlsYzJNVExXNHBoamlfNTVGbXlkbWwwTkZYcFVpOWVRdXJZZEE?oc=5"
   ],
-  "issue": 149
+  "issue": 149,
+  "decided_at": "2026-11-28T13:27+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185711844988633",
+      "post_id": "790959357430859_122185711868988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185711844988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/927896840_122185711850988633_1052918460119475326_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeElOgZObuBP5znuqIWMcpRRr02jKYUqSWavTaMphSpJZmR3KLvzwr-tAJMHuVIDIg8BrhQYce_AnUF-NUiex_XQ&_nc_ohc=QwB6VR0mxVQQ7kNvwExZZSA&_nc_oc=Adp_BSUfdS3YHTWFlpZqyZrHIKAmt6XgZQFmJOiRrCXTz_Y6LD8lgAAWPNlpdem6GxE&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=hp1aVdsL9XJYckLXN_potg&_nc_tpa=Q5bMBQIlNUyu-2s5b4AwLh1hfA-k_7D9H5nkQZC9X3Nrqo7XqZlpoO-kBtnpCnOctQowga0K7pLLmrwrkg&oh=00_AQWD5EzK6typBwH7KxfAPUP_NNVa2A8tAuWp6i1qufgtLA&oe=6B104A0C"
+    },
+    "instagram": {
+      "media_id": "18227365216339323",
+      "permalink": "https://www.instagram.com/p/DgR017qjIcm/"
+    },
+    "story": {
+      "media_id": "18029262818959699"
+    }
+  },
+  "published_at": "2026-11-28T13:28+05:00"
 }
