@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "34 de@d",
   "caption": "Severe weather caused by the El Nino phenomenon has triggered massive flooding across Peru and Ecuador. 🌊\n\nAccording to Al Jazeera and TRT World, heavy rains have left 34 people de@d and affected 47,000 people in Ecuador.\n\nIn northern Peru, waist high water filled the streets of Piura after 12 hours of heavy rains, affecting some 2,000 families according to preliminary reports.\n\nFloodwaters forced authorities to relocate patients from a hospital respiratory ward to its auditorium, while Peru armed forces deployed personnel to remove accumulated water.\n\nIn neighbouring Ecuador, residents waded through chest deep water and floated on mattresses in Manta after two rivers broke their banks.\n\nHow do you think governments should prepare for extreme weather disasters? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #ElNino #Peru #Ecuador\n\n📸 Pulakit Singh / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "pending",
+  "status": "approved",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-28T14:00+05:00",
@@ -22,5 +22,7 @@
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBxVXh3YjRpTzJMRkxtNldyU1VPZENxZlIwZW1LclV6M0tPUkN4M045SE91OWJtNE10RlhPc2lvakt5bHduYUUzSHp3RnJSQXpCTXN3Rl9QdEk?oc=5",
     "https://www.aljazeera.com/news/2026/11/28/el-nino-linked-deluges-flood-cities-in-peru-ecuador?traffic_source=rss"
   ],
-  "issue": 151
+  "issue": 151,
+  "decided_at": "2026-11-28T14:16+05:00",
+  "note": "auto-approved: no reply in 15 min"
 }
