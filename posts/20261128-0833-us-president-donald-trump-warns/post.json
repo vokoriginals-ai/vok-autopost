@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "nuclear holocaust",
   "caption": "US President Donald Trump warned that the lack of Middle East peace could lead to a nuclear holocaust and claimed Iranian missiles can reach Europe. 🌍\n\nSpeaking to US military personnel from Mar a Lago, Trump stated that Iran could launch nuclear attacks against Israel and other regional nations without stability. He added that Washington must prevent Tehran from obtaining a nuclear weapon.\n\nMeanwhile, Iranian navy commander Shahram Irani claimed the armed forces recovered two oil tankers stolen by the US military. The Revolutionary Guards also claimed air defences forced an American F 16 jet to retreat near Hengam Island.\n\nIn Kuwait, the foreign ministry summoned the Iranian ambassador over a drone attack that k!lled two Italian nationals. Iranian Foreign Minister Abbas Araghchi denied involvement, calling the incident a pre cooked recipe for war.\n\nCould these rising tensions spark a wider conflict in the region? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Iran #US #MiddleEast",
-  "status": "approved",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T08:36+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 146,
   "decided_at": "2026-11-28T08:48+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185704962988633",
+      "post_id": "790959357430859_122185704986988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185704962988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/932329374_122185704968988633_7436615268488740927_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeF4w0Me04-st9eOUdi6Bkp6ZI1fr8BQmetkjV-vwFCZ67oKNMQQzw5OwzdNAII20euugx_4-GN5JuzpR5huU5Mj&_nc_ohc=CU09sc4vRG8Q7kNvwHHQIKP&_nc_oc=AdoL7qDINmiAbyjrhS8O-_rWiYX9pOEAsccIMbKuCMMNprhCgnf67rtTakweApcRbpQ&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=DW2FQwhr4E9olonyURd3UA&_nc_tpa=Q5bMBQIOEvBwN82dMumQTD8rzpX71mTnPhYADxpXLoWibL9yvnyJ_yq5Evhe5QCqbfiaZpE-5mS3e7HMKw&oh=00_AQXLPHSwrIX78TGO8OU8BfgwS3xFoz-GDKBF2VxEuwLSjg&oe=6B10449B"
+    },
+    "instagram": {
+      "media_id": "18227104045354572",
+      "permalink": "https://www.instagram.com/p/DgRronpGnVR/"
+    },
+    "story": {
+      "media_id": "17969943507228528"
+    }
+  },
+  "published_at": "2026-11-28T12:07+05:00"
 }
