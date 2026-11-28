@@ -3,7 +3,7 @@
   "label": "BREAKING",
   "highlight": "k!ll or injure 121",
   "caption": "Fierce fighting and air strikes hit Yemen as a major new government offensive targets Houthi positions.\n\nYemeni military officials said that government forces and the Saudi led coalition carried out hundreds of attacks over a 24 hour period, leaving 121 Houthi fighters and commanders k!lled or wounded.\n\nStrikes hit areas including the capital Sanaa, Taiz and Mocha, causing civilian casualties according to local reports and Al Jazeera coverage.\n\nMeanwhile, UN agencies warned that about 1.8 million people face emergency levels of hunger in government held areas amid worsening violence and aid cuts.\n\nHow can international aid reach millions facing severe hunger in Yemen right now? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Yemen #Houthi #SaudiArabia",
-  "status": "pending",
+  "status": "published",
   "priority": 3,
   "ai_image": false,
   "created_at": "2026-11-28T15:22+05:00",
@@ -20,5 +20,23 @@
   "source_links": [
     "https://www.aljazeera.com/news/2026/11/28/yemen-governmen-forces-hit-houthi-positions-as-un-warns-of-hunger-crisis?traffic_source=rss"
   ],
-  "issue": 154
+  "issue": 154,
+  "decided_at": "2026-11-28T15:33+05:00",
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185723424988633",
+      "post_id": "790959357430859_122185723448988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185723424988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-sea5-1.xx.fbcdn.net/v/t39.30808-6/935700044_122185723430988633_855624291667165002_n.jpg?_nc_cat=100&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFiUiDT_v80XPA0gcyVCmGT30cMbwIg3fbfRwxvAiDd9kDhYQzqtXszljFz6YiPw8NglgK9JSmjcfziy4TA3oOm&_nc_ohc=wItrPFIUGdoQ7kNvwFxWrHc&_nc_oc=Adpvp-GIQNZB8DDH3ODCzqKjTeY1LYztB1WK0b0zWMqUeV4AkYO6QojQ1AWvTHI0bdM&_nc_zt=23&_nc_ht=scontent-sea5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=EIHnw8iv3iLMkizWI_zQ7g&_nc_tpa=Q5bMBQKRT8E96sBikz-IWW5aO2aKKKgT4HUMaBCxhHtTsGd1lXIg6fkbm_zgswjVhUBgqrzGuV7-fEFAWw&oh=00_AQVH4ViWD7NPN5oa0faQMpC502RG-U3E9tQfBwdKih38GA&oe=6B1076F3"
+    },
+    "instagram": {
+      "media_id": "18239360455322279",
+      "permalink": "https://www.instagram.com/p/DgSDOLAEkt2/"
+    },
+    "story": {
+      "media_id": "17971029429192008"
+    }
+  },
+  "published_at": "2026-11-28T15:33+05:00"
 }
