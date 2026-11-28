@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "AI assistant",
   "caption": "Saudi Arabia is planning to introduce an AI assistant for every citizen to simplify access to government services, according to Gulf News. 🤖\n\nThe initiative aims to make interacting with state departments much easier for the population through advanced technology.\n\nFurther details on the timeline and implementation of the AI project have not yet been fully detailed by authorities.\n\nHow would you use an official government AI assistant in your daily life? 👇\n\nFollow Vok for more stories like this.\n#Vok #VokOriginals #SaudiArabia #ArtificialIntelligence #TechNews\n\n📸 B.alotaby / Wikimedia Commons (CC BY-SA 4.0)",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-28T01:37+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 141,
   "decided_at": "2026-11-28T01:53+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185710104988633",
+      "post_id": "790959357430859_122185710128988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185710104988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/929822321_122185710110988633_5377311456946798145_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHyd8qRRrqwMyz9aSx1JV2uH6Gf8s6SoWcfoZ_yzpKhZwqnSIw4O5k8qA-zI9Kmsy8QNHPXH_Qa2FQcDseOWqMX&_nc_ohc=GdNfLOX3vh0Q7kNvwFFqjq1&_nc_oc=Adoco-7F9A0US-eEMUvcaZC2NiAIXvC00ZdQSt6wamz03F5CTDmit581YCWSpWYeQhw&_nc_zt=23&_nc_ht=scontent-ord5-2.xx&edm=AMAeTUEEAAAA&_nc_gid=EIZCAqaPgudboliL2gOusg&_nc_tpa=Q5bMBQIh2d91EteEGe9T9RFd2D11LjQkAw-e6YfjwEiMC1QryXbwh4TSpO4wQNDhrb4MjlZIb_F5MGAzaA&oh=00_AQWb1fPCtpp-RQ5-PanUYx5qf7MB5Oo7kfxhbNocW_IEhA&oe=6B10441E"
+    },
+    "instagram": {
+      "media_id": "18100592975557341",
+      "permalink": "https://www.instagram.com/p/DgRy7K5j605/"
+    },
+    "story": {
+      "media_id": "18138157525813483"
+    }
+  },
+  "published_at": "2026-11-28T13:11+05:00"
 }
