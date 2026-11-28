@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "84 percent",
   "caption": "India has brought the vast majority of its gold reserves back from London according to recent reports.\n\nFirstpost reports that 84 percent of the country gold reserves are now stored domestically instead of abroad.\n\nThe move highlights changing financial strategies and a lack of trust in foreign storage facilities.\n\nWould you keep your gold abroad or at home? 👇\n\nFollow Vok for more stories like this.\n\nNote: Image enhanced using AI.\n\n#Vok #VokOriginals #India #GoldReserves #London\n\n📸 VOK",
-  "status": "approved",
+  "status": "published",
   "priority": 1,
   "ai_image": false,
   "created_at": "2026-11-27T23:02+05:00",
@@ -22,5 +22,21 @@
   ],
   "issue": 135,
   "decided_at": "2026-11-27T23:18+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185691402988633",
+      "post_id": "790959357430859_122185691426988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185691402988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/930627603_122185691408988633_5629730391629840801_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeHNNkkUEyHMY15qoCl_8xE8ltcUngbPHbeW1xSeBs8dtyan-LqPb8ZLagtNV8hIEvWvn6H3hOHKNXFLNtrhsb3k&_nc_ohc=RB05KlzFqr4Q7kNvwFFfm3h&_nc_oc=AdrjdH8dKhADXv8SX1LtzSOqCe5UvmLuvKqmLxV3a3z8TMexSAdwFzBR7bYgrtkGD2g&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=ijumgAfu6kgxGMIlvEaJHw&_nc_tpa=Q5bMBQIiG1e6rF4wic9ixnIm_TuyqmEKUdYpaHvFpcKrpxHNQ2Gk0Fz-Qb0I_kXneUp8kC0QZjZLfsSQSw&oh=00_AQXdNHUgTlDoh2fnAs1tC-KVMbPdRfj9SAhWzLF_E7PpCA&oe=6B1004E2"
+    },
+    "instagram": {
+      "media_id": "18099749342667862",
+      "permalink": "https://www.instagram.com/p/DgRUOrmkdhp/"
+    },
+    "story": {
+      "media_id": "18223453684358904"
+    }
+  },
+  "published_at": "2026-11-28T08:43+05:00"
 }
