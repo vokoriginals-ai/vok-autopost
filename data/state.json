@@ -2,134 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T14:18:55.512090+05:00",
-   "words": [
-    "battled",
-    "crisis",
-    "details",
-    "devil",
-    "diaries",
-    "diary",
-    "encounters",
-    "francis",
-    "gates",
-    "hell",
-    "pope",
-    "private",
-    "profound",
-    "reveal",
-    "saw",
-    "spiritual",
-    "times",
-    "two",
-    "visions",
-    "well",
-    "wrote"
-   ],
-   "headline": "Private diaries reveal Pope Francis had visions of the Devil and Hell"
-  },
-  {
-   "at": "2026-11-24T14:19:15.227571+05:00",
-   "words": [
-    "adopt",
-    "australia",
-    "australian",
-    "big",
-    "bill",
-    "billions",
-    "dollar",
-    "dollars",
-    "face",
-    "fines",
-    "giants",
-    "global",
-    "google",
-    "harm",
-    "harms",
-    "imposing",
-    "internet",
-    "law",
-    "meta",
-    "multibillion",
-    "online",
-    "revenue",
-    "safety",
-    "set",
-    "takes",
-    "tech",
-    "warns"
-   ],
-   "headline": "Australia warns tech giants of multibillion-dollar fines for online ‘harm’"
-  },
-  {
-   "at": "2026-11-24T14:19:59.371101+05:00",
-   "words": [
-    "air",
-    "eight",
-    "held",
-    "hodeidah",
-    "houthi",
-    "killed",
-    "least",
-    "left",
-    "media",
-    "missing",
-    "raids",
-    "saudi",
-    "strike",
-    "yemen"
-   ],
-   "headline": "At least eight killed in Yemen air raids on Houthi-held Hodeidah"
-  },
-  {
-   "at": "2026-11-24T14:20:00.329148+05:00",
-   "words": [
-    "abu",
-    "ahmad",
-    "call",
-    "dhabi",
-    "discuss",
-    "fujairah",
-    "leader",
-    "mohamed",
-    "nation",
-    "phone",
-    "president",
-    "receives",
-    "ruler",
-    "shara",
-    "sheikh",
-    "speaks",
-    "syrian",
-    "talks",
-    "uae",
-    "vision"
-   ],
-   "headline": "UAE President receives ruler of Fujairah in Abu Dhabi"
-  },
-  {
-   "at": "2026-11-24T14:20:22.835777+05:00",
-   "words": [
-    "book",
-    "campaign",
-    "deeply",
-    "gis",
-    "gisele",
-    "humiliated",
-    "media",
-    "nude",
-    "pelicot",
-    "photos",
-    "promote",
-    "publisher",
-    "sent",
-    "shocked",
-    "sue",
-    "used"
-   ],
-   "headline": "Gisele Pelicot 'deeply shocked' after nude photos used to promote book"
-  },
-  {
    "at": "2026-11-24T14:38:12.147496+05:00",
    "words": [
     "2026",
@@ -19945,6 +19817,131 @@
     "latin"
    ],
    "headline": "Americas News ‚ US & Latin America Reports"
+  },
+  {
+   "at": "2026-11-28T14:22:49.608745+05:00",
+   "words": [
+    "exposes",
+    "failures",
+    "iraq's",
+    "legal",
+    "surge",
+    "violence",
+    "women"
+   ],
+   "headline": "Iraq's surge in violence against women exposes legal failures"
+  },
+  {
+   "at": "2026-11-28T14:22:50.684610+05:00",
+   "words": [
+    "aryan",
+    "book",
+    "broke",
+    "former",
+    "khan",
+    "ncb",
+    "officer",
+    "probe",
+    "questioned",
+    "reveals"
+   ],
+   "headline": "Aryan Khan broke down, questioned NCB probe, former officer reveals in book"
+  },
+  {
+   "at": "2026-11-28T14:23:12.510094+05:00",
+   "words": [
+    "adnoc",
+    "another",
+    "billion",
+    "channels",
+    "dh220",
+    "dh307",
+    "economy",
+    "five",
+    "targets",
+    "uae"
+   ],
+   "headline": "Adnoc channels Dh307 billion into UAE economy, targets another Dh220 billion over five years"
+  },
+  {
+   "at": "2026-11-28T14:23:13.377809+05:00",
+   "words": [
+    "answered",
+    "exploring",
+    "old",
+    "position",
+    "puzzles"
+   ],
+   "headline": "Exploring Old Puzzles, Answered From an AI’s Position"
+  },
+  {
+   "at": "2026-11-28T14:23:35.635634+05:00",
+   "words": [
+    "amnesty",
+    "coordinator",
+    "fixated",
+    "former",
+    "iran",
+    "issues",
+    "organization",
+    "palestinian",
+    "rights"
+   ],
+   "headline": "Former Iran coordinator at UK Amnesty says rights organization fixated on Palestinian issues"
+  },
+  {
+   "at": "2026-11-28T14:23:36.563379+05:00",
+   "words": [
+    "economy",
+    "events",
+    "government",
+    "national",
+    "uae"
+   ],
+   "headline": "UAE News – National Events, Economy & Government Updates"
+  },
+  {
+   "at": "2026-11-28T14:23:37.699134+05:00",
+   "words": [
+    "airport",
+    "animals",
+    "found",
+    "hundreds",
+    "luggage",
+    "peruvian"
+   ],
+   "headline": "Hundreds of live animals found in luggage at Peruvian airport"
+  },
+  {
+   "at": "2026-11-28T14:23:38.570135+05:00",
+   "words": [
+    "beyond",
+    "end",
+    "expiry",
+    "keep",
+    "lebanese",
+    "mandate",
+    "operating",
+    "proposal",
+    "unifil",
+    "works"
+   ],
+   "headline": "Lebanese PM says proposal in works to keep UNIFIL operating beyond year’s end"
+  },
+  {
+   "at": "2026-11-28T14:24:00.830774+05:00",
+   "words": [
+    "air",
+    "carry",
+    "israeli",
+    "jets",
+    "lebanese",
+    "nabatieh",
+    "nna",
+    "raid",
+    "town"
+   ],
+   "headline": "Israeli jets carry out air raid on Lebanese town in Nabatieh, NNA reports"
   }
  ],
  "published": [
