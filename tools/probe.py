@@ -1,3 +1,5 @@
+import sys, os
+sys.path.insert(0, os.getcwd())
 import os, tempfile
 from vok import images
 for fn, q in [(images.kremlin, "Putin"), (images.whitehouse, "Trump"), (images.mehr, "Araghchi"), (images.nasa, "rocket launch")]:
