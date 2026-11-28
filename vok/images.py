@@ -101,6 +101,110 @@ def wikimedia(query: str) -> list[dict]:
     return _parse(data)
 
 
+# ---------------- official government / state sources (free licences) ----------------
+_UA = {"User-Agent": "Mozilla/5.0 (VOK news; vok.originals@gmail.com)"}
+RUSSIA = re.compile(r"\b(putin|kremlin|russia|russian|moscow|lavrov|peskov|shoigu|medvedev|belousov)\b", re.I)
+US_GOV = re.compile(r"\b(trump|white house|vance|rubio|hegseth|leavitt|bessent|witkoff|kushner|melania|"
+                    r"washington|oval office|united states|us president)\b", re.I)
+IRAN = re.compile(r"\b(iran|iranian|tehran|araghchi|pezeshkian|khamenei|baghaei|ghalibaf|larijani|"
+                  r"rezaei|aref|irgc|hormuz)\b", re.I)
+SPACE = re.compile(r"\b(nasa|space|rocket|launch|astronaut|orbit|moon|mars|spacex|satellite|iss)\b", re.I)
+
+
+def _html(url: str) -> str:
+    import urllib.request
+    return urllib.request.urlopen(urllib.request.Request(url, headers=_UA), timeout=25) \
+        .read().decode("utf-8", "replace")
+
+
+def kremlin(query: str) -> list[dict]:
+    """Kremlin.ru: all photos are CC BY 4.0. Newest events first."""
+    from urllib.parse import quote
+    h = _html("http://en.kremlin.ru/search?query=" + quote(query))
+    ids = list(dict.fromkeys(re.findall(r'href="/events/president/news/(\d+)"', h)))[:3]
+    out = []
+    for n, eid in enumerate(ids):
+        try:
+            e = _html(f"http://en.kremlin.ru/events/president/news/{eid}/photos")
+        except Exception:
+            continue
+        keys = list(dict.fromkeys(re.findall(
+            r"static\.kremlin\.ru/media/events/photos/(?:small|medium|big|original)/(\w+\.jpg)", e)))
+        for k, key in enumerate(keys[:6]):
+            out.append({"url": f"http://static.kremlin.ru/media/events/photos/big/{key}",
+                        "credit": "Kremlin.ru (CC BY 4.0)",
+                        "page": f"http://en.kremlin.ru/events/president/news/{eid}/photos#{key}",
+                        "pixels": 2_000_000, "rank": n * 2 + k * 0.3 - 2})
+    return out
+
+
+def whitehouse(query: str) -> list[dict]:
+    """whitehouse.gov photo galleries: official White House photos are public domain."""
+    h = _html("https://www.whitehouse.gov/gallery/")
+    words = [w for w in re.findall(r"[a-z]+", query.lower()) if len(w) > 3]
+    links = list(dict.fromkeys(re.findall(r'href="(https://www\.whitehouse\.gov/gallery/[^"]+/)"', h)))
+    links = [l for l in links if any(w in l for w in words)] or links
+    out = []
+    for n, link in enumerate(links[:3]):
+        try:
+            g = _html(link)
+        except Exception:
+            continue
+        imgs = list(dict.fromkeys(re.findall(
+            r"(https://www\.whitehouse\.gov/wp-content/uploads/\d{4}/\d{2}/[\w\-]+?_o\.jpe?g)", g)))
+        for k, u in enumerate(imgs[:6]):
+            out.append({"url": u, "credit": "Official White House Photo (public domain)",
+                        "page": link + "#" + u.rsplit("/", 1)[-1], "pixels": 3_000_000,
+                        "rank": n * 2 + k * 0.3 - 2})
+    return out
+
+
+def mehr(query: str) -> list[dict]:
+    """Mehr News Agency (Iran): content published under CC BY 4.0."""
+    from urllib.parse import quote
+    h = _html("https://en.mehrnews.com/search?q=" + quote(query))
+    keys = list(dict.fromkeys(re.findall(r"media\.mehrnews\.com/d/(\d{4}/\d{2}/\d{2})/\d/(\d+)\.jpe?g", h)))
+    links = list(dict.fromkeys(re.findall(r'href="(/news/\d+/[^"]+)"', h)))
+    out = []
+    for k, (day, num) in enumerate(keys[:8]):
+        if day < "2025/01/01":
+            continue
+        out.append({"url": f"https://media.mehrnews.com/d/{day}/4/{num}.jpg",
+                    "credit": "Mehr News Agency (CC BY 4.0)",
+                    "page": "https://en.mehrnews.com" + (links[k] if k < len(links) else "") + f"#{num}",
+                    "pixels": 1_500_000, "rank": k * 0.5 - 1, "min_side": 700})
+    return out
+
+
+def nasa(query: str) -> list[dict]:
+    """NASA image library: public domain."""
+    data = net.get_json("https://images-api.nasa.gov/search", {"q": query, "media_type": "image"})
+    out = []
+    for k, it in enumerate((data.get("collection") or {}).get("items", [])[:10]):
+        d = (it.get("data") or [{}])[0]
+        nid = d.get("nasa_id")
+        if not nid:
+            continue
+        out.append({"url": f"https://images-assets.nasa.gov/image/{nid}/{nid}~orig.jpg",
+                    "credit": "NASA (public domain)",
+                    "page": f"https://images.nasa.gov/details/{nid}", "pixels": 4_000_000, "rank": k * 0.5})
+    return out
+
+
+def official_finders(query: str) -> tuple:
+    """Pick the official sources that fit this story."""
+    f = []
+    if RUSSIA.search(query):
+        f.append(kremlin)
+    if US_GOV.search(query):
+        f.append(whitehouse)
+    if IRAN.search(query):
+        f.append(mehr)
+    if SPACE.search(query):
+        f.append(nasa)
+    return tuple(f)
+
+
 def wikimedia_recent(query: str) -> list[dict]:
     """Newest uploads first: for fresh events, Commons often gets CC photos within hours
     (government and CC-licensed outlets). Only files from the last 30 days count."""
@@ -323,12 +427,13 @@ def best_photo(queries: list[str], exclude: set, workdir: str, person: str = "",
         return lib
     cands: list[dict] = []
     for q in [q for q in queries if q]:
+        official = official_finders(q)
         if q == person:
-            finders = (wikimedia_person, wikimedia, openverse)
+            finders = official + (wikimedia_person, wikimedia, openverse)
         elif generic:
             finders = (pexels, pixabay, openverse, wikimedia)
         else:
-            finders = (wikimedia_recent, wikimedia, openverse, pexels, pixabay)
+            finders = official + (wikimedia_recent, wikimedia, openverse, pexels, pixabay)
         for finder in finders:
             try:
                 for c in finder(q):
