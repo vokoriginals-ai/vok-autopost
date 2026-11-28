@@ -20092,6 +20092,21 @@
     "south"
    ],
    "headline": "Pezeshkian announces return of damaged South Pars gas pipelines to production"
+  },
+  {
+   "at": "2026-11-28T16:06:19.649072+05:00",
+   "words": [
+    "bulldozers",
+    "homes",
+    "israeli",
+    "jordan",
+    "raze",
+    "remain",
+    "residents",
+    "valley",
+    "vow"
+   ],
+   "headline": "Residents of Jordan Valley vow to remain after Israeli bulldozers raze homes"
   }
  ],
  "published": [
@@ -20707,6 +20722,10 @@
   {
    "at": "2026-11-28T16:06:15.880270+05:00",
    "page": "library:pezeshkian-2.png"
+  },
+  {
+   "at": "2026-11-28T16:06:38.281095+05:00",
+   "page": "https://commons.wikimedia.org/wiki/File:Camels_in_Jordan_valley_(4568207363).jpg"
   }
  ],
  "drip_until": "2026-11-28T16:20:31.501007+05:00",
