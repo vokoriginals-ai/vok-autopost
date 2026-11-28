@@ -2,24 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T15:09:37.257510+05:00",
-   "words": [
-    "across",
-    "airline",
-    "coastal",
-    "coming",
-    "filled",
-    "flooding",
-    "glitches",
-    "messy",
-    "storms",
-    "thanksgiving",
-    "threaten",
-    "travel"
-   ],
-   "headline": "Storms, coastal flooding threaten Thanksgiving travel across US"
-  },
-  {
    "at": "2026-11-24T15:43:48.839723+05:00",
    "words": [
     "access",
@@ -20460,7 +20442,7 @@
    "page": "https://pixabay.com/photos/chess-chess-board-chess-pieces-5217922/"
   }
  ],
- "drip_until": "2026-11-28T15:28:35.026673+05:00",
+ "drip_until": "2026-11-28T15:34:28.546686+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
