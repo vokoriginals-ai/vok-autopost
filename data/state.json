@@ -2,172 +2,6 @@
  "telegram_offset": 0,
  "seen": [
   {
-   "at": "2026-11-24T14:38:12.147496+05:00",
-   "words": [
-    "2026",
-    "brief",
-    "cartoon",
-    "daily",
-    "iran",
-    "november"
-   ],
-   "headline": "Daily News Brief I November 24"
-  },
-  {
-   "at": "2026-11-24T14:38:13.118079+05:00",
-   "words": [
-    "break",
-    "coast",
-    "communities",
-    "decades",
-    "flood",
-    "king",
-    "old",
-    "pacific",
-    "records",
-    "tides"
-   ],
-   "headline": "Pacific Coast king tides could break decades-old records and flood communities"
-  },
-  {
-   "at": "2026-11-24T14:38:14.821619+05:00",
-   "words": [
-    "000",
-    "750",
-    "750k",
-    "andrew",
-    "bribe",
-    "court",
-    "former",
-    "heiress",
-    "help",
-    "helping",
-    "hope",
-    "paid",
-    "passport",
-    "prince",
-    "received",
-    "told",
-    "took",
-    "turkish",
-    "woman"
-   ],
-   "headline": "Former prince Andrew was paid £750k in hope of helping Turkish woman with passport, court told"
-  },
-  {
-   "at": "2026-11-24T14:38:34.942603+05:00",
-   "words": [
-    "braces",
-    "congress",
-    "grilling",
-    "man",
-    "manus",
-    "markets",
-    "nvidia",
-    "trillion"
-   ],
-   "headline": "Manus on Markets: Nvidia’s $1 trillion man braces for Congress grilling"
-  },
-  {
-   "at": "2026-11-24T14:38:35.868638+05:00",
-   "words": [
-    "agrees",
-    "board",
-    "disarm",
-    "discusses",
-    "efforts",
-    "envoy",
-    "establish",
-    "gaza",
-    "gov't",
-    "hamas",
-    "int'l",
-    "moscow",
-    "peace",
-    "rebuild",
-    "russian",
-    "stalled"
-   ],
-   "headline": "Board of Peace says Hamas agrees to disarm amid int'l efforts to establish gov't"
-  },
-  {
-   "at": "2026-11-24T14:38:36.635818+05:00",
-   "words": [
-    "000",
-    "dh200",
-    "earn",
-    "executives",
-    "gather",
-    "gitex",
-    "global",
-    "highest",
-    "investors",
-    "month",
-    "next",
-    "officials",
-    "paid",
-    "tech",
-    "uae"
-   ],
-   "headline": "Dh200,000 a month: What the highest-paid UAE executives earn"
-  },
-  {
-   "at": "2026-11-24T14:38:39.437302+05:00",
-   "words": [
-    "iran",
-    "looks",
-    "meeting",
-    "meets",
-    "negotiations",
-    "qatar",
-    "revive",
-    "rubio",
-    "striving",
-    "talks"
-   ],
-   "headline": "Rubio Meets Qatar PM as Iran Talks Go On"
-  },
-  {
-   "at": "2026-11-24T14:39:11.585483+05:00",
-   "words": [
-    "2027",
-    "airpods",
-    "apple",
-    "glasses",
-    "homepod",
-    "including",
-    "iphones",
-    "launches",
-    "max",
-    "mini",
-    "partnership",
-    "plans",
-    "product",
-    "red",
-    "revive",
-    "smart"
-   ],
-   "headline": "Apple plans up to 18 product launches in 2027, including smart glasses and new iPhones"
-  },
-  {
-   "at": "2026-11-24T14:39:12.563198+05:00",
-   "words": [
-    "documentary",
-    "emmy",
-    "hours",
-    "international",
-    "israeli",
-    "kill",
-    "louis",
-    "settlers",
-    "sky",
-    "theroux's",
-    "wins",
-    "zone"
-   ],
-   "headline": "Louis Theroux's documentary on Israeli settlers wins International Emmy"
-  },
-  {
    "at": "2026-11-24T14:48:32.116597+05:00",
    "words": [
     "all",
@@ -19945,7 +19779,6 @@
   }
  ],
  "published": [
-  "2026-11-24T14:39+05:00",
   "2026-11-24T15:43+05:00",
   "2026-11-24T16:47+05:00",
   "2026-11-24T17:50+05:00",
@@ -20548,7 +20381,7 @@
    "page": "https://pixabay.com/photos/garbage-garbage-can-waste-1308138/"
   }
  ],
- "drip_until": "2026-11-28T14:55:03.102435+05:00",
+ "drip_until": "2026-11-28T15:00:10.109996+05:00",
  "quotes_used": [
   "donald trump i'm just going to veto everything there is, and then at some point, i think they're going to want to negoti",
   "donald trump it's always an option, i guess, but i don't think it'll be necessary",
