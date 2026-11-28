@@ -20077,6 +20077,21 @@
     "wings"
    ],
    "headline": "Two Boeing Aircraft Collide While Taxiing in Washington, Breaking One Plane’s Wing"
+  },
+  {
+   "at": "2026-11-28T16:06:11.467662+05:00",
+   "words": [
+    "announces",
+    "damaged",
+    "gas",
+    "pars",
+    "pezeshkian",
+    "pipelines",
+    "production",
+    "return",
+    "south"
+   ],
+   "headline": "Pezeshkian announces return of damaged South Pars gas pipelines to production"
   }
  ],
  "published": [
@@ -20688,6 +20703,10 @@
   {
    "at": "2026-11-28T16:06:07.526291+05:00",
    "page": "https://commons.wikimedia.org/wiki/File:American_Airlines_plane_at_the_Cura%C3%A7ao_International_Airport_(CUR).jpg"
+  },
+  {
+   "at": "2026-11-28T16:06:15.880270+05:00",
+   "page": "library:pezeshkian-2.png"
   }
  ],
  "drip_until": "2026-11-28T16:20:31.501007+05:00",
