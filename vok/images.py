@@ -150,14 +150,14 @@ def whitehouse(query: str) -> list[dict]:
             g = _html(link)
         except Exception:
             continue
-        import datetime as _d
-        recent = (_d.date.today() - _d.timedelta(days=62)).strftime("%Y/%m")
-        imgs = [u for u in dict.fromkeys(re.findall(
-            r"(https://www\.whitehouse\.gov/wp-content/uploads/(\d{4}/\d{2})/[\w\-]+?_o\.jpe?g)", g))
-            if u[1] >= recent]                      # gallery photos only, not old site images
-        imgs = [u[0] for u in imgs]
+        # gallery photos are named like P20261123MR-0768.jpg (date + photographer code)
+        imgs = list(dict.fromkeys(re.findall(
+            r"(https://www\.whitehouse\.gov/wp-content/uploads/\d{4}/\d{2}/P\d{8}[A-Z]{1,3}-\d+\.jpe?g)", g)))
+        who = re.findall(r"Official White House Photo by ([A-Z][\w.]+(?: [A-Z][\w.\-]+){0,2})", g)
+        credit = f"Official White House Photo by {who[0]} (public domain)" if who else \
+            "Official White House Photo (public domain)"
         for k, u in enumerate(imgs[:6]):
-            out.append({"url": u, "credit": "Official White House Photo (public domain)",
+            out.append({"url": u, "credit": credit,
                         "page": link + "#" + u.rsplit("/", 1)[-1], "pixels": 3_000_000,
                         "rank": n * 2 + k * 0.3 - 2})
     return out
