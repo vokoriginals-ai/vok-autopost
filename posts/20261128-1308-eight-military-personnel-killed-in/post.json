@@ -3,7 +3,7 @@
   "label": "NEWS",
   "highlight": "Eight military personnel",
   "caption": "Eight military personnel have been k!lled in a helicopter crash in a remote area of Peru known for growing and trafficking dr*gs 🚁\n\nAccording to the BBC and other sources, the aircraft came down near the town of Sanabamba during a mission to evacuate an army patrol in the Apurimac, Ene, and Mantaro rivers valley.\n\nThe Peruvian ministry of defence stated that the pilot was the sole survivor of the crash, while the cause of the accident remains unknown.\n\nThe aircraft was reported missing on Thursday night after rescuing three army personnel, and the pilot was later evacuated to Lima for medical treatment.\n\nWhat are your thoughts on this tragic accident? 👇\n\nFollow Vok for more stories like this.\n\n#Vok #VokOriginals #Peru #MilitaryCrash #RescueMission\n\n📸 TheOtherKev / Pixabay",
-  "status": "approved",
+  "status": "published",
   "priority": 2,
   "ai_image": false,
   "created_at": "2026-11-28T13:08+05:00",
@@ -26,5 +26,21 @@
   ],
   "issue": 148,
   "decided_at": "2026-11-28T13:27+05:00",
-  "note": "auto-approved: no reply in 15 min"
+  "note": "auto-approved: no reply in 15 min",
+  "result": {
+    "facebook": {
+      "photo_id": "122185717064988633",
+      "post_id": "790959357430859_122185717088988633",
+      "permalink": "https://www.facebook.com/photo.php?fbid=122185717064988633&set=a.122109167888988633&type=3",
+      "image_url": "https://scontent-ord5-1.xx.fbcdn.net/v/t39.30808-6/936487792_122185717070988633_1072315041857943196_n.jpg?_nc_cat=107&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=e5c1b6&_nc_eui2=AeFCaLrMYZ-XqtkLbxQAvOPxLV3CtmrCWJ0tXcK2asJYnYHW78wN41J6jxARqxaSjTmZDhxccSRe2TMRBn14LjYY&_nc_ohc=RRY2Y790QZQQ7kNvwFL4QLU&_nc_oc=Adpzzk1hYEn--ae_ElFfhaesuAdA4A85NuQk8lhQNP6Olk5wCl4R8J9vhLPxzU7eDUU&_nc_zt=23&_nc_ht=scontent-ord5-1.xx&edm=AMAeTUEEAAAA&_nc_gid=4u7RiU2vH3EypSVRHxRT6w&_nc_tpa=Q5bMBQIRHcAXrqbWuW0jmYbHy2m8th50tMDPruOBTZioI2PhL7regTHVCA3SU4QzXh0TKhrEFeHYL93ltg&oh=00_AQVDl45SBSbJFn_NBxnAiTzYxH6dp3mtE33RIdX-fyazUQ&oe=6B106B9C"
+    },
+    "instagram": {
+      "media_id": "18150471514572271",
+      "permalink": "https://www.instagram.com/p/DgR74-BD7qG/"
+    },
+    "story": {
+      "media_id": "17958524238318670"
+    }
+  },
+  "published_at": "2026-11-28T14:29+05:00"
 }
